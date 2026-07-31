@@ -1,0 +1,2 @@
+floorplan_id,floorplan_name,grid_unit,people_per_capacity_unit,image_file,notes
+FP02,School Administration Building,1.0,10,floorplan.png,Approved Floorplan2 school layout. Occupancy values are deterministic test values and may be edited. Exit visualization coordinates WEST16/EAST16 were normalized to A16/AG16; graph edges and routing data were not changed.

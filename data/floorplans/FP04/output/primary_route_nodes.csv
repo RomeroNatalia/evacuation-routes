@@ -1,0 +1,72 @@
+room_id,room_name,primary_exit,sequence_index,node_id,node_type,grid_position
+R01,West Gallery A,EXIT_A,0,START_R01,room_start,D3
+R01,West Gallery A,EXIT_A,1,D2,navigation,D2
+R01,West Gallery A,EXIT_A,2,E2,navigation,E2
+R01,West Gallery A,EXIT_A,3,F2,navigation,F2
+R01,West Gallery A,EXIT_A,4,DOOR_01,door,H2
+R01,West Gallery A,EXIT_A,5,I2,navigation,I2
+R01,West Gallery A,EXIT_A,6,J2,navigation,J2
+R01,West Gallery A,EXIT_A,7,K2,navigation,K2
+R01,West Gallery A,EXIT_A,8,EXIT_A,exit,K1
+R02,Front Desk,EXIT_A,0,START_R02,room_start,K3
+R02,Front Desk,EXIT_A,1,J3,navigation,J3
+R02,Front Desk,EXIT_A,2,J2,navigation,J2
+R02,Front Desk,EXIT_A,3,K2,navigation,K2
+R02,Front Desk,EXIT_A,4,EXIT_A,exit,K1
+R03,East Gallery A,EXIT_A,0,START_R03,room_start,R3
+R03,East Gallery A,EXIT_A,1,Q3,navigation,Q3
+R03,East Gallery A,EXIT_A,2,P3,navigation,P3
+R03,East Gallery A,EXIT_A,3,P2,navigation,P2
+R03,East Gallery A,EXIT_A,4,DOOR_02,door,N2
+R03,East Gallery A,EXIT_A,5,M2,navigation,M2
+R03,East Gallery A,EXIT_A,6,L2,navigation,L2
+R03,East Gallery A,EXIT_A,7,K2,navigation,K2
+R03,East Gallery A,EXIT_A,8,EXIT_A,exit,K1
+R04,West Gallery B,EXIT_A,0,START_R04,room_start,D8
+R04,West Gallery B,EXIT_A,1,D7,navigation,D7
+R04,West Gallery B,EXIT_A,2,D6,navigation,D6
+R04,West Gallery B,EXIT_A,3,E6,navigation,E6
+R04,West Gallery B,EXIT_A,4,DOOR_05,door,F6
+R04,West Gallery B,EXIT_A,5,G6,navigation,G6
+R04,West Gallery B,EXIT_A,6,G4,navigation,G4
+R04,West Gallery B,EXIT_A,7,I4,navigation,I4
+R04,West Gallery B,EXIT_A,8,I3,navigation,I3
+R04,West Gallery B,EXIT_A,9,I2,navigation,I2
+R04,West Gallery B,EXIT_A,10,J2,navigation,J2
+R04,West Gallery B,EXIT_A,11,K2,navigation,K2
+R04,West Gallery B,EXIT_A,12,EXIT_A,exit,K1
+R05,East Gallery B,EXIT_A,0,START_R05,room_start,R8
+R05,East Gallery B,EXIT_A,1,Q8,navigation,Q8
+R05,East Gallery B,EXIT_A,2,Q7,navigation,Q7
+R05,East Gallery B,EXIT_A,3,Q6,navigation,Q6
+R05,East Gallery B,EXIT_A,4,DOOR_06,door,P6
+R05,East Gallery B,EXIT_A,5,O6,navigation,O6
+R05,East Gallery B,EXIT_A,6,O4,navigation,O4
+R05,East Gallery B,EXIT_A,7,M4,navigation,M4
+R05,East Gallery B,EXIT_A,8,M3,navigation,M3
+R05,East Gallery B,EXIT_A,9,L3,navigation,L3
+R05,East Gallery B,EXIT_A,10,L2,navigation,L2
+R05,East Gallery B,EXIT_A,11,K2,navigation,K2
+R05,East Gallery B,EXIT_A,12,EXIT_A,exit,K1
+R06,West Gallery C,EXIT_B,0,START_R06,room_start,D14
+R06,West Gallery C,EXIT_B,1,E14,navigation,E14
+R06,West Gallery C,EXIT_B,2,F14,navigation,F14
+R06,West Gallery C,EXIT_B,3,H14,navigation,H14
+R06,West Gallery C,EXIT_B,4,DOOR_11,door,I14
+R06,West Gallery C,EXIT_B,5,J14,navigation,J14
+R06,West Gallery C,EXIT_B,6,J15,navigation,J15
+R06,West Gallery C,EXIT_B,7,K15,navigation,K15
+R06,West Gallery C,EXIT_B,8,EXIT_B,exit,K16
+R07,Museum Shop,EXIT_B,0,START_R07,room_start,K14
+R07,Museum Shop,EXIT_B,1,K14,navigation,K14
+R07,Museum Shop,EXIT_B,2,K15,navigation,K15
+R07,Museum Shop,EXIT_B,3,EXIT_B,exit,K16
+R08,East Gallery C,EXIT_B,0,START_R08,room_start,R14
+R08,East Gallery C,EXIT_B,1,Q14,navigation,Q14
+R08,East Gallery C,EXIT_B,2,P14,navigation,P14
+R08,East Gallery C,EXIT_B,3,N14,navigation,N14
+R08,East Gallery C,EXIT_B,4,DOOR_12,door,M14
+R08,East Gallery C,EXIT_B,5,L14,navigation,L14
+R08,East Gallery C,EXIT_B,6,K14,navigation,K14
+R08,East Gallery C,EXIT_B,7,K15,navigation,K15
+R08,East Gallery C,EXIT_B,8,EXIT_B,exit,K16

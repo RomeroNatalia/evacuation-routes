@@ -1,0 +1,2 @@
+floorplan_id,floorplan_name,grid_unit,people_per_capacity_unit,image_file,notes
+FP05,Clinic,1.0,10,floorplan.png,Approved Floorplan5 clinic layout with corrected unique node labels. Occupancy values are deterministic test values and may be edited. Exit visualization coordinate WEST18 was normalized to A18; graph edges and routing data were not changed.

@@ -1,0 +1,63 @@
+OFFICE EVACUATION QUBO RESULT
+====================================
+Solver: D-Wave LeapHybridSampler
+Variables: 72
+Interactions: 1751
+Best valid energy: 0.655631
+Valid one-exit-per-room solution: True
+Valid sample rate: 100.00%
+Assignment penalty: 2.212900
+Normalized route objective: 0.655631
+Total evacuated people: 85
+Total evacuation distance: 274.150000
+Raw congestion objective: 123.239236
+Overload-only report objective: 1.825000
+Used physical edges: 149
+Overloaded physical edges: 3
+Maximum edge utilization: 145.00%
+
+ROOM ASSIGNMENTS
+------------------------------------
+R01 (3 people) -> EXIT_C | distance=7.000
+R02 (6 people) -> EXIT_C | distance=6.500
+R03 (2 people) -> EXIT_C | distance=15.750
+R04 (2 people) -> EXIT_C | distance=13.500
+R05 (2 people) -> EXIT_C | distance=7.500
+R06 (2 people) -> EXIT_C | distance=7.500
+R07 (2 people) -> EXIT_B | distance=20.750
+R08 (2 people) -> EXIT_C | distance=15.500
+R09 (4 people) -> EXIT_C | distance=12.500
+R10 (1 people) -> EXIT_C | distance=12.500
+R11 (1 people) -> EXIT_C | distance=13.500
+R12 (3 people) -> EXIT_B | distance=14.500
+R13 (4 people) -> EXIT_C | distance=15.000
+R14 (2 people) -> EXIT_B | distance=7.000
+R15 (2 people) -> EXIT_B | distance=12.500
+R16 (4 people) -> EXIT_A | distance=21.750
+R17 (1 people) -> EXIT_B | distance=4.000
+R18 (4 people) -> EXIT_A | distance=13.750
+R19 (4 people) -> EXIT_B | distance=16.750
+R20 (4 people) -> EXIT_A | distance=6.100
+R21 (4 people) -> EXIT_A | distance=6.350
+R22 (4 people) -> EXIT_A | distance=10.600
+R23 (4 people) -> EXIT_A | distance=11.350
+R24 (18 people) -> EXIT_A | distance=2.000
+
+EXIT USAGE
+------------------------------------
+EXIT_A: 7 rooms, 42 people
+EXIT_B: 6 rooms, 14 people
+EXIT_C: 11 rooms, 29 people
+
+MOST UTILIZED EDGES
+------------------------------------
+E219:I2--I3: 29/20 people (145.00%)
+E202:H34--EXIT_A: 42/30 people (140.00%)
+E493:START_R24--H34: 42/40 people (105.00%)
+E238:I3--I4: 20/20 people (100.00%)
+E244:I4--I5.5: 20/20 people (100.00%)
+E245:I5.5--I7: 20/20 people (100.00%)
+E218:I2--EXIT_C: 29/30 people (96.67%)
+E185:G30--DOOR_30: 8/10 people (80.00%)
+E186:G32--DOOR_30: 8/10 people (80.00%)
+E229:I26--DOOR_26: 8/10 people (80.00%)

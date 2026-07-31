@@ -1,0 +1,63 @@
+OFFICE EVACUATION QUBO RESULT
+====================================
+Solver: direct D-Wave QPU with embedding and spin reversals
+Variables: 72
+Interactions: 1751
+Best valid energy: 0.944997
+Valid one-exit-per-room solution: True
+Valid sample rate: 1.30%
+Assignment penalty: 2.212900
+Normalized route objective: 0.944997
+Total evacuated people: 85
+Total evacuation distance: 355.400000
+Raw congestion objective: 221.813542
+Overload-only report objective: 6.092014
+Used physical edges: 149
+Overloaded physical edges: 15
+Maximum edge utilization: 150.00%
+
+ROOM ASSIGNMENTS
+------------------------------------
+R01 (3 people) -> EXIT_C | distance=7.000
+R02 (6 people) -> EXIT_B | distance=23.500
+R03 (2 people) -> EXIT_C | distance=15.750
+R04 (2 people) -> EXIT_C | distance=13.500
+R05 (2 people) -> EXIT_B | distance=18.500
+R06 (2 people) -> EXIT_C | distance=7.500
+R07 (2 people) -> EXIT_C | distance=13.750
+R08 (2 people) -> EXIT_C | distance=15.500
+R09 (4 people) -> EXIT_A | distance=23.750
+R10 (1 people) -> EXIT_C | distance=12.500
+R11 (1 people) -> EXIT_B | distance=20.500
+R12 (3 people) -> EXIT_B | distance=14.500
+R13 (4 people) -> EXIT_A | distance=20.250
+R14 (2 people) -> EXIT_C | distance=18.000
+R15 (2 people) -> EXIT_B | distance=12.500
+R16 (4 people) -> EXIT_C | distance=21.500
+R17 (1 people) -> EXIT_A | distance=21.250
+R18 (4 people) -> EXIT_B | distance=16.500
+R19 (4 people) -> EXIT_C | distance=22.750
+R20 (4 people) -> EXIT_A | distance=6.100
+R21 (4 people) -> EXIT_A | distance=6.350
+R22 (4 people) -> EXIT_A | distance=10.600
+R23 (4 people) -> EXIT_A | distance=11.350
+R24 (18 people) -> EXIT_A | distance=2.000
+
+EXIT USAGE
+------------------------------------
+EXIT_A: 8 rooms, 43 people
+EXIT_B: 6 rooms, 18 people
+EXIT_C: 10 rooms, 24 people
+
+MOST UTILIZED EDGES
+------------------------------------
+E214:I15--I16: 30/20 people (150.00%)
+E215:I16--I18: 30/20 people (150.00%)
+E202:H34--EXIT_A: 43/30 people (143.33%)
+E238:I3--I4: 27/20 people (135.00%)
+E244:I4--I5.5: 27/20 people (135.00%)
+E245:I5.5--I7: 27/20 people (135.00%)
+E219:I2--I3: 24/20 people (120.00%)
+E204:I10--I8: 23/20 people (115.00%)
+E207:I11--I12: 23/20 people (115.00%)
+E209:I12--I14: 23/20 people (115.00%)

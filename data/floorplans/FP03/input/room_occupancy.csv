@@ -1,0 +1,29 @@
+room_id,room_name,capacity,occupancy
+R05,Apartment 101,4,2
+R01,Apartment 102,4,2
+R02,Apartment 103,4,2
+R04,Apartment 104,4,2
+R06,Apartment 105,4,2
+R03,Apartment 106,4,2
+R07,Apartment 107,4,2
+R35,Apartment 108,4,2
+R10,Printer Room,6,2
+R08,Apartment 109,4,2
+R11,Apartment 110,4,2
+R09,Apartment 111,4,2
+R12,Communal Bathroom,12,4
+R16,Apartment 112,4,2
+R13,Apartment 113,4,2
+R15,Supply Closet,4,1
+R14,Apartment 114,4,2
+R25,Apartment 115,4,2
+R24,Laundry Room,10,4
+R36,Communal Kitchen,20,10
+R20,Emergency Stairwell / Exit Room,20,0
+R29,Apartment 116,4,2
+R33,Apartment 117,4,2
+R30,Apartment 118,4,2
+R31,Apartment 119,4,2
+R28,Apartment 120,4,2
+R32,Apartment 121,4,2
+R34,Apartment 122,4,2

@@ -1,0 +1,63 @@
+OFFICE EVACUATION QUBO RESULT
+====================================
+Solver: neal.SimulatedAnnealingSampler (multiple seeds)
+Variables: 72
+Interactions: 1751
+Best valid energy: 0.703960
+Valid one-exit-per-room solution: True
+Valid sample rate: 100.00%
+Assignment penalty: 2.212900
+Normalized route objective: 0.704015
+Total evacuated people: 85
+Total evacuation distance: 296.150000
+Raw congestion objective: 130.368403
+Overload-only report objective: 1.005556
+Used physical edges: 149
+Overloaded physical edges: 2
+Maximum edge utilization: 133.33%
+
+ROOM ASSIGNMENTS
+------------------------------------
+R01 (3 people) -> EXIT_C | distance=7.000
+R02 (6 people) -> EXIT_C | distance=6.500
+R03 (2 people) -> EXIT_C | distance=15.750
+R04 (2 people) -> EXIT_C | distance=13.500
+R05 (2 people) -> EXIT_A | distance=24.750
+R06 (2 people) -> EXIT_C | distance=7.500
+R07 (2 people) -> EXIT_C | distance=13.750
+R08 (2 people) -> EXIT_C | distance=15.500
+R09 (4 people) -> EXIT_B | distance=17.500
+R10 (1 people) -> EXIT_C | distance=12.500
+R11 (1 people) -> EXIT_B | distance=20.500
+R12 (3 people) -> EXIT_B | distance=14.500
+R13 (4 people) -> EXIT_C | distance=15.000
+R14 (2 people) -> EXIT_B | distance=7.000
+R15 (2 people) -> EXIT_C | distance=18.500
+R16 (4 people) -> EXIT_B | distance=15.500
+R17 (1 people) -> EXIT_B | distance=4.000
+R18 (4 people) -> EXIT_B | distance=16.500
+R19 (4 people) -> EXIT_A | distance=14.000
+R20 (4 people) -> EXIT_A | distance=6.100
+R21 (4 people) -> EXIT_A | distance=6.350
+R22 (4 people) -> EXIT_A | distance=10.600
+R23 (4 people) -> EXIT_A | distance=11.350
+R24 (18 people) -> EXIT_A | distance=2.000
+
+EXIT USAGE
+------------------------------------
+EXIT_A: 7 rooms, 40 people
+EXIT_B: 7 rooms, 19 people
+EXIT_C: 10 rooms, 26 people
+
+MOST UTILIZED EDGES
+------------------------------------
+E202:H34--EXIT_A: 40/30 people (133.33%)
+E219:I2--I3: 26/20 people (130.00%)
+E493:START_R24--H34: 40/40 people (100.00%)
+E011:B18--C18: 19/20 people (95.00%)
+E049:C18--D18: 18/20 people (90.00%)
+E081:D18--E18: 18/20 people (90.00%)
+E112:E18--F18: 18/20 people (90.00%)
+E218:I2--EXIT_C: 26/30 people (86.67%)
+E238:I3--I4: 17/20 people (85.00%)
+E244:I4--I5.5: 17/20 people (85.00%)

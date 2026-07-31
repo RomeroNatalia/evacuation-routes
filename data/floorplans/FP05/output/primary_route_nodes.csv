@@ -1,0 +1,308 @@
+room_id,room_name,primary_exit,sequence_index,node_id,node_type,grid_position
+R01,Doctor's Office,EXIT_C,0,START_R01,room_start,N3
+R01,Doctor's Office,EXIT_C,1,N3,navigation,N3
+R01,Doctor's Office,EXIT_C,2,M3,navigation,M3
+R01,Doctor's Office,EXIT_C,3,L3,navigation,L3
+R01,Doctor's Office,EXIT_C,4,K3,navigation,K3
+R01,Doctor's Office,EXIT_C,5,DOOR_02,door,J3
+R01,Doctor's Office,EXIT_C,6,I3,navigation,I3
+R01,Doctor's Office,EXIT_C,7,I2,navigation,I2
+R01,Doctor's Office,EXIT_C,8,EXIT_C,exit,I1
+R02,Staff Room,EXIT_C,0,START_R02,room_start,D3
+R02,Staff Room,EXIT_C,1,E3,navigation,E3
+R02,Staff Room,EXIT_C,2,F3,navigation,F3
+R02,Staff Room,EXIT_C,3,G3,navigation,G3
+R02,Staff Room,EXIT_C,4,DOOR_01,door,H3
+R02,Staff Room,EXIT_C,5,I3,navigation,I3
+R02,Staff Room,EXIT_C,6,I2,navigation,I2
+R02,Staff Room,EXIT_C,7,EXIT_C,exit,I1
+R03,Exam Room 1,EXIT_C,0,START_R03,room_start,P7
+R03,Exam Room 1,EXIT_C,1,P8,navigation,P8
+R03,Exam Room 1,EXIT_C,2,DOOR_10,door,P9
+R03,Exam Room 1,EXIT_C,3,P10,navigation,P10
+R03,Exam Room 1,EXIT_C,4,O10,navigation,O10
+R03,Exam Room 1,EXIT_C,5,N10,navigation,N10
+R03,Exam Room 1,EXIT_C,6,M10,navigation,M10
+R03,Exam Room 1,EXIT_C,7,L10,navigation,L10
+R03,Exam Room 1,EXIT_C,8,K10,navigation,K10
+R03,Exam Room 1,EXIT_C,9,J10,navigation,J10
+R03,Exam Room 1,EXIT_C,10,I10,navigation,I10
+R03,Exam Room 1,EXIT_C,11,I8,navigation,I8
+R03,Exam Room 1,EXIT_C,12,I7,navigation,I7
+R03,Exam Room 1,EXIT_C,13,I5.5,navigation,I5.5
+R03,Exam Room 1,EXIT_C,14,I4,navigation,I4
+R03,Exam Room 1,EXIT_C,15,I3,navigation,I3
+R03,Exam Room 1,EXIT_C,16,I2,navigation,I2
+R03,Exam Room 1,EXIT_C,17,EXIT_C,exit,I1
+R04,Exam Room 2,EXIT_C,0,START_R04,room_start,D7
+R04,Exam Room 2,EXIT_C,1,D8,navigation,D8
+R04,Exam Room 2,EXIT_C,2,E8,navigation,E8
+R04,Exam Room 2,EXIT_C,3,DOOR_06,door,E9
+R04,Exam Room 2,EXIT_C,4,E10,navigation,E10
+R04,Exam Room 2,EXIT_C,5,F10,navigation,F10
+R04,Exam Room 2,EXIT_C,6,G10,navigation,G10
+R04,Exam Room 2,EXIT_C,7,DOOR_07,door,G9
+R04,Exam Room 2,EXIT_C,8,G8,navigation,G8
+R04,Exam Room 2,EXIT_C,9,G7,navigation,G7
+R04,Exam Room 2,EXIT_C,10,DOOR_03,door,H7
+R04,Exam Room 2,EXIT_C,11,I7,navigation,I7
+R04,Exam Room 2,EXIT_C,12,I5.5,navigation,I5.5
+R04,Exam Room 2,EXIT_C,13,I4,navigation,I4
+R04,Exam Room 2,EXIT_C,14,I3,navigation,I3
+R04,Exam Room 2,EXIT_C,15,I2,navigation,I2
+R04,Exam Room 2,EXIT_C,16,EXIT_C,exit,I1
+R05,Exam Room 3,EXIT_C,0,START_R05,room_start,F7
+R05,Exam Room 3,EXIT_C,1,G7,navigation,G7
+R05,Exam Room 3,EXIT_C,2,DOOR_03,door,H7
+R05,Exam Room 3,EXIT_C,3,I7,navigation,I7
+R05,Exam Room 3,EXIT_C,4,I5.5,navigation,I5.5
+R05,Exam Room 3,EXIT_C,5,I4,navigation,I4
+R05,Exam Room 3,EXIT_C,6,I3,navigation,I3
+R05,Exam Room 3,EXIT_C,7,I2,navigation,I2
+R05,Exam Room 3,EXIT_C,8,EXIT_C,exit,I1
+R06,Exam Room 4,EXIT_C,0,START_R06,room_start,L7
+R06,Exam Room 4,EXIT_C,1,K7,navigation,K7
+R06,Exam Room 4,EXIT_C,2,DOOR_04,door,J7
+R06,Exam Room 4,EXIT_C,3,I7,navigation,I7
+R06,Exam Room 4,EXIT_C,4,I5.5,navigation,I5.5
+R06,Exam Room 4,EXIT_C,5,I4,navigation,I4
+R06,Exam Room 4,EXIT_C,6,I3,navigation,I3
+R06,Exam Room 4,EXIT_C,7,I2,navigation,I2
+R06,Exam Room 4,EXIT_C,8,EXIT_C,exit,I1
+R07,Exam Room 5,EXIT_C,0,START_R07,room_start,N7
+R07,Exam Room 5,EXIT_C,1,N8,navigation,N8
+R07,Exam Room 5,EXIT_C,2,DOOR_09,door,N9
+R07,Exam Room 5,EXIT_C,3,N10,navigation,N10
+R07,Exam Room 5,EXIT_C,4,M10,navigation,M10
+R07,Exam Room 5,EXIT_C,5,L10,navigation,L10
+R07,Exam Room 5,EXIT_C,6,K10,navigation,K10
+R07,Exam Room 5,EXIT_C,7,J10,navigation,J10
+R07,Exam Room 5,EXIT_C,8,I10,navigation,I10
+R07,Exam Room 5,EXIT_C,9,I8,navigation,I8
+R07,Exam Room 5,EXIT_C,10,I7,navigation,I7
+R07,Exam Room 5,EXIT_C,11,I5.5,navigation,I5.5
+R07,Exam Room 5,EXIT_C,12,I4,navigation,I4
+R07,Exam Room 5,EXIT_C,13,I3,navigation,I3
+R07,Exam Room 5,EXIT_C,14,I2,navigation,I2
+R07,Exam Room 5,EXIT_C,15,EXIT_C,exit,I1
+R08,Exam Room 6,EXIT_C,0,START_R08,room_start,B7
+R08,Exam Room 6,EXIT_C,1,B8,navigation,B8
+R08,Exam Room 6,EXIT_C,2,C8,navigation,C8
+R08,Exam Room 6,EXIT_C,3,DOOR_05,door,C9
+R08,Exam Room 6,EXIT_C,4,C10,navigation,C10
+R08,Exam Room 6,EXIT_C,5,D10,navigation,D10
+R08,Exam Room 6,EXIT_C,6,E10,navigation,E10
+R08,Exam Room 6,EXIT_C,7,F10,navigation,F10
+R08,Exam Room 6,EXIT_C,8,G10,navigation,G10
+R08,Exam Room 6,EXIT_C,9,DOOR_07,door,G9
+R08,Exam Room 6,EXIT_C,10,G8,navigation,G8
+R08,Exam Room 6,EXIT_C,11,G7,navigation,G7
+R08,Exam Room 6,EXIT_C,12,DOOR_03,door,H7
+R08,Exam Room 6,EXIT_C,13,I7,navigation,I7
+R08,Exam Room 6,EXIT_C,14,I5.5,navigation,I5.5
+R08,Exam Room 6,EXIT_C,15,I4,navigation,I4
+R08,Exam Room 6,EXIT_C,16,I3,navigation,I3
+R08,Exam Room 6,EXIT_C,17,I2,navigation,I2
+R08,Exam Room 6,EXIT_C,18,EXIT_C,exit,I1
+R09,Lab Room 1,EXIT_C,0,START_R09,room_start,D11
+R09,Lab Room 1,EXIT_C,1,E11,navigation,E11
+R09,Lab Room 1,EXIT_C,2,F11,navigation,F11
+R09,Lab Room 1,EXIT_C,3,G11,navigation,G11
+R09,Lab Room 1,EXIT_C,4,DOOR_13,door,H11
+R09,Lab Room 1,EXIT_C,5,I11,navigation,I11
+R09,Lab Room 1,EXIT_C,6,I10,navigation,I10
+R09,Lab Room 1,EXIT_C,7,I8,navigation,I8
+R09,Lab Room 1,EXIT_C,8,I7,navigation,I7
+R09,Lab Room 1,EXIT_C,9,I5.5,navigation,I5.5
+R09,Lab Room 1,EXIT_C,10,I4,navigation,I4
+R09,Lab Room 1,EXIT_C,11,I3,navigation,I3
+R09,Lab Room 1,EXIT_C,12,I2,navigation,I2
+R09,Lab Room 1,EXIT_C,13,EXIT_C,exit,I1
+R10,Bathroom A,EXIT_C,0,START_R10,room_start,M12
+R10,Bathroom A,EXIT_C,1,M11,navigation,M11
+R10,Bathroom A,EXIT_C,2,L11,navigation,L11
+R10,Bathroom A,EXIT_C,3,DOOR_11,door,L10.5
+R10,Bathroom A,EXIT_C,4,L10,navigation,L10
+R10,Bathroom A,EXIT_C,5,K10,navigation,K10
+R10,Bathroom A,EXIT_C,6,J10,navigation,J10
+R10,Bathroom A,EXIT_C,7,I10,navigation,I10
+R10,Bathroom A,EXIT_C,8,I8,navigation,I8
+R10,Bathroom A,EXIT_C,9,I7,navigation,I7
+R10,Bathroom A,EXIT_C,10,I5.5,navigation,I5.5
+R10,Bathroom A,EXIT_C,11,I4,navigation,I4
+R10,Bathroom A,EXIT_C,12,I3,navigation,I3
+R10,Bathroom A,EXIT_C,13,I2,navigation,I2
+R10,Bathroom A,EXIT_C,14,EXIT_C,exit,I1
+R11,Bathroom B,EXIT_C,0,START_R11,room_start,N12
+R11,Bathroom B,EXIT_C,1,N11,navigation,N11
+R11,Bathroom B,EXIT_C,2,DOOR_12,door,N10.5
+R11,Bathroom B,EXIT_C,3,N10,navigation,N10
+R11,Bathroom B,EXIT_C,4,M10,navigation,M10
+R11,Bathroom B,EXIT_C,5,L10,navigation,L10
+R11,Bathroom B,EXIT_C,6,K10,navigation,K10
+R11,Bathroom B,EXIT_C,7,J10,navigation,J10
+R11,Bathroom B,EXIT_C,8,I10,navigation,I10
+R11,Bathroom B,EXIT_C,9,I8,navigation,I8
+R11,Bathroom B,EXIT_C,10,I7,navigation,I7
+R11,Bathroom B,EXIT_C,11,I5.5,navigation,I5.5
+R11,Bathroom B,EXIT_C,12,I4,navigation,I4
+R11,Bathroom B,EXIT_C,13,I3,navigation,I3
+R11,Bathroom B,EXIT_C,14,I2,navigation,I2
+R11,Bathroom B,EXIT_C,15,EXIT_C,exit,I1
+R12,Nurse Room,EXIT_B,0,START_R12,room_start,D15
+R12,Nurse Room,EXIT_B,1,E15,navigation,E15
+R12,Nurse Room,EXIT_B,2,F15,navigation,F15
+R12,Nurse Room,EXIT_B,3,G15,navigation,G15
+R12,Nurse Room,EXIT_B,4,DOOR_16,door,H15
+R12,Nurse Room,EXIT_B,5,I15,navigation,I15
+R12,Nurse Room,EXIT_B,6,I16,navigation,I16
+R12,Nurse Room,EXIT_B,7,I18,navigation,I18
+R12,Nurse Room,EXIT_B,8,H18,navigation,H18
+R12,Nurse Room,EXIT_B,9,G18,navigation,G18
+R12,Nurse Room,EXIT_B,10,F18,navigation,F18
+R12,Nurse Room,EXIT_B,11,E18,navigation,E18
+R12,Nurse Room,EXIT_B,12,D18,navigation,D18
+R12,Nurse Room,EXIT_B,13,C18,navigation,C18
+R12,Nurse Room,EXIT_B,14,B18,navigation,B18
+R12,Nurse Room,EXIT_B,15,EXIT_B,exit,A18
+R13,Lab Room 2,EXIT_B,0,START_R13,room_start,M15
+R13,Lab Room 2,EXIT_B,1,L15,navigation,L15
+R13,Lab Room 2,EXIT_B,2,K15,navigation,K15
+R13,Lab Room 2,EXIT_B,3,DOOR_17,door,J15
+R13,Lab Room 2,EXIT_B,4,I15,navigation,I15
+R13,Lab Room 2,EXIT_B,5,I16,navigation,I16
+R13,Lab Room 2,EXIT_B,6,I18,navigation,I18
+R13,Lab Room 2,EXIT_B,7,H18,navigation,H18
+R13,Lab Room 2,EXIT_B,8,G18,navigation,G18
+R13,Lab Room 2,EXIT_B,9,F18,navigation,F18
+R13,Lab Room 2,EXIT_B,10,E18,navigation,E18
+R13,Lab Room 2,EXIT_B,11,D18,navigation,D18
+R13,Lab Room 2,EXIT_B,12,C18,navigation,C18
+R13,Lab Room 2,EXIT_B,13,B18,navigation,B18
+R13,Lab Room 2,EXIT_B,14,EXIT_B,exit,A18
+R14,Exam Room 7,EXIT_B,0,START_R14,room_start,F21
+R14,Exam Room 7,EXIT_B,1,F20,navigation,F20
+R14,Exam Room 7,EXIT_B,2,DOOR_19,door,F19
+R14,Exam Room 7,EXIT_B,3,F18,navigation,F18
+R14,Exam Room 7,EXIT_B,4,E18,navigation,E18
+R14,Exam Room 7,EXIT_B,5,D18,navigation,D18
+R14,Exam Room 7,EXIT_B,6,C18,navigation,C18
+R14,Exam Room 7,EXIT_B,7,B18,navigation,B18
+R14,Exam Room 7,EXIT_B,8,EXIT_B,exit,A18
+R15,Exam Room 8,EXIT_B,0,START_R15,room_start,L21
+R15,Exam Room 8,EXIT_B,1,K21,navigation,K21
+R15,Exam Room 8,EXIT_B,2,DOOR_23,door,J21
+R15,Exam Room 8,EXIT_B,3,I21,navigation,I21
+R15,Exam Room 8,EXIT_B,4,I20,navigation,I20
+R15,Exam Room 8,EXIT_B,5,I18,navigation,I18
+R15,Exam Room 8,EXIT_B,6,H18,navigation,H18
+R15,Exam Room 8,EXIT_B,7,G18,navigation,G18
+R15,Exam Room 8,EXIT_B,8,F18,navigation,F18
+R15,Exam Room 8,EXIT_B,9,E18,navigation,E18
+R15,Exam Room 8,EXIT_B,10,D18,navigation,D18
+R15,Exam Room 8,EXIT_B,11,C18,navigation,C18
+R15,Exam Room 8,EXIT_B,12,B18,navigation,B18
+R15,Exam Room 8,EXIT_B,13,EXIT_B,exit,A18
+R16,Procedure Room,EXIT_B,0,START_R16,room_start,O21
+R16,Procedure Room,EXIT_B,1,O20,navigation,O20
+R16,Procedure Room,EXIT_B,2,DOOR_21,door,O19
+R16,Procedure Room,EXIT_B,3,O18,navigation,O18
+R16,Procedure Room,EXIT_B,4,N18,navigation,N18
+R16,Procedure Room,EXIT_B,5,M18,navigation,M18
+R16,Procedure Room,EXIT_B,6,L18,navigation,L18
+R16,Procedure Room,EXIT_B,7,K18,navigation,K18
+R16,Procedure Room,EXIT_B,8,J18,navigation,J18
+R16,Procedure Room,EXIT_B,9,I18,navigation,I18
+R16,Procedure Room,EXIT_B,10,H18,navigation,H18
+R16,Procedure Room,EXIT_B,11,G18,navigation,G18
+R16,Procedure Room,EXIT_B,12,F18,navigation,F18
+R16,Procedure Room,EXIT_B,13,E18,navigation,E18
+R16,Procedure Room,EXIT_B,14,D18,navigation,D18
+R16,Procedure Room,EXIT_B,15,C18,navigation,C18
+R16,Procedure Room,EXIT_B,16,B18,navigation,B18
+R16,Procedure Room,EXIT_B,17,EXIT_B,exit,A18
+R17,Supply Room,EXIT_B,0,START_R17,room_start,C21
+R17,Supply Room,EXIT_B,1,C20,navigation,C20
+R17,Supply Room,EXIT_B,2,DOOR_18,door,C19
+R17,Supply Room,EXIT_B,3,C18,navigation,C18
+R17,Supply Room,EXIT_B,4,B18,navigation,B18
+R17,Supply Room,EXIT_B,5,EXIT_B,exit,A18
+R18,Observation Room,EXIT_A,0,START_R18,room_start,D25
+R18,Observation Room,EXIT_A,1,E25,navigation,E25
+R18,Observation Room,EXIT_A,2,F25,navigation,F25
+R18,Observation Room,EXIT_A,3,DOOR_24,door,G25
+R18,Observation Room,EXIT_A,4,H25,navigation,H25
+R18,Observation Room,EXIT_A,5,H26,navigation,H26
+R18,Observation Room,EXIT_A,6,I26,navigation,I26
+R18,Observation Room,EXIT_A,7,DOOR_26,door,I27
+R18,Observation Room,EXIT_A,8,I28,navigation,I28
+R18,Observation Room,EXIT_A,9,I29,navigation,I29
+R18,Observation Room,EXIT_A,10,I30,navigation,I30
+R18,Observation Room,EXIT_A,11,I32,navigation,I32
+R18,Observation Room,EXIT_A,12,I33,navigation,I33
+R18,Observation Room,EXIT_A,13,START_R24,room_start,H33
+R18,Observation Room,EXIT_A,14,H34,navigation,H34
+R18,Observation Room,EXIT_A,15,EXIT_A,exit,H35
+R19,Physical Therapy Room,EXIT_A,0,START_R19,room_start,N25
+R19,Physical Therapy Room,EXIT_A,1,M25,navigation,M25
+R19,Physical Therapy Room,EXIT_A,2,L25,navigation,L25
+R19,Physical Therapy Room,EXIT_A,3,DOOR_25,door,K25
+R19,Physical Therapy Room,EXIT_A,4,J25,navigation,J25
+R19,Physical Therapy Room,EXIT_A,5,I25,navigation,I25
+R19,Physical Therapy Room,EXIT_A,6,I26,navigation,I26
+R19,Physical Therapy Room,EXIT_A,7,DOOR_26,door,I27
+R19,Physical Therapy Room,EXIT_A,8,I28,navigation,I28
+R19,Physical Therapy Room,EXIT_A,9,I29,navigation,I29
+R19,Physical Therapy Room,EXIT_A,10,I30,navigation,I30
+R19,Physical Therapy Room,EXIT_A,11,I32,navigation,I32
+R19,Physical Therapy Room,EXIT_A,12,I33,navigation,I33
+R19,Physical Therapy Room,EXIT_A,13,START_R24,room_start,H33
+R19,Physical Therapy Room,EXIT_A,14,H34,navigation,H34
+R19,Physical Therapy Room,EXIT_A,15,EXIT_A,exit,H35
+R20,Consultation Room,EXIT_A,0,START_R20,room_start,F29
+R20,Consultation Room,EXIT_A,1,F30,navigation,F30
+R20,Consultation Room,EXIT_A,2,G30,navigation,G30
+R20,Consultation Room,EXIT_A,3,DOOR_30,door,G30
+R20,Consultation Room,EXIT_A,4,G32,navigation,G32
+R20,Consultation Room,EXIT_A,5,H32,navigation,H32
+R20,Consultation Room,EXIT_A,6,START_R24,room_start,H33
+R20,Consultation Room,EXIT_A,7,H34,navigation,H34
+R20,Consultation Room,EXIT_A,8,EXIT_A,exit,H35
+R21,Records Room,EXIT_A,0,START_R21,room_start,J29
+R21,Records Room,EXIT_A,1,J30,navigation,J30
+R21,Records Room,EXIT_A,2,I30,navigation,I30
+R21,Records Room,EXIT_A,3,I32,navigation,I32
+R21,Records Room,EXIT_A,4,I33,navigation,I33
+R21,Records Room,EXIT_A,5,START_R24,room_start,H33
+R21,Records Room,EXIT_A,6,H34,navigation,H34
+R21,Records Room,EXIT_A,7,EXIT_A,exit,H35
+R22,Billing Office,EXIT_A,0,START_R22,room_start,B29
+R22,Billing Office,EXIT_A,1,C29,navigation,C29
+R22,Billing Office,EXIT_A,2,DOOR_27,door,D29
+R22,Billing Office,EXIT_A,3,D29,navigation,D29
+R22,Billing Office,EXIT_A,4,E29,navigation,E29
+R22,Billing Office,EXIT_A,5,START_R20,room_start,F29
+R22,Billing Office,EXIT_A,6,F30,navigation,F30
+R22,Billing Office,EXIT_A,7,G30,navigation,G30
+R22,Billing Office,EXIT_A,8,DOOR_30,door,G30
+R22,Billing Office,EXIT_A,9,G32,navigation,G32
+R22,Billing Office,EXIT_A,10,H32,navigation,H32
+R22,Billing Office,EXIT_A,11,START_R24,room_start,H33
+R22,Billing Office,EXIT_A,12,H34,navigation,H34
+R22,Billing Office,EXIT_A,13,EXIT_A,exit,H35
+R23,Check-In Office,EXIT_A,0,START_R23,room_start,O29
+R23,Check-In Office,EXIT_A,1,N29,navigation,N29
+R23,Check-In Office,EXIT_A,2,DOOR_29,door,M29
+R23,Check-In Office,EXIT_A,3,L29,navigation,L29
+R23,Check-In Office,EXIT_A,4,K29,navigation,K29
+R23,Check-In Office,EXIT_A,5,START_R21,room_start,J29
+R23,Check-In Office,EXIT_A,6,J30,navigation,J30
+R23,Check-In Office,EXIT_A,7,I30,navigation,I30
+R23,Check-In Office,EXIT_A,8,I32,navigation,I32
+R23,Check-In Office,EXIT_A,9,I33,navigation,I33
+R23,Check-In Office,EXIT_A,10,START_R24,room_start,H33
+R23,Check-In Office,EXIT_A,11,H34,navigation,H34
+R23,Check-In Office,EXIT_A,12,EXIT_A,exit,H35
+R24,Waiting Room,EXIT_A,0,START_R24,room_start,H33
+R24,Waiting Room,EXIT_A,1,H34,navigation,H34
+R24,Waiting Room,EXIT_A,2,EXIT_A,exit,H35

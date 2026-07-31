@@ -1,0 +1,29 @@
+room_id,room_name,start_node,primary_exit,distance,hops,path,astar_matches_distance,astar_same_exact_path,capacity,occupancy
+R01,Apartment 102,START_R01,EXIT_A,5.5,5,START_R01 -> D3 -> DOOR_04 -> F3 -> F2 -> EXIT_A,True,True,4,2
+R02,Apartment 103,START_R02,EXIT_A,5.5,5,START_R02 -> H3 -> DOOR_01 -> F3 -> F2 -> EXIT_A,True,True,4,2
+R03,Apartment 106,START_R03,EXIT_B,5.5,5,START_R03 -> M3 -> DOOR_02 -> O3 -> O2 -> EXIT_B,True,True,4,2
+R04,Apartment 104,START_R04,EXIT_B,5.5,5,START_R04 -> Q3 -> DOOR_03 -> O3 -> O2 -> EXIT_B,True,True,4,2
+R05,Apartment 101,START_R05,EXIT_C,5.5,5,START_R05 -> V3 -> DOOR_05 -> X3 -> X2 -> EXIT_C,True,True,4,2
+R06,Apartment 105,START_R06,EXIT_C,5.5,5,START_R06 -> Z3 -> DOOR_06 -> X3 -> X2 -> EXIT_C,True,True,4,2
+R07,Apartment 107,START_R07,EXIT_C,16.25,15,START_R07 -> AE4 -> DOOR_07 -> AE6 -> AD6 -> AC6 -> AB6 -> AA6 -> Z6 -> Y6 -> X6 -> X5 -> X4 -> X3 -> X2 -> EXIT_C,True,True,4,2
+R08,Apartment 109,START_R08,EXIT_A,12.25,11,START_R08 -> C8 -> DOOR_14 -> START_R35 -> D6 -> DOOR_08 -> F6 -> F5 -> F4 -> F3 -> F2 -> EXIT_A,True,True,4,2
+R09,Apartment 111,START_R09,EXIT_H,15.0,13,START_R09 -> H9 -> DOOR_15 -> F9 -> F10.5 -> F12 -> F13 -> F14.5 -> F16 -> E16 -> D16 -> C16 -> B16 -> EXIT_H,True,True,4,2
+R10,Printer Room,START_R10,EXIT_D,12.5,12,START_R10 -> AA10 -> AB10 -> AB11 -> AB12 -> AB13 -> AB14.5 -> AB16 -> AC16 -> AD16 -> AE16 -> AF16 -> EXIT_D,True,True,6,2
+R11,Apartment 110,START_R11,EXIT_C,16.75,15,START_R11 -> AE8 -> DOOR_11 -> AE6 -> AD6 -> AC6 -> AB6 -> AA6 -> Z6 -> Y6 -> X6 -> X5 -> X4 -> X3 -> X2 -> EXIT_C,True,True,4,2
+R12,Communal Bathroom,START_R12,EXIT_B,14.5,13,START_R12 -> P12.5 -> O12.5 -> O11.25 -> O10.25 -> O9 -> O8 -> DOOR_09 -> O6 -> O5 -> O4 -> O3 -> O2 -> EXIT_B,True,False,12,4
+R13,Apartment 113,START_R13,EXIT_H,11.0,11,START_R13 -> D13 -> E13 -> DOOR_21 -> F13 -> F14.5 -> F16 -> E16 -> D16 -> C16 -> B16 -> EXIT_H,True,True,4,2
+R14,Apartment 114,START_R14,EXIT_H,11.0,10,START_R14 -> H13 -> DOOR_22 -> F13 -> F14.5 -> F16 -> E16 -> D16 -> C16 -> B16 -> EXIT_H,True,True,4,2
+R15,Supply Closet,START_R15,EXIT_D,9.5,9,START_R15 -> DOOR_19 -> AB13 -> AB14.5 -> AB16 -> AC16 -> AD16 -> AE16 -> AF16 -> EXIT_D,True,True,4,1
+R16,Apartment 112,START_R16,EXIT_D,10.5,10,START_R16 -> AD13 -> DOOR_20 -> AB13 -> AB14.5 -> AB16 -> AC16 -> AD16 -> AE16 -> AF16 -> EXIT_D,True,True,4,2
+R20,Emergency Stairwell / Exit Room,START_R20,EXIT_STAIRWELL,0.5,1,START_R20 -> EXIT_STAIRWELL,True,True,20,0
+R24,Laundry Room,START_R24,EXIT_STAIRWELL,12.5,12,START_R24 -> X20 -> W20 -> V20 -> DOOR_30 -> T20 -> S20 -> S21 -> S22 -> R22 -> Q22 -> DOOR_45 -> EXIT_STAIRWELL,True,True,10,4
+R25,Apartment 115,START_R25,EXIT_D,7.25,6,START_R25 -> AE19 -> AE18 -> DOOR_25 -> AE16 -> AF16 -> EXIT_D,True,True,4,2
+R28,Apartment 120,START_R28,EXIT_G,5.5,5,START_R28 -> D26 -> DOOR_44 -> F26 -> F27 -> EXIT_G,True,True,4,2
+R29,Apartment 116,START_R29,EXIT_G,5.5,5,START_R29 -> H26 -> DOOR_43 -> F26 -> F27 -> EXIT_G,True,True,4,2
+R30,Apartment 118,START_R30,EXIT_STAIRWELL,9.75,10,START_R30 -> M25 -> DOOR_34 -> M23 -> N23 -> O23 -> P23 -> P22 -> Q22 -> DOOR_45 -> EXIT_STAIRWELL,True,True,4,2
+R31,Apartment 119,START_R31,EXIT_F,5.5,5,START_R31 -> P26 -> DOOR_39 -> R26 -> R27 -> EXIT_F,True,True,4,2
+R32,Apartment 121,START_R32,EXIT_F,5.0,5,START_R32 -> T26 -> DOOR_41 -> R26 -> R27 -> EXIT_F,True,True,4,2
+R33,Apartment 117,START_R33,EXIT_E,5.5,5,START_R33 -> Y26 -> DOOR_40 -> AA26 -> AA27 -> EXIT_E,True,True,4,2
+R34,Apartment 122,START_R34,EXIT_E,6.5,6,START_R34 -> AD26 -> AC26 -> DOOR_42 -> AA26 -> AA27 -> EXIT_E,True,True,4,2
+R35,Apartment 108,START_R35,EXIT_A,9.0,8,START_R35 -> D6 -> DOOR_08 -> F6 -> F5 -> F4 -> F3 -> F2 -> EXIT_A,True,True,4,2
+R36,Communal Kitchen,START_R36,EXIT_STAIRWELL,16.0,16,START_R36 -> H20 -> I20 -> J20 -> K20 -> L20 -> DOOR_29 -> N20 -> N21 -> N22 -> N23 -> O23 -> P23 -> P22 -> Q22 -> DOOR_45 -> EXIT_STAIRWELL,True,True,20,10

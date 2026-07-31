@@ -1,0 +1,2 @@
+floorplan_id,floorplan_name,grid_unit,people_per_capacity_unit,image_file,notes
+FP03,Dormitory,1.0,10,floorplan.png,Approved Floorplan3 dormitory layout; R20 is the stairwell exit room. Occupancy values are deterministic test values and may be edited. Exit visualization coordinates EAST16/WEST16 were normalized to AG16/A16; graph edges and routing data were not changed.

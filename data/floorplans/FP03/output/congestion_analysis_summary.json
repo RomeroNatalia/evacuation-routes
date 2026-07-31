@@ -1,0 +1,10 @@
+{
+  "total_occupancy": 65,
+  "people_per_capacity_unit": 10.0,
+  "congestion_weight": 5.0,
+  "classical_congested_edges": 1,
+  "congestion_aware_congested_edges": 0,
+  "rooms_changing_exit": 2,
+  "rooms_changing_path": 3,
+  "routing_method": "repeated congestion-aware Dijkstra"
+}

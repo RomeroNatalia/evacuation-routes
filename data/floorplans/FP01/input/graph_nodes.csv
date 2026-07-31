@@ -1,0 +1,174 @@
+node_id,node_type,grid_position,description,space_type,space_id,space_name,room_id,room_name
+A2,navigation,A2,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+A3,navigation,A3,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+A4,navigation,A4,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+A6,navigation,A6,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+A7,navigation,A7,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+A8,navigation,A8,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+A10,navigation,A10,green navigation-grid node,room,R08,Training Room,R08,Training Room
+A11,navigation,A11,green navigation-grid node,room,R08,Training Room,R08,Training Room
+A12,navigation,A12,green navigation-grid node,room,R08,Training Room,R08,Training Room
+B2,navigation,B2,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+B4,navigation,B4,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+B6,navigation,B6,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+B8,navigation,B8,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+B10,navigation,B10,green navigation-grid node,room,R08,Training Room,R08,Training Room
+B12,navigation,B12,green navigation-grid node,room,R08,Training Room,R08,Training Room
+C2,navigation,C2,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+C3,navigation,C3,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+C4,navigation,C4,green navigation-grid node,room,R01,Reception & Waiting,R01,Reception & Waiting
+C6,navigation,C6,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+C7,navigation,C7,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+C8,navigation,C8,green navigation-grid node,room,R06,West Open Office,R06,West Open Office
+C10,navigation,C10,green navigation-grid node,room,R08,Training Room,R08,Training Room
+C11,navigation,C11,green navigation-grid node,room,R08,Training Room,R08,Training Room
+C12,navigation,C12,green navigation-grid node,room,R08,Training Room,R08,Training Room
+E3,navigation,E3,green navigation-grid node,room,R02,IT / Server Room,R02,IT / Server Room
+E4,navigation,E4,green navigation-grid node,hallway,H01,Central Hallway System,,
+E5,navigation,E5,green navigation-grid node,hallway,H01,Central Hallway System,,
+E6,navigation,E6,green navigation-grid node,hallway,H01,Central Hallway System,,
+E7,navigation,E7,green navigation-grid node,hallway,H01,Central Hallway System,,
+E8,navigation,E8,green navigation-grid node,hallway,H01,Central Hallway System,,
+E9,navigation,E9,green navigation-grid node,hallway,H01,Central Hallway System,,
+E10,navigation,E10,green navigation-grid node,hallway,H01,Central Hallway System,,
+E11,navigation,E11,green navigation-grid node,hallway,H01,Central Hallway System,,
+E12,navigation,E12,green navigation-grid node,hallway,H01,Central Hallway System,,
+F9,navigation,F9,green navigation-grid node,hallway,H01,Central Hallway System,,
+F10,navigation,F10,green navigation-grid node,hallway,H01,Central Hallway System,,
+G2,navigation,G2,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+G3,navigation,G3,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+G4,navigation,G4,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+G5,navigation,G5,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+G6,navigation,G6,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+G7,navigation,G7,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+G8,navigation,G8,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+G9,navigation,G9,green navigation-grid node,hallway,H01,Central Hallway System,,
+G10,navigation,G10,green navigation-grid node,hallway,H01,Central Hallway System,,
+G11,navigation,G11,green navigation-grid node,room,R09,Conference Room A,R09,Conference Room A
+G12,navigation,G12,green navigation-grid node,room,R09,Conference Room A,R09,Conference Room A
+H2,navigation,H2,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+H3,navigation,H3,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+H4,navigation,H4,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+H5,navigation,H5,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+H6,navigation,H6,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+H7,navigation,H7,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+H8,navigation,H8,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+H9,navigation,H9,green navigation-grid node,hallway,H01,Central Hallway System,,
+H10,navigation,H10,green navigation-grid node,hallway,H01,Central Hallway System,,
+H11,navigation,H11,green navigation-grid node,room,R09,Conference Room A,R09,Conference Room A
+I2,navigation,I2,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+I3,navigation,I3,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+I4,navigation,I4,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+I6,navigation,I6,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+I7,navigation,I7,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+I8,navigation,I8,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+I9,navigation,I9,green navigation-grid node,hallway,H01,Central Hallway System,,
+I10,navigation,I10,green navigation-grid node,hallway,H01,Central Hallway System,,
+I11,navigation,I11,green navigation-grid node,room,R09,Conference Room A,R09,Conference Room A
+I12,navigation,I12,green navigation-grid node,room,R09,Conference Room A,R09,Conference Room A
+J2,navigation,J2,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+J3,navigation,J3,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+J4,navigation,J4,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+J5,navigation,J5,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+J6,navigation,J6,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+J7,navigation,J7,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+J8,navigation,J8,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+J9,navigation,J9,green navigation-grid node,hallway,H01,Central Hallway System,,
+J10,navigation,J10,green navigation-grid node,hallway,H01,Central Hallway System,,
+K2,navigation,K2,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+K3,navigation,K3,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+K4,navigation,K4,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+K5,navigation,K5,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+K6,navigation,K6,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+K7,navigation,K7,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+K8,navigation,K8,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+K9,navigation,K9,green navigation-grid node,hallway,H01,Central Hallway System,,
+K10,navigation,K10,green navigation-grid node,hallway,H01,Central Hallway System,,
+K11,navigation,K11,green navigation-grid node,room,R10,Human Resources,R10,Human Resources
+L2,navigation,L2,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+L3,navigation,L3,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+L4,navigation,L4,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+L5,navigation,L5,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+L6,navigation,L6,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+L7,navigation,L7,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+L8,navigation,L8,green navigation-grid node,room,R03,Central Open Office,R03,Central Open Office
+L9,navigation,L9,green navigation-grid node,hallway,H01,Central Hallway System,,
+L10,navigation,L10,green navigation-grid node,hallway,H01,Central Hallway System,,
+L11,navigation,L11,green navigation-grid node,room,R10,Human Resources,R10,Human Resources
+L12,navigation,L12,green navigation-grid node,room,R10,Human Resources,R10,Human Resources
+M9,navigation,M9,green navigation-grid node,hallway,H01,Central Hallway System,,
+M10,navigation,M10,green navigation-grid node,hallway,H01,Central Hallway System,,
+M11,navigation,M11,green navigation-grid node,room,R11,Finance / Administration,R11,Finance / Administration
+M12,navigation,M12,green navigation-grid node,room,R11,Finance / Administration,R11,Finance / Administration
+N2,navigation,N2,green navigation-grid node,hallway,H01,Central Hallway System,,
+N3,navigation,N3,green navigation-grid node,hallway,H01,Central Hallway System,,
+N4,navigation,N4,green navigation-grid node,hallway,H01,Central Hallway System,,
+N5,navigation,N5,green navigation-grid node,hallway,H01,Central Hallway System,,
+N6,navigation,N6,green navigation-grid node,hallway,H01,Central Hallway System,,
+N7,navigation,N7,green navigation-grid node,hallway,H01,Central Hallway System,,
+N8,navigation,N8,green navigation-grid node,hallway,H01,Central Hallway System,,
+N9,navigation,N9,green navigation-grid node,hallway,H01,Central Hallway System,,
+N10,navigation,N10,green navigation-grid node,hallway,H01,Central Hallway System,,
+N11,navigation,N11,green navigation-grid node,room,R11,Finance / Administration,R11,Finance / Administration
+P2,navigation,P2,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+P3,navigation,P3,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+P6,navigation,P6,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+P7,navigation,P7,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+P8,navigation,P8,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+P10,navigation,P10,green navigation-grid node,room,R12,Break Room,R12,Break Room
+P11,navigation,P11,green navigation-grid node,room,R12,Break Room,R12,Break Room
+P12,navigation,P12,green navigation-grid node,room,R12,Break Room,R12,Break Room
+Q2,navigation,Q2,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+Q4,navigation,Q4,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+Q6,navigation,Q6,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+Q8,navigation,Q8,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+Q10,navigation,Q10,green navigation-grid node,room,R12,Break Room,R12,Break Room
+Q12,navigation,Q12,green navigation-grid node,room,R12,Break Room,R12,Break Room
+R2,navigation,R2,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+R3,navigation,R3,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+R4,navigation,R4,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+R6,navigation,R6,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+R7,navigation,R7,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+R8,navigation,R8,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+R10,navigation,R10,green navigation-grid node,room,R12,Break Room,R12,Break Room
+R11,navigation,R11,green navigation-grid node,room,R12,Break Room,R12,Break Room
+R12,navigation,R12,green navigation-grid node,room,R12,Break Room,R12,Break Room
+S2,navigation,S2,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+S3,navigation,S3,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+S4,navigation,S4,green navigation-grid node,room,R04,Executive Conference,R04,Executive Conference
+S6,navigation,S6,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+S7,navigation,S7,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+S8,navigation,S8,green navigation-grid node,room,R07,East Open Office,R07,East Open Office
+S10,navigation,S10,green navigation-grid node,room,R12,Break Room,R12,Break Room
+S11,navigation,S11,green navigation-grid node,room,R12,Break Room,R12,Break Room
+S12,navigation,S12,green navigation-grid node,room,R12,Break Room,R12,Break Room
+START_R01,room_start,B3,pink room midpoint / occupant starting node,room_start,R01,Reception & Waiting,R01,Reception & Waiting
+START_R02,room_start,E2,pink room midpoint / occupant starting node,room_start,R02,IT / Server Room,R02,IT / Server Room
+START_R03,room_start,I5,pink room midpoint / occupant starting node,room_start,R03,Central Open Office,R03,Central Open Office
+START_R04,room_start,Q3,pink room midpoint / occupant starting node,room_start,R04,Executive Conference,R04,Executive Conference
+START_R05,room_start,P4,pink room midpoint / occupant starting node,room_start,R05,Copy / Supply Room,R05,Copy / Supply Room
+START_R06,room_start,B7,pink room midpoint / occupant starting node,room_start,R06,West Open Office,R06,West Open Office
+START_R07,room_start,Q7,pink room midpoint / occupant starting node,room_start,R07,East Open Office,R07,East Open Office
+START_R08,room_start,B11,pink room midpoint / occupant starting node,room_start,R08,Training Room,R08,Training Room
+START_R09,room_start,H12,pink room midpoint / occupant starting node,room_start,R09,Conference Room A,R09,Conference Room A
+START_R10,room_start,K12,pink room midpoint / occupant starting node,room_start,R10,Human Resources,R10,Human Resources
+START_R11,room_start,N12,pink room midpoint / occupant starting node,room_start,R11,Finance / Administration,R11,Finance / Administration
+START_R12,room_start,Q11,pink room midpoint / occupant starting node,room_start,R12,Break Room,R12,Break Room
+DOOR_01,door,E3.5,cyan doorway transition node,door,R02,,R02,
+DOOR_02,door,D4,cyan doorway transition node,door,R01,,R01,
+DOOR_03,door,D6,cyan doorway transition node,door,R06,,R06,
+DOOR_04,door,D10,cyan doorway transition node,door,R08,,R08,
+DOOR_05,door,F8,cyan doorway transition node,door,R03,,R03,
+DOOR_06,door,M2,cyan doorway transition node,door,R03,,R03,
+DOOR_07,door,O2,cyan doorway transition node,door,R04,,R04,
+DOOR_08,door,O4,cyan doorway transition node,door,R05,,R05,
+DOOR_09,door,O8,cyan doorway transition node,door,R07,,R07,
+DOOR_10,door,O10,cyan doorway transition node,door,R12,,R12,
+DOOR_11,door,G10.5,cyan doorway transition node,door,R09,,R09,
+DOOR_12,door,K10.5,cyan doorway transition node,door,R10,,R10,
+DOOR_13,door,M10.5,cyan doorway transition node,door,R11,,R11,
+EXIT_A,exit,E13,yellow exterior evacuation sink node,exit,,Exit A,,Exit A
+EXIT_B,exit,Q13,yellow exterior evacuation sink node,exit,,Exit B,,Exit B
+EXIT_C,exit,G1,yellow exterior evacuation sink node,exit,,Exit C,,Exit C
+EXIT_D,exit,J1,yellow exterior evacuation sink node,exit,,Exit D,,Exit D
+EXIT_E,exit,N1,yellow exterior evacuation sink node,exit,,Exit E,,Exit E

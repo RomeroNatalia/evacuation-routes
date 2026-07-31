@@ -1,0 +1,6 @@
+floorplan_id,floorplan_name,rooms,exits,candidate_routes,nodes,edges,test_occupancy,connected_components,isolated_nodes,route_catalog_rows,incidence_route_rows,edge_index_rows,preprocessing_status
+FP01,Office,12,5,60,173,245,100,1,0,60,60,245,PASS
+FP02,School Administration Building,33,8,264,584,793,183,1,0,264,264,793,PASS
+FP03,Dormitory,28,9,252,571,790,65,1,0,252,252,790,PASS
+FP04,Museum,8,2,16,173,253,164,1,0,16,16,253,PASS
+FP05,Clinic,24,3,72,360,497,85,1,0,72,72,497,PASS

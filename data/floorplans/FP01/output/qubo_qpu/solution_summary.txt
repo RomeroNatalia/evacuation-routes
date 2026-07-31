@@ -1,0 +1,53 @@
+OFFICE EVACUATION QUBO RESULT
+====================================
+Solver: direct D-Wave QPU with embedding and spin reversals
+Variables: 60
+Interactions: 954
+Best valid energy: 0.783489
+Valid one-exit-per-room solution: True
+Valid sample rate: 0.90%
+Assignment penalty: 1.889696
+Normalized route objective: 0.783489
+Total evacuated people: 100
+Total evacuation distance: 131.500000
+Raw congestion objective: 231.636458
+Overload-only report objective: 19.855556
+Used physical edges: 96
+Overloaded physical edges: 13
+Maximum edge utilization: 230.00%
+
+ROOM ASSIGNMENTS
+------------------------------------
+R01 (6 people) -> EXIT_A | distance=12.500
+R02 (2 people) -> EXIT_C | distance=14.250
+R03 (24 people) -> EXIT_D | distance=5.000
+R04 (8 people) -> EXIT_E | distance=5.000
+R05 (1 people) -> EXIT_D | distance=9.000
+R06 (12 people) -> EXIT_B | distance=22.250
+R07 (11 people) -> EXIT_B | distance=11.500
+R08 (14 people) -> EXIT_A | distance=6.500
+R09 (5 people) -> EXIT_C | distance=15.500
+R10 (4 people) -> EXIT_E | distance=14.000
+R11 (5 people) -> EXIT_A | distance=14.000
+R12 (8 people) -> EXIT_B | distance=2.000
+
+EXIT USAGE
+------------------------------------
+EXIT_A: 3 rooms, 25 people
+EXIT_B: 3 rooms, 31 people
+EXIT_C: 2 rooms, 7 people
+EXIT_D: 2 rooms, 25 people
+EXIT_E: 2 rooms, 12 people
+
+MOST UTILIZED EDGES
+------------------------------------
+E231:P10--DOOR_10: 23/10 people (230.00%)
+E232:DOOR_10--N10: 23/10 people (230.00%)
+E220:C10--DOOR_04: 14/10 people (140.00%)
+E221:DOOR_04--E10: 14/10 people (140.00%)
+E033:E10--E11: 25/20 people (125.00%)
+E034:E11--E12: 25/20 people (125.00%)
+E218:C6--DOOR_03: 12/10 people (120.00%)
+E219:DOOR_03--E6: 12/10 people (120.00%)
+E029:E8--E9: 23/20 people (115.00%)
+E141:N9--N10: 23/20 people (115.00%)

@@ -1,0 +1,9 @@
+room_id,room_name,capacity,occupancy
+R01,West Gallery A,50,25
+R02,Front Desk,8,4
+R03,East Gallery A,50,25
+R04,West Gallery B,50,25
+R05,East Gallery B,50,25
+R06,West Gallery C,50,25
+R07,Museum Shop,20,10
+R08,East Gallery C,50,25

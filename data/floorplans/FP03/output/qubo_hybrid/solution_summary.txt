@@ -1,0 +1,73 @@
+OFFICE EVACUATION QUBO RESULT
+====================================
+Solver: D-Wave LeapHybridSampler
+Variables: 252
+Interactions: 12421
+Best valid energy: 0.497328
+Valid one-exit-per-room solution: True
+Valid sample rate: 100.00%
+Assignment penalty: 0.836859
+Normalized route objective: 0.497750
+Total evacuated people: 65
+Total evacuation distance: 487.500000
+Raw congestion objective: 122.532292
+Overload-only report objective: 0.000000
+Used physical edges: 244
+Overloaded physical edges: 0
+Maximum edge utilization: 100.00%
+
+ROOM ASSIGNMENTS
+------------------------------------
+R01 (2 people) -> EXIT_G | distance=45.500
+R02 (2 people) -> EXIT_A | distance=5.500
+R03 (2 people) -> EXIT_C | distance=21.500
+R04 (2 people) -> EXIT_F | distance=35.500
+R05 (2 people) -> EXIT_C | distance=5.500
+R06 (2 people) -> EXIT_B | distance=21.500
+R07 (2 people) -> EXIT_C | distance=16.250
+R08 (2 people) -> EXIT_A | distance=12.250
+R09 (2 people) -> EXIT_H | distance=15.000
+R10 (2 people) -> EXIT_C | distance=14.000
+R11 (2 people) -> EXIT_D | distance=21.250
+R12 (4 people) -> EXIT_F | distance=20.750
+R13 (2 people) -> EXIT_A | distance=22.000
+R14 (2 people) -> EXIT_F | distance=31.500
+R15 (1 people) -> EXIT_D | distance=9.500
+R16 (2 people) -> EXIT_STAIRWELL | distance=27.500
+R20 (0 people) -> EXIT_G | distance=19.500
+R24 (4 people) -> EXIT_STAIRWELL | distance=12.500
+R25 (2 people) -> EXIT_D | distance=7.250
+R28 (2 people) -> EXIT_G | distance=5.500
+R29 (2 people) -> EXIT_G | distance=5.500
+R30 (2 people) -> EXIT_F | distance=13.250
+R31 (2 people) -> EXIT_G | distance=17.750
+R32 (2 people) -> EXIT_E | distance=14.750
+R33 (2 people) -> EXIT_STAIRWELL | distance=12.750
+R34 (2 people) -> EXIT_E | distance=6.500
+R35 (2 people) -> EXIT_H | distance=18.000
+R36 (10 people) -> EXIT_A | distance=29.250
+
+EXIT USAGE
+------------------------------------
+EXIT_A: 4 rooms, 16 people
+EXIT_B: 1 rooms, 2 people
+EXIT_C: 4 rooms, 8 people
+EXIT_D: 3 rooms, 5 people
+EXIT_E: 2 rooms, 4 people
+EXIT_F: 4 rooms, 10 people
+EXIT_G: 5 rooms, 8 people
+EXIT_H: 2 rooms, 4 people
+EXIT_STAIRWELL: 3 rooms, 8 people
+
+MOST UTILIZED EDGES
+------------------------------------
+E316:I18--DOOR_28: 10/10 people (100.00%)
+E354:K18--DOOR_28: 10/10 people (100.00%)
+E251:F2--F3: 16/20 people (80.00%)
+E264:F3--F4: 16/20 people (80.00%)
+E265:F4--F5: 16/20 people (80.00%)
+E266:F5--F6: 16/20 people (80.00%)
+E504:Q22--DOOR_45: 8/10 people (80.00%)
+E352:K16--K17: 14/20 people (70.00%)
+E353:K17--K18: 14/20 people (70.00%)
+E193:C8--DOOR_14: 6/10 people (60.00%)

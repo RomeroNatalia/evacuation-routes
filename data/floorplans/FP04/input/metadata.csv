@@ -1,0 +1,2 @@
+floorplan_id,floorplan_name,grid_unit,people_per_capacity_unit,image_file,notes
+FP04,Museum,1.0,10,floorplan.png,Approved Floorplan4 museum layout; center is a courtyard and not a room. Occupancy values are deterministic test values and may be edited.

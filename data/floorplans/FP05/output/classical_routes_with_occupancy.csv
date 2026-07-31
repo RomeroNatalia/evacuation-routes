@@ -1,0 +1,25 @@
+room_id,room_name,start_node,primary_exit,distance,hops,path,astar_matches_distance,astar_same_exact_path,capacity,occupancy
+R01,Doctor's Office,START_R01,EXIT_C,7.0,8,START_R01 -> N3 -> M3 -> L3 -> K3 -> DOOR_02 -> I3 -> I2 -> EXIT_C,True,True,6,3
+R02,Staff Room,START_R02,EXIT_C,6.5,7,START_R02 -> E3 -> F3 -> G3 -> DOOR_01 -> I3 -> I2 -> EXIT_C,True,True,12,6
+R03,Exam Room 1,START_R03,EXIT_C,15.75,17,START_R03 -> P8 -> DOOR_10 -> P10 -> O10 -> N10 -> M10 -> L10 -> K10 -> J10 -> I10 -> I8 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,True,4,2
+R04,Exam Room 2,START_R04,EXIT_C,13.5,16,START_R04 -> D8 -> E8 -> DOOR_06 -> E10 -> F10 -> G10 -> DOOR_07 -> G8 -> G7 -> DOOR_03 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,False,4,2
+R05,Exam Room 3,START_R05,EXIT_C,7.5,8,START_R05 -> G7 -> DOOR_03 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,True,4,2
+R06,Exam Room 4,START_R06,EXIT_C,7.5,8,START_R06 -> K7 -> DOOR_04 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,True,4,2
+R07,Exam Room 5,START_R07,EXIT_C,13.75,15,START_R07 -> N8 -> DOOR_09 -> N10 -> M10 -> L10 -> K10 -> J10 -> I10 -> I8 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,True,4,2
+R08,Exam Room 6,START_R08,EXIT_C,15.5,18,START_R08 -> B8 -> C8 -> DOOR_05 -> C10 -> D10 -> E10 -> F10 -> G10 -> DOOR_07 -> G8 -> G7 -> DOOR_03 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,False,4,2
+R09,Lab Room 1,START_R09,EXIT_C,12.5,13,START_R09 -> E11 -> F11 -> G11 -> DOOR_13 -> I11 -> I10 -> I8 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,False,8,4
+R10,Bathroom A,START_R10,EXIT_C,12.5,14,START_R10 -> M11 -> L11 -> DOOR_11 -> L10 -> K10 -> J10 -> I10 -> I8 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,True,4,1
+R11,Bathroom B,START_R11,EXIT_C,13.5,15,START_R11 -> N11 -> DOOR_12 -> N10 -> M10 -> L10 -> K10 -> J10 -> I10 -> I8 -> I7 -> I5.5 -> I4 -> I3 -> I2 -> EXIT_C,True,True,4,1
+R12,Nurse Room,START_R12,EXIT_B,14.5,15,START_R12 -> E15 -> F15 -> G15 -> DOOR_16 -> I15 -> I16 -> I18 -> H18 -> G18 -> F18 -> E18 -> D18 -> C18 -> B18 -> EXIT_B,True,True,6,3
+R13,Lab Room 2,START_R13,EXIT_B,14.0,14,START_R13 -> L15 -> K15 -> DOOR_17 -> I15 -> I16 -> I18 -> H18 -> G18 -> F18 -> E18 -> D18 -> C18 -> B18 -> EXIT_B,True,True,8,4
+R14,Exam Room 7,START_R14,EXIT_B,7.0,8,START_R14 -> F20 -> DOOR_19 -> F18 -> E18 -> D18 -> C18 -> B18 -> EXIT_B,True,True,4,2
+R15,Exam Room 8,START_R15,EXIT_B,12.5,13,START_R15 -> K21 -> DOOR_23 -> I21 -> I20 -> I18 -> H18 -> G18 -> F18 -> E18 -> D18 -> C18 -> B18 -> EXIT_B,True,True,4,2
+R16,Procedure Room,START_R16,EXIT_B,15.5,17,START_R16 -> O20 -> DOOR_21 -> O18 -> N18 -> M18 -> L18 -> K18 -> J18 -> I18 -> H18 -> G18 -> F18 -> E18 -> D18 -> C18 -> B18 -> EXIT_B,True,True,8,4
+R17,Supply Room,START_R17,EXIT_B,4.0,5,START_R17 -> C20 -> DOOR_18 -> C18 -> B18 -> EXIT_B,True,True,4,1
+R18,Observation Room,START_R18,EXIT_A,13.75,15,START_R18 -> E25 -> F25 -> DOOR_24 -> H25 -> H26 -> I26 -> DOOR_26 -> I28 -> I29 -> I30 -> I32 -> I33 -> START_R24 -> H34 -> EXIT_A,True,True,8,4
+R19,Physical Therapy Room,START_R19,EXIT_A,14.0,15,START_R19 -> M25 -> L25 -> DOOR_25 -> J25 -> I25 -> I26 -> DOOR_26 -> I28 -> I29 -> I30 -> I32 -> I33 -> START_R24 -> H34 -> EXIT_A,True,False,8,4
+R20,Consultation Room,START_R20,EXIT_A,6.1,8,START_R20 -> F30 -> G30 -> DOOR_30 -> G32 -> H32 -> START_R24 -> H34 -> EXIT_A,True,True,8,4
+R21,Records Room,START_R21,EXIT_A,6.35,7,START_R21 -> J30 -> I30 -> I32 -> I33 -> START_R24 -> H34 -> EXIT_A,True,True,8,4
+R22,Billing Office,START_R22,EXIT_A,10.6,13,START_R22 -> C29 -> DOOR_27 -> D29 -> E29 -> START_R20 -> F30 -> G30 -> DOOR_30 -> G32 -> H32 -> START_R24 -> H34 -> EXIT_A,True,True,8,4
+R23,Check-In Office,START_R23,EXIT_A,11.35,12,START_R23 -> N29 -> DOOR_29 -> L29 -> K29 -> START_R21 -> J30 -> I30 -> I32 -> I33 -> START_R24 -> H34 -> EXIT_A,True,True,8,4
+R24,Waiting Room,START_R24,EXIT_A,2.0,2,START_R24 -> H34 -> EXIT_A,True,True,30,18

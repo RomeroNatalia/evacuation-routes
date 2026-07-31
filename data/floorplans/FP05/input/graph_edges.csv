@@ -1,0 +1,506 @@
+source,target,edge_type,distance,capacity,notes
+B10,B11,navigation,1.0,3,adjacent room grid points
+B10,C10,navigation,1.0,3,adjacent room grid points
+B11,B12,navigation,1.0,3,adjacent room grid points
+B11,C11,navigation,1.0,3,adjacent room grid points
+B12,C12,navigation,1.0,3,adjacent room grid points
+B14,B15,navigation,1.0,3,adjacent room grid points
+B14,C14,navigation,1.0,3,adjacent room grid points
+B15,B16,navigation,1.0,3,adjacent room grid points
+B15,C15,navigation,1.0,3,adjacent room grid points
+B16,C16,navigation,1.0,3,adjacent room grid points
+B18,C18,navigation,1.0,2,adjacent hallway or shared grid points
+B18,EXIT_B,exit,1.0,3,interior graph connected to evacuation exit
+B2,B3,navigation,1.0,3,adjacent room grid points
+B2,C2,navigation,1.0,3,adjacent room grid points
+B20,B21,navigation,1.0,3,adjacent room grid points
+B20,C20,navigation,1.0,3,adjacent room grid points
+B21,B22,navigation,1.0,3,adjacent room grid points
+B21,START_R17,room_start,1,4,room center connected to adjacent graph node
+B22,C22,navigation,1.0,3,adjacent room grid points
+B24,B25,navigation,1.0,3,adjacent room grid points
+B24,C24,navigation,1.0,3,adjacent room grid points
+B25,B26,navigation,1.0,3,adjacent room grid points
+B25,C25,navigation,1.0,3,adjacent room grid points
+B26,C26,navigation,1.0,3,adjacent room grid points
+B28,C28,navigation,1.0,3,adjacent room grid points
+B28,START_R22,room_start,1.2,4,room center connected to adjacent graph node
+B3,B4,navigation,1.0,3,adjacent room grid points
+B3,C3,navigation,1.0,3,adjacent room grid points
+B30,C30,navigation,1.0,3,adjacent room grid points
+B32,B33,navigation,1.0,2,adjacent hallway or shared grid points
+B32,C32,navigation,1.0,2,adjacent hallway or shared grid points
+B33,B34,navigation,1.0,2,adjacent hallway or shared grid points
+B33,C33,navigation,1.0,2,adjacent hallway or shared grid points
+B34,C34,navigation,1.0,2,adjacent hallway or shared grid points
+B4,C4,navigation,1.0,3,adjacent room grid points
+B6,C6,navigation,1.0,3,adjacent room grid points
+B8,C8,navigation,1.0,3,adjacent room grid points
+C10,C11,navigation,1.0,3,adjacent room grid points
+C10,D10,navigation,1.0,3,adjacent room grid points
+C10,DOOR_05,room_to_door,0.5,1,room side of doorway
+C11,C12,navigation,1.0,3,adjacent room grid points
+C11,START_R09,room_start,1,4,room center connected to adjacent graph node
+C12,D12,navigation,1.0,3,adjacent room grid points
+C14,C15,navigation,1.0,3,adjacent room grid points
+C14,D14,navigation,1.0,3,adjacent room grid points
+C15,C16,navigation,1.0,3,adjacent room grid points
+C15,START_R12,room_start,1,4,room center connected to adjacent graph node
+C16,D16,navigation,1.0,3,adjacent room grid points
+C18,D18,navigation,1.0,2,adjacent hallway or shared grid points
+C18,DOOR_18,door_to_hallway,0.5,1,hallway side of doorway
+C2,C3,navigation,1.0,3,adjacent room grid points
+C2,D2,navigation,1.0,3,adjacent room grid points
+C20,D20,navigation,1.0,3,adjacent room grid points
+C20,DOOR_18,room_to_door,0.5,1,room side of doorway
+C22,D22,navigation,1.0,3,adjacent room grid points
+C24,C25,navigation,1.0,3,adjacent room grid points
+C24,D24,navigation,1.0,3,adjacent room grid points
+C25,C26,navigation,1.0,3,adjacent room grid points
+C25,START_R18,room_start,1,4,room center connected to adjacent graph node
+C26,D26,navigation,1.0,3,adjacent room grid points
+C28,C29,navigation,1.0,3,adjacent room grid points
+C29,C30,navigation,1.0,3,adjacent room grid points
+C29,DOOR_27,room_to_door,1.0,1,room side of doorway
+C3,C4,navigation,1.0,3,adjacent room grid points
+C3,START_R02,room_start,1,4,room center connected to adjacent graph node
+C32,C33,navigation,1.0,2,adjacent hallway or shared grid points
+C32,D32,navigation,1.0,2,adjacent hallway or shared grid points
+C33,C34,navigation,1.0,2,adjacent hallway or shared grid points
+C33,D33,navigation,1.0,2,adjacent hallway or shared grid points
+C34,D34,navigation,1.0,2,adjacent hallway or shared grid points
+C4,D4,navigation,1.0,3,adjacent room grid points
+C6,C7,navigation,1.0,3,adjacent room grid points
+C7,C8,navigation,1.0,3,adjacent room grid points
+C8,DOOR_05,room_to_door,0.5,1,room side of doorway
+D10,E10,navigation,1.0,3,adjacent room grid points
+D10,START_R09,room_start,1,4,room center connected to adjacent graph node
+D12,E12,navigation,1.0,3,adjacent room grid points
+D14,E14,navigation,1.0,3,adjacent room grid points
+D14,START_R12,room_start,1,4,room center connected to adjacent graph node
+D16,E16,navigation,1.0,3,adjacent room grid points
+D18,E18,navigation,1.0,2,adjacent hallway or shared grid points
+D2,E2,navigation,1.0,3,adjacent room grid points
+D2,START_R02,room_start,1,4,room center connected to adjacent graph node
+D20,D21,navigation,1.0,3,adjacent room grid points
+D21,D22,navigation,1.0,3,adjacent room grid points
+D24,E24,navigation,1.0,3,adjacent room grid points
+D26,E26,navigation,1.0,3,adjacent room grid points
+D29,D30,navigation,1.0,3,adjacent room grid points
+D29,DOOR_27,room_to_door,0.5,1,room side of doorway
+D29,E29,navigation,1.0,3,adjacent room grid points
+D30,D32,navigation,1.0,3,adjacent room grid points
+D30,E30,navigation,1.0,3,adjacent room grid points
+D32,D33,navigation,1.0,2,adjacent hallway or shared grid points
+D32,E32,navigation,1.0,3,adjacent room grid points
+D33,D34,navigation,1.0,2,adjacent hallway or shared grid points
+D33,E33,navigation,1.0,2,adjacent hallway or shared grid points
+D34,E34,navigation,1.0,2,adjacent hallway or shared grid points
+D4,E4,navigation,1.0,3,adjacent room grid points
+D6,E6,navigation,1.0,3,adjacent room grid points
+D8,E8,navigation,1.0,3,adjacent room grid points
+E10,DOOR_06,room_to_door,0.5,1,room side of doorway
+E10,E11,navigation,1.0,3,adjacent room grid points
+E10,F10,navigation,1.0,3,adjacent room grid points
+E11,E12,navigation,1.0,3,adjacent room grid points
+E11,F11,navigation,1.0,3,adjacent room grid points
+E12,F12,navigation,1.0,3,adjacent room grid points
+E14,E15,navigation,1.0,3,adjacent room grid points
+E14,F14,navigation,1.0,3,adjacent room grid points
+E15,E16,navigation,1.0,3,adjacent room grid points
+E15,F15,navigation,1.0,3,adjacent room grid points
+E16,F16,navigation,1.0,3,adjacent room grid points
+E18,F18,navigation,1.0,2,adjacent hallway or shared grid points
+E2,E3,navigation,1.0,3,adjacent room grid points
+E2,F2,navigation,1.0,3,adjacent room grid points
+E20,E21,navigation,1.0,3,adjacent room grid points
+E20,F20,navigation,1.0,3,adjacent room grid points
+E21,E22,navigation,1.0,3,adjacent room grid points
+E21,START_R14,room_start,1,4,room center connected to adjacent graph node
+E22,F22,navigation,1.0,3,adjacent room grid points
+E24,E25,navigation,1.0,3,adjacent room grid points
+E24,F24,navigation,1.0,3,adjacent room grid points
+E25,E26,navigation,1.0,3,adjacent room grid points
+E25,F25,navigation,1.0,3,adjacent room grid points
+E26,F26,navigation,1.0,3,adjacent room grid points
+E29,E30,navigation,1.0,3,adjacent room grid points
+E29,START_R20,room_start,1,4,room center connected to adjacent graph node
+E3,E4,navigation,1.0,3,adjacent room grid points
+E3,F3,navigation,1.0,3,adjacent room grid points
+E30,E32,navigation,1.0,3,adjacent room grid points
+E32,E33,navigation,1.0,2,adjacent hallway or shared grid points
+E32,F32,navigation,1.0,3,adjacent room grid points
+E33,E34,navigation,1.0,3,adjacent room grid points
+E33,F33,navigation,1.0,3,adjacent room grid points
+E4,F4,navigation,1.0,3,adjacent room grid points
+E6,E7,navigation,1.0,3,adjacent room grid points
+E7,E8,navigation,1.0,3,adjacent room grid points
+E8,DOOR_06,room_to_door,0.5,1,room side of doorway
+F10,F11,navigation,1.0,3,adjacent room grid points
+F10,G10,navigation,1.0,3,adjacent room grid points
+F11,F12,navigation,1.0,3,adjacent room grid points
+F11,G11,navigation,1.0,3,adjacent room grid points
+F12,G12,navigation,1.0,3,adjacent room grid points
+F14,F15,navigation,1.0,3,adjacent room grid points
+F14,G14,navigation,1.0,3,adjacent room grid points
+F15,F16,navigation,1.0,3,adjacent room grid points
+F15,G15,navigation,1.0,3,adjacent room grid points
+F16,G16,navigation,1.0,3,adjacent room grid points
+F18,DOOR_19,door_to_hallway,0.5,1,hallway side of doorway
+F18,G18,navigation,1.0,2,adjacent hallway or shared grid points
+F2,F3,navigation,1.0,3,adjacent room grid points
+F2,G2,navigation,1.0,3,adjacent room grid points
+F20,DOOR_19,room_to_door,0.5,1,room side of doorway
+F20,G20,navigation,1.0,3,adjacent room grid points
+F22,G22,navigation,1.0,3,adjacent room grid points
+F24,F25,navigation,1.0,3,adjacent room grid points
+F25,DOOR_24,room_to_door,1.0,1,room side of doorway
+F25,F26,navigation,1.0,3,adjacent room grid points
+F28,G28,navigation,1.0,3,adjacent room grid points
+F3,F4,navigation,1.0,3,adjacent room grid points
+F3,G3,navigation,1.0,3,adjacent room grid points
+F30,G30,navigation,1.0,3,adjacent room grid points
+F32,F33,navigation,1.0,2,adjacent hallway or shared grid points
+F32,G32,navigation,1.0,2,adjacent hallway or shared grid points
+F33,G33,navigation,1.0,3,adjacent room grid points
+F4,G4,navigation,1.0,3,adjacent room grid points
+F6,G6,navigation,1.0,3,adjacent room grid points
+F8,G8,navigation,1.0,3,adjacent room grid points
+G10,DOOR_07,room_to_door,0.5,1,room side of doorway
+G10,G11,navigation,1.0,3,adjacent room grid points
+G11,DOOR_13,room_to_door,0.5,1,room side of doorway
+G11,G12,navigation,1.0,3,adjacent room grid points
+G14,G15,navigation,1.0,3,adjacent room grid points
+G15,DOOR_16,room_to_door,0.5,1,room side of doorway
+G15,G16,navigation,1.0,3,adjacent room grid points
+G18,H18,navigation,0.5,2,adjacent hallway or shared grid points
+G2,G3,navigation,1.0,3,adjacent room grid points
+G20,G21,navigation,1.0,3,adjacent room grid points
+G21,DOOR_22,room_to_door,0.5,1,room side of doorway
+G21,G22,navigation,1.0,3,adjacent room grid points
+G28,G29,navigation,1.0,3,adjacent room grid points
+G29,DOOR_28,room_to_door,1.0,1,room side of doorway
+G29,G30,navigation,1.0,3,adjacent room grid points
+G3,DOOR_01,room_to_door,0.5,1,room side of doorway
+G3,G4,navigation,1.0,3,adjacent room grid points
+G30,DOOR_30,room_to_door,0.5,1,room side of doorway
+G32,DOOR_30,room_to_door,0.5,1,room side of doorway
+G32,G33,navigation,1.0,3,adjacent room grid points
+G32,H32,navigation,0.5,3,adjacent room grid points
+G6,G7,navigation,1.0,3,adjacent room grid points
+G7,DOOR_03,room_to_door,0.5,1,room side of doorway
+G7,G8,navigation,1.0,3,adjacent room grid points
+G8,DOOR_07,room_to_door,0.5,1,room side of doorway
+H18,I18,navigation,1.0,2,adjacent hallway or shared grid points
+H24,H25,navigation,1.0,2,adjacent hallway or shared grid points
+H24,I24,navigation,1.0,2,adjacent hallway or shared grid points
+H25,DOOR_24,room_to_door,0.5,1,room side of doorway
+H25,H26,navigation,1.0,3,adjacent room grid points
+H25,I25,navigation,1.0,2,adjacent hallway or shared grid points
+H26,I26,navigation,1.0,2,adjacent hallway or shared grid points
+H32,I32,navigation,1.0,3,adjacent room grid points
+H32,START_R24,room_start,1,4,room center connected to adjacent graph node
+H34,EXIT_A,exit,1.0,3,interior graph connected to evacuation exit
+I10,I11,navigation,1.0,2,adjacent hallway or shared grid points
+I10,I8,navigation,1.0,2,adjacent hallway or shared grid points
+I10,J10,navigation,1.0,2,adjacent hallway or shared grid points
+I11,DOOR_13,door_to_hallway,1.0,1,hallway side of doorway
+I11,I12,navigation,1.0,2,adjacent hallway or shared grid points
+I11,J11,navigation,1.0,2,adjacent hallway or shared grid points
+I12,I14,navigation,1.0,2,adjacent hallway or shared grid points
+I12,J12,navigation,1.0,2,adjacent hallway or shared grid points
+I14,I15,navigation,1.0,2,adjacent hallway or shared grid points
+I15,DOOR_16,door_to_hallway,1.0,1,hallway side of doorway
+I15,DOOR_17,door_to_hallway,1.0,1,hallway side of doorway
+I15,I16,navigation,1.0,2,adjacent hallway or shared grid points
+I16,I18,navigation,1.5,2,adjacent hallway or shared grid points
+I18,I20,navigation,1.0,2,adjacent hallway or shared grid points
+I18,J18,navigation,1.0,2,adjacent hallway or shared grid points
+I2,EXIT_C,exit,1.0,3,interior graph connected to evacuation exit
+I2,I3,navigation,1.0,2,adjacent hallway or shared grid points
+I20,I21,navigation,1.0,2,adjacent hallway or shared grid points
+I21,DOOR_22,door_to_hallway,1.0,1,hallway side of doorway
+I21,DOOR_23,door_to_hallway,1.0,1,hallway side of doorway
+I21,I22,navigation,0.5,2,adjacent hallway or shared grid points
+I22,I24,navigation,1.0,2,adjacent hallway or shared grid points
+I24,I25,navigation,1.0,2,adjacent hallway or shared grid points
+I24,J24,navigation,1.0,2,adjacent hallway or shared grid points
+I25,I26,navigation,1.0,3,adjacent room grid points
+I25,J25,navigation,1.0,3,adjacent room grid points
+I26,DOOR_26,room_to_door,0.5,1,room side of doorway
+I26,J26,navigation,1.0,3,adjacent room grid points
+I28,I29,navigation,1.0,3,adjacent room grid points
+I28,J28,navigation,1.0,3,adjacent room grid points
+I29,DOOR_28,room_to_door,0.5,1,room side of doorway
+I29,I30,navigation,1.0,3,adjacent room grid points
+I29,START_R21,room_start,1,4,room center connected to adjacent graph node
+I3,DOOR_01,door_to_hallway,1.0,1,hallway side of doorway
+I3,DOOR_02,door_to_hallway,1.0,1,hallway side of doorway
+I3,I4,navigation,1.0,2,adjacent hallway or shared grid points
+I30,I32,navigation,1.0,2,adjacent hallway or shared grid points
+I30,J30,navigation,1.0,3,adjacent room grid points
+I32,I33,navigation,1.0,3,adjacent room grid points
+I32,J32,navigation,1.0,2,adjacent hallway or shared grid points
+I33,J33,navigation,1.0,3,adjacent room grid points
+I4,I5.5,navigation,1.0,2,adjacent hallway or shared grid points
+I5.5,I7,navigation,1.0,2,adjacent hallway or shared grid points
+I7,DOOR_03,door_to_hallway,1.0,1,hallway side of doorway
+I7,DOOR_04,door_to_hallway,1.0,1,hallway side of doorway
+I7,I8,navigation,1.0,2,adjacent hallway or shared grid points
+J10,J11,navigation,1.0,2,adjacent hallway or shared grid points
+J10,K10,navigation,0.5,2,adjacent hallway or shared grid points
+J11,J12,navigation,1.0,2,adjacent hallway or shared grid points
+J12,DOOR_14,door_to_hallway,1.0,1,hallway side of doorway
+J18,K18,navigation,1.0,2,adjacent hallway or shared grid points
+J24,J25,navigation,1.0,2,adjacent hallway or shared grid points
+J25,DOOR_25,room_to_door,0.5,1,room side of doorway
+J25,J26,navigation,1.0,3,adjacent room grid points
+J32,J33,navigation,1.0,2,adjacent hallway or shared grid points
+J32,K32,navigation,1.0,3,adjacent room grid points
+J33,K33,navigation,1.0,3,adjacent room grid points
+K10,L10,navigation,1.0,2,adjacent hallway or shared grid points
+K14,K15,navigation,1.0,3,adjacent room grid points
+K14,L14,navigation,1.0,3,adjacent room grid points
+K15,DOOR_17,room_to_door,1.0,1,room side of doorway
+K15,K16,navigation,1.0,3,adjacent room grid points
+K15,L15,navigation,1.0,3,adjacent room grid points
+K16,L16,navigation,1.0,3,adjacent room grid points
+K18,L18,navigation,1.0,2,adjacent hallway or shared grid points
+K2,K3,navigation,1.0,3,adjacent room grid points
+K2,L2,navigation,1.0,3,adjacent room grid points
+K20,K21,navigation,1.0,3,adjacent room grid points
+K20,L20,navigation,1.0,3,adjacent room grid points
+K21,DOOR_23,room_to_door,1.0,1,room side of doorway
+K21,K22,navigation,1.0,3,adjacent room grid points
+K21,START_R15,room_start,1,4,room center connected to adjacent graph node
+K22,L22,navigation,1.0,3,adjacent room grid points
+K29,K30,navigation,1.0,3,adjacent room grid points
+K29,L29,navigation,1.0,3,adjacent room grid points
+K3,DOOR_02,room_to_door,0.5,1,room side of doorway
+K3,K4,navigation,1.0,3,adjacent room grid points
+K3,L3,navigation,1.0,3,adjacent room grid points
+K30,K32,navigation,1.0,3,adjacent room grid points
+K30,L30,navigation,1.0,3,adjacent room grid points
+K32,K33,navigation,1.0,2,adjacent hallway or shared grid points
+K32,L32,navigation,1.0,3,adjacent room grid points
+K33,K34,navigation,1.0,3,adjacent room grid points
+K33,L33,navigation,1.0,2,adjacent hallway or shared grid points
+K34,L34,navigation,1.0,2,adjacent hallway or shared grid points
+K4,L4,navigation,1.0,3,adjacent room grid points
+K6,K7,navigation,1.0,3,adjacent room grid points
+K6,L6,navigation,1.0,3,adjacent room grid points
+K7,DOOR_04,room_to_door,0.5,1,room side of doorway
+K7,K8,navigation,1.0,3,adjacent room grid points
+K8,L8,navigation,1.0,3,adjacent room grid points
+L10,DOOR_08,door_to_hallway,1.0,1,hallway side of doorway
+L10,DOOR_11,door_to_hallway,0.5,1,hallway side of doorway
+L10,M10,navigation,1.0,2,adjacent hallway or shared grid points
+L11,DOOR_11,room_to_door,0.5,1,room side of doorway
+L11,L12,navigation,1.0,3,adjacent room grid points
+L11,M11,navigation,1.0,3,adjacent room grid points
+L12,DOOR_14,room_to_door,1.0,1,room side of doorway
+L14,L15,navigation,1.0,3,adjacent room grid points
+L14,M14,navigation,1.0,3,adjacent room grid points
+L15,L16,navigation,1.0,3,adjacent room grid points
+L15,START_R13,room_start,1,4,room center connected to adjacent graph node
+L16,M16,navigation,1.0,3,adjacent room grid points
+L18,M18,navigation,1.0,2,adjacent hallway or shared grid points
+L2,L3,navigation,1.0,3,adjacent room grid points
+L2,M2,navigation,1.0,3,adjacent room grid points
+L20,M20,navigation,1.0,3,adjacent room grid points
+L22,M22,navigation,1.0,3,adjacent room grid points
+L24,L25,navigation,1.0,3,adjacent room grid points
+L24,M24,navigation,1.0,3,adjacent room grid points
+L25,DOOR_25,room_to_door,1.0,1,room side of doorway
+L25,L26,navigation,1.0,3,adjacent room grid points
+L25,M25,navigation,1.0,3,adjacent room grid points
+L26,M26,navigation,1.0,3,adjacent room grid points
+L29,DOOR_29,room_to_door,1.0,1,room side of doorway
+L29,L30,navigation,1.0,3,adjacent room grid points
+L3,L4,navigation,1.0,3,adjacent room grid points
+L3,M3,navigation,1.0,3,adjacent room grid points
+L30,L32,navigation,1.0,3,adjacent room grid points
+L32,L33,navigation,1.0,2,adjacent hallway or shared grid points
+L32,M32,navigation,1.0,2,adjacent hallway or shared grid points
+L33,L34,navigation,1.0,2,adjacent hallway or shared grid points
+L33,M33,navigation,1.0,2,adjacent hallway or shared grid points
+L34,M34,navigation,1.0,2,adjacent hallway or shared grid points
+L4,M4,navigation,1.0,3,adjacent room grid points
+L8,DOOR_08,room_to_door,0.5,1,room side of doorway
+M10,N10,navigation,1.0,2,adjacent hallway or shared grid points
+M14,N14,navigation,1.0,3,adjacent room grid points
+M14,START_R13,room_start,1,4,room center connected to adjacent graph node
+M16,N16,navigation,1.0,3,adjacent room grid points
+M18,DOOR_20,door_to_hallway,0.5,1,hallway side of doorway
+M18,N18,navigation,1.0,2,adjacent hallway or shared grid points
+M2,M3,navigation,1.0,3,adjacent room grid points
+M2,N2,navigation,1.0,3,adjacent room grid points
+M20,DOOR_20,room_to_door,0.5,1,room side of doorway
+M20,M21,navigation,1.0,3,adjacent room grid points
+M21,M22,navigation,1.0,3,adjacent room grid points
+M24,M25,navigation,1.0,3,adjacent room grid points
+M24,N24,navigation,1.0,3,adjacent room grid points
+M25,M26,navigation,1.0,3,adjacent room grid points
+M25,START_R19,room_start,1.25,4,room center connected to adjacent graph node
+M26,N26,navigation,1.0,3,adjacent room grid points
+M3,M4,navigation,1.0,3,adjacent room grid points
+M3,N3,navigation,1.0,3,adjacent room grid points
+M32,M33,navigation,1.0,2,adjacent hallway or shared grid points
+M32,N32,navigation,1.0,2,adjacent hallway or shared grid points
+M33,M34,navigation,1.0,2,adjacent hallway or shared grid points
+M33,N33,navigation,1.0,2,adjacent hallway or shared grid points
+M34,N34,navigation,1.0,2,adjacent hallway or shared grid points
+M4,N4,navigation,1.0,3,adjacent room grid points
+M6,M7,navigation,1.0,3,adjacent room grid points
+M6,N6,navigation,1.0,3,adjacent room grid points
+M7,M8,navigation,1.0,3,adjacent room grid points
+M8,N8,navigation,1.0,3,adjacent room grid points
+N10,DOOR_09,door_to_hallway,1.0,1,hallway side of doorway
+N10,DOOR_12,door_to_hallway,0.5,1,hallway side of doorway
+N10,O10,navigation,1.0,2,adjacent hallway or shared grid points
+N11,DOOR_12,room_to_door,0.5,1,room side of doorway
+N11,O11,navigation,1.0,3,adjacent room grid points
+N14,N15,navigation,1.0,3,adjacent room grid points
+N14,O14,navigation,1.0,3,adjacent room grid points
+N15,N16,navigation,1.0,3,adjacent room grid points
+N15,O15,navigation,1.0,3,adjacent room grid points
+N16,O16,navigation,1.0,3,adjacent room grid points
+N18,O18,navigation,1.0,2,adjacent hallway or shared grid points
+N2,N3,navigation,1.0,3,adjacent room grid points
+N2,O2,navigation,1.0,3,adjacent room grid points
+N20,N21,navigation,1.0,3,adjacent room grid points
+N20,O20,navigation,1.0,3,adjacent room grid points
+N21,N22,navigation,1.0,3,adjacent room grid points
+N21,START_R16,room_start,1,4,room center connected to adjacent graph node
+N22,O22,navigation,1.0,3,adjacent room grid points
+N24,O24,navigation,1.0,3,adjacent room grid points
+N26,O26,navigation,1.0,3,adjacent room grid points
+N28,N29,navigation,1.0,3,adjacent room grid points
+N28,O28,navigation,1.0,3,adjacent room grid points
+N29,DOOR_29,room_to_door,1.0,1,room side of doorway
+N29,N30,navigation,1.0,3,adjacent room grid points
+N29,START_R23,room_start,1,4,room center connected to adjacent graph node
+N3,N4,navigation,1.0,3,adjacent room grid points
+N3,O3,navigation,1.0,3,adjacent room grid points
+N30,O30,navigation,1.0,3,adjacent room grid points
+N32,N33,navigation,1.0,2,adjacent hallway or shared grid points
+N32,O32,navigation,1.0,2,adjacent hallway or shared grid points
+N33,N34,navigation,1.0,2,adjacent hallway or shared grid points
+N33,O33,navigation,1.0,2,adjacent hallway or shared grid points
+N34,O34,navigation,1.0,2,adjacent hallway or shared grid points
+N4,O4,navigation,1.0,3,adjacent room grid points
+N8,DOOR_09,room_to_door,0.5,1,room side of doorway
+O10,P10,navigation,1.0,2,adjacent hallway or shared grid points
+O11,DOOR_15,room_to_door,0.5,1,room side of doorway
+O14,O15,navigation,1.0,3,adjacent room grid points
+O14,P14,navigation,1.0,3,adjacent room grid points
+O15,O16,navigation,1.0,3,adjacent room grid points
+O15,P15,navigation,1.0,3,adjacent room grid points
+O16,P16,navigation,1.0,3,adjacent room grid points
+O18,DOOR_21,door_to_hallway,0.5,1,hallway side of doorway
+O18,P18,navigation,1.0,2,adjacent hallway or shared grid points
+O2,O3,navigation,1.0,3,adjacent room grid points
+O2,P2,navigation,1.0,3,adjacent room grid points
+O20,DOOR_21,room_to_door,0.5,1,room side of doorway
+O20,P20,navigation,1.0,3,adjacent room grid points
+O22,P22,navigation,1.0,3,adjacent room grid points
+O24,O25,navigation,1.0,3,adjacent room grid points
+O24,P24,navigation,1.0,3,adjacent room grid points
+O25,O26,navigation,1.0,3,adjacent room grid points
+O25,P25,navigation,1.0,3,adjacent room grid points
+O26,P26,navigation,1.0,3,adjacent room grid points
+O28,P28,navigation,1.0,3,adjacent room grid points
+O3,O4,navigation,1.0,3,adjacent room grid points
+O3,P3,navigation,1.0,3,adjacent room grid points
+O30,P30,navigation,1.0,3,adjacent room grid points
+O32,O33,navigation,1.0,2,adjacent hallway or shared grid points
+O32,P32,navigation,1.0,2,adjacent hallway or shared grid points
+O33,O34,navigation,1.0,2,adjacent hallway or shared grid points
+O33,P33,navigation,1.0,2,adjacent hallway or shared grid points
+O34,P34,navigation,1.0,2,adjacent hallway or shared grid points
+O4,P4,navigation,1.0,3,adjacent room grid points
+O6,O7,navigation,1.0,3,adjacent room grid points
+O6,P6,navigation,1.0,3,adjacent room grid points
+O7,O8,navigation,1.0,3,adjacent room grid points
+O8,P8,navigation,1.0,3,adjacent room grid points
+P10,DOOR_10,door_to_hallway,1.0,1,hallway side of doorway
+P10,P11,navigation,1.0,2,adjacent hallway or shared grid points
+P11,P12,navigation,1.0,2,adjacent hallway or shared grid points
+P12,DOOR_15,door_to_hallway,1.0,1,hallway side of doorway
+P14,P15,navigation,1.0,3,adjacent room grid points
+P15,P16,navigation,1.0,3,adjacent room grid points
+P2,P3,navigation,1.0,3,adjacent room grid points
+P20,P21,navigation,1.0,3,adjacent room grid points
+P21,P22,navigation,1.0,3,adjacent room grid points
+P24,P25,navigation,1.0,3,adjacent room grid points
+P25,P26,navigation,1.0,3,adjacent room grid points
+P28,P29,navigation,1.0,3,adjacent room grid points
+P29,P30,navigation,1.0,3,adjacent room grid points
+P3,P4,navigation,1.0,3,adjacent room grid points
+P33,P34,navigation,1.0,2,adjacent hallway or shared grid points
+P8,DOOR_10,room_to_door,0.5,1,room side of doorway
+START_R01,N3,room_start,0.5,4,room center connected to room grid
+START_R02,D4,room_start,1,4,room center connected to adjacent graph node
+START_R02,E3,room_start,1.0,4,room center connected to room grid
+START_R03,P6,room_start,1.0,4,room center connected to room grid
+START_R03,P8,room_start,0.75,4,room center connected to adjacent graph node
+START_R04,D6,room_start,1.0,4,room center connected to room grid
+START_R04,D8,room_start,1,4,room center connected to adjacent graph node
+START_R05,F6,room_start,1.0,4,room center connected to room grid
+START_R05,F8,room_start,1,4,room center connected to adjacent graph node
+START_R06,L6,room_start,1.0,4,room center connected to room grid
+START_R06,L8,room_start,0.75,4,room center connected to adjacent graph node
+START_R07,N6,room_start,1.0,4,room center connected to room grid
+START_R07,N8,room_start,0.75,4,room center connected to adjacent graph node
+START_R08,B6,room_start,1.0,4,room center connected to room grid
+START_R08,B8,room_start,1,4,room center connected to adjacent graph node
+START_R09,D12,room_start,1,4,room center connected to adjacent graph node
+START_R09,E11,room_start,1.0,4,room center connected to room grid
+START_R10,M11,room_start,1.0,4,room center connected to room grid
+START_R12,D16,room_start,1,4,room center connected to adjacent graph node
+START_R12,E15,room_start,1.0,4,room center connected to room grid
+START_R13,M16,room_start,1,4,room center connected to adjacent graph node
+START_R13,N15,room_start,1.0,4,room center connected to room grid
+START_R14,F20,room_start,1.0,4,room center connected to room grid
+START_R14,F22,room_start,0.75,4,room center connected to adjacent graph node
+START_R14,G21,room_start,1,4,room center connected to adjacent graph node
+START_R15,L20,room_start,1.0,4,room center connected to room grid
+START_R15,L22,room_start,0.75,4,room center connected to adjacent graph node
+START_R15,M21,room_start,1,4,room center connected to adjacent graph node
+START_R16,O20,room_start,1.0,4,room center connected to room grid
+START_R16,O22,room_start,0.75,4,room center connected to adjacent graph node
+START_R16,P21,room_start,1,4,room center connected to adjacent graph node
+START_R17,C20,room_start,1.0,4,room center connected to room grid
+START_R17,C22,room_start,0.75,4,room center connected to adjacent graph node
+START_R17,D21,room_start,1,4,room center connected to adjacent graph node
+START_R18,D24,room_start,1.0,4,room center connected to room grid
+START_R18,D26,room_start,0.75,4,room center connected to adjacent graph node
+START_R18,E25,room_start,1,4,room center connected to adjacent graph node
+START_R19,N24,room_start,1.0,4,room center connected to room grid
+START_R19,N26,room_start,0.75,4,room center connected to adjacent graph node
+START_R19,O25,room_start,1.25,4,room center connected to adjacent graph node
+START_R20,F28,room_start,1.0,4,room center connected to room grid
+START_R20,F30,room_start,0.6,4,room center connected to adjacent graph node
+START_R20,G29,room_start,1,4,room center connected to adjacent graph node
+START_R21,J28,room_start,1.0,4,room center connected to room grid
+START_R21,J30,room_start,0.6,4,room center connected to adjacent graph node
+START_R21,K29,room_start,1,4,room center connected to adjacent graph node
+START_R22,B30,room_start,0.8,4,room center connected to adjacent graph node
+START_R22,C29,room_start,1.0,4,room center connected to room grid
+START_R23,O28,room_start,1.0,4,room center connected to room grid
+START_R23,O30,room_start,0.75,4,room center connected to adjacent graph node
+START_R23,P29,room_start,1,4,room center connected to adjacent graph node
+START_R24,G33,room_start,1.0,4,room center connected to room grid
+START_R24,H34,room_start,1,4,room center connected to adjacent graph node
+START_R24,I33,room_start,0.75,4,room center connected to adjacent graph node
+START_R08,C7,room_start,1.0,4,room center connected to adjacent graph node
+START_R04,E7,room_start,1.0,4,room center connected to adjacent graph node
+START_R05,G7,room_start,1.0,4,room center connected to adjacent graph node
+K7,START_R06,room_start,1.0,4,room center connected to adjacent graph node
+M7,START_R07,room_start,1.0,4,room center connected to adjacent graph node
+O7,START_R03,room_start,1.0,4,room center connected to adjacent graph node
+L12,START_R10,room_start,1.0,4,room center connected to adjacent graph node
+P32,P33,navigation,1.0,2,adjacent hallway or shared grid points
+DOOR_26,I28,room_to_door,1.0,1,room side of doorway
+N11,START_R11,room_start,1.0,4,room center connected to adjacent room grid node
+START_R11,DOOR_15,room_to_door,1.0,1,Bathroom B room start connected directly to doorway

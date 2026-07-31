@@ -1,0 +1,13 @@
+room_id,room_name,start_node,primary_exit,distance,hops,path,astar_matches_distance,astar_same_exact_path,capacity,occupancy
+R01,Reception & Waiting,START_R01,EXIT_A,12.5,13,START_R01 -> C3 -> C4 -> DOOR_02 -> E4 -> E5 -> E6 -> E7 -> E8 -> E9 -> E10 -> E11 -> E12 -> EXIT_A,True,False,12,6
+R02,IT / Server Room,START_R02,EXIT_A,10.75,12,START_R02 -> E3 -> DOOR_01 -> E4 -> E5 -> E6 -> E7 -> E8 -> E9 -> E10 -> E11 -> E12 -> EXIT_A,True,True,4,2
+R03,Central Open Office,START_R03,EXIT_D,5.0,5,START_R03 -> J5 -> J4 -> J3 -> J2 -> EXIT_D,True,False,36,24
+R04,Executive Conference,START_R04,EXIT_E,5.0,5,START_R04 -> P3 -> P2 -> DOOR_07 -> N2 -> EXIT_E,True,True,14,8
+R05,Copy / Supply Room,START_R05,EXIT_E,5.0,5,START_R05 -> DOOR_08 -> N4 -> N3 -> N2 -> EXIT_E,True,True,4,1
+R06,West Open Office,START_R06,EXIT_A,10.5,11,START_R06 -> C7 -> C6 -> DOOR_03 -> E6 -> E7 -> E8 -> E9 -> E10 -> E11 -> E12 -> EXIT_A,True,True,18,12
+R07,East Open Office,START_R07,EXIT_E,10.75,11,START_R07 -> P7 -> P8 -> DOOR_09 -> N8 -> N7 -> N6 -> N5 -> N4 -> N3 -> N2 -> EXIT_E,True,True,18,11
+R08,Training Room,START_R08,EXIT_A,6.5,7,START_R08 -> C11 -> C10 -> DOOR_04 -> E10 -> E11 -> E12 -> EXIT_A,True,True,24,14
+R09,Conference Room A,START_R09,EXIT_A,8.0,9,START_R09 -> G12 -> G11 -> DOOR_11 -> G10 -> F10 -> E10 -> E11 -> E12 -> EXIT_A,True,True,10,5
+R10,Human Resources,START_R10,EXIT_B,10.75,12,START_R10 -> K11 -> DOOR_12 -> K10 -> L10 -> M10 -> N10 -> DOOR_10 -> P10 -> Q10 -> START_R12 -> Q12 -> EXIT_B,True,False,6,4
+R11,Finance / Administration,START_R11,EXIT_B,9.75,11,START_R11 -> M12 -> M11 -> DOOR_13 -> M10 -> N10 -> DOOR_10 -> P10 -> Q10 -> START_R12 -> Q12 -> EXIT_B,True,False,8,5
+R12,Break Room,START_R12,EXIT_B,2.0,2,START_R12 -> Q12 -> EXIT_B,True,True,16,8

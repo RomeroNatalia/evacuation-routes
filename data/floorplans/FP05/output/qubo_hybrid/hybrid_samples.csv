@@ -1,0 +1,2 @@
+rank,energy,num_occurrences,valid_exactly_one_exit_per_room,constraint_violation_count,selected_variable_count,selected_variables
+1,0.6556312226346763,1,True,0,24,x_R01_EXIT_C | x_R02_EXIT_C | x_R03_EXIT_C | x_R04_EXIT_C | x_R05_EXIT_C | x_R06_EXIT_C | x_R07_EXIT_B | x_R08_EXIT_C | x_R09_EXIT_C | x_R10_EXIT_C | x_R11_EXIT_C | x_R12_EXIT_B | x_R13_EXIT_C | x_R14_EXIT_B | x_R15_EXIT_B | x_R16_EXIT_A | x_R17_EXIT_B | x_R18_EXIT_A | x_R19_EXIT_B | x_R20_EXIT_A | x_R21_EXIT_A | x_R22_EXIT_A | x_R23_EXIT_A | x_R24_EXIT_A

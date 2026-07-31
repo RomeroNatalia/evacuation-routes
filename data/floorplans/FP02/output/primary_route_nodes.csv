@@ -1,0 +1,351 @@
+room_id,room_name,primary_exit,sequence_index,node_id,node_type,grid_position
+R01,Reception & Main Office,EXIT_C,0,START_R01,room_start,B3
+R01,Reception & Main Office,EXIT_C,1,C3,navigation,C3
+R01,Reception & Main Office,EXIT_C,2,DOOR_01,door,D3
+R01,Reception & Main Office,EXIT_C,3,E3,navigation,E3
+R01,Reception & Main Office,EXIT_C,4,E2,navigation,E2
+R01,Reception & Main Office,EXIT_C,5,EXIT_C,exit,E1
+R02,Attendance Office,EXIT_C,0,START_R02,room_start,H3
+R02,Attendance Office,EXIT_C,1,G3,navigation,G3
+R02,Attendance Office,EXIT_C,2,DOOR_03,door,F3
+R02,Attendance Office,EXIT_C,3,E3,navigation,E3
+R02,Attendance Office,EXIT_C,4,E2,navigation,E2
+R02,Attendance Office,EXIT_C,5,EXIT_C,exit,E1
+R03,Registrar & Student Records,EXIT_E,0,START_R03,room_start,W3
+R03,Registrar & Student Records,EXIT_E,1,DOOR_02,door,X3
+R03,Registrar & Student Records,EXIT_E,2,Y3,navigation,Y3
+R03,Registrar & Student Records,EXIT_E,3,Y2,navigation,Y2
+R03,Registrar & Student Records,EXIT_E,4,EXIT_E,exit,Y1
+R04,West Administrative Office,EXIT_E,0,START_R04,room_start,AC3
+R04,West Administrative Office,EXIT_E,1,AB3,navigation,AB3
+R04,West Administrative Office,EXIT_E,2,AA3,navigation,AA3
+R04,West Administrative Office,EXIT_E,3,DOOR_04,door,Z3
+R04,West Administrative Office,EXIT_E,4,Y3,navigation,Y3
+R04,West Administrative Office,EXIT_E,5,Y2,navigation,Y2
+R04,West Administrative Office,EXIT_E,6,EXIT_E,exit,Y1
+R05,Media Center / Library,EXIT_D,0,START_R05,room_start,O5
+R05,Media Center / Library,EXIT_D,1,O4,navigation,O4
+R05,Media Center / Library,EXIT_D,2,O3,navigation,O3
+R05,Media Center / Library,EXIT_D,3,O2,navigation,O2
+R05,Media Center / Library,EXIT_D,4,P2,navigation,P2
+R05,Media Center / Library,EXIT_D,5,EXIT_D,exit,P1
+R06,School Nurse Office,EXIT_C,0,START_R06,room_start,B7
+R06,School Nurse Office,EXIT_C,1,C7,navigation,C7
+R06,School Nurse Office,EXIT_C,2,DOOR_12,door,D7
+R06,School Nurse Office,EXIT_C,3,E7,navigation,E7
+R06,School Nurse Office,EXIT_C,4,E6,navigation,E6
+R06,School Nurse Office,EXIT_C,5,E5,navigation,E5
+R06,School Nurse Office,EXIT_C,6,E4,navigation,E4
+R06,School Nurse Office,EXIT_C,7,E3,navigation,E3
+R06,School Nurse Office,EXIT_C,8,E2,navigation,E2
+R06,School Nurse Office,EXIT_C,9,EXIT_C,exit,E1
+R07,Counseling Office,EXIT_C,0,START_R07,room_start,H7
+R07,Counseling Office,EXIT_C,1,H6,navigation,H6
+R07,Counseling Office,EXIT_C,2,DOOR_05,door,H5
+R07,Counseling Office,EXIT_C,3,H4,navigation,H4
+R07,Counseling Office,EXIT_C,4,G4,navigation,G4
+R07,Counseling Office,EXIT_C,5,G3,navigation,G3
+R07,Counseling Office,EXIT_C,6,DOOR_03,door,F3
+R07,Counseling Office,EXIT_C,7,E3,navigation,E3
+R07,Counseling Office,EXIT_C,8,E2,navigation,E2
+R07,Counseling Office,EXIT_C,9,EXIT_C,exit,E1
+R08,Curriculum Office,EXIT_E,0,START_R08,room_start,W7
+R08,Curriculum Office,EXIT_E,1,DOOR_11,door,X7
+R08,Curriculum Office,EXIT_E,2,Y7,navigation,Y7
+R08,Curriculum Office,EXIT_E,3,Y6,navigation,Y6
+R08,Curriculum Office,EXIT_E,4,Y5,navigation,Y5
+R08,Curriculum Office,EXIT_E,5,Y4,navigation,Y4
+R08,Curriculum Office,EXIT_E,6,Y3,navigation,Y3
+R08,Curriculum Office,EXIT_E,7,Y2,navigation,Y2
+R08,Curriculum Office,EXIT_E,8,EXIT_E,exit,Y1
+R09,Student Services Office,EXIT_E,0,START_R09,room_start,AB7
+R09,Student Services Office,EXIT_E,1,AB6,navigation,AB6
+R09,Student Services Office,EXIT_E,2,DOOR_06,door,AB5
+R09,Student Services Office,EXIT_E,3,AB4,navigation,AB4
+R09,Student Services Office,EXIT_E,4,AA4,navigation,AA4
+R09,Student Services Office,EXIT_E,5,AA3,navigation,AA3
+R09,Student Services Office,EXIT_E,6,DOOR_04,door,Z3
+R09,Student Services Office,EXIT_E,7,Y3,navigation,Y3
+R09,Student Services Office,EXIT_E,8,Y2,navigation,Y2
+R09,Student Services Office,EXIT_E,9,EXIT_E,exit,Y1
+R10,Special Education Office,EXIT_E,0,START_R10,room_start,AE7
+R10,Special Education Office,EXIT_E,1,AD7,navigation,AD7
+R10,Special Education Office,EXIT_E,2,DOOR_10,door,AC7
+R10,Special Education Office,EXIT_E,3,START_R09,room_start,AB7
+R10,Special Education Office,EXIT_E,4,AB6,navigation,AB6
+R10,Special Education Office,EXIT_E,5,DOOR_06,door,AB5
+R10,Special Education Office,EXIT_E,6,AB4,navigation,AB4
+R10,Special Education Office,EXIT_E,7,AA4,navigation,AA4
+R10,Special Education Office,EXIT_E,8,AA3,navigation,AA3
+R10,Special Education Office,EXIT_E,9,DOOR_04,door,Z3
+R10,Special Education Office,EXIT_E,10,Y3,navigation,Y3
+R10,Special Education Office,EXIT_E,11,Y2,navigation,Y2
+R10,Special Education Office,EXIT_E,12,EXIT_E,exit,Y1
+R11,Testing & Assessment Office,EXIT_C,0,START_R11,room_start,B13
+R11,Testing & Assessment Office,EXIT_C,1,B12,navigation,B12
+R11,Testing & Assessment Office,EXIT_C,2,DOOR_18,door,B10.5
+R11,Testing & Assessment Office,EXIT_C,3,B10,navigation,B10
+R11,Testing & Assessment Office,EXIT_C,4,C10,navigation,C10
+R11,Testing & Assessment Office,EXIT_C,5,D10,navigation,D10
+R11,Testing & Assessment Office,EXIT_C,6,E10,navigation,E10
+R11,Testing & Assessment Office,EXIT_C,7,E9,navigation,E9
+R11,Testing & Assessment Office,EXIT_C,8,E8,navigation,E8
+R11,Testing & Assessment Office,EXIT_C,9,E7,navigation,E7
+R11,Testing & Assessment Office,EXIT_C,10,E6,navigation,E6
+R11,Testing & Assessment Office,EXIT_C,11,E5,navigation,E5
+R11,Testing & Assessment Office,EXIT_C,12,E4,navigation,E4
+R11,Testing & Assessment Office,EXIT_C,13,E3,navigation,E3
+R11,Testing & Assessment Office,EXIT_C,14,E2,navigation,E2
+R11,Testing & Assessment Office,EXIT_C,15,EXIT_C,exit,E1
+R12,Academic Advising Office,EXIT_C,0,START_R12,room_start,E13
+R12,Academic Advising Office,EXIT_C,1,E12,navigation,E12
+R12,Academic Advising Office,EXIT_C,2,DOOR_19,door,E10.5
+R12,Academic Advising Office,EXIT_C,3,E10,navigation,E10
+R12,Academic Advising Office,EXIT_C,4,E9,navigation,E9
+R12,Academic Advising Office,EXIT_C,5,E8,navigation,E8
+R12,Academic Advising Office,EXIT_C,6,E7,navigation,E7
+R12,Academic Advising Office,EXIT_C,7,E6,navigation,E6
+R12,Academic Advising Office,EXIT_C,8,E5,navigation,E5
+R12,Academic Advising Office,EXIT_C,9,E4,navigation,E4
+R12,Academic Advising Office,EXIT_C,10,E3,navigation,E3
+R12,Academic Advising Office,EXIT_C,11,E2,navigation,E2
+R12,Academic Advising Office,EXIT_C,12,EXIT_C,exit,E1
+R13,Records Support Office,EXIT_C,0,START_R13,room_start,H13
+R13,Records Support Office,EXIT_C,1,H12,navigation,H12
+R13,Records Support Office,EXIT_C,2,DOOR_17,door,H10.5
+R13,Records Support Office,EXIT_C,3,H10,navigation,H10
+R13,Records Support Office,EXIT_C,4,G10,navigation,G10
+R13,Records Support Office,EXIT_C,5,F10,navigation,F10
+R13,Records Support Office,EXIT_C,6,E10,navigation,E10
+R13,Records Support Office,EXIT_C,7,E9,navigation,E9
+R13,Records Support Office,EXIT_C,8,E8,navigation,E8
+R13,Records Support Office,EXIT_C,9,E7,navigation,E7
+R13,Records Support Office,EXIT_C,10,E6,navigation,E6
+R13,Records Support Office,EXIT_C,11,E5,navigation,E5
+R13,Records Support Office,EXIT_C,12,E4,navigation,E4
+R13,Records Support Office,EXIT_C,13,E3,navigation,E3
+R13,Records Support Office,EXIT_C,14,E2,navigation,E2
+R13,Records Support Office,EXIT_C,15,EXIT_C,exit,E1
+R14,Human Resources Office,EXIT_D,0,START_R14,room_start,K13
+R14,Human Resources Office,EXIT_D,1,K12,navigation,K12
+R14,Human Resources Office,EXIT_D,2,DOOR_20,door,K10.5
+R14,Human Resources Office,EXIT_D,3,K10,navigation,K10
+R14,Human Resources Office,EXIT_D,4,M10,navigation,M10
+R14,Human Resources Office,EXIT_D,5,N10,navigation,N10
+R14,Human Resources Office,EXIT_D,6,DOOR_16,door,N10
+R14,Human Resources Office,EXIT_D,7,O10,navigation,O10
+R14,Human Resources Office,EXIT_D,8,O8,navigation,O8
+R14,Human Resources Office,EXIT_D,9,O7,navigation,O7
+R14,Human Resources Office,EXIT_D,10,O6,navigation,O6
+R14,Human Resources Office,EXIT_D,11,P6,navigation,P6
+R14,Human Resources Office,EXIT_D,12,P5,navigation,P5
+R14,Human Resources Office,EXIT_D,13,P4,navigation,P4
+R14,Human Resources Office,EXIT_D,14,P3,navigation,P3
+R14,Human Resources Office,EXIT_D,15,P2,navigation,P2
+R14,Human Resources Office,EXIT_D,16,EXIT_D,exit,P1
+R15,Finance Office,EXIT_D,0,START_R15,room_start,S13
+R15,Finance Office,EXIT_D,1,S12,navigation,S12
+R15,Finance Office,EXIT_D,2,DOOR_25,door,S10.5
+R15,Finance Office,EXIT_D,3,S10,navigation,S10
+R15,Finance Office,EXIT_D,4,R10,navigation,R10
+R15,Finance Office,EXIT_D,5,Q10,navigation,Q10
+R15,Finance Office,EXIT_D,6,DOOR_15,door,P10
+R15,Finance Office,EXIT_D,7,O10,navigation,O10
+R15,Finance Office,EXIT_D,8,O8,navigation,O8
+R15,Finance Office,EXIT_D,9,O7,navigation,O7
+R15,Finance Office,EXIT_D,10,O6,navigation,O6
+R15,Finance Office,EXIT_D,11,P6,navigation,P6
+R15,Finance Office,EXIT_D,12,P5,navigation,P5
+R15,Finance Office,EXIT_D,13,P4,navigation,P4
+R15,Finance Office,EXIT_D,14,P3,navigation,P3
+R15,Finance Office,EXIT_D,15,P2,navigation,P2
+R15,Finance Office,EXIT_D,16,EXIT_D,exit,P1
+R16,Payroll Office,EXIT_E,0,START_R16,room_start,V13
+R16,Payroll Office,EXIT_E,1,V12,navigation,V12
+R16,Payroll Office,EXIT_E,2,DOOR_23,door,V10.5
+R16,Payroll Office,EXIT_E,3,V10,navigation,V10
+R16,Payroll Office,EXIT_E,4,W10,navigation,W10
+R16,Payroll Office,EXIT_E,5,X10,navigation,X10
+R16,Payroll Office,EXIT_E,6,Y10,navigation,Y10
+R16,Payroll Office,EXIT_E,7,Y9,navigation,Y9
+R16,Payroll Office,EXIT_E,8,Y8,navigation,Y8
+R16,Payroll Office,EXIT_E,9,Y7,navigation,Y7
+R16,Payroll Office,EXIT_E,10,Y6,navigation,Y6
+R16,Payroll Office,EXIT_E,11,Y5,navigation,Y5
+R16,Payroll Office,EXIT_E,12,Y4,navigation,Y4
+R16,Payroll Office,EXIT_E,13,Y3,navigation,Y3
+R16,Payroll Office,EXIT_E,14,Y2,navigation,Y2
+R16,Payroll Office,EXIT_E,15,EXIT_E,exit,Y1
+R17,Operations Office,EXIT_E,0,START_R17,room_start,Y13
+R17,Operations Office,EXIT_E,1,Y12,navigation,Y12
+R17,Operations Office,EXIT_E,2,DOOR_22,door,Y10.5
+R17,Operations Office,EXIT_E,3,Y10,navigation,Y10
+R17,Operations Office,EXIT_E,4,Y9,navigation,Y9
+R17,Operations Office,EXIT_E,5,Y8,navigation,Y8
+R17,Operations Office,EXIT_E,6,Y7,navigation,Y7
+R17,Operations Office,EXIT_E,7,Y6,navigation,Y6
+R17,Operations Office,EXIT_E,8,Y5,navigation,Y5
+R17,Operations Office,EXIT_E,9,Y4,navigation,Y4
+R17,Operations Office,EXIT_E,10,Y3,navigation,Y3
+R17,Operations Office,EXIT_E,11,Y2,navigation,Y2
+R17,Operations Office,EXIT_E,12,EXIT_E,exit,Y1
+R18,Facilities Office,EXIT_E,0,START_R18,room_start,AB13
+R18,Facilities Office,EXIT_E,1,AB12,navigation,AB12
+R18,Facilities Office,EXIT_E,2,DOOR_21,door,AB10.5
+R18,Facilities Office,EXIT_E,3,AB10,navigation,AB10
+R18,Facilities Office,EXIT_E,4,AA10,navigation,AA10
+R18,Facilities Office,EXIT_E,5,Z10,navigation,Z10
+R18,Facilities Office,EXIT_E,6,Y10,navigation,Y10
+R18,Facilities Office,EXIT_E,7,Y9,navigation,Y9
+R18,Facilities Office,EXIT_E,8,Y8,navigation,Y8
+R18,Facilities Office,EXIT_E,9,Y7,navigation,Y7
+R18,Facilities Office,EXIT_E,10,Y6,navigation,Y6
+R18,Facilities Office,EXIT_E,11,Y5,navigation,Y5
+R18,Facilities Office,EXIT_E,12,Y4,navigation,Y4
+R18,Facilities Office,EXIT_E,13,Y3,navigation,Y3
+R18,Facilities Office,EXIT_E,14,Y2,navigation,Y2
+R18,Facilities Office,EXIT_E,15,EXIT_E,exit,Y1
+R19,Principal's Office,EXIT_E,0,START_R19,room_start,AE13
+R19,Principal's Office,EXIT_E,1,AE12,navigation,AE12
+R19,Principal's Office,EXIT_E,2,DOOR_24,door,AE10.5
+R19,Principal's Office,EXIT_E,3,AE10,navigation,AE10
+R19,Principal's Office,EXIT_E,4,AD10,navigation,AD10
+R19,Principal's Office,EXIT_E,5,AC10,navigation,AC10
+R19,Principal's Office,EXIT_E,6,AB10,navigation,AB10
+R19,Principal's Office,EXIT_E,7,AA10,navigation,AA10
+R19,Principal's Office,EXIT_E,8,Z10,navigation,Z10
+R19,Principal's Office,EXIT_E,9,Y10,navigation,Y10
+R19,Principal's Office,EXIT_E,10,Y9,navigation,Y9
+R19,Principal's Office,EXIT_E,11,Y8,navigation,Y8
+R19,Principal's Office,EXIT_E,12,Y7,navigation,Y7
+R19,Principal's Office,EXIT_E,13,Y6,navigation,Y6
+R19,Principal's Office,EXIT_E,14,Y5,navigation,Y5
+R19,Principal's Office,EXIT_E,15,Y4,navigation,Y4
+R19,Principal's Office,EXIT_E,16,Y3,navigation,Y3
+R19,Principal's Office,EXIT_E,17,Y2,navigation,Y2
+R19,Principal's Office,EXIT_E,18,EXIT_E,exit,Y1
+R20,Assistant Principal's Office,EXIT_A,0,START_R20,room_start,C19
+R20,Assistant Principal's Office,EXIT_A,1,C20,navigation,C20
+R20,Assistant Principal's Office,EXIT_A,2,DOOR_37,door,C21
+R20,Assistant Principal's Office,EXIT_A,3,C22,navigation,C22
+R20,Assistant Principal's Office,EXIT_A,4,DOOR_44,door,C23
+R20,Assistant Principal's Office,EXIT_A,5,C24,navigation,C24
+R20,Assistant Principal's Office,EXIT_A,6,START_R28,room_start,C25
+R20,Assistant Principal's Office,EXIT_A,7,C26,navigation,C26
+R20,Assistant Principal's Office,EXIT_A,8,EXIT_A,exit,C27
+R21,Conference Room A,EXIT_G,0,START_R21,room_start,H19
+R21,Conference Room A,EXIT_G,1,H18,navigation,H18
+R21,Conference Room A,EXIT_G,2,DOOR_29,door,H17
+R21,Conference Room A,EXIT_G,3,H16,navigation,H16
+R21,Conference Room A,EXIT_G,4,G16,navigation,G16
+R21,Conference Room A,EXIT_G,5,F16,navigation,F16
+R21,Conference Room A,EXIT_G,6,E16,navigation,E16
+R21,Conference Room A,EXIT_G,7,D16,navigation,D16
+R21,Conference Room A,EXIT_G,8,C16,navigation,C16
+R21,Conference Room A,EXIT_G,9,B16,navigation,B16
+R21,Conference Room A,EXIT_G,10,A16,navigation,A16
+R21,Conference Room A,EXIT_G,11,EXIT_G,exit,A16
+R22,Conference Room B,EXIT_F,0,START_R22,room_start,N18.5
+R22,Conference Room B,EXIT_F,1,N18.5,navigation,N18.5
+R22,Conference Room B,EXIT_F,2,O18.5,navigation,O18.5
+R22,Conference Room B,EXIT_F,3,DOOR_33,door,Q18.5
+R22,Conference Room B,EXIT_F,4,P18.5,navigation,P18.5
+R22,Conference Room B,EXIT_F,5,P19,navigation,P19
+R22,Conference Room B,EXIT_F,6,P20,navigation,P20
+R22,Conference Room B,EXIT_F,7,P21,navigation,P21
+R22,Conference Room B,EXIT_F,8,P22,navigation,P22
+R22,Conference Room B,EXIT_F,9,P23,navigation,P23
+R22,Conference Room B,EXIT_F,10,P24,navigation,P24
+R22,Conference Room B,EXIT_F,11,P25,navigation,P25
+R22,Conference Room B,EXIT_F,12,P26,navigation,P26
+R22,Conference Room B,EXIT_F,13,EXIT_F,exit,P27
+R23,Meeting Room A,EXIT_F,0,START_R23,room_start,R18.5
+R23,Meeting Room A,EXIT_F,1,R18.5,navigation,R18.5
+R23,Meeting Room A,EXIT_F,2,Q18.5,navigation,Q18.5
+R23,Meeting Room A,EXIT_F,3,DOOR_35,door,Q18.5
+R23,Meeting Room A,EXIT_F,4,P18.5,navigation,P18.5
+R23,Meeting Room A,EXIT_F,5,P19,navigation,P19
+R23,Meeting Room A,EXIT_F,6,P20,navigation,P20
+R23,Meeting Room A,EXIT_F,7,P21,navigation,P21
+R23,Meeting Room A,EXIT_F,8,P22,navigation,P22
+R23,Meeting Room A,EXIT_F,9,P23,navigation,P23
+R23,Meeting Room A,EXIT_F,10,P24,navigation,P24
+R23,Meeting Room A,EXIT_F,11,P25,navigation,P25
+R23,Meeting Room A,EXIT_F,12,P26,navigation,P26
+R23,Meeting Room A,EXIT_F,13,EXIT_F,exit,P27
+R24,Meeting Room B,EXIT_H,0,START_R24,room_start,X19
+R24,Meeting Room B,EXIT_H,1,X18,navigation,X18
+R24,Meeting Room B,EXIT_H,2,DOOR_30,door,X17
+R24,Meeting Room B,EXIT_H,3,X16,navigation,X16
+R24,Meeting Room B,EXIT_H,4,Y16,navigation,Y16
+R24,Meeting Room B,EXIT_H,5,Z16,navigation,Z16
+R24,Meeting Room B,EXIT_H,6,AA16,navigation,AA16
+R24,Meeting Room B,EXIT_H,7,AB16,navigation,AB16
+R24,Meeting Room B,EXIT_H,8,AC16,navigation,AC16
+R24,Meeting Room B,EXIT_H,9,AD16,navigation,AD16
+R24,Meeting Room B,EXIT_H,10,AE16,navigation,AE16
+R24,Meeting Room B,EXIT_H,11,AF16,navigation,AF16
+R24,Meeting Room B,EXIT_H,12,EXIT_H,exit,AG16
+R25,Faculty Training Room,EXIT_H,0,START_R25,room_start,AD19
+R25,Faculty Training Room,EXIT_H,1,AD18,navigation,AD18
+R25,Faculty Training Room,EXIT_H,2,DOOR_28,door,AD17
+R25,Faculty Training Room,EXIT_H,3,AD16,navigation,AD16
+R25,Faculty Training Room,EXIT_H,4,AE16,navigation,AE16
+R25,Faculty Training Room,EXIT_H,5,AF16,navigation,AF16
+R25,Faculty Training Room,EXIT_H,6,EXIT_H,exit,AG16
+R26,Staff Break Room,EXIT_F,0,START_R26,room_start,N21
+R26,Staff Break Room,EXIT_F,1,O21,navigation,O21
+R26,Staff Break Room,EXIT_F,2,DOOR_43,door,Q21
+R26,Staff Break Room,EXIT_F,3,P21,navigation,P21
+R26,Staff Break Room,EXIT_F,4,P22,navigation,P22
+R26,Staff Break Room,EXIT_F,5,P23,navigation,P23
+R26,Staff Break Room,EXIT_F,6,P24,navigation,P24
+R26,Staff Break Room,EXIT_F,7,P25,navigation,P25
+R26,Staff Break Room,EXIT_F,8,P26,navigation,P26
+R26,Staff Break Room,EXIT_F,9,EXIT_F,exit,P27
+R27,IT / Server Room,EXIT_F,0,START_R27,room_start,R21
+R27,IT / Server Room,EXIT_F,1,Q21,navigation,Q21
+R27,IT / Server Room,EXIT_F,2,DOOR_41,door,Q21
+R27,IT / Server Room,EXIT_F,3,P21,navigation,P21
+R27,IT / Server Room,EXIT_F,4,P22,navigation,P22
+R27,IT / Server Room,EXIT_F,5,P23,navigation,P23
+R27,IT / Server Room,EXIT_F,6,P24,navigation,P24
+R27,IT / Server Room,EXIT_F,7,P25,navigation,P25
+R27,IT / Server Room,EXIT_F,8,P26,navigation,P26
+R27,IT / Server Room,EXIT_F,9,EXIT_F,exit,P27
+R28,Copy & Supply Room,EXIT_A,0,START_R28,room_start,C25
+R28,Copy & Supply Room,EXIT_A,1,C26,navigation,C26
+R28,Copy & Supply Room,EXIT_A,2,EXIT_A,exit,C27
+R29,Faculty Workroom,EXIT_A,0,START_R29,room_start,H25
+R29,Faculty Workroom,EXIT_A,1,G25,navigation,G25
+R29,Faculty Workroom,EXIT_A,2,DOOR_50,door,F25
+R29,Faculty Workroom,EXIT_A,3,E25,navigation,E25
+R29,Faculty Workroom,EXIT_A,4,DOOR_54,door,E25
+R29,Faculty Workroom,EXIT_A,5,D25,navigation,D25
+R29,Faculty Workroom,EXIT_A,6,D26,navigation,D26
+R29,Faculty Workroom,EXIT_A,7,C26,navigation,C26
+R29,Faculty Workroom,EXIT_A,8,EXIT_A,exit,C27
+R30,School Security Office,EXIT_F,0,START_R30,room_start,M25
+R30,School Security Office,EXIT_F,1,N25,navigation,N25
+R30,School Security Office,EXIT_F,2,DOOR_52,door,O25
+R30,School Security Office,EXIT_F,3,P25,navigation,P25
+R30,School Security Office,EXIT_F,4,P26,navigation,P26
+R30,School Security Office,EXIT_F,5,EXIT_F,exit,P27
+R31,Maintenance & Storage,EXIT_F,0,START_R31,room_start,S25
+R31,Maintenance & Storage,EXIT_F,1,R25,navigation,R25
+R31,Maintenance & Storage,EXIT_F,2,DOOR_55,door,Q25
+R31,Maintenance & Storage,EXIT_F,3,P25,navigation,P25
+R31,Maintenance & Storage,EXIT_F,4,P26,navigation,P26
+R31,Maintenance & Storage,EXIT_F,5,EXIT_F,exit,P27
+R32,East Support Office,EXIT_B,0,START_R32,room_start,X25
+R32,East Support Office,EXIT_B,1,Y25,navigation,Y25
+R32,East Support Office,EXIT_B,2,DOOR_51,door,Z25
+R32,East Support Office,EXIT_B,3,AA25,navigation,AA25
+R32,East Support Office,EXIT_B,4,DOOR_53,door,AB25
+R32,East Support Office,EXIT_B,5,AC25,navigation,AC25
+R32,East Support Office,EXIT_B,6,AC26,navigation,AC26
+R32,East Support Office,EXIT_B,7,EXIT_B,exit,AC27
+R33,Administrative Support Office,EXIT_B,0,START_R33,room_start,AD25
+R33,Administrative Support Office,EXIT_B,1,AC25,navigation,AC25
+R33,Administrative Support Office,EXIT_B,2,AC26,navigation,AC26
+R33,Administrative Support Office,EXIT_B,3,EXIT_B,exit,AC27

@@ -1,0 +1,53 @@
+OFFICE EVACUATION QUBO RESULT
+====================================
+Solver: neal.SimulatedAnnealingSampler (multiple seeds)
+Variables: 60
+Interactions: 954
+Best valid energy: 0.636840
+Valid one-exit-per-room solution: True
+Valid sample rate: 100.00%
+Assignment penalty: 1.889696
+Normalized route objective: 0.636840
+Total evacuated people: 100
+Total evacuation distance: 105.500000
+Raw congestion objective: 193.254514
+Overload-only report objective: 14.075000
+Used physical edges: 78
+Overloaded physical edges: 11
+Maximum edge utilization: 195.00%
+
+ROOM ASSIGNMENTS
+------------------------------------
+R01 (6 people) -> EXIT_A | distance=12.500
+R02 (2 people) -> EXIT_A | distance=10.750
+R03 (24 people) -> EXIT_C | distance=6.000
+R04 (8 people) -> EXIT_E | distance=5.000
+R05 (1 people) -> EXIT_D | distance=9.000
+R06 (12 people) -> EXIT_A | distance=10.500
+R07 (11 people) -> EXIT_B | distance=11.500
+R08 (14 people) -> EXIT_A | distance=6.500
+R09 (5 people) -> EXIT_A | distance=8.000
+R10 (4 people) -> EXIT_B | distance=10.750
+R11 (5 people) -> EXIT_E | distance=13.000
+R12 (8 people) -> EXIT_B | distance=2.000
+
+EXIT USAGE
+------------------------------------
+EXIT_A: 5 rooms, 39 people
+EXIT_B: 3 rooms, 23 people
+EXIT_C: 1 rooms, 24 people
+EXIT_D: 1 rooms, 1 people
+EXIT_E: 2 rooms, 13 people
+
+MOST UTILIZED EDGES
+------------------------------------
+E033:E10--E11: 39/20 people (195.00%)
+E034:E11--E12: 39/20 people (195.00%)
+E231:P10--DOOR_10: 15/10 people (150.00%)
+E232:DOOR_10--N10: 15/10 people (150.00%)
+E220:C10--DOOR_04: 14/10 people (140.00%)
+E221:DOOR_04--E10: 14/10 people (140.00%)
+E239:E12--EXIT_A: 39/30 people (130.00%)
+E218:C6--DOOR_03: 12/10 people (120.00%)
+E219:DOOR_03--E6: 12/10 people (120.00%)
+E229:P8--DOOR_09: 11/10 people (110.00%)

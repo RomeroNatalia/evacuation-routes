@@ -1,0 +1,246 @@
+source,target,edge_type,distance,capacity,notes
+A2,B2,navigation,1.0,3,adjacent green grid nodes inside R01
+A2,A3,navigation,1.0,3,adjacent green grid nodes inside R01
+A3,A4,navigation,1.0,3,adjacent green grid nodes inside R01
+A4,B4,navigation,1.0,3,adjacent green grid nodes inside R01
+A6,B6,navigation,1.0,3,adjacent green grid nodes inside R06
+A6,A7,navigation,1.0,3,adjacent green grid nodes inside R06
+A7,A8,navigation,1.0,3,adjacent green grid nodes inside R06
+A8,B8,navigation,1.0,3,adjacent green grid nodes inside R06
+A10,B10,navigation,1.0,3,adjacent green grid nodes inside R08
+A10,A11,navigation,1.0,3,adjacent green grid nodes inside R08
+A11,A12,navigation,1.0,3,adjacent green grid nodes inside R08
+A12,B12,navigation,1.0,3,adjacent green grid nodes inside R08
+B2,C2,navigation,1.0,3,adjacent green grid nodes inside R01
+B4,C4,navigation,1.0,3,adjacent green grid nodes inside R01
+B6,C6,navigation,1.0,3,adjacent green grid nodes inside R06
+B8,C8,navigation,1.0,3,adjacent green grid nodes inside R06
+B10,C10,navigation,1.0,3,adjacent green grid nodes inside R08
+B12,C12,navigation,1.0,3,adjacent green grid nodes inside R08
+C2,C3,navigation,1.0,3,adjacent green grid nodes inside R01
+C3,C4,navigation,1.0,3,adjacent green grid nodes inside R01
+C6,C7,navigation,1.0,3,adjacent green grid nodes inside R06
+C7,C8,navigation,1.0,3,adjacent green grid nodes inside R06
+C10,C11,navigation,1.0,3,adjacent green grid nodes inside R08
+C11,C12,navigation,1.0,3,adjacent green grid nodes inside R08
+E4,E5,navigation,1.0,2,adjacent green grid nodes inside H01
+E5,E6,navigation,1.0,2,adjacent green grid nodes inside H01
+E6,E7,navigation,1.0,2,adjacent green grid nodes inside H01
+E7,E8,navigation,1.0,2,adjacent green grid nodes inside H01
+E8,E9,navigation,1.0,2,adjacent green grid nodes inside H01
+E9,F9,navigation,1.0,2,adjacent green grid nodes inside H01
+E9,E10,navigation,1.0,2,adjacent green grid nodes inside H01
+E10,F10,navigation,1.0,2,adjacent green grid nodes inside H01
+E10,E11,navigation,1.0,2,adjacent green grid nodes inside H01
+E11,E12,navigation,1.0,2,adjacent green grid nodes inside H01
+F9,G9,navigation,1.0,2,adjacent green grid nodes inside H01
+F9,F10,navigation,1.0,2,adjacent green grid nodes inside H01
+F10,G10,navigation,1.0,2,adjacent green grid nodes inside H01
+G2,H2,navigation,1.0,3,adjacent green grid nodes inside R03
+G2,G3,navigation,1.0,3,adjacent green grid nodes inside R03
+G3,H3,navigation,1.0,3,adjacent green grid nodes inside R03
+G3,G4,navigation,1.0,3,adjacent green grid nodes inside R03
+G4,H4,navigation,1.0,3,adjacent green grid nodes inside R03
+G4,G5,navigation,1.0,3,adjacent green grid nodes inside R03
+G5,H5,navigation,1.0,3,adjacent green grid nodes inside R03
+G5,G6,navigation,1.0,3,adjacent green grid nodes inside R03
+G6,H6,navigation,1.0,3,adjacent green grid nodes inside R03
+G6,G7,navigation,1.0,3,adjacent green grid nodes inside R03
+G7,H7,navigation,1.0,3,adjacent green grid nodes inside R03
+G7,G8,navigation,1.0,3,adjacent green grid nodes inside R03
+G8,H8,navigation,1.0,3,adjacent green grid nodes inside R03
+G9,H9,navigation,1.0,2,adjacent green grid nodes inside H01
+G9,G10,navigation,1.0,2,adjacent green grid nodes inside H01
+G10,H10,navigation,1.0,2,adjacent green grid nodes inside H01
+G11,H11,navigation,1.0,3,adjacent green grid nodes inside R09
+G11,G12,navigation,1.0,3,adjacent green grid nodes inside R09
+H2,I2,navigation,1.0,3,adjacent green grid nodes inside R03
+H2,H3,navigation,1.0,3,adjacent green grid nodes inside R03
+H3,I3,navigation,1.0,3,adjacent green grid nodes inside R03
+H3,H4,navigation,1.0,3,adjacent green grid nodes inside R03
+H4,I4,navigation,1.0,3,adjacent green grid nodes inside R03
+H4,H5,navigation,1.0,3,adjacent green grid nodes inside R03
+H5,H6,navigation,1.0,3,adjacent green grid nodes inside R03
+H6,I6,navigation,1.0,3,adjacent green grid nodes inside R03
+H6,H7,navigation,1.0,3,adjacent green grid nodes inside R03
+H7,I7,navigation,1.0,3,adjacent green grid nodes inside R03
+H7,H8,navigation,1.0,3,adjacent green grid nodes inside R03
+H8,I8,navigation,1.0,3,adjacent green grid nodes inside R03
+H9,I9,navigation,1.0,2,adjacent green grid nodes inside H01
+H9,H10,navigation,1.0,2,adjacent green grid nodes inside H01
+H10,I10,navigation,1.0,2,adjacent green grid nodes inside H01
+H11,I11,navigation,1.0,3,adjacent green grid nodes inside R09
+I2,J2,navigation,1.0,3,adjacent green grid nodes inside R03
+I2,I3,navigation,1.0,3,adjacent green grid nodes inside R03
+I3,J3,navigation,1.0,3,adjacent green grid nodes inside R03
+I3,I4,navigation,1.0,3,adjacent green grid nodes inside R03
+I4,J4,navigation,1.0,3,adjacent green grid nodes inside R03
+I6,J6,navigation,1.0,3,adjacent green grid nodes inside R03
+I6,I7,navigation,1.0,3,adjacent green grid nodes inside R03
+I7,J7,navigation,1.0,3,adjacent green grid nodes inside R03
+I7,I8,navigation,1.0,3,adjacent green grid nodes inside R03
+I8,J8,navigation,1.0,3,adjacent green grid nodes inside R03
+I9,J9,navigation,1.0,2,adjacent green grid nodes inside H01
+I9,I10,navigation,1.0,2,adjacent green grid nodes inside H01
+I10,J10,navigation,1.0,2,adjacent green grid nodes inside H01
+I11,I12,navigation,1.0,3,adjacent green grid nodes inside R09
+J2,K2,navigation,1.0,3,adjacent green grid nodes inside R03
+J2,J3,navigation,1.0,3,adjacent green grid nodes inside R03
+J3,K3,navigation,1.0,3,adjacent green grid nodes inside R03
+J3,J4,navigation,1.0,3,adjacent green grid nodes inside R03
+J4,K4,navigation,1.0,3,adjacent green grid nodes inside R03
+J4,J5,navigation,1.0,3,adjacent green grid nodes inside R03
+J5,K5,navigation,1.0,3,adjacent green grid nodes inside R03
+J5,J6,navigation,1.0,3,adjacent green grid nodes inside R03
+J6,K6,navigation,1.0,3,adjacent green grid nodes inside R03
+J6,J7,navigation,1.0,3,adjacent green grid nodes inside R03
+J7,K7,navigation,1.0,3,adjacent green grid nodes inside R03
+J7,J8,navigation,1.0,3,adjacent green grid nodes inside R03
+J8,K8,navigation,1.0,3,adjacent green grid nodes inside R03
+J9,K9,navigation,1.0,2,adjacent green grid nodes inside H01
+J9,J10,navigation,1.0,2,adjacent green grid nodes inside H01
+J10,K10,navigation,1.0,2,adjacent green grid nodes inside H01
+K2,L2,navigation,1.0,3,adjacent green grid nodes inside R03
+K2,K3,navigation,1.0,3,adjacent green grid nodes inside R03
+K3,L3,navigation,1.0,3,adjacent green grid nodes inside R03
+K3,K4,navigation,1.0,3,adjacent green grid nodes inside R03
+K4,L4,navigation,1.0,3,adjacent green grid nodes inside R03
+K4,K5,navigation,1.0,3,adjacent green grid nodes inside R03
+K5,L5,navigation,1.0,3,adjacent green grid nodes inside R03
+K5,K6,navigation,1.0,3,adjacent green grid nodes inside R03
+K6,L6,navigation,1.0,3,adjacent green grid nodes inside R03
+K6,K7,navigation,1.0,3,adjacent green grid nodes inside R03
+K7,L7,navigation,1.0,3,adjacent green grid nodes inside R03
+K7,K8,navigation,1.0,3,adjacent green grid nodes inside R03
+K8,L8,navigation,1.0,3,adjacent green grid nodes inside R03
+K9,L9,navigation,1.0,2,adjacent green grid nodes inside H01
+K9,K10,navigation,1.0,2,adjacent green grid nodes inside H01
+K10,L10,navigation,1.0,2,adjacent green grid nodes inside H01
+K11,L11,navigation,1.0,3,adjacent green grid nodes inside R10
+L2,L3,navigation,1.0,3,adjacent green grid nodes inside R03
+L3,L4,navigation,1.0,3,adjacent green grid nodes inside R03
+L4,L5,navigation,1.0,3,adjacent green grid nodes inside R03
+L5,L6,navigation,1.0,3,adjacent green grid nodes inside R03
+L6,L7,navigation,1.0,3,adjacent green grid nodes inside R03
+L7,L8,navigation,1.0,3,adjacent green grid nodes inside R03
+L9,M9,navigation,1.0,2,adjacent green grid nodes inside H01
+L9,L10,navigation,1.0,2,adjacent green grid nodes inside H01
+L10,M10,navigation,1.0,2,adjacent green grid nodes inside H01
+L11,L12,navigation,1.0,3,adjacent green grid nodes inside R10
+M9,N9,navigation,1.0,2,adjacent green grid nodes inside H01
+M9,M10,navigation,1.0,2,adjacent green grid nodes inside H01
+M10,N10,navigation,1.0,2,adjacent green grid nodes inside H01
+M11,N11,navigation,1.0,3,adjacent green grid nodes inside R11
+M11,M12,navigation,1.0,3,adjacent green grid nodes inside R11
+N2,N3,navigation,1.0,2,adjacent green grid nodes inside H01
+N3,N4,navigation,1.0,2,adjacent green grid nodes inside H01
+N4,N5,navigation,1.0,2,adjacent green grid nodes inside H01
+N5,N6,navigation,1.0,2,adjacent green grid nodes inside H01
+N6,N7,navigation,1.0,2,adjacent green grid nodes inside H01
+N7,N8,navigation,1.0,2,adjacent green grid nodes inside H01
+N8,N9,navigation,1.0,2,adjacent green grid nodes inside H01
+N9,N10,navigation,1.0,2,adjacent green grid nodes inside H01
+P2,Q2,navigation,1.0,3,adjacent green grid nodes inside R04
+P2,P3,navigation,1.0,3,adjacent green grid nodes inside R04
+P6,Q6,navigation,1.0,3,adjacent green grid nodes inside R07
+P6,P7,navigation,1.0,3,adjacent green grid nodes inside R07
+P7,P8,navigation,1.0,3,adjacent green grid nodes inside R07
+P8,Q8,navigation,1.0,3,adjacent green grid nodes inside R07
+P10,Q10,navigation,1.0,3,adjacent green grid nodes inside R12
+P10,P11,navigation,1.0,3,adjacent green grid nodes inside R12
+P11,P12,navigation,1.0,3,adjacent green grid nodes inside R12
+P12,Q12,navigation,1.0,3,adjacent green grid nodes inside R12
+Q2,R2,navigation,1.0,3,adjacent green grid nodes inside R04
+Q4,R4,navigation,1.0,3,adjacent green grid nodes inside R04
+Q6,R6,navigation,1.0,3,adjacent green grid nodes inside R07
+Q8,R8,navigation,1.0,3,adjacent green grid nodes inside R07
+Q10,R10,navigation,1.0,3,adjacent green grid nodes inside R12
+Q12,R12,navigation,1.0,3,adjacent green grid nodes inside R12
+R2,S2,navigation,1.0,3,adjacent green grid nodes inside R04
+R2,R3,navigation,1.0,3,adjacent green grid nodes inside R04
+R3,S3,navigation,1.0,3,adjacent green grid nodes inside R04
+R3,R4,navigation,1.0,3,adjacent green grid nodes inside R04
+R4,S4,navigation,1.0,3,adjacent green grid nodes inside R04
+R6,S6,navigation,1.0,3,adjacent green grid nodes inside R07
+R6,R7,navigation,1.0,3,adjacent green grid nodes inside R07
+R7,S7,navigation,1.0,3,adjacent green grid nodes inside R07
+R7,R8,navigation,1.0,3,adjacent green grid nodes inside R07
+R8,S8,navigation,1.0,3,adjacent green grid nodes inside R07
+R10,S10,navigation,1.0,3,adjacent green grid nodes inside R12
+R10,R11,navigation,1.0,3,adjacent green grid nodes inside R12
+R11,S11,navigation,1.0,3,adjacent green grid nodes inside R12
+R11,R12,navigation,1.0,3,adjacent green grid nodes inside R12
+R12,S12,navigation,1.0,3,adjacent green grid nodes inside R12
+S2,S3,navigation,1.0,3,adjacent green grid nodes inside R04
+S3,S4,navigation,1.0,3,adjacent green grid nodes inside R04
+S6,S7,navigation,1.0,3,adjacent green grid nodes inside R07
+S7,S8,navigation,1.0,3,adjacent green grid nodes inside R07
+S10,S11,navigation,1.0,3,adjacent green grid nodes inside R12
+S11,S12,navigation,1.0,3,adjacent green grid nodes inside R12
+START_R01,C3,room_start,1.0,4,Reception & Waiting start point to internal grid
+START_R01,A3,room_start,1.0,4,Reception & Waiting start point to internal grid
+START_R01,B4,room_start,1.0,4,Reception & Waiting start point to internal grid
+START_R01,B2,room_start,1.0,4,Reception & Waiting start point to internal grid
+START_R02,E3,room_start,1.0,4,IT / Server Room start point to internal grid
+START_R03,J5,room_start,1.0,4,Central Open Office start point to internal grid
+START_R03,H5,room_start,1.0,4,Central Open Office start point to internal grid
+START_R03,I6,room_start,1.0,4,Central Open Office start point to internal grid
+START_R03,I4,room_start,1.0,4,Central Open Office start point to internal grid
+START_R04,R3,room_start,1.0,4,Executive Conference start point to internal grid
+START_R04,P3,room_start,1.0,4,Executive Conference start point to internal grid
+START_R04,Q4,room_start,1.0,4,Executive Conference start point to internal grid
+START_R04,Q2,room_start,1.0,4,Executive Conference start point to internal grid
+START_R06,C7,room_start,1.0,4,West Open Office start point to internal grid
+START_R06,A7,room_start,1.0,4,West Open Office start point to internal grid
+START_R06,B8,room_start,1.0,4,West Open Office start point to internal grid
+START_R06,B6,room_start,1.0,4,West Open Office start point to internal grid
+START_R07,R7,room_start,1.0,4,East Open Office start point to internal grid
+START_R07,P7,room_start,1.0,4,East Open Office start point to internal grid
+START_R07,Q8,room_start,1.0,4,East Open Office start point to internal grid
+START_R07,Q6,room_start,1.0,4,East Open Office start point to internal grid
+START_R08,C11,room_start,1.0,4,Training Room start point to internal grid
+START_R08,A11,room_start,1.0,4,Training Room start point to internal grid
+START_R08,B12,room_start,1.0,4,Training Room start point to internal grid
+START_R08,B10,room_start,1.0,4,Training Room start point to internal grid
+START_R09,I12,room_start,1.0,4,Conference Room A start point to internal grid
+START_R09,G12,room_start,1.0,4,Conference Room A start point to internal grid
+START_R09,H11,room_start,1.0,4,Conference Room A start point to internal grid
+START_R10,L12,room_start,1.0,4,Human Resources start point to internal grid
+START_R10,K11,room_start,1.0,4,Human Resources start point to internal grid
+START_R11,M12,room_start,1.0,4,Finance / Administration start point to internal grid
+START_R11,N11,room_start,1.0,4,Finance / Administration start point to internal grid
+START_R12,P11,room_start,1.0,4,Break Room start point to internal grid
+START_R12,Q10,room_start,1.0,4,Break Room start point to internal grid
+START_R05,DOOR_08,room_to_door,1.0,1,Copy / Supply Room center connects directly to its only door
+E3,DOOR_01,room_to_door,0.5,1,room-side doorway connection
+DOOR_01,E4,door_to_hallway,0.25,1,hallway-side doorway connection
+C4,DOOR_02,room_to_door,1.0,1,room-side doorway connection
+DOOR_02,E4,door_to_hallway,0.5,1,hallway-side doorway connection
+C6,DOOR_03,room_to_door,1.0,1,room-side doorway connection
+DOOR_03,E6,door_to_hallway,0.5,1,hallway-side doorway connection
+C10,DOOR_04,room_to_door,1.0,1,room-side doorway connection
+DOOR_04,E10,door_to_hallway,0.5,1,hallway-side doorway connection
+G8,DOOR_05,room_to_door,1.0,1,room-side doorway connection
+DOOR_05,E8,door_to_hallway,0.5,1,hallway-side doorway connection
+L2,DOOR_06,room_to_door,1.0,1,room-side doorway connection
+DOOR_06,N2,door_to_hallway,1.0,1,hallway-side doorway connection
+P2,DOOR_07,room_to_door,1.0,1,room-side doorway connection
+DOOR_07,N2,door_to_hallway,1.0,1,hallway-side doorway connection
+DOOR_08,N4,door_to_hallway,1.0,1,hallway-side doorway connection
+P8,DOOR_09,room_to_door,1.0,1,room-side doorway connection
+DOOR_09,N8,door_to_hallway,0.75,1,hallway-side doorway connection
+P10,DOOR_10,room_to_door,1.0,1,room-side doorway connection
+DOOR_10,N10,door_to_hallway,0.75,1,hallway-side doorway connection
+G11,DOOR_11,room_to_door,0.75,1,room-side doorway connection
+DOOR_11,G10,door_to_hallway,0.25,1,hallway-side doorway connection
+K11,DOOR_12,room_to_door,0.75,1,room-side doorway connection
+DOOR_12,K10,door_to_hallway,0.25,1,hallway-side doorway connection
+M11,DOOR_13,room_to_door,0.75,1,room-side doorway connection
+DOOR_13,M10,door_to_hallway,0.25,1,hallway-side doorway connection
+E12,EXIT_A,exit,1.0,3,exterior exit sink connection
+Q12,EXIT_B,exit,1.0,3,exterior exit sink connection
+G2,EXIT_C,exit,1.0,3,exterior exit sink connection
+J2,EXIT_D,exit,1.0,3,exterior exit sink connection
+N2,EXIT_E,exit,1.0,3,exterior exit sink connection
+START_R12,Q12,room_start,1.0,4,Break Room start point at Q11 to adjacent internal grid node Q12
+START_R12,R11,room_start,1.0,4,Break Room start point at Q11 to adjacent internal grid node R11

@@ -1,0 +1,6 @@
+exit_node,assigned_room_count,assigned_people,room_ids,route_ids,total_route_distance,average_route_distance
+EXIT_A,3,25,R01 | R08 | R11,R01__EXIT_A | R08__EXIT_A | R11__EXIT_A,33.0,11.0
+EXIT_B,3,31,R06 | R07 | R12,R06__EXIT_B | R07__EXIT_B | R12__EXIT_B,35.75,11.916666666666666
+EXIT_C,2,7,R02 | R09,R02__EXIT_C | R09__EXIT_C,29.75,14.875
+EXIT_D,2,25,R03 | R05,R03__EXIT_D | R05__EXIT_D,14.0,7.0
+EXIT_E,2,12,R04 | R10,R04__EXIT_E | R10__EXIT_E,19.0,9.5

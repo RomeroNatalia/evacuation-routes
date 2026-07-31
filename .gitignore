@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.DS_Store
+
+# Do not commit credentials.
+.dwavesystem/
+
+# New generated output files may be large. Existing tracked saved results remain in the archive.
+data/floorplans/*/output/*.png

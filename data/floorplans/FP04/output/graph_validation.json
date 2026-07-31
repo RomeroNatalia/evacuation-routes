@@ -1,0 +1,60 @@
+{
+  "node_count": 173,
+  "edge_count": 258,
+  "connected_components": 1,
+  "component_sizes": [
+    173
+  ],
+  "isolated_nodes": [],
+  "all_rooms_reach_all_exits": true,
+  "door_degrees": {
+    "DOOR_02": 2,
+    "DOOR_01": 2,
+    "DOOR_03": 2,
+    "DOOR_04": 2,
+    "DOOR_05": 2,
+    "DOOR_06": 2,
+    "DOOR_07": 2,
+    "DOOR_08": 2,
+    "DOOR_09": 2,
+    "DOOR_10": 2,
+    "DOOR_11": 2,
+    "DOOR_12": 2
+  },
+  "all_doors_have_degree_2": true,
+  "all_doors_have_valid_degree": true,
+  "reachability": {
+    "START_R01": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    },
+    "START_R02": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    },
+    "START_R03": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    },
+    "START_R04": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    },
+    "START_R05": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    },
+    "START_R06": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    },
+    "START_R07": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    },
+    "START_R08": {
+      "EXIT_A": true,
+      "EXIT_B": true
+    }
+  }
+}

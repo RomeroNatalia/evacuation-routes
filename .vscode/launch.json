@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run QPU Benchmark - FP02",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/benchmark_qubo_qpu.py",
+            "args": [
+                "--floorplan",
+                "FP02",
+                "1"
+            ]
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+room_id,room_name,capacity,occupancy
+R01,Reception & Waiting,12,6
+R02,IT / Server Room,4,2
+R03,Central Open Office,36,24
+R04,Executive Conference,14,8
+R05,Copy / Supply Room,4,1
+R06,West Open Office,18,12
+R07,East Open Office,18,11
+R08,Training Room,24,14
+R09,Conference Room A,10,5
+R10,Human Resources,6,4
+R11,Finance / Administration,8,5
+R12,Break Room,16,8

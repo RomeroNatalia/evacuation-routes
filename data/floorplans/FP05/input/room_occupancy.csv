@@ -1,0 +1,25 @@
+room_id,room_name,capacity,occupancy
+R01,Doctor's Office,6,3
+R02,Staff Room,12,6
+R03,Exam Room 1,4,2
+R04,Exam Room 2,4,2
+R05,Exam Room 3,4,2
+R06,Exam Room 4,4,2
+R07,Exam Room 5,4,2
+R08,Exam Room 6,4,2
+R09,Lab Room 1,8,4
+R10,Bathroom A,4,1
+R11,Bathroom B,4,1
+R12,Nurse Room,6,3
+R13,Lab Room 2,8,4
+R14,Exam Room 7,4,2
+R15,Exam Room 8,4,2
+R16,Procedure Room,8,4
+R17,Supply Room,4,1
+R18,Observation Room,8,4
+R19,Physical Therapy Room,8,4
+R20,Consultation Room,8,4
+R21,Records Room,8,4
+R22,Billing Office,8,4
+R23,Check-In Office,8,4
+R24,Waiting Room,30,18

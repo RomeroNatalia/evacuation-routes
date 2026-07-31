@@ -1,0 +1,572 @@
+node_id,node_type,grid_position,description,space_type,space_id,space_name,room_id,room_name
+AA10,navigation,AA10,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+AA12,navigation,AA12,walkable room grid point,room,R15,Supply Closet,R15,Supply Closet
+AA14,navigation,AA14,walkable room grid point,room,R15,Supply Closet,R15,Supply Closet
+AA16,navigation,AA16,hallway grid point,hallway,H03,Hallway 03,,
+AA18,navigation,AA18,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+AA19,navigation,AA19,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+AA2,navigation,AA2,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+AA20,navigation,AA20,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+AA21.5,navigation,AA21.5,hallway grid point,hallway,H03,Hallway 03,,
+AA22,navigation,AA22,hallway grid point,hallway,H03,Hallway 03,,
+AA23,navigation,AA23,hallway grid point,hallway,H03,Hallway 03,,
+AA24,navigation,AA24,hallway grid point,hallway,H03,Hallway 03,,
+AA25,navigation,AA25,hallway grid point,hallway,H03,Hallway 03,,
+AA26,navigation,AA26,hallway grid point,hallway,H03,Hallway 03,,
+AA27,navigation,AA27,hallway grid point,hallway,H03,Hallway 03,,
+AA4,navigation,AA4,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+AA6,navigation,AA6,hallway grid point,hallway,H03,Hallway 03,,
+AA8,navigation,AA8,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+AB10,navigation,AB10,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+AB11,navigation,AB11,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+AB12,navigation,AB12,hallway grid point,hallway,H03,Hallway 03,,
+AB13,navigation,AB13,hallway grid point,hallway,H03,Hallway 03,,
+AB14.5,navigation,AB14.5,hallway grid point,hallway,H03,Hallway 03,,
+AB16,navigation,AB16,hallway grid point,hallway,H03,Hallway 03,,
+AB18,navigation,AB18,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+AB19,navigation,AB19,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+AB2,navigation,AB2,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+AB20,navigation,AB20,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+AB21.5,navigation,AB21.5,hallway grid point,hallway,H03,Hallway 03,,
+AB22,navigation,AB22,hallway grid point,hallway,H03,Hallway 03,,
+AB23,navigation,AB23,hallway grid point,hallway,H03,Hallway 03,,
+AB3,navigation,AB3,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+AB4,navigation,AB4,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+AB6,navigation,AB6,hallway grid point,hallway,H03,Hallway 03,,
+AB8,navigation,AB8,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+AB9,navigation,AB9,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+AC16,navigation,AC16,hallway grid point,hallway,H03,Hallway 03,,
+AC23,navigation,AC23,hallway grid point,hallway,H03,Hallway 03,,
+AC25,navigation,AC25,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AC26,navigation,AC26,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AC27,navigation,AC27,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AC6,navigation,AC6,hallway grid point,hallway,H03,Hallway 03,,
+AD10,navigation,AD10,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+AD12,navigation,AD12,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AD13,navigation,AD13,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AD14,navigation,AD14,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AD16,navigation,AD16,hallway grid point,hallway,H03,Hallway 03,,
+AD18,navigation,AD18,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AD19,navigation,AD19,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AD2,navigation,AD2,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AD20,navigation,AD20,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AD21,navigation,AD21,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AD23,navigation,AD23,hallway grid point,hallway,H03,Hallway 03,,
+AD25,navigation,AD25,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AD26,navigation,AD26,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AD27,navigation,AD27,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AD3,navigation,AD3,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AD4,navigation,AD4,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AD6,navigation,AD6,hallway grid point,hallway,H03,Hallway 03,,
+AD8,navigation,AD8,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+AD9,navigation,AD9,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+AE10,navigation,AE10,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+AE12,navigation,AE12,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AE14,navigation,AE14,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AE16,navigation,AE16,hallway grid point,hallway,H03,Hallway 03,,
+AE18,navigation,AE18,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AE19,navigation,AE19,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AE2,navigation,AE2,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AE21,navigation,AE21,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AE23,navigation,AE23,hallway grid point,hallway,H03,Hallway 03,,
+AE25,navigation,AE25,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AE27,navigation,AE27,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AE4,navigation,AE4,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AE6,navigation,AE6,hallway grid point,hallway,H03,Hallway 03,,
+AE8,navigation,AE8,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+AF10,navigation,AF10,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+AF12,navigation,AF12,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AF13,navigation,AF13,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AF14,navigation,AF14,walkable room grid point,room,R16,Apartment 112,R16,Apartment 112
+AF16,navigation,AF16,hallway grid point,hallway,H03,Hallway 03,,
+AF18,navigation,AF18,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AF19,navigation,AF19,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AF2,navigation,AF2,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AF20,navigation,AF20,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AF21,navigation,AF21,walkable room grid point,room,R25,Apartment 115,R25,Apartment 115
+AF23,navigation,AF23,hallway grid point,hallway,H03,Hallway 03,,
+AF25,navigation,AF25,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AF26,navigation,AF26,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AF27,navigation,AF27,walkable room grid point,room,R34,Apartment 122,R34,Apartment 122
+AF3,navigation,AF3,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AF4,navigation,AF4,walkable room grid point,room,R07,Apartment 107,R07,Apartment 107
+AF6,navigation,AF6,hallway grid point,hallway,H03,Hallway 03,,
+AF8,navigation,AF8,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+AF9,navigation,AF9,walkable room grid point,room,R11,Apartment 110,R11,Apartment 110
+B10,navigation,B10,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+B12,navigation,B12,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+B13,navigation,B13,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+B14,navigation,B14,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+B16,navigation,B16,hallway grid point,hallway,H03,Hallway 03,,
+B18,navigation,B18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+B19,navigation,B19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+B2,navigation,B2,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+B20,navigation,B20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+B21,navigation,B21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+B23,navigation,B23,hallway grid point,hallway,H02,Hallway 02,,
+B25,navigation,B25,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+B26,navigation,B26,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+B27,navigation,B27,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+B3,navigation,B3,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+B4,navigation,B4,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+B6,navigation,B6,walkable room grid point,room,R35,Apartment 108,R35,Apartment 108
+B8,navigation,B8,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+B9,navigation,B9,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+C10,navigation,C10,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+C12,navigation,C12,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+C14,navigation,C14,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+C16,navigation,C16,hallway grid point,hallway,H03,Hallway 03,,
+C18,navigation,C18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+C19,navigation,C19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+C2,navigation,C2,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+C20,navigation,C20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+C21,navigation,C21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+C23,navigation,C23,hallway grid point,hallway,H02,Hallway 02,,
+C25,navigation,C25,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+C27,navigation,C27,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+C4,navigation,C4,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+C8,navigation,C8,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+D10,navigation,D10,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+D12,navigation,D12,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+D13,navigation,D13,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+D14,navigation,D14,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+D16,navigation,D16,hallway grid point,hallway,H03,Hallway 03,,
+D18,navigation,D18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+D19,navigation,D19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+D2,navigation,D2,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+D20,navigation,D20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+D21,navigation,D21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+D23,navigation,D23,hallway grid point,hallway,H02,Hallway 02,,
+D25,navigation,D25,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+D26,navigation,D26,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+D27,navigation,D27,walkable room grid point,room,R28,Apartment 120,R28,Apartment 120
+D3,navigation,D3,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+D4,navigation,D4,walkable room grid point,room,R01,Apartment 102,R01,Apartment 102
+D6,navigation,D6,walkable room grid point,room,R35,Apartment 108,R35,Apartment 108
+D8,navigation,D8,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+D9,navigation,D9,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+DOOR_01,door,G3,doorway transition point,door,R02,,R02,Apartment 103
+DOOR_02,door,N3,doorway transition point,door,R03,,R03,Apartment 106
+DOOR_03,door,P3,doorway transition point,door,R04,,R04,Apartment 104
+DOOR_04,door,E3,doorway transition point,door,R01,,R01,Apartment 102
+DOOR_05,door,W3,doorway transition point,door,R05,,R05,Apartment 101
+DOOR_06,door,Y3,doorway transition point,door,R06,,R06,Apartment 105
+DOOR_07,door,AE5,doorway transition point,door,R07,,R07,Apartment 107
+DOOR_08,door,E6,doorway transition point,door,R35,,R35,Apartment 108
+DOOR_09,door,O7,doorway between Hallway 03 and Hallway 03,door,,,,
+DOOR_10,door,S7,doorway between Hallway 03 and Hallway 03,door,,,,
+DOOR_11,door,AE7,doorway transition point,door,R11,,R11,Apartment 110
+DOOR_12,door,F7,doorway between Hallway 03 and Hallway 03,door,,,,
+DOOR_13,door,AB7,doorway transition point,door,R10,,R10,Printer Room
+DOOR_14,door,C7,doorway between Apartment 108 and Apartment 109,door,,,,
+DOOR_15,door,G9,doorway transition point,door,R09,,R09,Apartment 111
+DOOR_16,door,E_A9,doorway transition point,door,R08,,R08,Apartment 109
+DOOR_17,door,W9,doorway transition point,door,R10,,R10,Printer Room
+DOOR_18,door,L9,doorway between Hallway 03 and Hallway 03,door,,,,
+DOOR_19,door,AA13,doorway transition point,door,R15,,R15,Supply Closet
+DOOR_20,door,AC13,doorway transition point,door,R16,,R16,Apartment 112
+DOOR_21,door,E_A13,doorway transition point,door,R13,,R13,Apartment 113
+DOOR_22,door,G13,doorway transition point,door,R14,,R14,Apartment 114
+DOOR_23,door,W15,doorway between Hallway 03 and Hallway 03,door,,,,
+DOOR_24,door,L15,doorway between Hallway 03 and Hallway 03,door,,,,
+DOOR_25,door,AE17,doorway transition point,door,R25,,R25,Apartment 115
+DOOR_26,door,Q17,doorway transition point,door,R20,,R20,Emergency Stairwell / Exit Room
+DOOR_27,door,Y18,doorway transition point,door,R24,,R24,Laundry Room
+DOOR_28,door,J18,doorway transition point,door,R36,,R36,Communal Kitchen
+DOOR_29,door,M20,doorway between Communal Kitchen and Emergency Stairwell / Exit Room,door,,,,
+DOOR_30,door,U20,doorway between Emergency Stairwell / Exit Room and Laundry Room,door,,,,
+DOOR_31,door,G23,doorway between Hallway 02 and Hallway 03,door,,,,
+DOOR_32,door,C24,doorway transition point,door,R28,,R28,Apartment 120
+DOOR_33,door,I24,doorway transition point,door,R29,,R29,Apartment 116
+DOOR_34,door,M24,doorway transition point,door,R30,,R30,Apartment 118
+DOOR_35,door,U24,doorway transition point,door,R32,,R32,Apartment 121
+DOOR_36,door,X24,doorway transition point,door,R33,,R33,Apartment 117
+DOOR_37,door,O24,doorway transition point,door,R31,,R31,Apartment 119
+DOOR_38,door,AE24,doorway transition point,door,R34,,R34,Apartment 122
+DOOR_39,door,Q26,doorway transition point,door,R31,,R31,Apartment 119
+DOOR_40,door,Z26,doorway transition point,door,R33,,R33,Apartment 117
+DOOR_41,door,S26,doorway transition point,door,R32,,R32,Apartment 121
+DOOR_42,door,AB26,doorway transition point,door,R34,,R34,Apartment 122
+DOOR_43,door,G26,doorway transition point,door,R29,,R29,Apartment 116
+DOOR_44,door,E26,doorway transition point,door,R28,,R28,Apartment 120
+DOOR_45,door,Q21,doorway transition point to stairwell exit,door,R20,,R20,Emergency Stairwell / Exit Room
+E10,navigation,E10,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+E12,navigation,E12,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+E13,navigation,E13,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+E14,navigation,E14,walkable room grid point,room,R13,Apartment 113,R13,Apartment 113
+E16,navigation,E16,hallway grid point,hallway,H03,Hallway 03,,
+E18,navigation,E18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+E19,navigation,E19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+E20,navigation,E20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+E21,navigation,E21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+E23,navigation,E23,hallway grid point,hallway,H02,Hallway 02,,
+E8,navigation,E8,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+E9,navigation,E9,walkable room grid point,room,R08,Apartment 109,R08,Apartment 109
+EXIT_A,exit,F1,exterior evacuation exit,exit,,Exit A,,Exit A
+EXIT_B,exit,O1,exterior evacuation exit,exit,,Exit B,,Exit B
+EXIT_C,exit,X1,exterior evacuation exit,exit,,Exit C,,Exit C
+EXIT_D,exit,AG16,exterior evacuation exit,exit,,Exit D,,Exit D
+EXIT_E,exit,AA28,exterior evacuation exit,exit,,Exit E,,Exit E
+EXIT_F,exit,R28,exterior evacuation exit,exit,,Exit F,,Exit F
+EXIT_G,exit,F28,exterior evacuation exit,exit,,Exit G,,Exit G
+EXIT_H,exit,A16,exterior evacuation exit,exit,,Exit H,,Exit H
+EXIT_STAIRWELL,exit,Q20,stairwell evacuation exit,exit,,Exit Stairwell,R20,Emergency Stairwell / Exit Room
+F10.5,navigation,F10.5,hallway grid point,hallway,H03,Hallway 03,,
+F12,navigation,F12,hallway grid point,hallway,H03,Hallway 03,,
+F13,navigation,F13,hallway grid point,hallway,H03,Hallway 03,,
+F14.5,navigation,F14.5,hallway grid point,hallway,H03,Hallway 03,,
+F16,navigation,F16,hallway grid point,hallway,H03,Hallway 03,,
+F18,navigation,F18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+F19,navigation,F19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+F2,navigation,F2,hallway grid point,hallway,H03,Hallway 03,,
+F20,navigation,F20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+F21,navigation,F21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+F23,navigation,F23,hallway grid point,hallway,H02,Hallway 02,,
+F24,navigation,F24,hallway grid point,hallway,H02,Hallway 02,,
+F25,navigation,F25,hallway grid point,hallway,H02,Hallway 02,,
+F26,navigation,F26,hallway grid point,hallway,H02,Hallway 02,,
+F27,navigation,F27,hallway grid point,hallway,H02,Hallway 02,,
+F3,navigation,F3,hallway grid point,hallway,H03,Hallway 03,,
+F4,navigation,F4,hallway grid point,hallway,H03,Hallway 03,,
+F5,navigation,F5,hallway grid point,hallway,H03,Hallway 03,,
+F6,navigation,F6,hallway grid point,hallway,H03,Hallway 03,,
+F8.5,navigation,F8.5,hallway grid point,hallway,H03,Hallway 03,,
+F9,navigation,F9,hallway grid point,hallway,H03,Hallway 03,,
+F9.5,navigation,F9.5,hallway grid point,hallway,H03,Hallway 03,,
+G16,navigation,G16,hallway grid point,hallway,H03,Hallway 03,,
+G18,navigation,G18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+G19,navigation,G19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+G21,navigation,G21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+G23,navigation,G23,hallway grid point,hallway,H02,Hallway 02,,
+G6,navigation,G6,hallway grid point,hallway,H03,Hallway 03,,
+H10,navigation,H10,walkable room grid point,room,R09,Apartment 111,R09,Apartment 111
+H12,navigation,H12,walkable room grid point,room,R14,Apartment 114,R14,Apartment 114
+H13,navigation,H13,walkable room grid point,room,R14,Apartment 114,R14,Apartment 114
+H14,navigation,H14,walkable room grid point,room,R14,Apartment 114,R14,Apartment 114
+H16,navigation,H16,hallway grid point,hallway,H03,Hallway 03,,
+H18,navigation,H18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+H19,navigation,H19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+H2,navigation,H2,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+H20,navigation,H20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+H21,navigation,H21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+H23,navigation,H23,hallway grid point,hallway,H03,Hallway 03,,
+H25,navigation,H25,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+H26,navigation,H26,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+H27,navigation,H27,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+H3,navigation,H3,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+H4,navigation,H4,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+H6,navigation,H6,hallway grid point,hallway,H03,Hallway 03,,
+H8,navigation,H8,walkable room grid point,room,R09,Apartment 111,R09,Apartment 111
+H9,navigation,H9,walkable room grid point,room,R09,Apartment 111,R09,Apartment 111
+I10,navigation,I10,walkable room grid point,room,R09,Apartment 111,R09,Apartment 111
+I12,navigation,I12,walkable room grid point,room,R14,Apartment 114,R14,Apartment 114
+I14,navigation,I14,walkable room grid point,room,R14,Apartment 114,R14,Apartment 114
+I16,navigation,I16,hallway grid point,hallway,H03,Hallway 03,,
+I18,navigation,I18,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+I19,navigation,I19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+I2,navigation,I2,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+I20,navigation,I20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+I21,navigation,I21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+I23,navigation,I23,hallway grid point,hallway,H03,Hallway 03,,
+I25,navigation,I25,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+I27,navigation,I27,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+I4,navigation,I4,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+I6,navigation,I6,hallway grid point,hallway,H03,Hallway 03,,
+I8,navigation,I8,walkable room grid point,room,R09,Apartment 111,R09,Apartment 111
+J16,navigation,J16,hallway grid point,hallway,H03,Hallway 03,,
+J19,navigation,J19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+J2,navigation,J2,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+J20,navigation,J20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+J21,navigation,J21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+J23,navigation,J23,hallway grid point,hallway,H03,Hallway 03,,
+J25,navigation,J25,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+J26,navigation,J26,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+J27,navigation,J27,walkable room grid point,room,R29,Apartment 116,R29,Apartment 116
+J3,navigation,J3,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+J4,navigation,J4,walkable room grid point,room,R02,Apartment 103,R02,Apartment 103
+J6,navigation,J6,hallway grid point,hallway,H03,Hallway 03,,
+K10.5,navigation,K10.5,hallway grid point,hallway,H03,Hallway 03,,
+K11.5,navigation,K11.5,hallway grid point,hallway,H03,Hallway 03,,
+K12.5,navigation,K12.5,hallway grid point,hallway,H03,Hallway 03,,
+K13.5,navigation,K13.5,hallway grid point,hallway,H03,Hallway 03,,
+K15,navigation,K15,hallway grid point,hallway,H03,Hallway 03,,
+K16,navigation,K16,hallway grid point,hallway,H03,Hallway 03,,
+K17,navigation,K17,hallway grid point,hallway,H03,Hallway 03,,
+K18,navigation,K18,hallway grid point,hallway,H03,Hallway 03,,
+K19,navigation,K19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+K20,navigation,K20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+K21,navigation,K21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+K23,navigation,K23,hallway grid point,hallway,H03,Hallway 03,,
+K6,navigation,K6,hallway grid point,hallway,H03,Hallway 03,,
+K7,navigation,K7,hallway grid point,hallway,H03,Hallway 03,,
+K8,navigation,K8,hallway grid point,hallway,H03,Hallway 03,,
+K9,navigation,K9,hallway grid point,hallway,H03,Hallway 03,,
+L18,navigation,L18,hallway grid point,hallway,H03,Hallway 03,,
+L19,navigation,L19,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+L2,navigation,L2,walkable room grid point,room,R03,Apartment 106,R03,Apartment 106
+L20,navigation,L20,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+L21,navigation,L21,walkable room grid point,room,R36,Communal Kitchen,R36,Communal Kitchen
+L23,navigation,L23,hallway grid point,hallway,H03,Hallway 03,,
+L25,navigation,L25,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+L26,navigation,L26,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+L27,navigation,L27,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+L4,navigation,L4,walkable room grid point,room,R03,Apartment 106,R03,Apartment 106
+L6,navigation,L6,hallway grid point,hallway,H03,Hallway 03,,
+M10.25,navigation,M10.25,hallway grid point,hallway,H03,Hallway 03,,
+M11.25,navigation,M11.25,hallway grid point,hallway,H03,Hallway 03,,
+M12.5,navigation,M12.5,hallway grid point,hallway,H03,Hallway 03,,
+M13.5,navigation,M13.5,hallway grid point,hallway,H03,Hallway 03,,
+M15,navigation,M15,hallway grid point,hallway,H03,Hallway 03,,
+M16,navigation,M16,hallway grid point,hallway,H03,Hallway 03,,
+M18,navigation,M18,hallway grid point,hallway,H03,Hallway 03,,
+M2,navigation,M2,walkable room grid point,room,R03,Apartment 106,R03,Apartment 106
+M23,navigation,M23,hallway grid point,hallway,H03,Hallway 03,,
+M25,navigation,M25,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+M27,navigation,M27,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+M3,navigation,M3,walkable room grid point,room,R03,Apartment 106,R03,Apartment 106
+M4,navigation,M4,walkable room grid point,room,R03,Apartment 106,R03,Apartment 106
+M6,navigation,M6,hallway grid point,hallway,H03,Hallway 03,,
+M8,navigation,M8,hallway grid point,hallway,H03,Hallway 03,,
+M9,navigation,M9,hallway grid point,hallway,H03,Hallway 03,,
+N10.25,navigation,N10.25,hallway grid point,hallway,H03,Hallway 03,,
+N11.25,navigation,N11.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+N12.5,navigation,N12.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+N13.5,navigation,N13.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+N15,navigation,N15,hallway grid point,hallway,H03,Hallway 03,,
+N16,navigation,N16,hallway grid point,hallway,H03,Hallway 03,,
+N18,navigation,N18,hallway grid point,hallway,H03,Hallway 03,,
+N19,navigation,N19,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+N20,navigation,N20,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+N21,navigation,N21,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+N22,navigation,N22,hallway grid point,hallway,H03,Hallway 03,,
+N23,navigation,N23,hallway grid point,hallway,H03,Hallway 03,,
+N25,navigation,N25,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+N26,navigation,N26,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+N27,navigation,N27,walkable room grid point,room,R30,Apartment 118,R30,Apartment 118
+N6,navigation,N6,hallway grid point,hallway,H03,Hallway 03,,
+N8,navigation,N8,hallway grid point,hallway,H03,Hallway 03,,
+N9,navigation,N9,hallway grid point,hallway,H03,Hallway 03,,
+O10.25,navigation,O10.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+O11.25,navigation,O11.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+O12.5,navigation,O12.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+O13.5,navigation,O13.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+O15,navigation,O15,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+O16,navigation,O16,hallway grid point,hallway,H03,Hallway 03,,
+O18,navigation,O18,hallway grid point,hallway,H03,Hallway 03,,
+O2,navigation,O2,hallway grid point,hallway,H03,Hallway 03,,
+O22,navigation,O22,hallway grid point,hallway,H03,Hallway 03,,
+O23,navigation,O23,hallway grid point,hallway,H03,Hallway 03,,
+O25,navigation,O25,walkable room grid point,room,R31,Apartment 119,R31,Apartment 119
+O27,navigation,O27,walkable room grid point,room,R31,Apartment 119,R31,Apartment 119
+O3,navigation,O3,hallway grid point,hallway,H03,Hallway 03,,
+O4,navigation,O4,hallway grid point,hallway,H03,Hallway 03,,
+O5,navigation,O5,hallway grid point,hallway,H03,Hallway 03,,
+O6,navigation,O6,hallway grid point,hallway,H03,Hallway 03,,
+O8,navigation,O8,hallway grid point,hallway,H03,Hallway 03,,
+O9,navigation,O9,hallway grid point,hallway,H03,Hallway 03,,
+P10.25,navigation,P10.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+P11.25,navigation,P11.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+P12.5,navigation,P12.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+P13.5,navigation,P13.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+P15,navigation,P15,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+P16,navigation,P16,hallway grid point,hallway,H03,Hallway 03,,
+P18,navigation,P18,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+P22,navigation,P22,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+P23,navigation,P23,hallway grid point,hallway,H03,Hallway 03,,
+P25,navigation,P25,walkable room grid point,room,R31,Apartment 119,R31,Apartment 119
+P26,navigation,P26,walkable room grid point,room,R31,Apartment 119,R31,Apartment 119
+P27,navigation,P27,walkable room grid point,room,R31,Apartment 119,R31,Apartment 119
+P6,navigation,P6,hallway grid point,hallway,H03,Hallway 03,,
+P8,navigation,P8,hallway grid point,hallway,H03,Hallway 03,,
+P9,navigation,P9,hallway grid point,hallway,H03,Hallway 03,,
+Q10.25,navigation,Q10.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+Q11.25,navigation,Q11.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+Q13.5,navigation,Q13.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+Q15,navigation,Q15,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+Q16,navigation,Q16,hallway grid point,hallway,H03,Hallway 03,,
+Q18,navigation,Q18,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+Q2,navigation,Q2,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+Q22,navigation,Q22,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+Q23,navigation,Q23,hallway grid point,hallway,H03,Hallway 03,,
+Q3,navigation,Q3,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+Q4,navigation,Q4,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+Q6,navigation,Q6,hallway grid point,hallway,H03,Hallway 03,,
+Q8,navigation,Q8,hallway grid point,hallway,H03,Hallway 03,,
+Q9,navigation,Q9,hallway grid point,hallway,H03,Hallway 03,,
+R10.25,navigation,R10.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+R11.25,navigation,R11.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+R12.5,navigation,R12.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+R13.5,navigation,R13.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+R15,navigation,R15,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+R16,navigation,R16,hallway grid point,hallway,H03,Hallway 03,,
+R18,navigation,R18,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+R2,navigation,R2,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+R22,navigation,R22,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+R23,navigation,R23,hallway grid point,hallway,H03,Hallway 03,,
+R24,navigation,R24,hallway grid point,hallway,H03,Hallway 03,,
+R25,navigation,R25,hallway grid point,hallway,H03,Hallway 03,,
+R26,navigation,R26,hallway grid point,hallway,H03,Hallway 03,,
+R27,navigation,R27,hallway grid point,hallway,H03,Hallway 03,,
+R4,navigation,R4,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+R6,navigation,R6,hallway grid point,hallway,H03,Hallway 03,,
+R8,navigation,R8,hallway grid point,hallway,H03,Hallway 03,,
+R9,navigation,R9,hallway grid point,hallway,H03,Hallway 03,,
+S10.25,navigation,S10.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+S11.25,navigation,S11.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+S12.5,navigation,S12.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+S13.5,navigation,S13.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+S15,navigation,S15,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+S16,navigation,S16,hallway grid point,hallway,H03,Hallway 03,,
+S18,navigation,S18,hallway grid point,hallway,H03,Hallway 03,,
+S19,navigation,S19,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+S2,navigation,S2,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+S20,navigation,S20,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+S21,navigation,S21,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+S22,navigation,S22,hallway grid point,hallway,H03,Hallway 03,,
+S23,navigation,S23,hallway grid point,hallway,H03,Hallway 03,,
+S3,navigation,S3,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+S4,navigation,S4,walkable room grid point,room,R04,Apartment 104,R04,Apartment 104
+S6,navigation,S6,hallway grid point,hallway,H03,Hallway 03,,
+S8,navigation,S8,hallway grid point,hallway,H03,Hallway 03,,
+S9,navigation,S9,hallway grid point,hallway,H03,Hallway 03,,
+START_R01,room_start,C3,pink room center,room_start,R01,Apartment 102,R01,Apartment 102
+START_R02,room_start,I3,pink room center,room_start,R02,Apartment 103,R02,Apartment 103
+START_R03,room_start,L3,pink room center,room_start,R03,Apartment 106,R03,Apartment 106
+START_R04,room_start,R3,pink room center,room_start,R04,Apartment 104,R04,Apartment 104
+START_R05,room_start,U3,pink room center,room_start,R05,Apartment 101,R05,Apartment 101
+START_R06,room_start,AA3,pink room center,room_start,R06,Apartment 105,R06,Apartment 105
+START_R07,room_start,AE3,pink room center,room_start,R07,Apartment 107,R07,Apartment 107
+START_R08,room_start,C9,pink room center,room_start,R08,Apartment 109,R08,Apartment 109
+START_R09,room_start,I9,pink room center,room_start,R09,Apartment 111,R09,Apartment 111
+START_R10,room_start,AA9,pink room center,room_start,R10,Printer Room,R10,Printer Room
+START_R11,room_start,AE9,pink room center,room_start,R11,Apartment 110,R11,Apartment 110
+START_R12,room_start,Q12.5,pink room center,room_start,R12,Communal Bathroom,R12,Communal Bathroom
+START_R13,room_start,C13,pink room center,room_start,R13,Apartment 113,R13,Apartment 113
+START_R14,room_start,I13,pink room center,room_start,R14,Apartment 114,R14,Apartment 114
+START_R15,room_start,Z13,pink room center,room_start,R15,Supply Closet,R15,Supply Closet
+START_R16,room_start,AE13,pink room center,room_start,R16,Apartment 112,R16,Apartment 112
+START_R20,room_start,Q20,pink room center,room_start,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+START_R24,room_start,Y20,pink room center,room_start,R24,Laundry Room,R24,Laundry Room
+START_R25,room_start,AE20,pink room center,room_start,R25,Apartment 115,R25,Apartment 115
+START_R28,room_start,C26,pink room center,room_start,R28,Apartment 120,R28,Apartment 120
+START_R29,room_start,I26,pink room center,room_start,R29,Apartment 116,R29,Apartment 116
+START_R30,room_start,M26,pink room center,room_start,R30,Apartment 118,R30,Apartment 118
+START_R31,room_start,O26,pink room center,room_start,R31,Apartment 119,R31,Apartment 119
+START_R32,room_start,U26,pink room center,room_start,R32,Apartment 121,R32,Apartment 121
+START_R33,room_start,X26,pink room center,room_start,R33,Apartment 117,R33,Apartment 117
+START_R34,room_start,AE26,pink room center,room_start,R34,Apartment 122,R34,Apartment 122
+START_R35,room_start,C6,pink room center,room_start,R35,Apartment 108,R35,Apartment 108
+START_R36,room_start,G20,pink room center,room_start,R36,Communal Kitchen,R36,Communal Kitchen
+T10.25,navigation,T10.25,hallway grid point,hallway,H03,Hallway 03,,
+T11.25,navigation,T11.25,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+T12.5,navigation,T12.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+T13.5,navigation,T13.5,walkable room grid point,room,R12,Communal Bathroom,R12,Communal Bathroom
+T15,navigation,T15,hallway grid point,hallway,H03,Hallway 03,,
+T16,navigation,T16,hallway grid point,hallway,H03,Hallway 03,,
+T18,navigation,T18,hallway grid point,hallway,H03,Hallway 03,,
+T19,navigation,T19,hallway grid point,hallway,H03,Hallway 03,,
+T20,navigation,T20,walkable room grid point,room,R20,Emergency Stairwell / Exit Room,R20,Emergency Stairwell / Exit Room
+T21,navigation,T21,hallway grid point,hallway,H03,Hallway 03,,
+T22,navigation,T22,hallway grid point,hallway,H03,Hallway 03,,
+T23,navigation,T23,hallway grid point,hallway,H03,Hallway 03,,
+T25,navigation,T25,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+T26,navigation,T26,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+T27,navigation,T27,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+T6,navigation,T6,hallway grid point,hallway,H03,Hallway 03,,
+T8,navigation,T8,hallway grid point,hallway,H03,Hallway 03,,
+T9,navigation,T9,hallway grid point,hallway,H03,Hallway 03,,
+U10.25,navigation,U10.25,hallway grid point,hallway,H03,Hallway 03,,
+U11.25,navigation,U11.25,hallway grid point,hallway,H03,Hallway 03,,
+U12.5,navigation,U12.5,hallway grid point,hallway,H03,Hallway 03,,
+U13.5,navigation,U13.5,hallway grid point,hallway,H03,Hallway 03,,
+U15,navigation,U15,hallway grid point,hallway,H03,Hallway 03,,
+U16,navigation,U16,hallway grid point,hallway,H03,Hallway 03,,
+U18,navigation,U18,hallway grid point,hallway,H03,Hallway 03,,
+U2,navigation,U2,walkable room grid point,room,R05,Apartment 101,R05,Apartment 101
+U22,navigation,U22,hallway grid point,hallway,H03,Hallway 03,,
+U23,navigation,U23,hallway grid point,hallway,H03,Hallway 03,,
+U25,navigation,U25,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+U27,navigation,U27,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+U4,navigation,U4,walkable room grid point,room,R05,Apartment 101,R05,Apartment 101
+U6,navigation,U6,hallway grid point,hallway,H03,Hallway 03,,
+U8,navigation,U8,hallway grid point,hallway,H03,Hallway 03,,
+U9,navigation,U9,hallway grid point,hallway,H03,Hallway 03,,
+V10.25,navigation,V10.25,hallway grid point,hallway,H03,Hallway 03,,
+V11.25,navigation,V11.25,hallway grid point,hallway,H03,Hallway 03,,
+V12.5,navigation,V12.5,hallway grid point,hallway,H03,Hallway 03,,
+V13.5,navigation,V13.5,hallway grid point,hallway,H03,Hallway 03,,
+V15,navigation,V15,hallway grid point,hallway,H03,Hallway 03,,
+V16,navigation,V16,hallway grid point,hallway,H03,Hallway 03,,
+V18,navigation,V18,hallway grid point,hallway,H03,Hallway 03,,
+V19,navigation,V19,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+V2,navigation,V2,walkable room grid point,room,R05,Apartment 101,R05,Apartment 101
+V20,navigation,V20,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+V21,navigation,V21,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+V22,navigation,V22,hallway grid point,hallway,H03,Hallway 03,,
+V23,navigation,V23,hallway grid point,hallway,H03,Hallway 03,,
+V25,navigation,V25,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+V26,navigation,V26,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+V27,navigation,V27,walkable room grid point,room,R32,Apartment 121,R32,Apartment 121
+V3,navigation,V3,walkable room grid point,room,R05,Apartment 101,R05,Apartment 101
+V4,navigation,V4,walkable room grid point,room,R05,Apartment 101,R05,Apartment 101
+V6,navigation,V6,hallway grid point,hallway,H03,Hallway 03,,
+V8,navigation,V8,hallway grid point,hallway,H03,Hallway 03,,
+V9,navigation,V9,hallway grid point,hallway,H03,Hallway 03,,
+W18,navigation,W18,hallway grid point,hallway,H03,Hallway 03,,
+W19,navigation,W19,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+W20,navigation,W20,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+W21,navigation,W21,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+W22,navigation,W22,hallway grid point,hallway,H03,Hallway 03,,
+W23,navigation,W23,hallway grid point,hallway,H03,Hallway 03,,
+W25,navigation,W25,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+W26,navigation,W26,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+W27,navigation,W27,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+W6,navigation,W6,hallway grid point,hallway,H03,Hallway 03,,
+X10.5,navigation,X10.5,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+X11.5,navigation,X11.5,hallway grid point,hallway,H03,Hallway 03,,
+X12.5,navigation,X12.5,hallway grid point,hallway,H03,Hallway 03,,
+X13.5,navigation,X13.5,hallway grid point,hallway,H03,Hallway 03,,
+X15,navigation,X15,hallway grid point,hallway,H03,Hallway 03,,
+X16,navigation,X16,hallway grid point,hallway,H03,Hallway 03,,
+X17,navigation,X17,hallway grid point,hallway,H03,Hallway 03,,
+X18,navigation,X18,hallway grid point,hallway,H03,Hallway 03,,
+X19,navigation,X19,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+X2,navigation,X2,hallway grid point,hallway,H03,Hallway 03,,
+X20,navigation,X20,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+X21,navigation,X21,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+X22,navigation,X22,hallway grid point,hallway,H03,Hallway 03,,
+X23,navigation,X23,hallway grid point,hallway,H03,Hallway 03,,
+X25,navigation,X25,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+X27,navigation,X27,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+X3,navigation,X3,hallway grid point,hallway,H03,Hallway 03,,
+X4,navigation,X4,hallway grid point,hallway,H03,Hallway 03,,
+X5,navigation,X5,hallway grid point,hallway,H03,Hallway 03,,
+X6,navigation,X6,hallway grid point,hallway,H03,Hallway 03,,
+X7,navigation,X7,hallway grid point,hallway,H03,Hallway 03,,
+X8,navigation,X8,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+X9,navigation,X9,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+Y16,navigation,Y16,hallway grid point,hallway,H03,Hallway 03,,
+Y19,navigation,Y19,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+Y21.5,navigation,Y21.5,hallway grid point,hallway,H03,Hallway 03,,
+Y22,navigation,Y22,hallway grid point,hallway,H03,Hallway 03,,
+Y23,navigation,Y23,hallway grid point,hallway,H03,Hallway 03,,
+Y25,navigation,Y25,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+Y26,navigation,Y26,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+Y27,navigation,Y27,walkable room grid point,room,R33,Apartment 117,R33,Apartment 117
+Y6,navigation,Y6,hallway grid point,hallway,H03,Hallway 03,,
+Z10,navigation,Z10,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+Z12,navigation,Z12,walkable room grid point,room,R15,Supply Closet,R15,Supply Closet
+Z14,navigation,Z14,walkable room grid point,room,R15,Supply Closet,R15,Supply Closet
+Z16,navigation,Z16,hallway grid point,hallway,H03,Hallway 03,,
+Z18,navigation,Z18,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+Z19,navigation,Z19,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+Z2,navigation,Z2,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+Z20,navigation,Z20,walkable room grid point,room,R24,Laundry Room,R24,Laundry Room
+Z21.5,navigation,Z21.5,hallway grid point,hallway,H03,Hallway 03,,
+Z22,navigation,Z22,hallway grid point,hallway,H03,Hallway 03,,
+Z23,navigation,Z23,hallway grid point,hallway,H03,Hallway 03,,
+Z3,navigation,Z3,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+Z4,navigation,Z4,walkable room grid point,room,R06,Apartment 105,R06,Apartment 105
+Z6,navigation,Z6,hallway grid point,hallway,H03,Hallway 03,,
+Z8,navigation,Z8,walkable room grid point,room,R10,Printer Room,R10,Printer Room
+Z9,navigation,Z9,walkable room grid point,room,R10,Printer Room,R10,Printer Room

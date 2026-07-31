@@ -1,0 +1,116 @@
+room_id,room_name,primary_exit,sequence_index,node_id,node_type,grid_position
+R01,Reception & Waiting,EXIT_A,0,START_R01,room_start,B3
+R01,Reception & Waiting,EXIT_A,1,C3,navigation,C3
+R01,Reception & Waiting,EXIT_A,2,C4,navigation,C4
+R01,Reception & Waiting,EXIT_A,3,DOOR_02,door,D4
+R01,Reception & Waiting,EXIT_A,4,E4,navigation,E4
+R01,Reception & Waiting,EXIT_A,5,E5,navigation,E5
+R01,Reception & Waiting,EXIT_A,6,E6,navigation,E6
+R01,Reception & Waiting,EXIT_A,7,E7,navigation,E7
+R01,Reception & Waiting,EXIT_A,8,E8,navigation,E8
+R01,Reception & Waiting,EXIT_A,9,E9,navigation,E9
+R01,Reception & Waiting,EXIT_A,10,E10,navigation,E10
+R01,Reception & Waiting,EXIT_A,11,E11,navigation,E11
+R01,Reception & Waiting,EXIT_A,12,E12,navigation,E12
+R01,Reception & Waiting,EXIT_A,13,EXIT_A,exit,E13
+R02,IT / Server Room,EXIT_A,0,START_R02,room_start,E2
+R02,IT / Server Room,EXIT_A,1,E3,navigation,E3
+R02,IT / Server Room,EXIT_A,2,DOOR_01,door,E3.5
+R02,IT / Server Room,EXIT_A,3,E4,navigation,E4
+R02,IT / Server Room,EXIT_A,4,E5,navigation,E5
+R02,IT / Server Room,EXIT_A,5,E6,navigation,E6
+R02,IT / Server Room,EXIT_A,6,E7,navigation,E7
+R02,IT / Server Room,EXIT_A,7,E8,navigation,E8
+R02,IT / Server Room,EXIT_A,8,E9,navigation,E9
+R02,IT / Server Room,EXIT_A,9,E10,navigation,E10
+R02,IT / Server Room,EXIT_A,10,E11,navigation,E11
+R02,IT / Server Room,EXIT_A,11,E12,navigation,E12
+R02,IT / Server Room,EXIT_A,12,EXIT_A,exit,E13
+R03,Central Open Office,EXIT_D,0,START_R03,room_start,I5
+R03,Central Open Office,EXIT_D,1,J5,navigation,J5
+R03,Central Open Office,EXIT_D,2,J4,navigation,J4
+R03,Central Open Office,EXIT_D,3,J3,navigation,J3
+R03,Central Open Office,EXIT_D,4,J2,navigation,J2
+R03,Central Open Office,EXIT_D,5,EXIT_D,exit,J1
+R04,Executive Conference,EXIT_E,0,START_R04,room_start,Q3
+R04,Executive Conference,EXIT_E,1,P3,navigation,P3
+R04,Executive Conference,EXIT_E,2,P2,navigation,P2
+R04,Executive Conference,EXIT_E,3,DOOR_07,door,O2
+R04,Executive Conference,EXIT_E,4,N2,navigation,N2
+R04,Executive Conference,EXIT_E,5,EXIT_E,exit,N1
+R05,Copy / Supply Room,EXIT_E,0,START_R05,room_start,P4
+R05,Copy / Supply Room,EXIT_E,1,DOOR_08,door,O4
+R05,Copy / Supply Room,EXIT_E,2,N4,navigation,N4
+R05,Copy / Supply Room,EXIT_E,3,N3,navigation,N3
+R05,Copy / Supply Room,EXIT_E,4,N2,navigation,N2
+R05,Copy / Supply Room,EXIT_E,5,EXIT_E,exit,N1
+R06,West Open Office,EXIT_A,0,START_R06,room_start,B7
+R06,West Open Office,EXIT_A,1,C7,navigation,C7
+R06,West Open Office,EXIT_A,2,C6,navigation,C6
+R06,West Open Office,EXIT_A,3,DOOR_03,door,D6
+R06,West Open Office,EXIT_A,4,E6,navigation,E6
+R06,West Open Office,EXIT_A,5,E7,navigation,E7
+R06,West Open Office,EXIT_A,6,E8,navigation,E8
+R06,West Open Office,EXIT_A,7,E9,navigation,E9
+R06,West Open Office,EXIT_A,8,E10,navigation,E10
+R06,West Open Office,EXIT_A,9,E11,navigation,E11
+R06,West Open Office,EXIT_A,10,E12,navigation,E12
+R06,West Open Office,EXIT_A,11,EXIT_A,exit,E13
+R07,East Open Office,EXIT_E,0,START_R07,room_start,Q7
+R07,East Open Office,EXIT_E,1,P7,navigation,P7
+R07,East Open Office,EXIT_E,2,P8,navigation,P8
+R07,East Open Office,EXIT_E,3,DOOR_09,door,O8
+R07,East Open Office,EXIT_E,4,N8,navigation,N8
+R07,East Open Office,EXIT_E,5,N7,navigation,N7
+R07,East Open Office,EXIT_E,6,N6,navigation,N6
+R07,East Open Office,EXIT_E,7,N5,navigation,N5
+R07,East Open Office,EXIT_E,8,N4,navigation,N4
+R07,East Open Office,EXIT_E,9,N3,navigation,N3
+R07,East Open Office,EXIT_E,10,N2,navigation,N2
+R07,East Open Office,EXIT_E,11,EXIT_E,exit,N1
+R08,Training Room,EXIT_A,0,START_R08,room_start,B11
+R08,Training Room,EXIT_A,1,C11,navigation,C11
+R08,Training Room,EXIT_A,2,C10,navigation,C10
+R08,Training Room,EXIT_A,3,DOOR_04,door,D10
+R08,Training Room,EXIT_A,4,E10,navigation,E10
+R08,Training Room,EXIT_A,5,E11,navigation,E11
+R08,Training Room,EXIT_A,6,E12,navigation,E12
+R08,Training Room,EXIT_A,7,EXIT_A,exit,E13
+R09,Conference Room A,EXIT_A,0,START_R09,room_start,H12
+R09,Conference Room A,EXIT_A,1,G12,navigation,G12
+R09,Conference Room A,EXIT_A,2,G11,navigation,G11
+R09,Conference Room A,EXIT_A,3,DOOR_11,door,G10.5
+R09,Conference Room A,EXIT_A,4,G10,navigation,G10
+R09,Conference Room A,EXIT_A,5,F10,navigation,F10
+R09,Conference Room A,EXIT_A,6,E10,navigation,E10
+R09,Conference Room A,EXIT_A,7,E11,navigation,E11
+R09,Conference Room A,EXIT_A,8,E12,navigation,E12
+R09,Conference Room A,EXIT_A,9,EXIT_A,exit,E13
+R10,Human Resources,EXIT_B,0,START_R10,room_start,K12
+R10,Human Resources,EXIT_B,1,K11,navigation,K11
+R10,Human Resources,EXIT_B,2,DOOR_12,door,K10.5
+R10,Human Resources,EXIT_B,3,K10,navigation,K10
+R10,Human Resources,EXIT_B,4,L10,navigation,L10
+R10,Human Resources,EXIT_B,5,M10,navigation,M10
+R10,Human Resources,EXIT_B,6,N10,navigation,N10
+R10,Human Resources,EXIT_B,7,DOOR_10,door,O10
+R10,Human Resources,EXIT_B,8,P10,navigation,P10
+R10,Human Resources,EXIT_B,9,Q10,navigation,Q10
+R10,Human Resources,EXIT_B,10,START_R12,room_start,Q11
+R10,Human Resources,EXIT_B,11,Q12,navigation,Q12
+R10,Human Resources,EXIT_B,12,EXIT_B,exit,Q13
+R11,Finance / Administration,EXIT_B,0,START_R11,room_start,N12
+R11,Finance / Administration,EXIT_B,1,M12,navigation,M12
+R11,Finance / Administration,EXIT_B,2,M11,navigation,M11
+R11,Finance / Administration,EXIT_B,3,DOOR_13,door,M10.5
+R11,Finance / Administration,EXIT_B,4,M10,navigation,M10
+R11,Finance / Administration,EXIT_B,5,N10,navigation,N10
+R11,Finance / Administration,EXIT_B,6,DOOR_10,door,O10
+R11,Finance / Administration,EXIT_B,7,P10,navigation,P10
+R11,Finance / Administration,EXIT_B,8,Q10,navigation,Q10
+R11,Finance / Administration,EXIT_B,9,START_R12,room_start,Q11
+R11,Finance / Administration,EXIT_B,10,Q12,navigation,Q12
+R11,Finance / Administration,EXIT_B,11,EXIT_B,exit,Q13
+R12,Break Room,EXIT_B,0,START_R12,room_start,Q11
+R12,Break Room,EXIT_B,1,Q12,navigation,Q12
+R12,Break Room,EXIT_B,2,EXIT_B,exit,Q13

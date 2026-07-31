@@ -1,0 +1,585 @@
+node_id,node_type,grid_position,description,space_type,space_id,space_name,room_id,room_name
+EXIT_C,exit,E1,exterior evacuation exit,exit,,Exit C,,Exit C
+EXIT_D,exit,P1,exterior evacuation exit,exit,,Exit D,,Exit D
+EXIT_E,exit,Y1,exterior evacuation exit,exit,,Exit E,,Exit E
+A2,navigation,A2,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+B2,navigation,B2,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+C2,navigation,C2,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+E2,navigation,E2,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+G2,navigation,G2,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+H2,navigation,H2,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+I2,navigation,I2,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+K2,navigation,K2,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+L2,navigation,L2,hallway grid point,hallway,H18,Hallway 18,,
+M2,navigation,M2,hallway grid point,hallway,H18,Hallway 18,,
+N2,navigation,N2,hallway grid point,hallway,H18,Hallway 18,,
+O2,navigation,O2,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+P2,navigation,P2,hallway grid point,hallway,H18,Hallway 18,,
+Q2,navigation,Q2,hallway grid point,hallway,H18,Hallway 18,,
+S2,navigation,S2,hallway grid point,hallway,H18,Hallway 18,,
+T2,navigation,T2,hallway grid point,hallway,H18,Hallway 18,,
+V2,navigation,V2,walkable room grid point,room,R03,Registrar & Student Records,R03,Registrar & Student Records
+W2,navigation,W2,walkable room grid point,room,R03,Registrar & Student Records,R03,Registrar & Student Records
+Y2,navigation,Y2,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AA2,navigation,AA2,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AB2,navigation,AB2,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AC2,navigation,AC2,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AD2,navigation,AD2,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AF2,navigation,AF2,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+A3,navigation,A3,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+START_R01,room_start,B3,pink room center,room_start,R01,Reception & Main Office,R01,Reception & Main Office
+C3,navigation,C3,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+DOOR_01,door,D3,doorway between Reception & Main Office and Attendance Office,door,,,,
+E3,navigation,E3,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+DOOR_03,door,F3,doorway transition point,door,R02,,R02,Attendance Office
+G3,navigation,G3,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+START_R02,room_start,H3,pink room center,room_start,R02,Attendance Office,R02,Attendance Office
+I3,navigation,I3,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+K3,navigation,K3,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+L3,navigation,L3,hallway grid point,hallway,H18,Hallway 18,,
+M3,navigation,M3,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+N3,navigation,N3,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+O3,navigation,O3,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+P3,navigation,P3,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+Q3,navigation,Q3,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+S3,navigation,S3,hallway grid point,hallway,H18,Hallway 18,,
+T3,navigation,T3,hallway grid point,hallway,H18,Hallway 18,,
+V3,navigation,V3,walkable room grid point,room,R03,Registrar & Student Records,R03,Registrar & Student Records
+START_R03,room_start,W3,pink room center,room_start,R03,Registrar & Student Records,R03,Registrar & Student Records
+DOOR_02,door,X3,doorway between Registrar & Student Records and Meeting Room B,door,,,,
+Y3,navigation,Y3,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_04,door,Z3,doorway between Meeting Room B and West Administrative Office,door,,,,
+AA3,navigation,AA3,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AB3,navigation,AB3,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+START_R04,room_start,AC3,pink room center,room_start,R04,West Administrative Office,R04,West Administrative Office
+AD3,navigation,AD3,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AF3,navigation,AF3,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+A4,navigation,A4,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+B4,navigation,B4,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+C4,navigation,C4,walkable room grid point,room,R01,Reception & Main Office,R01,Reception & Main Office
+E4,navigation,E4,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+G4,navigation,G4,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+H4,navigation,H4,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+I4,navigation,I4,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+K4,navigation,K4,walkable room grid point,room,R02,Attendance Office,R02,Attendance Office
+L4,navigation,L4,hallway grid point,hallway,H18,Hallway 18,,
+M4,navigation,M4,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+N4,navigation,N4,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+O4,navigation,O4,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+P4,navigation,P4,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+Q4,navigation,Q4,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+S4,navigation,S4,hallway grid point,hallway,H18,Hallway 18,,
+T4,navigation,T4,hallway grid point,hallway,H18,Hallway 18,,
+V4,navigation,V4,walkable room grid point,room,R03,Registrar & Student Records,R03,Registrar & Student Records
+W4,navigation,W4,walkable room grid point,room,R03,Registrar & Student Records,R03,Registrar & Student Records
+Y4,navigation,Y4,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AA4,navigation,AA4,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AB4,navigation,AB4,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AC4,navigation,AC4,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AD4,navigation,AD4,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+AF4,navigation,AF4,walkable room grid point,room,R04,West Administrative Office,R04,West Administrative Office
+E5,navigation,E5,hallway grid point,hallway,H18,Hallway 18,,
+DOOR_05,door,H5,doorway between Attendance Office and Counseling Office,door,,,,
+K5,navigation,K5,hallway grid point,hallway,H18,Hallway 18,,
+L5,navigation,L5,hallway grid point,hallway,H18,Hallway 18,,
+M5,navigation,M5,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+N5,navigation,N5,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+START_R05,room_start,O5,pink room center,room_start,R05,Media Center / Library,R05,Media Center / Library
+P5,navigation,P5,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+Q5,navigation,Q5,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+S5,navigation,S5,hallway grid point,hallway,H18,Hallway 18,,
+T5,navigation,T5,hallway grid point,hallway,H18,Hallway 18,,
+DOOR_07,door,W5,doorway between Registrar & Student Records and Curriculum Office,door,,,,
+Y5,navigation,Y5,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_06,door,AB5,doorway between West Administrative Office and Student Services Office,door,,,,
+A6,navigation,A6,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+B6,navigation,B6,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+C6,navigation,C6,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+E6,navigation,E6,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+G6,navigation,G6,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+H6,navigation,H6,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+I6,navigation,I6,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+K6,navigation,K6,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+L6,navigation,L6,hallway grid point,hallway,H18,Hallway 18,,
+M6,navigation,M6,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+N6,navigation,N6,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+O6,navigation,O6,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+P6,navigation,P6,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+Q6,navigation,Q6,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+S6,navigation,S6,hallway grid point,hallway,H18,Hallway 18,,
+T6,navigation,T6,hallway grid point,hallway,H18,Hallway 18,,
+V6,navigation,V6,walkable room grid point,room,R08,Curriculum Office,R08,Curriculum Office
+W6,navigation,W6,walkable room grid point,room,R08,Curriculum Office,R08,Curriculum Office
+Y6,navigation,Y6,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AA6,navigation,AA6,walkable room grid point,room,R09,Student Services Office,R09,Student Services Office
+AB6,navigation,AB6,walkable room grid point,room,R09,Student Services Office,R09,Student Services Office
+AD6,navigation,AD6,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+AE6,navigation,AE6,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+AF6,navigation,AF6,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+A7,navigation,A7,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+START_R06,room_start,B7,pink room center,room_start,R06,School Nurse Office,R06,School Nurse Office
+C7,navigation,C7,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+DOOR_12,door,D7,doorway between School Nurse Office and Counseling Office,door,,,,
+E7,navigation,E7,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+DOOR_09,door,F7,doorway transition point,door,R07,,R07,Counseling Office
+G7,navigation,G7,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+START_R07,room_start,H7,pink room center,room_start,R07,Counseling Office,R07,Counseling Office
+I7,navigation,I7,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+K7,navigation,K7,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+L7,navigation,L7,hallway grid point,hallway,H18,Hallway 18,,
+M7,navigation,M7,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+N7,navigation,N7,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+O7,navigation,O7,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+P7,navigation,P7,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+Q7,navigation,Q7,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+S7,navigation,S7,hallway grid point,hallway,H18,Hallway 18,,
+T7,navigation,T7,hallway grid point,hallway,H18,Hallway 18,,
+V7,navigation,V7,walkable room grid point,room,R08,Curriculum Office,R08,Curriculum Office
+START_R08,room_start,W7,pink room center,room_start,R08,Curriculum Office,R08,Curriculum Office
+DOOR_11,door,X7,doorway between Curriculum Office and Meeting Room B,door,,,,
+Y7,navigation,Y7,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_08,door,Z7,doorway between Meeting Room B and Student Services Office,door,,,,
+AA7,navigation,AA7,walkable room grid point,room,R09,Student Services Office,R09,Student Services Office
+START_R09,room_start,AB7,pink room center,room_start,R09,Student Services Office,R09,Student Services Office
+DOOR_10,door,AC7,doorway between Student Services Office and Special Education Office,door,,,,
+AD7,navigation,AD7,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+START_R10,room_start,AE7,pink room center,room_start,R10,Special Education Office,R10,Special Education Office
+AF7,navigation,AF7,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+A8,navigation,A8,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+B8,navigation,B8,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+C8,navigation,C8,walkable room grid point,room,R06,School Nurse Office,R06,School Nurse Office
+E8,navigation,E8,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+G8,navigation,G8,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+H8,navigation,H8,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+I8,navigation,I8,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+K8,navigation,K8,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+L8,navigation,L8,hallway grid point,hallway,H18,Hallway 18,,
+M8,navigation,M8,hallway grid point,hallway,H18,Hallway 18,,
+N8,navigation,N8,hallway grid point,hallway,H18,Hallway 18,,
+O8,navigation,O8,walkable room grid point,room,R05,Media Center / Library,R05,Media Center / Library
+P8,navigation,P8,hallway grid point,hallway,H18,Hallway 18,,
+Q8,navigation,Q8,hallway grid point,hallway,H18,Hallway 18,,
+S8,navigation,S8,hallway grid point,hallway,H18,Hallway 18,,
+T8,navigation,T8,hallway grid point,hallway,H18,Hallway 18,,
+V8,navigation,V8,walkable room grid point,room,R08,Curriculum Office,R08,Curriculum Office
+W8,navigation,W8,walkable room grid point,room,R08,Curriculum Office,R08,Curriculum Office
+Y8,navigation,Y8,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AA8,navigation,AA8,walkable room grid point,room,R09,Student Services Office,R09,Student Services Office
+AB8,navigation,AB8,walkable room grid point,room,R09,Student Services Office,R09,Student Services Office
+AD8,navigation,AD8,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+AE8,navigation,AE8,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+AF8,navigation,AF8,walkable room grid point,room,R10,Special Education Office,R10,Special Education Office
+DOOR_14,door,B9,doorway transition point,door,R06,,R06,School Nurse Office
+E9,navigation,E9,hallway grid point,hallway,H18,Hallway 18,,
+Y9,navigation,Y9,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_13,door,AE9,doorway between Special Education Office and Meeting Room B,door,,,,
+A10,navigation,A10,hallway grid point,hallway,H18,Hallway 18,,
+B10,navigation,B10,hallway grid point,hallway,H18,Hallway 18,,
+C10,navigation,C10,hallway grid point,hallway,H18,Hallway 18,,
+D10,navigation,D10,hallway grid point,hallway,H18,Hallway 18,,
+E10,navigation,E10,hallway grid point,hallway,H18,Hallway 18,,
+F10,navigation,F10,hallway grid point,hallway,H18,Hallway 18,,
+G10,navigation,G10,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+H10,navigation,H10,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+I10,navigation,I10,walkable room grid point,room,R07,Counseling Office,R07,Counseling Office
+J10,navigation,J10,hallway grid point,hallway,H18,Hallway 18,,
+K10,navigation,K10,hallway grid point,hallway,H18,Hallway 18,,
+M10,navigation,M10,hallway grid point,hallway,H18,Hallway 18,,
+DOOR_16,door,N10,doorway between Hallway 18 and Hallway 18,door,,,,
+N10,navigation,N10,hallway grid point,hallway,H18,Hallway 18,,
+O10,navigation,O10,hallway grid point,hallway,H18,Hallway 18,,
+DOOR_15,door,P10,doorway transition point,door,R24,,R24,Meeting Room B
+Q10,navigation,Q10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+R10,navigation,R10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+S10,navigation,S10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+T10,navigation,T10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+U10,navigation,U10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+V10,navigation,V10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+W10,navigation,W10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+X10,navigation,X10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Y10,navigation,Y10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Z10,navigation,Z10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AA10,navigation,AA10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AB10,navigation,AB10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AC10,navigation,AC10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AD10,navigation,AD10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AE10,navigation,AE10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AF10,navigation,AF10,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_18,door,B10.5,doorway transition point,door,R11,,R11,Testing & Assessment Office
+DOOR_19,door,E10.5,doorway transition point,door,R12,,R12,Academic Advising Office
+DOOR_17,door,H10.5,doorway between Counseling Office and Records Support Office,door,,,,
+DOOR_20,door,K10.5,doorway transition point,door,R14,,R14,Human Resources Office
+DOOR_25,door,S10.5,doorway between Meeting Room B and Finance Office,door,,,,
+DOOR_23,door,V10.5,doorway between Meeting Room B and Payroll Office,door,,,,
+DOOR_22,door,Y10.5,doorway between Meeting Room B and Operations Office,door,,,,
+DOOR_21,door,AB10.5,doorway between Meeting Room B and Facilities Office,door,,,,
+DOOR_24,door,AE10.5,doorway between Meeting Room B and Principal's Office,door,,,,
+N11,navigation,N11,hallway grid point,hallway,H18,Hallway 18,,
+O11,navigation,O11,hallway grid point,hallway,H18,Hallway 18,,
+Q11,navigation,Q11,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+A12,navigation,A12,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+B12,navigation,B12,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+C12,navigation,C12,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+D12,navigation,D12,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+E12,navigation,E12,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+F12,navigation,F12,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+G12,navigation,G12,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+H12,navigation,H12,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+I12,navigation,I12,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+J12,navigation,J12,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+K12,navigation,K12,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+L12,navigation,L12,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+R12,navigation,R12,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+S12,navigation,S12,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+T12,navigation,T12,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+U12,navigation,U12,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+V12,navigation,V12,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+W12,navigation,W12,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+X12,navigation,X12,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+Y12,navigation,Y12,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+Z12,navigation,Z12,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+AA12,navigation,AA12,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+AB12,navigation,AB12,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+AC12,navigation,AC12,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+AD12,navigation,AD12,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+AE12,navigation,AE12,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+AF12,navigation,AF12,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+A13,navigation,A13,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+START_R11,room_start,B13,pink room center,room_start,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+C13,navigation,C13,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+D13,navigation,D13,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+START_R12,room_start,E13,pink room center,room_start,R12,Academic Advising Office,R12,Academic Advising Office
+F13,navigation,F13,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+G13,navigation,G13,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+START_R13,room_start,H13,pink room center,room_start,R13,Records Support Office,R13,Records Support Office
+I13,navigation,I13,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+J13,navigation,J13,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+START_R14,room_start,K13,pink room center,room_start,R14,Human Resources Office,R14,Human Resources Office
+L13,navigation,L13,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+N13,navigation,N13,hallway grid point,hallway,H18,Hallway 18,,
+O13,navigation,O13,hallway grid point,hallway,H18,Hallway 18,,
+Q13,navigation,Q13,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+R13,navigation,R13,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+START_R15,room_start,S13,pink room center,room_start,R15,Finance Office,R15,Finance Office
+T13,navigation,T13,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+U13,navigation,U13,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+START_R16,room_start,V13,pink room center,room_start,R16,Payroll Office,R16,Payroll Office
+W13,navigation,W13,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+X13,navigation,X13,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+START_R17,room_start,Y13,pink room center,room_start,R17,Operations Office,R17,Operations Office
+Z13,navigation,Z13,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+AA13,navigation,AA13,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+START_R18,room_start,AB13,pink room center,room_start,R18,Facilities Office,R18,Facilities Office
+AC13,navigation,AC13,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+AD13,navigation,AD13,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+START_R19,room_start,AE13,pink room center,room_start,R19,Principal's Office,R19,Principal's Office
+AF13,navigation,AF13,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+A14,navigation,A14,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+B14,navigation,B14,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+C14,navigation,C14,walkable room grid point,room,R11,Testing & Assessment Office,R11,Testing & Assessment Office
+D14,navigation,D14,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+E14,navigation,E14,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+F14,navigation,F14,walkable room grid point,room,R12,Academic Advising Office,R12,Academic Advising Office
+G14,navigation,G14,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+H14,navigation,H14,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+I14,navigation,I14,walkable room grid point,room,R13,Records Support Office,R13,Records Support Office
+J14,navigation,J14,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+K14,navigation,K14,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+L14,navigation,L14,walkable room grid point,room,R14,Human Resources Office,R14,Human Resources Office
+R14,navigation,R14,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+S14,navigation,S14,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+T14,navigation,T14,walkable room grid point,room,R15,Finance Office,R15,Finance Office
+U14,navigation,U14,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+V14,navigation,V14,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+W14,navigation,W14,walkable room grid point,room,R16,Payroll Office,R16,Payroll Office
+X14,navigation,X14,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+Y14,navigation,Y14,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+Z14,navigation,Z14,walkable room grid point,room,R17,Operations Office,R17,Operations Office
+AA14,navigation,AA14,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+AB14,navigation,AB14,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+AC14,navigation,AC14,walkable room grid point,room,R18,Facilities Office,R18,Facilities Office
+AD14,navigation,AD14,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+AE14,navigation,AE14,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+AF14,navigation,AF14,walkable room grid point,room,R19,Principal's Office,R19,Principal's Office
+N15,navigation,N15,hallway grid point,hallway,H18,Hallway 18,,
+O15,navigation,O15,hallway grid point,hallway,H18,Hallway 18,,
+Q15,navigation,Q15,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+EXIT_G,exit,A16,exterior evacuation exit,exit,,Exit G,,Exit G
+A16,navigation,A16,hallway grid point,hallway,H18,Hallway 18,,
+B16,navigation,B16,hallway grid point,hallway,H18,Hallway 18,,
+C16,navigation,C16,hallway grid point,hallway,H18,Hallway 18,,
+D16,navigation,D16,hallway grid point,hallway,H18,Hallway 18,,
+E16,navigation,E16,hallway grid point,hallway,H18,Hallway 18,,
+F16,navigation,F16,hallway grid point,hallway,H18,Hallway 18,,
+G16,navigation,G16,hallway grid point,hallway,H18,Hallway 18,,
+H16,navigation,H16,hallway grid point,hallway,H18,Hallway 18,,
+I16,navigation,I16,hallway grid point,hallway,H18,Hallway 18,,
+J16,navigation,J16,hallway grid point,hallway,H18,Hallway 18,,
+K16,navigation,K16,hallway grid point,hallway,H18,Hallway 18,,
+M16,navigation,M16,hallway grid point,hallway,H18,Hallway 18,,
+DOOR_26,door,N16,doorway transition point,door,R22,,R22,Conference Room B
+N16,navigation,N16,hallway grid point,hallway,H18,Hallway 18,,
+O16,navigation,O16,hallway grid point,hallway,H18,Hallway 18,,
+DOOR_27,door,P16,doorway transition point,door,R24,,R24,Meeting Room B
+Q16,navigation,Q16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+R16,navigation,R16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+S16,navigation,S16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+T16,navigation,T16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+U16,navigation,U16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+V16,navigation,V16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+W16,navigation,W16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+X16,navigation,X16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Y16,navigation,Y16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Z16,navigation,Z16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AA16,navigation,AA16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AB16,navigation,AB16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AC16,navigation,AC16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AD16,navigation,AD16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AE16,navigation,AE16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AF16,navigation,AF16,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+EXIT_H,exit,AG16,exterior evacuation exit,exit,,Exit H,,Exit H
+DOOR_31,door,D17,doorway transition point,door,R20,,R20,Assistant Principal's Office
+DOOR_29,door,H17,doorway transition point,door,R21,,R21,Conference Room A
+K17,navigation,K17,hallway grid point,hallway,H04,Hallway 04,,
+U17,navigation,U17,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_30,door,X17,doorway transition point,door,R24,,R24,Meeting Room B
+DOOR_28,door,AD17,doorway between Meeting Room B and Faculty Training Room,door,,,,
+A18,navigation,A18,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+B18,navigation,B18,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+C18,navigation,C18,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+D18,navigation,D18,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+E18,navigation,E18,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+G18,navigation,G18,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+H18,navigation,H18,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+I18,navigation,I18,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+K18,navigation,K18,hallway grid point,hallway,H04,Hallway 04,,
+M18,navigation,M18,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+N18,navigation,N18,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+O18,navigation,O18,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+P18,navigation,P18,hallway grid point,hallway,H01,Hallway 01,,
+Q18,navigation,Q18,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+R18,navigation,R18,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+S18,navigation,S18,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+U18,navigation,U18,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+W18,navigation,W18,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+X18,navigation,X18,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Y18,navigation,Y18,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AB18,navigation,AB18,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AC18,navigation,AC18,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AD18,navigation,AD18,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AE18,navigation,AE18,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AF18,navigation,AF18,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+K18.5,navigation,K18.5,hallway grid point,hallway,H04,Hallway 04,,
+DOOR_32,door,L18.5,doorway transition point,door,R22,,R22,Conference Room B
+M18.5,navigation,M18.5,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+N18.5,navigation,N18.5,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+START_R22,room_start,N18.5,pink room center,room_start,R22,Conference Room B,R22,Conference Room B
+O18.5,navigation,O18.5,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+P18.5,navigation,P18.5,hallway grid point,hallway,H01,Hallway 01,,
+DOOR_33,door,Q18.5,doorway transition point,door,R22,,R22,Conference Room B
+DOOR_35,door,Q18.5,doorway transition point,door,R23,,R23,Meeting Room A
+Q18.5,navigation,Q18.5,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+R18.5,navigation,R18.5,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+START_R23,room_start,R18.5,pink room center,room_start,R23,Meeting Room A,R23,Meeting Room A
+S18.5,navigation,S18.5,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+DOOR_34,door,T18.5,doorway between Meeting Room A and Meeting Room B,door,,,,
+U18.5,navigation,U18.5,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+A19,navigation,A19,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+B19,navigation,B19,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+START_R20,room_start,C19,pink room center,room_start,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+D19,navigation,D19,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+E19,navigation,E19,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+G19,navigation,G19,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+START_R21,room_start,H19,pink room center,room_start,R21,Conference Room A,R21,Conference Room A
+I19,navigation,I19,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+K19,navigation,K19,hallway grid point,hallway,H04,Hallway 04,,
+M19,navigation,M19,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+N19,navigation,N19,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+O19,navigation,O19,walkable room grid point,room,R22,Conference Room B,R22,Conference Room B
+P19,navigation,P19,hallway grid point,hallway,H02,Hallway 02,,
+Q19,navigation,Q19,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+R19,navigation,R19,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+S19,navigation,S19,walkable room grid point,room,R23,Meeting Room A,R23,Meeting Room A
+U19,navigation,U19,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+W19,navigation,W19,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+START_R24,room_start,X19,pink room center,room_start,R24,Meeting Room B,R24,Meeting Room B
+Y19,navigation,Y19,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AB19,navigation,AB19,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AC19,navigation,AC19,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+START_R25,room_start,AD19,pink room center,room_start,R25,Faculty Training Room,R25,Faculty Training Room
+AE19,navigation,AE19,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AF19,navigation,AF19,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+A20,navigation,A20,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+B20,navigation,B20,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+C20,navigation,C20,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+D20,navigation,D20,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+E20,navigation,E20,walkable room grid point,room,R20,Assistant Principal's Office,R20,Assistant Principal's Office
+G20,navigation,G20,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+H20,navigation,H20,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+I20,navigation,I20,walkable room grid point,room,R21,Conference Room A,R21,Conference Room A
+K20,navigation,K20,hallway grid point,hallway,H04,Hallway 04,,
+M20,navigation,M20,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+N20,navigation,N20,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+O20,navigation,O20,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+P20,navigation,P20,hallway grid point,hallway,H03,Hallway 03,,
+Q20,navigation,Q20,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+R20,navigation,R20,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+S20,navigation,S20,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+U20,navigation,U20,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+W20,navigation,W20,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+X20,navigation,X20,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Y20,navigation,Y20,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AB20,navigation,AB20,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AC20,navigation,AC20,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AD20,navigation,AD20,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AE20,navigation,AE20,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+AF20,navigation,AF20,walkable room grid point,room,R25,Faculty Training Room,R25,Faculty Training Room
+DOOR_37,door,C21,doorway transition point,door,R20,,R20,Assistant Principal's Office
+DOOR_38,door,H21,doorway transition point,door,R21,,R21,Conference Room A
+K21,navigation,K21,hallway grid point,hallway,H04,Hallway 04,,
+DOOR_40,door,L21,doorway transition point,door,R26,,R26,Staff Break Room
+M21,navigation,M21,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+START_R26,room_start,N21,pink room center,room_start,R26,Staff Break Room,R26,Staff Break Room
+O21,navigation,O21,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+P21,navigation,P21,hallway grid point,hallway,H13,Hallway 13,,
+DOOR_41,door,Q21,doorway transition point,door,R27,,R27,IT / Server Room
+DOOR_43,door,Q21,doorway transition point,door,R26,,R26,Staff Break Room
+Q21,navigation,Q21,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+START_R27,room_start,R21,pink room center,room_start,R27,IT / Server Room,R27,IT / Server Room
+S21,navigation,S21,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+DOOR_42,door,T21,doorway between IT / Server Room and Meeting Room B,door,,,,
+U21,navigation,U21,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_39,door,X21,doorway transition point,door,R24,,R24,Meeting Room B
+DOOR_36,door,AD21,doorway between Faculty Training Room and Meeting Room B,door,,,,
+A22,navigation,A22,hallway grid point,hallway,H04,Hallway 04,,
+B22,navigation,B22,hallway grid point,hallway,H04,Hallway 04,,
+C22,navigation,C22,hallway grid point,hallway,H04,Hallway 04,,
+D22,navigation,D22,hallway grid point,hallway,H04,Hallway 04,,
+E22,navigation,E22,hallway grid point,hallway,H04,Hallway 04,,
+F22,navigation,F22,hallway grid point,hallway,H04,Hallway 04,,
+G22,navigation,G22,hallway grid point,hallway,H04,Hallway 04,,
+H22,navigation,H22,hallway grid point,hallway,H04,Hallway 04,,
+I22,navigation,I22,hallway grid point,hallway,H04,Hallway 04,,
+J22,navigation,J22,hallway grid point,hallway,H04,Hallway 04,,
+K22,navigation,K22,hallway grid point,hallway,H04,Hallway 04,,
+M22,navigation,M22,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+N22,navigation,N22,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+O22,navigation,O22,walkable room grid point,room,R26,Staff Break Room,R26,Staff Break Room
+P22,navigation,P22,hallway grid point,hallway,H13,Hallway 13,,
+Q22,navigation,Q22,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+R22,navigation,R22,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+S22,navigation,S22,walkable room grid point,room,R27,IT / Server Room,R27,IT / Server Room
+U22,navigation,U22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+V22,navigation,V22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+W22,navigation,W22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+X22,navigation,X22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Y22,navigation,Y22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+Z22,navigation,Z22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AA22,navigation,AA22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AB22,navigation,AB22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AD22,navigation,AD22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AE22,navigation,AE22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+AF22,navigation,AF22,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_44,door,C23,doorway transition point,door,R28,,R28,Copy & Supply Room
+E23,navigation,E23,hallway grid point,hallway,H14,Hallway 14,,
+DOOR_45,door,H23,doorway transition point,door,R29,,R29,Faculty Workroom
+K23,navigation,K23,hallway grid point,hallway,H04,Hallway 04,,
+L23,navigation,L23,hallway grid point,hallway,H10,Hallway 10,,
+DOOR_48,door,M23,doorway transition point,door,R30,,R30,School Security Office
+M23,navigation,M23,hallway grid point,hallway,H07,Hallway 07,,
+N23,navigation,N23,hallway grid point,hallway,H08,Hallway 08,,
+O23,navigation,O23,hallway grid point,hallway,H12,Hallway 12,,
+P23,navigation,P23,hallway grid point,hallway,H13,Hallway 13,,
+Q23,navigation,Q23,hallway grid point,hallway,H09,Hallway 09,,
+R23,navigation,R23,hallway grid point,hallway,H06,Hallway 06,,
+DOOR_46,door,S23,doorway transition point,door,R31,,R31,Maintenance & Storage
+S23,navigation,S23,hallway grid point,hallway,H05,Hallway 05,,
+T23,navigation,T23,hallway grid point,hallway,H11,Hallway 11,,
+U23,navigation,U23,walkable room grid point,room,R24,Meeting Room B,R24,Meeting Room B
+DOOR_49,door,X23,doorway between Meeting Room B and East Support Office,door,,,,
+AA23,navigation,AA23,hallway grid point,hallway,H15,Hallway 15,,
+DOOR_47,door,AD23,doorway between Meeting Room B and Administrative Support Office,door,,,,
+A24,navigation,A24,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+B24,navigation,B24,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+C24,navigation,C24,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+D24,navigation,D24,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+E24,navigation,E24,hallway grid point,hallway,H14,Hallway 14,,
+G24,navigation,G24,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+H24,navigation,H24,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+I24,navigation,I24,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+K24,navigation,K24,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+L24,navigation,L24,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+M24,navigation,M24,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+N24,navigation,N24,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+P24,navigation,P24,hallway grid point,hallway,H13,Hallway 13,,
+R24,navigation,R24,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+S24,navigation,S24,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+T24,navigation,T24,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+V24,navigation,V24,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+W24,navigation,W24,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+X24,navigation,X24,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+Y24,navigation,Y24,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+AA24,navigation,AA24,hallway grid point,hallway,H15,Hallway 15,,
+AC24,navigation,AC24,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+AD24,navigation,AD24,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+AE24,navigation,AE24,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+AF24,navigation,AF24,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+A25,navigation,A25,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+B25,navigation,B25,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+START_R28,room_start,C25,pink room center,room_start,R28,Copy & Supply Room,R28,Copy & Supply Room
+D25,navigation,D25,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+DOOR_54,door,E25,doorway transition point,door,R28,,R28,Copy & Supply Room
+E25,navigation,E25,hallway grid point,hallway,H14,Hallway 14,,
+DOOR_50,door,F25,doorway transition point,door,R29,,R29,Faculty Workroom
+G25,navigation,G25,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+START_R29,room_start,H25,pink room center,room_start,R29,Faculty Workroom,R29,Faculty Workroom
+I25,navigation,I25,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+K25,navigation,K25,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+L25,navigation,L25,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+START_R30,room_start,M25,pink room center,room_start,R30,School Security Office,R30,School Security Office
+N25,navigation,N25,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+DOOR_52,door,O25,doorway transition point,door,R30,,R30,School Security Office
+P25,navigation,P25,hallway grid point,hallway,H13,Hallway 13,,
+DOOR_55,door,Q25,doorway transition point,door,R31,,R31,Maintenance & Storage
+R25,navigation,R25,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+START_R31,room_start,S25,pink room center,room_start,R31,Maintenance & Storage,R31,Maintenance & Storage
+T25,navigation,T25,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+V25,navigation,V25,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+W25,navigation,W25,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+START_R32,room_start,X25,pink room center,room_start,R32,East Support Office,R32,East Support Office
+Y25,navigation,Y25,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+DOOR_51,door,Z25,doorway transition point,door,R32,,R32,East Support Office
+AA25,navigation,AA25,hallway grid point,hallway,H15,Hallway 15,,
+DOOR_53,door,AB25,doorway transition point,door,R33,,R33,Administrative Support Office
+AC25,navigation,AC25,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+START_R33,room_start,AD25,pink room center,room_start,R33,Administrative Support Office,R33,Administrative Support Office
+AE25,navigation,AE25,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+AF25,navigation,AF25,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+A26,navigation,A26,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+B26,navigation,B26,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+C26,navigation,C26,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+D26,navigation,D26,walkable room grid point,room,R28,Copy & Supply Room,R28,Copy & Supply Room
+E26,navigation,E26,hallway grid point,hallway,H14,Hallway 14,,
+G26,navigation,G26,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+H26,navigation,H26,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+I26,navigation,I26,walkable room grid point,room,R29,Faculty Workroom,R29,Faculty Workroom
+K26,navigation,K26,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+L26,navigation,L26,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+M26,navigation,M26,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+N26,navigation,N26,walkable room grid point,room,R30,School Security Office,R30,School Security Office
+P26,navigation,P26,hallway grid point,hallway,H13,Hallway 13,,
+R26,navigation,R26,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+S26,navigation,S26,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+T26,navigation,T26,walkable room grid point,room,R31,Maintenance & Storage,R31,Maintenance & Storage
+V26,navigation,V26,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+W26,navigation,W26,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+X26,navigation,X26,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+Y26,navigation,Y26,walkable room grid point,room,R32,East Support Office,R32,East Support Office
+AA26,navigation,AA26,hallway grid point,hallway,H15,Hallway 15,,
+AC26,navigation,AC26,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+AD26,navigation,AD26,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+AE26,navigation,AE26,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+AF26,navigation,AF26,walkable room grid point,room,R33,Administrative Support Office,R33,Administrative Support Office
+EXIT_A,exit,C27,exterior evacuation exit,exit,,Exit A,,Exit A
+EXIT_F,exit,P27,exterior evacuation exit,exit,,Exit F,,Exit F
+EXIT_B,exit,AC27,exterior evacuation exit,exit,,Exit B,,Exit B

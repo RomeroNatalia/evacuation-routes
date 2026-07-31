@@ -1,0 +1,8 @@
+numpy>=1.26
+pandas>=2.0
+networkx>=3.0
+matplotlib>=3.7
+dwave-ocean-sdk>=9.0
+
+[dev]
+pytest>=8.0

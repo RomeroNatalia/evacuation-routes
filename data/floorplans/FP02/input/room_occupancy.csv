@@ -1,0 +1,34 @@
+room_id,room_name,capacity,occupancy
+R01,Reception & Main Office,30,18
+R02,Attendance Office,8,4
+R03,Registrar & Student Records,8,4
+R04,West Administrative Office,8,4
+R05,Media Center / Library,36,20
+R06,School Nurse Office,6,3
+R07,Counseling Office,8,4
+R08,Curriculum Office,8,4
+R09,Student Services Office,8,4
+R10,Special Education Office,8,4
+R11,Testing & Assessment Office,8,4
+R12,Academic Advising Office,8,4
+R13,Records Support Office,8,4
+R14,Human Resources Office,8,4
+R15,Finance Office,8,4
+R16,Payroll Office,8,4
+R17,Operations Office,8,4
+R18,Facilities Office,8,4
+R19,Principal's Office,6,3
+R20,Assistant Principal's Office,6,3
+R21,Conference Room A,20,10
+R22,Conference Room B,20,10
+R23,Meeting Room A,20,10
+R24,Meeting Room B,20,10
+R25,Faculty Training Room,20,10
+R26,Staff Break Room,12,6
+R27,IT / Server Room,4,1
+R28,Copy & Supply Room,6,2
+R29,Faculty Workroom,8,4
+R30,School Security Office,8,4
+R31,Maintenance & Storage,4,1
+R32,East Support Office,8,4
+R33,Administrative Support Office,8,4

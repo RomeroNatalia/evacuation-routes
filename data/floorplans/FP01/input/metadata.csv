@@ -1,0 +1,2 @@
+floorplan_id,floorplan_name,grid_unit,people_per_capacity_unit,image_file,notes
+FP01,Office,1.0,10,floorplan.png,Original dot-graph office floorplan. The reference image is the verified graph rendering because the original source image was not stored in the repository.

@@ -1,0 +1,77 @@
+OFFICE EVACUATION QUBO RESULT
+====================================
+Solver: neal.SimulatedAnnealingSampler (multiple seeds)
+Variables: 264
+Interactions: 13675
+Best valid energy: 0.585420
+Valid one-exit-per-room solution: True
+Valid sample rate: 100.00%
+Assignment penalty: 0.919309
+Normalized route objective: 0.587613
+Total evacuated people: 183
+Total evacuation distance: 693.250000
+Raw congestion objective: 867.601736
+Overload-only report objective: 137.933333
+Used physical edges: 273
+Overloaded physical edges: 36
+Maximum edge utilization: 280.00%
+
+ROOM ASSIGNMENTS
+------------------------------------
+R01 (18 people) -> EXIT_C | distance=5.000
+R02 (4 people) -> EXIT_C | distance=5.000
+R03 (4 people) -> EXIT_F | distance=41.500
+R04 (4 people) -> EXIT_E | distance=6.000
+R05 (20 people) -> EXIT_D | distance=5.000
+R06 (3 people) -> EXIT_C | distance=9.250
+R07 (4 people) -> EXIT_C | distance=9.000
+R08 (4 people) -> EXIT_G | distance=35.500
+R09 (4 people) -> EXIT_E | distance=9.000
+R10 (4 people) -> EXIT_D | distance=28.000
+R11 (4 people) -> EXIT_H | distance=39.500
+R12 (4 people) -> EXIT_A | distance=38.000
+R13 (4 people) -> EXIT_C | distance=15.000
+R14 (4 people) -> EXIT_G | distance=24.000
+R15 (4 people) -> EXIT_C | distance=26.000
+R16 (4 people) -> EXIT_C | distance=29.000
+R17 (4 people) -> EXIT_B | distance=40.000
+R18 (4 people) -> EXIT_G | distance=36.500
+R19 (3 people) -> EXIT_F | distance=41.000
+R20 (3 people) -> EXIT_A | distance=8.000
+R21 (10 people) -> EXIT_G | distance=11.000
+R22 (10 people) -> EXIT_D | distance=20.250
+R23 (10 people) -> EXIT_B | distance=19.500
+R24 (10 people) -> EXIT_B | distance=13.000
+R25 (10 people) -> EXIT_D | distance=33.500
+R26 (6 people) -> EXIT_F | distance=10.000
+R27 (1 people) -> EXIT_H | distance=20.000
+R28 (2 people) -> EXIT_E | distance=45.250
+R29 (4 people) -> EXIT_A | distance=8.000
+R30 (4 people) -> EXIT_F | distance=5.000
+R31 (1 people) -> EXIT_A | distance=24.000
+R32 (4 people) -> EXIT_A | distance=30.500
+R33 (4 people) -> EXIT_B | distance=3.000
+
+EXIT USAGE
+------------------------------------
+EXIT_A: 5 rooms, 16 people
+EXIT_B: 4 rooms, 28 people
+EXIT_C: 7 rooms, 41 people
+EXIT_D: 4 rooms, 44 people
+EXIT_E: 3 rooms, 10 people
+EXIT_F: 4 rooms, 17 people
+EXIT_G: 4 rooms, 22 people
+EXIT_H: 2 rooms, 5 people
+
+MOST UTILIZED EDGES
+------------------------------------
+E761:X22--DOOR_49: 28/10 people (280.00%)
+E763:X24--DOOR_49: 28/10 people (280.00%)
+E456:O10--DOOR_15: 27/10 people (270.00%)
+E512:Q10--DOOR_15: 27/10 people (270.00%)
+E046:AA25--DOOR_51: 24/10 people (240.00%)
+E047:AA25--DOOR_53: 24/10 people (240.00%)
+E091:AC25--DOOR_53: 24/10 people (240.00%)
+E780:Y25--DOOR_51: 24/10 people (240.00%)
+E223:DOOR_26--N18: 19/10 people (190.00%)
+E463:O16--DOOR_26: 19/10 people (190.00%)

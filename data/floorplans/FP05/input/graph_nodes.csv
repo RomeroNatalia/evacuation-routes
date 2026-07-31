@@ -1,0 +1,360 @@
+node_id,node_type,grid_position,description,space_type,space_id,space_name,room_id,room_name
+B2,navigation,B2,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+C2,navigation,C2,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+D2,navigation,D2,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+E2,navigation,E2,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+F2,navigation,F2,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+G2,navigation,G2,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+I2,navigation,I2,hallway grid point,hallway,H01,Hallway 01,,
+K2,navigation,K2,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+L2,navigation,L2,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+M2,navigation,M2,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+N2,navigation,N2,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+O2,navigation,O2,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+P2,navigation,P2,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+B3,navigation,B3,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+C3,navigation,C3,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+E3,navigation,E3,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+F3,navigation,F3,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+G3,navigation,G3,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+I3,navigation,I3,hallway grid point,hallway,H01,Hallway 01,,
+K3,navigation,K3,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+L3,navigation,L3,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+M3,navigation,M3,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+N3,navigation,N3,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+O3,navigation,O3,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+P3,navigation,P3,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+B4,navigation,B4,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+C4,navigation,C4,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+D4,navigation,D4,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+E4,navigation,E4,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+F4,navigation,F4,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+G4,navigation,G4,walkable room grid point,room,R02,Staff Room,R02,Staff Room
+I4,navigation,I4,hallway grid point,hallway,H01,Hallway 01,,
+K4,navigation,K4,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+L4,navigation,L4,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+M4,navigation,M4,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+N4,navigation,N4,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+O4,navigation,O4,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+P4,navigation,P4,walkable room grid point,room,R01,Doctor's Office,R01,Doctor's Office
+I5.5,navigation,I5.5,hallway grid point,hallway,H01,Hallway 01,,
+B6,navigation,B6,walkable room grid point,room,R08,Exam Room 6,R08,Exam Room 6
+C6,navigation,C6,walkable room grid point,room,R08,Exam Room 6,R08,Exam Room 6
+D6,navigation,D6,walkable room grid point,room,R04,Exam Room 2,R04,Exam Room 2
+E6,navigation,E6,walkable room grid point,room,R04,Exam Room 2,R04,Exam Room 2
+F6,navigation,F6,walkable room grid point,room,R05,Exam Room 3,R05,Exam Room 3
+G6,navigation,G6,walkable room grid point,room,R05,Exam Room 3,R05,Exam Room 3
+K6,navigation,K6,walkable room grid point,room,R06,Exam Room 4,R06,Exam Room 4
+L6,navigation,L6,walkable room grid point,room,R06,Exam Room 4,R06,Exam Room 4
+M6,navigation,M6,walkable room grid point,room,R07,Exam Room 5,R07,Exam Room 5
+N6,navigation,N6,walkable room grid point,room,R07,Exam Room 5,R07,Exam Room 5
+O6,navigation,O6,walkable room grid point,room,R03,Exam Room 1,R03,Exam Room 1
+P6,navigation,P6,walkable room grid point,room,R03,Exam Room 1,R03,Exam Room 1
+C7,navigation,C7,walkable room grid point,room,R08,Exam Room 6,R08,Exam Room 6
+E7,navigation,E7,walkable room grid point,room,R04,Exam Room 2,R04,Exam Room 2
+G7,navigation,G7,walkable room grid point,room,R05,Exam Room 3,R05,Exam Room 3
+I7,navigation,I7,hallway grid point,hallway,H01,Hallway 01,,
+K7,navigation,K7,walkable room grid point,room,R06,Exam Room 4,R06,Exam Room 4
+M7,navigation,M7,walkable room grid point,room,R07,Exam Room 5,R07,Exam Room 5
+O7,navigation,O7,walkable room grid point,room,R03,Exam Room 1,R03,Exam Room 1
+B8,navigation,B8,walkable room grid point,room,R08,Exam Room 6,R08,Exam Room 6
+C8,navigation,C8,walkable room grid point,room,R08,Exam Room 6,R08,Exam Room 6
+D8,navigation,D8,walkable room grid point,room,R04,Exam Room 2,R04,Exam Room 2
+E8,navigation,E8,walkable room grid point,room,R04,Exam Room 2,R04,Exam Room 2
+F8,navigation,F8,walkable room grid point,room,R05,Exam Room 3,R05,Exam Room 3
+G8,navigation,G8,walkable room grid point,room,R05,Exam Room 3,R05,Exam Room 3
+I8,navigation,I8,hallway grid point,hallway,H01,Hallway 01,,
+K8,navigation,K8,walkable room grid point,room,R06,Exam Room 4,R06,Exam Room 4
+L8,navigation,L8,walkable room grid point,room,R06,Exam Room 4,R06,Exam Room 4
+M8,navigation,M8,walkable room grid point,room,R07,Exam Room 5,R07,Exam Room 5
+N8,navigation,N8,walkable room grid point,room,R07,Exam Room 5,R07,Exam Room 5
+O8,navigation,O8,walkable room grid point,room,R03,Exam Room 1,R03,Exam Room 1
+P8,navigation,P8,walkable room grid point,room,R03,Exam Room 1,R03,Exam Room 1
+B10,navigation,B10,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+C10,navigation,C10,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+D10,navigation,D10,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+E10,navigation,E10,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+F10,navigation,F10,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+G10,navigation,G10,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+I10,navigation,I10,hallway grid point,hallway,H01,Hallway 01,,
+J10,navigation,J10,hallway grid point,hallway,H01,Hallway 01,,
+K10,navigation,K10,hallway grid point,hallway,H01,Hallway 01,,
+L10,navigation,L10,hallway grid point,hallway,H01,Hallway 01,,
+M10,navigation,M10,hallway grid point,hallway,H01,Hallway 01,,
+N10,navigation,N10,hallway grid point,hallway,H01,Hallway 01,,
+O10,navigation,O10,hallway grid point,hallway,H01,Hallway 01,,
+P10,navigation,P10,hallway grid point,hallway,H01,Hallway 01,,
+B11,navigation,B11,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+C11,navigation,C11,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+E11,navigation,E11,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+F11,navigation,F11,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+G11,navigation,G11,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+I11,navigation,I11,hallway grid point,hallway,H01,Hallway 01,,
+J11,navigation,J11,hallway grid point,hallway,H01,Hallway 01,,
+L11,navigation,L11,walkable room grid point,room,R10,Bathroom A,R10,Bathroom A
+M11,navigation,M11,walkable room grid point,room,R10,Bathroom A,R10,Bathroom A
+N11,navigation,N11,walkable room grid point,room,R11,Bathroom B,R11,Bathroom B
+O11,navigation,O11,walkable room grid point,room,R11,Bathroom B,R11,Bathroom B
+P11,navigation,P11,hallway grid point,hallway,H01,Hallway 01,,
+B12,navigation,B12,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+C12,navigation,C12,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+D12,navigation,D12,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+E12,navigation,E12,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+F12,navigation,F12,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+G12,navigation,G12,walkable room grid point,room,R09,Lab Room 1,R09,Lab Room 1
+I12,navigation,I12,hallway grid point,hallway,H01,Hallway 01,,
+J12,navigation,J12,hallway grid point,hallway,H01,Hallway 01,,
+L12,navigation,L12,walkable room grid point,room,R10,Bathroom A,R10,Bathroom A
+P12,navigation,P12,hallway grid point,hallway,H01,Hallway 01,,
+B14,navigation,B14,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+C14,navigation,C14,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+D14,navigation,D14,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+E14,navigation,E14,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+F14,navigation,F14,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+G14,navigation,G14,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+I14,navigation,I14,hallway grid point,hallway,H01,Hallway 01,,
+K14,navigation,K14,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+L14,navigation,L14,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+M14,navigation,M14,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+N14,navigation,N14,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+O14,navigation,O14,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+P14,navigation,P14,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+B15,navigation,B15,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+C15,navigation,C15,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+E15,navigation,E15,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+F15,navigation,F15,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+G15,navigation,G15,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+I15,navigation,I15,hallway grid point,hallway,H01,Hallway 01,,
+K15,navigation,K15,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+L15,navigation,L15,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+N15,navigation,N15,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+O15,navigation,O15,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+P15,navigation,P15,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+B16,navigation,B16,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+C16,navigation,C16,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+D16,navigation,D16,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+E16,navigation,E16,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+F16,navigation,F16,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+G16,navigation,G16,walkable room grid point,room,R12,Nurse Room,R12,Nurse Room
+I16,navigation,I16,hallway grid point,hallway,H01,Hallway 01,,
+K16,navigation,K16,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+L16,navigation,L16,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+M16,navigation,M16,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+N16,navigation,N16,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+O16,navigation,O16,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+P16,navigation,P16,walkable room grid point,room,R13,Lab Room 2,R13,Lab Room 2
+B18,navigation,B18,hallway grid point,hallway,H01,Hallway 01,,
+C18,navigation,C18,hallway grid point,hallway,H01,Hallway 01,,
+D18,navigation,D18,hallway grid point,hallway,H01,Hallway 01,,
+E18,navigation,E18,hallway grid point,hallway,H01,Hallway 01,,
+F18,navigation,F18,hallway grid point,hallway,H01,Hallway 01,,
+G18,navigation,G18,hallway grid point,hallway,H01,Hallway 01,,
+H18,navigation,H18,hallway grid point,hallway,H01,Hallway 01,,
+I18,navigation,I18,hallway grid point,hallway,H01,Hallway 01,,
+J18,navigation,J18,hallway grid point,hallway,H01,Hallway 01,,
+K18,navigation,K18,hallway grid point,hallway,H01,Hallway 01,,
+L18,navigation,L18,hallway grid point,hallway,H01,Hallway 01,,
+M18,navigation,M18,hallway grid point,hallway,H01,Hallway 01,,
+N18,navigation,N18,hallway grid point,hallway,H01,Hallway 01,,
+O18,navigation,O18,hallway grid point,hallway,H01,Hallway 01,,
+P18,navigation,P18,hallway grid point,hallway,H01,Hallway 01,,
+B20,navigation,B20,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+C20,navigation,C20,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+D20,navigation,D20,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+E20,navigation,E20,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+F20,navigation,F20,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+G20,navigation,G20,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+I20,navigation,I20,hallway grid point,hallway,H01,Hallway 01,,
+K20,navigation,K20,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+L20,navigation,L20,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+M20,navigation,M20,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+N20,navigation,N20,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+O20,navigation,O20,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+P20,navigation,P20,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+B21,navigation,B21,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+D21,navigation,D21,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+E21,navigation,E21,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+G21,navigation,G21,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+I21,navigation,I21,hallway grid point,hallway,H01,Hallway 01,,
+K21,navigation,K21,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+M21,navigation,M21,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+N21,navigation,N21,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+P21,navigation,P21,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+B22,navigation,B22,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+C22,navigation,C22,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+D22,navigation,D22,walkable room grid point,room,R17,Supply Room,R17,Supply Room
+E22,navigation,E22,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+F22,navigation,F22,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+G22,navigation,G22,walkable room grid point,room,R14,Exam Room 7,R14,Exam Room 7
+I22,navigation,I22,hallway grid point,hallway,H01,Hallway 01,,
+K22,navigation,K22,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+L22,navigation,L22,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+M22,navigation,M22,walkable room grid point,room,R15,Exam Room 8,R15,Exam Room 8
+N22,navigation,N22,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+O22,navigation,O22,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+P22,navigation,P22,walkable room grid point,room,R16,Procedure Room,R16,Procedure Room
+B24,navigation,B24,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+C24,navigation,C24,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+D24,navigation,D24,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+E24,navigation,E24,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+F24,navigation,F24,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+H24,navigation,H24,hallway grid point,hallway,H01,Hallway 01,,
+I24,navigation,I24,hallway grid point,hallway,H01,Hallway 01,,
+J24,navigation,J24,hallway grid point,hallway,H01,Hallway 01,,
+L24,navigation,L24,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+M24,navigation,M24,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+N24,navigation,N24,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+O24,navigation,O24,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+P24,navigation,P24,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+B25,navigation,B25,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+C25,navigation,C25,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+E25,navigation,E25,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+F25,navigation,F25,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+H25,navigation,H25,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+I25,navigation,I25,walkable room grid point,room,R21,Records Room,R21,Records Room
+J25,navigation,J25,walkable room grid point,room,R21,Records Room,R21,Records Room
+L25,navigation,L25,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+M25,navigation,M25,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+O25,navigation,O25,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+P25,navigation,P25,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+B26,navigation,B26,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+C26,navigation,C26,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+D26,navigation,D26,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+E26,navigation,E26,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+F26,navigation,F26,walkable room grid point,room,R18,Observation Room,R18,Observation Room
+H26,navigation,H26,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+I26,navigation,I26,walkable room grid point,room,R21,Records Room,R21,Records Room
+J26,navigation,J26,walkable room grid point,room,R21,Records Room,R21,Records Room
+L26,navigation,L26,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+M26,navigation,M26,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+N26,navigation,N26,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+O26,navigation,O26,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+P26,navigation,P26,walkable room grid point,room,R19,Physical Therapy Room,R19,Physical Therapy Room
+B28,navigation,B28,walkable room grid point,room,R22,Billing Office,R22,Billing Office
+C28,navigation,C28,walkable room grid point,room,R22,Billing Office,R22,Billing Office
+F28,navigation,F28,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+G28,navigation,G28,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+I28,navigation,I28,walkable room grid point,room,R21,Records Room,R21,Records Room
+J28,navigation,J28,walkable room grid point,room,R21,Records Room,R21,Records Room
+N28,navigation,N28,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+O28,navigation,O28,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+P28,navigation,P28,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+C29,navigation,C29,walkable room grid point,room,R22,Billing Office,R22,Billing Office
+D29,navigation,D29,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+E29,navigation,E29,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+G29,navigation,G29,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+I29,navigation,I29,walkable room grid point,room,R21,Records Room,R21,Records Room
+K29,navigation,K29,walkable room grid point,room,R21,Records Room,R21,Records Room
+L29,navigation,L29,walkable room grid point,room,R21,Records Room,R21,Records Room
+N29,navigation,N29,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+P29,navigation,P29,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+B30,navigation,B30,walkable room grid point,room,R22,Billing Office,R22,Billing Office
+C30,navigation,C30,walkable room grid point,room,R22,Billing Office,R22,Billing Office
+D30,navigation,D30,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+E30,navigation,E30,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+F30,navigation,F30,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+G30,navigation,G30,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+I30,navigation,I30,walkable room grid point,room,R21,Records Room,R21,Records Room
+J30,navigation,J30,walkable room grid point,room,R21,Records Room,R21,Records Room
+K30,navigation,K30,walkable room grid point,room,R21,Records Room,R21,Records Room
+L30,navigation,L30,walkable room grid point,room,R21,Records Room,R21,Records Room
+N30,navigation,N30,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+O30,navigation,O30,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+P30,navigation,P30,walkable room grid point,room,R23,Check-In Office,R23,Check-In Office
+B32,navigation,B32,hallway grid point,hallway,H01,Hallway 01,,
+C32,navigation,C32,hallway grid point,hallway,H01,Hallway 01,,
+D32,navigation,D32,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+E32,navigation,E32,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+F32,navigation,F32,walkable room grid point,room,R20,Consultation Room,R20,Consultation Room
+G32,navigation,G32,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+H32,navigation,H32,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+I32,navigation,I32,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+J32,navigation,J32,walkable room grid point,room,R21,Records Room,R21,Records Room
+K32,navigation,K32,walkable room grid point,room,R21,Records Room,R21,Records Room
+L32,navigation,L32,walkable room grid point,room,R21,Records Room,R21,Records Room
+M32,navigation,M32,hallway grid point,hallway,H01,Hallway 01,,
+N32,navigation,N32,hallway grid point,hallway,H01,Hallway 01,,
+O32,navigation,O32,hallway grid point,hallway,H01,Hallway 01,,
+P32,navigation,P32,hallway grid point,hallway,H01,Hallway 01,,
+B33,navigation,B33,hallway grid point,hallway,H01,Hallway 01,,
+C33,navigation,C33,hallway grid point,hallway,H01,Hallway 01,,
+D33,navigation,D33,hallway grid point,hallway,H01,Hallway 01,,
+E33,navigation,E33,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+F33,navigation,F33,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+G33,navigation,G33,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+I33,navigation,I33,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+J33,navigation,J33,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+K33,navigation,K33,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+L33,navigation,L33,hallway grid point,hallway,H01,Hallway 01,,
+M33,navigation,M33,hallway grid point,hallway,H01,Hallway 01,,
+N33,navigation,N33,hallway grid point,hallway,H01,Hallway 01,,
+O33,navigation,O33,hallway grid point,hallway,H01,Hallway 01,,
+P33,navigation,P33,hallway grid point,hallway,H01,Hallway 01,,
+B34,navigation,B34,hallway grid point,hallway,H01,Hallway 01,,
+C34,navigation,C34,hallway grid point,hallway,H01,Hallway 01,,
+D34,navigation,D34,hallway grid point,hallway,H01,Hallway 01,,
+E34,navigation,E34,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+H34,navigation,H34,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+K34,navigation,K34,walkable room grid point,room,R24,Waiting Room,R24,Waiting Room
+L34,navigation,L34,hallway grid point,hallway,H01,Hallway 01,,
+M34,navigation,M34,hallway grid point,hallway,H01,Hallway 01,,
+N34,navigation,N34,hallway grid point,hallway,H01,Hallway 01,,
+O34,navigation,O34,hallway grid point,hallway,H01,Hallway 01,,
+P34,navigation,P34,hallway grid point,hallway,H01,Hallway 01,,
+START_R01,room_start,N3,pink room center,room_start,R01,Doctor's Office,R01,Doctor's Office
+START_R02,room_start,D3,pink room center,room_start,R02,Staff Room,R02,Staff Room
+START_R03,room_start,P7,pink room center,room_start,R03,Exam Room 1,R03,Exam Room 1
+START_R04,room_start,D7,pink room center,room_start,R04,Exam Room 2,R04,Exam Room 2
+START_R05,room_start,F7,pink room center,room_start,R05,Exam Room 3,R05,Exam Room 3
+START_R06,room_start,L7,pink room center,room_start,R06,Exam Room 4,R06,Exam Room 4
+START_R07,room_start,N7,pink room center,room_start,R07,Exam Room 5,R07,Exam Room 5
+START_R08,room_start,B7,pink room center,room_start,R08,Exam Room 6,R08,Exam Room 6
+START_R09,room_start,D11,pink room center,room_start,R09,Lab Room 1,R09,Lab Room 1
+START_R10,room_start,M12,pink room center,room_start,R10,Bathroom A,R10,Bathroom A
+START_R11,room_start,N12,pink room center,room_start,R11,Bathroom B,R11,Bathroom B
+START_R12,room_start,D15,pink room center,room_start,R12,Nurse Room,R12,Nurse Room
+START_R13,room_start,M15,pink room center,room_start,R13,Lab Room 2,R13,Lab Room 2
+START_R14,room_start,F21,pink room center,room_start,R14,Exam Room 7,R14,Exam Room 7
+START_R15,room_start,L21,pink room center,room_start,R15,Exam Room 8,R15,Exam Room 8
+START_R16,room_start,O21,pink room center,room_start,R16,Procedure Room,R16,Procedure Room
+START_R17,room_start,C21,pink room center,room_start,R17,Supply Room,R17,Supply Room
+START_R18,room_start,D25,pink room center,room_start,R18,Observation Room,R18,Observation Room
+START_R19,room_start,N25,pink room center,room_start,R19,Physical Therapy Room,R19,Physical Therapy Room
+START_R20,room_start,F29,pink room center,room_start,R20,Consultation Room,R20,Consultation Room
+START_R21,room_start,J29,pink room center,room_start,R21,Records Room,R21,Records Room
+START_R22,room_start,B29,pink room center,room_start,R22,Billing Office,R22,Billing Office
+START_R23,room_start,O29,pink room center,room_start,R23,Check-In Office,R23,Check-In Office
+START_R24,room_start,H33,pink room center,room_start,R24,Waiting Room,R24,Waiting Room
+DOOR_01,door,H3,doorway transition point,door,R02,,R02,Staff Room
+DOOR_02,door,J3,doorway transition point,door,R01,,R01,Doctor's Office
+DOOR_04,door,J7,doorway transition point,door,R06,,R06,Exam Room 4
+DOOR_03,door,H7,doorway transition point,door,R05,,R05,Exam Room 3
+DOOR_09,door,N9,doorway transition point,door,R07,,R07,Exam Room 5
+DOOR_08,door,L9,doorway transition point,door,R06,,R06,Exam Room 4
+DOOR_05,door,C9,doorway between Exam Room 6 and Lab Room 1,door,,,,
+DOOR_06,door,E9,doorway between Exam Room 2 and Lab Room 1,door,,,,
+DOOR_07,door,G9,doorway between Exam Room 3 and Lab Room 1,door,,,,
+DOOR_10,door,P9,doorway transition point,door,R03,,R03,Exam Room 1
+DOOR_12,door,N10.5,doorway transition point,door,R11,,R11,Bathroom B
+DOOR_11,door,L10.5,doorway transition point,door,R10,,R10,Bathroom A
+DOOR_13,door,H11,doorway transition point,door,R09,,R09,Lab Room 1
+DOOR_14,door,K12,doorway transition point,door,R10,,R10,Bathroom A
+DOOR_15,door,O12,doorway transition point,door,R11,,R11,Bathroom B
+DOOR_17,door,J15,doorway transition point,door,R13,,R13,Lab Room 2
+DOOR_16,door,H15,doorway transition point,door,R12,,R12,Nurse Room
+DOOR_18,door,C19,doorway transition point,door,R17,,R17,Supply Room
+DOOR_19,door,F19,doorway transition point,door,R14,,R14,Exam Room 7
+DOOR_21,door,O19,doorway transition point,door,R16,,R16,Procedure Room
+DOOR_20,door,M19,doorway transition point,door,R15,,R15,Exam Room 8
+DOOR_22,door,H21,doorway transition point,door,R14,,R14,Exam Room 7
+DOOR_23,door,J21,doorway transition point,door,R15,,R15,Exam Room 8
+DOOR_24,door,G25,doorway between Observation Room and Consultation Room,door,,,,
+DOOR_25,door,K25,doorway between Records Room and Physical Therapy Room,door,,,,
+DOOR_26,door,I27,doorway transition point,door,R21,,R21,Records Room
+DOOR_28,door,H29,doorway between Consultation Room and Records Room,door,,,,
+DOOR_27,door,D29,doorway between Billing Office and Consultation Room,door,,,,
+DOOR_29,door,M29,doorway between Records Room and Check-In Office,door,,,,
+DOOR_30,door,G30,doorway between Consultation Room and Waiting Room,door,,,,
+EXIT_C,exit,I1,exterior evacuation exit,exit,,Exit C,,Exit C
+EXIT_B,exit,A18,exterior evacuation exit,exit,,Exit B,,Exit B
+EXIT_A,exit,H35,exterior evacuation exit,exit,,Exit A,,Exit A
