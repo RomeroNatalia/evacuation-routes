@@ -102,7 +102,7 @@ The tests validate every included floorplan, confirm room-to-exit reachability a
 
 ## Current saved results
 
-The completed solver benchmarks and assignment-penalty sweeps from the prior discussion are preserved under `data/floorplans/FP01/output/`. FP02 through FP05 contain deterministic preprocessing outputs after running the integration pipeline; their cloud solver results must be generated with the user's D-Wave account.
+The completed solver benchmarks and assignment-penalty sweeps from the prior discussion are preserved under each floorplan, for example: `data/floorplans/FP01/output/`. The capstone contains complete 30-run Neal and Hybrid results for all five floor plans and QPU results for FP01, FP04, and FP05.
 
 ## Model scope
 
