@@ -1,0 +1,33 @@
+node_id,node_type,grid_position,description,space_type,space_id,space_name,room_id,room_name
+C0,navigation,B3,navigation node,hallway,,,,
+C1,navigation,C3,navigation node,hallway,,,,
+C2,navigation,D3,navigation node,hallway,,,,
+C3,navigation,E3,navigation node,hallway,,,,
+C4,navigation,F3,navigation node,hallway,,,,
+C5,navigation,G3,navigation node,hallway,,,,
+C6,navigation,H3,navigation node,hallway,,,,
+C7,navigation,I3,navigation node,hallway,,,,
+C8,navigation,J3,navigation node,hallway,,,,
+C9,navigation,K3,navigation node,hallway,,,,
+EXIT_A,exit,B2.5,exit node,,,,,
+EXIT_B,exit,K2.5,exit node,,,,,
+START_R01,room_start,B5,room_start node,room,R01,,R01,Room 01
+DOOR_01,door,B4,door node,door,R01,,R01,Room 01
+START_R02,room_start,C1,room_start node,room,R02,,R02,Room 02
+DOOR_02,door,C2,door node,door,R02,,R02,Room 02
+START_R03,room_start,D5,room_start node,room,R03,,R03,Room 03
+DOOR_03,door,D4,door node,door,R03,,R03,Room 03
+START_R04,room_start,E1,room_start node,room,R04,,R04,Room 04
+DOOR_04,door,E2,door node,door,R04,,R04,Room 04
+START_R05,room_start,F5,room_start node,room,R05,,R05,Room 05
+DOOR_05,door,F4,door node,door,R05,,R05,Room 05
+START_R06,room_start,G1,room_start node,room,R06,,R06,Room 06
+DOOR_06,door,G2,door node,door,R06,,R06,Room 06
+START_R07,room_start,H5,room_start node,room,R07,,R07,Room 07
+DOOR_07,door,H4,door node,door,R07,,R07,Room 07
+START_R08,room_start,I1,room_start node,room,R08,,R08,Room 08
+DOOR_08,door,I2,door node,door,R08,,R08,Room 08
+START_R09,room_start,J5,room_start node,room,R09,,R09,Room 09
+DOOR_09,door,J4,door node,door,R09,,R09,Room 09
+START_R10,room_start,K1,room_start node,room,R10,,R10,Room 10
+DOOR_10,door,K2,door node,door,R10,,R10,Room 10

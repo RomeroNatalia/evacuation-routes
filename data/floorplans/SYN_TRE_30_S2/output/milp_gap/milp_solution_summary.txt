@@ -1,0 +1,11 @@
+MILP OPTIMALITY-GAP RESULT -- SYN_TRE_30_S2
+============================================
+Status: OPTIMAL (proven optimal: True)
+Wall-clock: 0.58s
+Variables: 180  |  Edge square-terms: 105
+True (unpruned, recomputed) energy: 0.7959110397
+  distance component:   0.5107033639
+  congestion component: 0.2852076758
+  total distance:       167.000000
+  raw congestion (unweighted sum of util^2): 73.778097
+Solver-internal scaled objective gap: 0.000000%
