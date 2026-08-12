@@ -4,15 +4,23 @@ proper significance test (not just single-shot numbers) on both the original
 
 Neal repeats are free (local compute) -- default 10 independent 4-seed
 batches per floorplan, matching the paper's own per-run granularity.
-Hybrid repeats cost real D-Wave Leap quota -- default 10 per floorplan,
-23 floorplans x 10 = 230 calls x ~3.0s service-enforced minimum =~ 11.5
-minutes of Hybrid solver time total. Confirm budget before increasing
---hybrid-repeats.
+Hybrid repeats cost real D-Wave Leap quota -- default 10 per floorplan.
+Confirm budget before increasing --hybrid-repeats; a previous run exhausted
+quota partway through (see docs/EXPANSION_STATISTICAL_CONFIRMATION.md).
+
+Crash-safe by design: every single Hybrid call's result is written to disk
+immediately (docs/expansion_repeated_comparison_raw.json), not just at the
+end. If the process dies mid-run (quota exhaustion, network error, etc.),
+nothing already computed is lost. Re-running the exact same command resumes
+automatically -- floorplans that already have the requested number of Neal
+and Hybrid repeats saved are skipped, and a floorplan that's partially done
+(e.g. 4 of 10 Hybrid repeats saved before a crash) only runs the remaining
+repeats.
 
 Usage:
 
     DWAVE_API_TOKEN=... python scripts/expansion/run_repeated_comparison.py \
-        --repeats 10 --floorplans FP01 FP02 ... SYN_LIN_10_S1 ...
+        --repeats 10 --hybrid-repeats 10 --floorplans FP01 FP02 ... SYN_LIN_10_S1 ...
 """
 
 from __future__ import annotations
@@ -33,12 +41,40 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from neal_budget_scaling_test import load_and_build_bqm, best_valid_energy  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
+OUT_PATH = ROOT / "docs" / "expansion_repeated_comparison_raw.json"
 
 
-def neal_runs(bqm, room_variables, n_repeats: int, reads: int, sweeps: int):
+def load_state() -> dict:
+    """floorplan -> result dict. Missing/corrupt file just starts empty."""
+    if not OUT_PATH.exists():
+        return {}
+    try:
+        data = json.loads(OUT_PATH.read_text())
+        return {r["floorplan"]: r for r in data}
+    except (json.JSONDecodeError, KeyError):
+        return {}
+
+
+def save_state(state: dict) -> None:
+    OUT_PATH.write_text(json.dumps(list(state.values()), indent=2), encoding="utf-8")
+
+
+def ensure_entry(state: dict, fp: str, n_variables: int, milp_optimum) -> dict:
+    if fp not in state:
+        state[fp] = {
+            "floorplan": fp,
+            "n_variables": n_variables,
+            "milp_optimum": milp_optimum,
+            "neal_energies": [],
+            "hybrid_energies": [],
+        }
+    return state[fp]
+
+
+def run_neal_repeats(bqm, room_variables, entry: dict, target: int, reads: int, sweeps: int, state: dict) -> None:
     sampler = neal.SimulatedAnnealingSampler()
-    energies = []
-    for i in range(n_repeats):
+    start_index = len(entry["neal_energies"])
+    for i in range(start_index, target):
         seeds = [1000 * (i + 1) + s for s in range(4)]
         reads_per_seed = max(1, math.ceil(reads / len(seeds)))
         sample_sets = [
@@ -47,17 +83,17 @@ def neal_runs(bqm, room_variables, n_repeats: int, reads: int, sweeps: int):
         ]
         sampleset = dimod.concatenate(sample_sets).aggregate()
         best = best_valid_energy(sampleset, room_variables)
-        energies.append(best)
-    return energies
+        entry["neal_energies"].append(best)
+        save_state(state)  # save after every single repeat, not just at the end
 
 
-def hybrid_runs(sampler, bqm, room_variables, floorplan: str, n_repeats: int):
-    energies = []
-    for i in range(n_repeats):
+def run_hybrid_repeats(sampler, bqm, room_variables, entry: dict, floorplan: str, target: int, state: dict) -> None:
+    start_index = len(entry["hybrid_energies"])
+    for i in range(start_index, target):
         sampleset = sampler.sample(bqm, label=f"expansion-hybrid-rep{i}: {floorplan}")
         best = best_valid_energy(sampleset, room_variables)
-        energies.append(best)
-    return energies
+        entry["hybrid_energies"].append(best)
+        save_state(state)  # save after every single Hybrid call -- these are the expensive ones
 
 
 def main() -> None:
@@ -75,44 +111,44 @@ def main() -> None:
     hybrid_sampler = LeapHybridSampler(token=token)
     print(f"Connected: {hybrid_sampler.solver.name}\n")
 
-    all_results = []
+    state = load_state()
+    print(f"Resuming with {len(state)} floorplan(s) already having some data saved.\n")
+
     for fp in args.floorplans:
         input_dir = ROOT / "data" / "floorplans" / fp / "output"
         bqm, routes, room_variables = load_and_build_bqm(input_dir)
         milp_path = input_dir / "milp_gap" / "milp_solution_summary.json"
         milp_optimum = json.loads(milp_path.read_text())["energy"] if milp_path.exists() else None
 
-        t0 = time.perf_counter()
-        neal_energies = neal_runs(bqm, room_variables, args.repeats, args.reads, args.sweeps)
-        neal_t = time.perf_counter() - t0
+        entry = ensure_entry(state, fp, bqm.num_variables, milp_optimum)
 
-        t0 = time.perf_counter()
-        hybrid_energies = hybrid_runs(hybrid_sampler, bqm, room_variables, fp, args.hybrid_repeats)
-        hybrid_t = time.perf_counter() - t0
+        if len(entry["neal_energies"]) < args.repeats:
+            t0 = time.perf_counter()
+            run_neal_repeats(bqm, room_variables, entry, args.repeats, args.reads, args.sweeps, state)
+            neal_t = time.perf_counter() - t0
+        else:
+            neal_t = 0.0
 
-        result = {
-            "floorplan": fp,
-            "n_variables": bqm.num_variables,
-            "milp_optimum": milp_optimum,
-            "neal_energies": neal_energies,
-            "hybrid_energies": hybrid_energies,
-            "neal_wall_clock_s": neal_t,
-            "hybrid_wall_clock_s": hybrid_t,
-        }
-        all_results.append(result)
+        if len(entry["hybrid_energies"]) < args.hybrid_repeats:
+            t0 = time.perf_counter()
+            try:
+                run_hybrid_repeats(hybrid_sampler, bqm, room_variables, entry, fp, args.hybrid_repeats, state)
+            except Exception as exc:
+                print(f"\n{fp}: stopped after {len(entry['hybrid_energies'])} Hybrid repeats -- {exc}")
+                print("Partial results through this point are already saved. Re-run the same command to resume.")
+                raise
+            hybrid_t = time.perf_counter() - t0
+        else:
+            hybrid_t = 0.0
 
-        n_gap_mean = 100 * (sum(neal_energies) / len(neal_energies) - milp_optimum) / milp_optimum
-        h_gap_mean = 100 * (sum(hybrid_energies) / len(hybrid_energies) - milp_optimum) / milp_optimum
-        print(f"{fp:20}Neal mean gap={n_gap_mean:8.2f}%   Hybrid mean gap={h_gap_mean:8.2f}%   "
+        n_e, h_e = entry["neal_energies"], entry["hybrid_energies"]
+        n_gap_mean = 100 * (sum(n_e) / len(n_e) - milp_optimum) / milp_optimum if n_e else float("nan")
+        h_gap_mean = 100 * (sum(h_e) / len(h_e) - milp_optimum) / milp_optimum if h_e else float("nan")
+        print(f"{fp:20}Neal({len(n_e)}) mean gap={n_gap_mean:8.2f}%   "
+              f"Hybrid({len(h_e)}) mean gap={h_gap_mean:8.2f}%   "
               f"(neal {neal_t:.1f}s, hybrid {hybrid_t:.1f}s)")
 
-    out_path = ROOT / "docs" / "expansion_repeated_comparison_raw.json"
-    existing = []
-    if out_path.exists():
-        existing = json.loads(out_path.read_text())
-        existing = [e for e in existing if e["floorplan"] not in {r["floorplan"] for r in all_results}]
-    out_path.write_text(json.dumps(existing + all_results, indent=2), encoding="utf-8")
-    print(f"\nWritten to {out_path}")
+    print(f"\nAll requested floorplans complete. Written to {OUT_PATH}")
 
 
 if __name__ == "__main__":
