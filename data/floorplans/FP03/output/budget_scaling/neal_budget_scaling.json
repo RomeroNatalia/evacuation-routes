@@ -1,0 +1,40 @@
+{
+  "floorplan": "FP03",
+  "milp_optimum": 0.2600115376776572,
+  "baseline_paper_sweeps": 5000,
+  "baseline_paper_reads": 1000,
+  "results": [
+    {
+      "sweeps": 5000,
+      "reads_per_seed": 50,
+      "total_reads": 200,
+      "best_valid_energy": 0.6286316818158753,
+      "gap_pct": 141.7706873435769,
+      "wall_clock_seconds": 4.271249083000001
+    },
+    {
+      "sweeps": 25000,
+      "reads_per_seed": 50,
+      "total_reads": 200,
+      "best_valid_energy": 0.6688374114905287,
+      "gap_pct": 157.2337433424601,
+      "wall_clock_seconds": 21.951687
+    },
+    {
+      "sweeps": 100000,
+      "reads_per_seed": 50,
+      "total_reads": 200,
+      "best_valid_energy": 0.5383025406095499,
+      "gap_pct": 107.03025158710338,
+      "wall_clock_seconds": 89.41444
+    },
+    {
+      "sweeps": 500000,
+      "reads_per_seed": 50,
+      "total_reads": 200,
+      "best_valid_energy": 0.5848038541371352,
+      "gap_pct": 124.91457854540712,
+      "wall_clock_seconds": 460.06572575
+    }
+  ]
+}
