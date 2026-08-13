@@ -114,6 +114,44 @@ than how many non-redundant (bridge) edges exist.** FP03's dormitory-style
 consistent with this: it's not just that FP03 has many bridges, it's that
 its single corridor is unusually long.
 
+## Result 4: replicated under Hybrid, with proper significance testing (confirmed)
+
+The Neal-only results above used a single run per floorplan. This repeats
+the test with 10 independent runs of **both** Neal and Hybrid on all 23
+floorplans (`scripts/expansion/run_repeated_comparison.py`,
+`scripts/expansion/hybrid_significance_analysis.py`), using the same
+Mann-Whitney U test as the original Tier 1 analysis
+(`scripts/expansion/significance_tests.py`) -- Neal's local seeds and
+Hybrid's server-side randomness aren't paired, so Mann-Whitney is correct,
+not paired Wilcoxon.
+
+**Hybrid beats Neal broadly, extending the paper's original finding to the
+full 23-floorplan corpus**: Hybrid's mean gap is smaller than Neal's in
+18/23 floorplans, significantly so (Bonferroni-corrected across 23 tests,
+alpha=0.05/23=0.0022) in 17/23.
+
+**The corridor-diameter finding replicates under Hybrid, not just Neal** --
+this is the important confirmation, since a solver-specific artifact would
+have shown up as a large discrepancy here:
+
+| Predictor | vs. Neal gap (10-repeat mean) | vs. Hybrid gap (10-repeat mean) |
+|---|---:|---:|
+| corridor_diameter_hops | r=0.859, p=1.5e-07 | **r=0.849, p=3.0e-07** |
+| n_variables | -- | r=0.859, p=1.5e-07 |
+
+Corridor diameter predicts Hybrid's optimality gap essentially as well as it
+predicts Neal's (r=0.849 vs. 0.859) -- the structural mechanism isn't an
+artifact of one solver's particular search dynamics.
+
+**Cost of this confirmation, for the record**: 23 floorplans x 10 Hybrid
+repeats = 230 Hybrid calls, each at the D-Wave-enforced 3.0s minimum for
+problems under 1,024 variables, roughly 12 minutes of Hybrid solver time.
+A first attempt at this ran out of Leap quota partway through (11/23
+floorplans done) and -- due to a since-fixed bug where results were only
+written to disk once, at the very end -- that partial progress was lost
+before being persisted. `run_repeated_comparison.py` now saves after every
+single repeat and resumes cleanly from wherever a prior run stopped.
+
 ## What's still open
 
 - n=23 with 18 controlled + 5 real is enough to establish the direction and
@@ -121,10 +159,6 @@ its single corridor is unusually long.
   route-hop-mean (r=0.721, likely correlated with diameter) -- a larger
   synthetic sweep varying diameter independently of hop-count would sharpen
   this further.
-- This was tested against Neal only (single run, paper-baseline settings).
-  Confirming the same ordering holds for Hybrid, and running enough repeats
-  per synthetic floorplan for its own significance test (as in Tier 1 for
-  the original 5), is the natural next step.
 - The synthetic generator's room-to-door simplification (no interior
   navigation grid) should be revisited if this result is used beyond
   directional confirmation -- e.g. if a future paper wants to report
@@ -133,4 +167,6 @@ its single corridor is unusually long.
 
 All raw data: `docs/expansion_statistical_confirmation_raw.json`,
 `docs/expansion_synthetic_geometry_raw.json`,
-`docs/expansion_synthetic_neal_results.json`.
+`docs/expansion_synthetic_neal_results.json`,
+`docs/expansion_repeated_comparison_raw.json`,
+`docs/expansion_hybrid_significance_raw.json`.
