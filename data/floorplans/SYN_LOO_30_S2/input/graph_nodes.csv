@@ -1,0 +1,91 @@
+node_id,node_type,grid_position,description,space_type,space_id,space_name,room_id,room_name
+C0,navigation,B_A3,navigation node,hallway,,,,
+C1,navigation,C_A3,navigation node,hallway,,,,
+C2,navigation,D_A3,navigation node,hallway,,,,
+C3,navigation,E_A3,navigation node,hallway,,,,
+C4,navigation,F_A3,navigation node,hallway,,,,
+C5,navigation,G_A3,navigation node,hallway,,,,
+C6,navigation,H_A3,navigation node,hallway,,,,
+C7,navigation,H_A4,navigation node,hallway,,,,
+C8,navigation,H_A5,navigation node,hallway,,,,
+C9,navigation,H_A6,navigation node,hallway,,,,
+C10,navigation,H_A7,navigation node,hallway,,,,
+C11,navigation,H_A8,navigation node,hallway,,,,
+C12,navigation,H_A9,navigation node,hallway,,,,
+C13,navigation,G_A9,navigation node,hallway,,,,
+C14,navigation,F_A9,navigation node,hallway,,,,
+C15,navigation,E_A9,navigation node,hallway,,,,
+C16,navigation,D_A9,navigation node,hallway,,,,
+C17,navigation,C_A9,navigation node,hallway,,,,
+C18,navigation,B_A9,navigation node,hallway,,,,
+C19,navigation,B_A8,navigation node,hallway,,,,
+C20,navigation,B_A7,navigation node,hallway,,,,
+C21,navigation,B_A6,navigation node,hallway,,,,
+C22,navigation,B_A5,navigation node,hallway,,,,
+C23,navigation,B_A4,navigation node,hallway,,,,
+EXIT_A,exit,C4,exit node,,,,,
+EXIT_B,exit,H4,exit node,,,,,
+EXIT_C,exit,I7,exit node,,,,,
+EXIT_D,exit,G10,exit node,,,,,
+EXIT_E,exit,C10,exit node,,,,,
+EXIT_F,exit,C5,exit node,,,,,
+DOOR_01,door,B2,door node,door,R01,,R01,Room 01
+START_R01,room_start,B1,room_start node,room,R01,,R01,Room 01
+DOOR_02,door,C2,door node,door,R02,,R02,Room 02
+START_R02,room_start,C1,room_start node,room,R02,,R02,Room 02
+DOOR_03,door,D2,door node,door,R03,,R03,Room 03
+START_R03,room_start,D1,room_start node,room,R03,,R03,Room 03
+DOOR_04,door,E2,door node,door,R04,,R04,Room 04
+START_R04,room_start,E1,room_start node,room,R04,,R04,Room 04
+DOOR_05,door,F2,door node,door,R05,,R05,Room 05
+START_R05,room_start,F1,room_start node,room,R05,,R05,Room 05
+DOOR_06,door,G2,door node,door,R06,,R06,Room 06
+START_R06,room_start,G1,room_start node,room,R06,,R06,Room 06
+DOOR_07,door,H2,door node,door,R07,,R07,Room 07
+START_R07,room_start,H1,room_start node,room,R07,,R07,Room 07
+DOOR_08,door,H3,door node,door,R08,,R08,Room 08
+START_R08,room_start,H2,room_start node,room,R08,,R08,Room 08
+DOOR_09,door,H4,door node,door,R09,,R09,Room 09
+START_R09,room_start,H3,room_start node,room,R09,,R09,Room 09
+DOOR_10,door,H5,door node,door,R10,,R10,Room 10
+START_R10,room_start,H4,room_start node,room,R10,,R10,Room 10
+DOOR_11,door,H6,door node,door,R11,,R11,Room 11
+START_R11,room_start,H5,room_start node,room,R11,,R11,Room 11
+DOOR_12,door,H7,door node,door,R12,,R12,Room 12
+START_R12,room_start,H6,room_start node,room,R12,,R12,Room 12
+DOOR_13,door,H8,door node,door,R13,,R13,Room 13
+START_R13,room_start,H7,room_start node,room,R13,,R13,Room 13
+DOOR_14,door,G8,door node,door,R14,,R14,Room 14
+START_R14,room_start,G7,room_start node,room,R14,,R14,Room 14
+DOOR_15,door,F8,door node,door,R15,,R15,Room 15
+START_R15,room_start,F7,room_start node,room,R15,,R15,Room 15
+DOOR_16,door,E8,door node,door,R16,,R16,Room 16
+START_R16,room_start,E7,room_start node,room,R16,,R16,Room 16
+DOOR_17,door,D8,door node,door,R17,,R17,Room 17
+START_R17,room_start,D7,room_start node,room,R17,,R17,Room 17
+DOOR_18,door,C8,door node,door,R18,,R18,Room 18
+START_R18,room_start,C7,room_start node,room,R18,,R18,Room 18
+DOOR_19,door,B8,door node,door,R19,,R19,Room 19
+START_R19,room_start,B7,room_start node,room,R19,,R19,Room 19
+DOOR_20,door,B7,door node,door,R20,,R20,Room 20
+START_R20,room_start,B6,room_start node,room,R20,,R20,Room 20
+DOOR_21,door,B6,door node,door,R21,,R21,Room 21
+START_R21,room_start,B5,room_start node,room,R21,,R21,Room 21
+DOOR_22,door,B5,door node,door,R22,,R22,Room 22
+START_R22,room_start,B4,room_start node,room,R22,,R22,Room 22
+DOOR_23,door,B4,door node,door,R23,,R23,Room 23
+START_R23,room_start,B3,room_start node,room,R23,,R23,Room 23
+DOOR_24,door,B3,door node,door,R24,,R24,Room 24
+START_R24,room_start,B2,room_start node,room,R24,,R24,Room 24
+DOOR_25,door,B2,door node,door,R25,,R25,Room 25
+START_R25,room_start,B1,room_start node,room,R25,,R25,Room 25
+DOOR_26,door,C2,door node,door,R26,,R26,Room 26
+START_R26,room_start,C1,room_start node,room,R26,,R26,Room 26
+DOOR_27,door,D2,door node,door,R27,,R27,Room 27
+START_R27,room_start,D1,room_start node,room,R27,,R27,Room 27
+DOOR_28,door,E2,door node,door,R28,,R28,Room 28
+START_R28,room_start,E1,room_start node,room,R28,,R28,Room 28
+DOOR_29,door,F2,door node,door,R29,,R29,Room 29
+START_R29,room_start,F1,room_start node,room,R29,,R29,Room 29
+DOOR_30,door,G2,door node,door,R30,,R30,Room 30
+START_R30,room_start,G1,room_start node,room,R30,,R30,Room 30

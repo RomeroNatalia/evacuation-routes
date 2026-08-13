@@ -1,0 +1,30 @@
+{
+  "status": "OPTIMAL",
+  "wall_clock_seconds": 0.005124167000000013,
+  "n_variables": 20,
+  "n_edge_square_terms": 30,
+  "proven_optimal": true,
+  "assignment": {
+    "x_R01_EXIT_A": 1,
+    "x_R02_EXIT_A": 1,
+    "x_R03_EXIT_A": 1,
+    "x_R04_EXIT_A": 1,
+    "x_R05_EXIT_B": 1,
+    "x_R06_EXIT_B": 1,
+    "x_R07_EXIT_B": 1,
+    "x_R08_EXIT_B": 1,
+    "x_R09_EXIT_A": 1,
+    "x_R10_EXIT_A": 1
+  },
+  "total_distance": 43.0,
+  "congestion_raw_unweighted": 18.22582222222222,
+  "congestion_objective": 91.1291111111111,
+  "normalized_distance_component": 0.8113207547169811,
+  "normalized_congestion_component": 2.0797833699516337,
+  "energy": 2.891104124668615,
+  "solver_internal_objective_scaled": 2890545578974.0,
+  "solver_internal_best_bound_scaled": 2890545578974.0,
+  "solver_reported_gap_scaled_pct": 0.0,
+  "distance_normalization_scale": 53.0,
+  "congestion_normalization_scale": 43.81663611111111
+}

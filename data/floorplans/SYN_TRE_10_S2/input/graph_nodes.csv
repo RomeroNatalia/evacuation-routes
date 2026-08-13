@@ -1,0 +1,39 @@
+node_id,node_type,grid_position,description,space_type,space_id,space_name,room_id,room_name
+C0,navigation,B4,navigation node,hallway,,,,
+C1,navigation,C4,navigation node,hallway,,,,
+C2,navigation,D4,navigation node,hallway,,,,
+C3,navigation,E4,navigation node,hallway,,,,
+C4,navigation,F4,navigation node,hallway,,,,
+C5,navigation,G4,navigation node,hallway,,,,
+B1_0,navigation,C_A5,navigation node,hallway,,,,
+START_R01,room_start,D_A6,room_start node,room,R01,,R01,Room 01
+DOOR_01,door,D_A5,door node,door,R01,,R01,Room 01
+B2_0,navigation,C_A3,navigation node,hallway,,,,
+START_R02,room_start,B_A4,room_start node,room,R02,,R02,Room 02
+DOOR_02,door,B_A3,door node,door,R02,,R02,Room 02
+B3_0,navigation,F_A5,navigation node,hallway,,,,
+START_R03,room_start,G_A6,room_start node,room,R03,,R03,Room 03
+DOOR_03,door,G_A5,door node,door,R03,,R03,Room 03
+B4_0,navigation,F_A3,navigation node,hallway,,,,
+START_R04,room_start,E_A4,room_start node,room,R04,,R04,Room 04
+DOOR_04,door,E_A3,door node,door,R04,,R04,Room 04
+B1_1,navigation,C_A6,navigation node,hallway,,,,
+START_R05,room_start,D_A7,room_start node,room,R05,,R05,Room 05
+DOOR_05,door,D_A6,door node,door,R05,,R05,Room 05
+B2_1,navigation,C_A2,navigation node,hallway,,,,
+START_R06,room_start,B_A3,room_start node,room,R06,,R06,Room 06
+DOOR_06,door,B_A2,door node,door,R06,,R06,Room 06
+B3_1,navigation,F_A6,navigation node,hallway,,,,
+START_R07,room_start,G_A7,room_start node,room,R07,,R07,Room 07
+DOOR_07,door,G_A6,door node,door,R07,,R07,Room 07
+B4_1,navigation,F_A2,navigation node,hallway,,,,
+START_R08,room_start,E_A3,room_start node,room,R08,,R08,Room 08
+DOOR_08,door,E_A2,door node,door,R08,,R08,Room 08
+B1_2,navigation,C_A7,navigation node,hallway,,,,
+START_R09,room_start,D_A8,room_start node,room,R09,,R09,Room 09
+DOOR_09,door,D_A7,door node,door,R09,,R09,Room 09
+B2_2,navigation,C_A1,navigation node,hallway,,,,
+START_R10,room_start,B_A2,room_start node,room,R10,,R10,Room 10
+DOOR_10,door,B_A1,door node,door,R10,,R10,Room 10
+EXIT_A,exit,B3.3,exit node,,,,,
+EXIT_B,exit,G3.3,exit node,,,,,

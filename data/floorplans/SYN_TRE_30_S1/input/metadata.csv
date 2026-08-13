@@ -1,0 +1,2 @@
+floorplan_id,floorplan_name,grid_unit,people_per_capacity_unit,image_file,notes
+SYN_TRE_30_S1,Synthetic tree,1.0,10,,"Generated synthetic floorplan, topology=tree"

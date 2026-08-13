@@ -1,0 +1,232 @@
+[
+  {
+    "floorplan": "SYN_LIN_10_S1",
+    "n_variables": 20,
+    "n_interactions": 145,
+    "milp_optimum": 1.1939981962597013,
+    "hybrid_best_energy": 1.193998196259706,
+    "hybrid_gap_pct": 3.905313021437298e-13,
+    "wall_clock_seconds": 2.531740042,
+    "solver_run_time_us": 2986640
+  },
+  {
+    "floorplan": "SYN_LIN_10_S2",
+    "n_variables": 20,
+    "n_interactions": 145,
+    "milp_optimum": 1.2188949589781854,
+    "hybrid_best_energy": 1.2188949589781863,
+    "hybrid_gap_pct": 7.286751111389418e-14,
+    "wall_clock_seconds": 2.359458666000001,
+    "solver_run_time_us": 2993091
+  },
+  {
+    "floorplan": "SYN_LIN_20_S1",
+    "n_variables": 80,
+    "n_interactions": 2178,
+    "milp_optimum": 0.3971338757749991,
+    "hybrid_best_energy": 0.54636599342961,
+    "hybrid_gap_pct": 37.57728231150952,
+    "wall_clock_seconds": 2.488669500000002,
+    "solver_run_time_us": 2999454
+  },
+  {
+    "floorplan": "SYN_LIN_20_S2",
+    "n_variables": 80,
+    "n_interactions": 2136,
+    "milp_optimum": 0.3940950305760918,
+    "hybrid_best_energy": 0.5175721981037997,
+    "hybrid_gap_pct": 31.331825561770685,
+    "wall_clock_seconds": 2.721432374999999,
+    "solver_run_time_us": 2995185
+  },
+  {
+    "floorplan": "SYN_LIN_30_S1",
+    "n_variables": 180,
+    "n_interactions": 9923,
+    "milp_optimum": 0.244048704702985,
+    "hybrid_best_energy": 0.5165971302808905,
+    "hybrid_gap_pct": 111.67788245776823,
+    "wall_clock_seconds": 2.7861280000000015,
+    "solver_run_time_us": 2989660
+  },
+  {
+    "floorplan": "SYN_LIN_30_S2",
+    "n_variables": 180,
+    "n_interactions": 9931,
+    "milp_optimum": 0.24279643837702725,
+    "hybrid_best_energy": 0.4769008659645057,
+    "hybrid_gap_pct": 96.42004188873176,
+    "wall_clock_seconds": 2.6436314580000015,
+    "solver_run_time_us": 2985187
+  },
+  {
+    "floorplan": "SYN_LOO_10_S1",
+    "n_variables": 20,
+    "n_interactions": 138,
+    "milp_optimum": 3.0132763884684346,
+    "hybrid_best_energy": 3.013276388468434,
+    "hybrid_gap_pct": -1.4737752286831576e-14,
+    "wall_clock_seconds": 2.356715207999997,
+    "solver_run_time_us": 2998658
+  },
+  {
+    "floorplan": "SYN_LOO_10_S2",
+    "n_variables": 20,
+    "n_interactions": 138,
+    "milp_optimum": 2.894449342797159,
+    "hybrid_best_energy": 2.89110412466861,
+    "hybrid_gap_pct": -0.11557355933257261,
+    "wall_clock_seconds": 2.600425209000001,
+    "solver_run_time_us": 2989912
+  },
+  {
+    "floorplan": "SYN_LOO_20_S1",
+    "n_variables": 80,
+    "n_interactions": 1778,
+    "milp_optimum": 0.7146512939939766,
+    "hybrid_best_energy": 0.842511228961272,
+    "hybrid_gap_pct": 17.89123395449599,
+    "wall_clock_seconds": 2.735004791999998,
+    "solver_run_time_us": 2997113
+  },
+  {
+    "floorplan": "SYN_LOO_20_S2",
+    "n_variables": 80,
+    "n_interactions": 1766,
+    "milp_optimum": 0.6670233780479964,
+    "hybrid_best_energy": 0.7676001334194894,
+    "hybrid_gap_pct": 15.07844532613307,
+    "wall_clock_seconds": 2.792088917000001,
+    "solver_run_time_us": 2999628
+  },
+  {
+    "floorplan": "SYN_LOO_30_S1",
+    "n_variables": 180,
+    "n_interactions": 8296,
+    "milp_optimum": 0.4056054892180343,
+    "hybrid_best_energy": 0.6146124901637754,
+    "hybrid_gap_pct": 51.52962829686677,
+    "wall_clock_seconds": 2.6796563749999933,
+    "solver_run_time_us": 2985255
+  },
+  {
+    "floorplan": "SYN_LOO_30_S2",
+    "n_variables": 180,
+    "n_interactions": 7568,
+    "milp_optimum": 0.42164427308871966,
+    "hybrid_best_energy": 0.6527240056649166,
+    "hybrid_gap_pct": 54.8044281221803,
+    "wall_clock_seconds": 2.5412825000000083,
+    "solver_run_time_us": 2991800
+  },
+  {
+    "floorplan": "SYN_TRE_10_S1",
+    "n_variables": 20,
+    "n_interactions": 140,
+    "milp_optimum": 1.7240822096633996,
+    "hybrid_best_energy": 1.7240822096633974,
+    "hybrid_gap_pct": -1.2879003314371075e-13,
+    "wall_clock_seconds": 2.4123817499999944,
+    "solver_run_time_us": 2982727
+  },
+  {
+    "floorplan": "SYN_TRE_10_S2",
+    "n_variables": 20,
+    "n_interactions": 132,
+    "milp_optimum": 1.687639717122691,
+    "hybrid_best_energy": 1.6876397171226902,
+    "hybrid_gap_pct": -3.947132838937958e-14,
+    "wall_clock_seconds": 2.470846750000007,
+    "solver_run_time_us": 2990608
+  },
+  {
+    "floorplan": "SYN_TRE_20_S1",
+    "n_variables": 80,
+    "n_interactions": 1925,
+    "milp_optimum": 1.1002152710824848,
+    "hybrid_best_energy": 1.1605957682377241,
+    "hybrid_gap_pct": 5.488062085870873,
+    "wall_clock_seconds": 2.394299709000009,
+    "solver_run_time_us": 2997120
+  },
+  {
+    "floorplan": "SYN_TRE_20_S2",
+    "n_variables": 80,
+    "n_interactions": 2031,
+    "milp_optimum": 1.0437398557524473,
+    "hybrid_best_energy": 1.117905066858954,
+    "hybrid_gap_pct": 7.10571802904278,
+    "wall_clock_seconds": 2.5533005839999987,
+    "solver_run_time_us": 2991906
+  },
+  {
+    "floorplan": "SYN_TRE_30_S1",
+    "n_variables": 180,
+    "n_interactions": 10257,
+    "milp_optimum": 0.7396965204988426,
+    "hybrid_best_energy": 0.9060730454015695,
+    "hybrid_gap_pct": 22.492538533306142,
+    "wall_clock_seconds": 2.6442334999999986,
+    "solver_run_time_us": 2989226
+  },
+  {
+    "floorplan": "SYN_TRE_30_S2",
+    "n_variables": 180,
+    "n_interactions": 9786,
+    "milp_optimum": 0.7959110397225657,
+    "hybrid_best_energy": 0.9270089413058772,
+    "hybrid_gap_pct": 16.471426458541004,
+    "wall_clock_seconds": 2.574953082999997,
+    "solver_run_time_us": 2992576
+  },
+  {
+    "floorplan": "FP01",
+    "n_variables": 60,
+    "n_interactions": 954,
+    "milp_optimum": 0.5938570161592381,
+    "hybrid_best_energy": 0.6506178300862842,
+    "hybrid_gap_pct": 9.557993318685662,
+    "wall_clock_seconds": 2.334804042000002,
+    "solver_run_time_us": 2990360
+  },
+  {
+    "floorplan": "FP02",
+    "n_variables": 264,
+    "n_interactions": 13675,
+    "milp_optimum": 0.28882971133673535,
+    "hybrid_best_energy": 0.6002221944890483,
+    "hybrid_gap_pct": 107.81179045298168,
+    "wall_clock_seconds": 2.725793667000005,
+    "solver_run_time_us": 2998154
+  },
+  {
+    "floorplan": "FP03",
+    "n_variables": 252,
+    "n_interactions": 12421,
+    "milp_optimum": 0.2600115376776572,
+    "hybrid_best_energy": 0.5814147047908608,
+    "hybrid_gap_pct": 123.61111740804942,
+    "wall_clock_seconds": 2.7457512920000227,
+    "solver_run_time_us": 2991946
+  },
+  {
+    "floorplan": "FP04",
+    "n_variables": 16,
+    "n_interactions": 77,
+    "milp_optimum": 1.502658366632903,
+    "hybrid_best_energy": 1.5026583666328994,
+    "hybrid_gap_pct": -2.364285693734418e-13,
+    "wall_clock_seconds": 2.406847499999998,
+    "solver_run_time_us": 2981307
+  },
+  {
+    "floorplan": "FP05",
+    "n_variables": 72,
+    "n_interactions": 1751,
+    "milp_optimum": 0.6150570634825465,
+    "hybrid_best_energy": 0.7766322534906857,
+    "hybrid_gap_pct": 26.269951131570764,
+    "wall_clock_seconds": 2.4114535829999966,
+    "solver_run_time_us": 2994639
+  }
+]

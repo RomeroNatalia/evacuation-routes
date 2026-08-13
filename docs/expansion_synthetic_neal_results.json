@@ -1,0 +1,209 @@
+[
+  {
+    "floorplan": "SYN_LIN_10_S1",
+    "n_variables": 20,
+    "n_interactions": 145,
+    "milp_optimum": 1.1939981962597013,
+    "neal_best_energy": 1.1939981962597148,
+    "neal_gap_pct": 1.1344004490841674e-12,
+    "wall_clock_seconds": 0.32746174999999994
+  },
+  {
+    "floorplan": "SYN_LIN_10_S2",
+    "n_variables": 20,
+    "n_interactions": 145,
+    "milp_optimum": 1.2188949589781854,
+    "neal_best_energy": 1.2188949589781828,
+    "neal_gap_pct": -2.1860253334168256e-13,
+    "wall_clock_seconds": 0.3298245409999999
+  },
+  {
+    "floorplan": "SYN_LIN_20_S1",
+    "n_variables": 80,
+    "n_interactions": 2178,
+    "milp_optimum": 0.3971338757749991,
+    "neal_best_energy": 0.5299323975257337,
+    "neal_gap_pct": 33.43923292657442,
+    "wall_clock_seconds": 2.683736958
+  },
+  {
+    "floorplan": "SYN_LIN_20_S2",
+    "n_variables": 80,
+    "n_interactions": 2136,
+    "milp_optimum": 0.3940950305760918,
+    "neal_best_energy": 0.6082340591278808,
+    "neal_gap_pct": 54.33690149270812,
+    "wall_clock_seconds": 2.7558710000000004
+  },
+  {
+    "floorplan": "SYN_LIN_30_S1",
+    "n_variables": 180,
+    "n_interactions": 9923,
+    "milp_optimum": 0.244048704702985,
+    "neal_best_energy": 0.5854743276778436,
+    "neal_gap_pct": 139.90060852418142,
+    "wall_clock_seconds": 12.389048917
+  },
+  {
+    "floorplan": "SYN_LIN_30_S2",
+    "n_variables": 180,
+    "n_interactions": 9931,
+    "milp_optimum": 0.24279643837702725,
+    "neal_best_energy": 0.5864221216403678,
+    "neal_gap_pct": 141.52830476439703,
+    "wall_clock_seconds": 12.765351541999998
+  },
+  {
+    "floorplan": "SYN_LOO_10_S1",
+    "n_variables": 20,
+    "n_interactions": 138,
+    "milp_optimum": 3.0132763884684346,
+    "neal_best_energy": 3.013276388468432,
+    "neal_gap_pct": -8.842651372098944e-14,
+    "wall_clock_seconds": 0.39332158299999875
+  },
+  {
+    "floorplan": "SYN_LOO_10_S2",
+    "n_variables": 20,
+    "n_interactions": 138,
+    "milp_optimum": 2.894449342797159,
+    "neal_best_energy": 2.891104124668617,
+    "neal_gap_pct": -0.11557355933232713,
+    "wall_clock_seconds": 0.43979866699999803
+  },
+  {
+    "floorplan": "SYN_LOO_20_S1",
+    "n_variables": 80,
+    "n_interactions": 1778,
+    "milp_optimum": 0.7146512939939766,
+    "neal_best_energy": 0.8863504116517049,
+    "neal_gap_pct": 24.025579901794092,
+    "wall_clock_seconds": 2.7352437919999986
+  },
+  {
+    "floorplan": "SYN_LOO_20_S2",
+    "n_variables": 80,
+    "n_interactions": 1766,
+    "milp_optimum": 0.6670233780479964,
+    "neal_best_energy": 0.798436948720358,
+    "neal_gap_pct": 19.701493980156357,
+    "wall_clock_seconds": 2.718883124999998
+  },
+  {
+    "floorplan": "SYN_LOO_30_S1",
+    "n_variables": 180,
+    "n_interactions": 8296,
+    "milp_optimum": 0.4056054892180343,
+    "neal_best_energy": 0.6660989170877372,
+    "neal_gap_pct": 64.22334874508415,
+    "wall_clock_seconds": 11.68813025
+  },
+  {
+    "floorplan": "SYN_LOO_30_S2",
+    "n_variables": 180,
+    "n_interactions": 7568,
+    "milp_optimum": 0.42164427308871966,
+    "neal_best_energy": 0.7215818700869931,
+    "neal_gap_pct": 71.13522372807435,
+    "wall_clock_seconds": 11.137733708000006
+  },
+  {
+    "floorplan": "SYN_TRE_10_S1",
+    "n_variables": 20,
+    "n_interactions": 140,
+    "milp_optimum": 1.7240822096633996,
+    "neal_best_energy": 1.7240822096633952,
+    "neal_gap_pct": -2.575800662874215e-13,
+    "wall_clock_seconds": 0.3932062920000021
+  },
+  {
+    "floorplan": "SYN_TRE_10_S2",
+    "n_variables": 20,
+    "n_interactions": 132,
+    "milp_optimum": 1.687639717122691,
+    "neal_best_energy": 1.6876397171226838,
+    "neal_gap_pct": -4.2102750282004884e-13,
+    "wall_clock_seconds": 0.4932152910000056
+  },
+  {
+    "floorplan": "SYN_TRE_20_S1",
+    "n_variables": 80,
+    "n_interactions": 1925,
+    "milp_optimum": 1.1002152710824848,
+    "neal_best_energy": 1.2169443399247015,
+    "neal_gap_pct": 10.609657210753742,
+    "wall_clock_seconds": 2.9253878339999986
+  },
+  {
+    "floorplan": "SYN_TRE_20_S2",
+    "n_variables": 80,
+    "n_interactions": 2031,
+    "milp_optimum": 1.0437398557524473,
+    "neal_best_energy": 1.1155857246121101,
+    "neal_gap_pct": 6.883503438495034,
+    "wall_clock_seconds": 2.994672209000001
+  },
+  {
+    "floorplan": "SYN_TRE_30_S1",
+    "n_variables": 180,
+    "n_interactions": 10257,
+    "milp_optimum": 0.7396965204988426,
+    "neal_best_energy": 0.9500383022422625,
+    "neal_gap_pct": 28.436227008553168,
+    "wall_clock_seconds": 13.417343125000002
+  },
+  {
+    "floorplan": "SYN_TRE_30_S2",
+    "n_variables": 180,
+    "n_interactions": 9786,
+    "milp_optimum": 0.7959110397225657,
+    "neal_best_energy": 0.9472265773121364,
+    "neal_gap_pct": 19.011614368650477,
+    "wall_clock_seconds": 12.958757332999994
+  },
+  {
+    "floorplan": "FP01",
+    "n_variables": 60,
+    "n_interactions": 954,
+    "milp_optimum": 0.5938570161592381,
+    "neal_best_energy": 0.7225180241709097,
+    "neal_gap_pct": 21.665317494063608,
+    "wall_clock_seconds": 1.57504475
+  },
+  {
+    "floorplan": "FP02",
+    "n_variables": 264,
+    "n_interactions": 13675,
+    "milp_optimum": 0.28882971133673535,
+    "neal_best_energy": 0.6575380977113809,
+    "neal_gap_pct": 127.65597578871753,
+    "wall_clock_seconds": 18.397747375
+  },
+  {
+    "floorplan": "FP03",
+    "n_variables": 252,
+    "n_interactions": 12421,
+    "milp_optimum": 0.2600115376776572,
+    "neal_best_energy": 0.6164298706879094,
+    "neal_gap_pct": 137.0778913096206,
+    "wall_clock_seconds": 17.454242875000002
+  },
+  {
+    "floorplan": "FP04",
+    "n_variables": 16,
+    "n_interactions": 77,
+    "milp_optimum": 1.502658366632903,
+    "neal_best_energy": 1.5026583666328968,
+    "neal_gap_pct": -4.137499964035232e-13,
+    "wall_clock_seconds": 0.2887822920000005
+  },
+  {
+    "floorplan": "FP05",
+    "n_variables": 72,
+    "n_interactions": 1751,
+    "milp_optimum": 0.6150570634825465,
+    "neal_best_energy": 0.8697548333228298,
+    "neal_gap_pct": 41.410429204429555,
+    "wall_clock_seconds": 2.273930749999998
+  }
+]

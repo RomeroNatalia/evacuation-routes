@@ -1,0 +1,1948 @@
+{
+  "n_total": 23,
+  "univariate_correlations": {
+    "n_variables": {
+      "pearson_r": 0.8342283710921989,
+      "pearson_p": 7.543523653157774e-07,
+      "spearman_rho": 0.8514305227328307,
+      "spearman_p": 2.586350761006086e-07
+    },
+    "structural_bridge_count": {
+      "pearson_r": 0.6255802362055332,
+      "pearson_p": 0.0014106926192879188,
+      "spearman_rho": 0.7546441116620048,
+      "spearman_p": 3.172720852212743e-05
+    },
+    "structural_critical_bridge_count": {
+      "pearson_r": 0.7229522105169728,
+      "pearson_p": 9.735074907834454e-05,
+      "spearman_rho": 0.6588959076431309,
+      "spearman_p": 0.0006283961141392359
+    },
+    "corridor_diameter_hops": {
+      "pearson_r": 0.8647836556670739,
+      "pearson_p": 1.0232756006777004e-07,
+      "spearman_rho": 0.890331461582556,
+      "spearman_p": 1.2758620171648361e-08
+    },
+    "route_hops_mean": {
+      "pearson_r": 0.7205199430120013,
+      "pearson_p": 0.00010544152433068038,
+      "spearman_rho": 0.7301994514266587,
+      "spearman_p": 7.636342863675539e-05
+    },
+    "capacity_bottleneck_edge_count_over_1x": {
+      "pearson_r": 0.6515416287496922,
+      "pearson_p": 0.0007573980547604324,
+      "spearman_rho": 0.7479600080426337,
+      "spearman_p": 4.073216820285108e-05
+    },
+    "traffic_bottleneck_top1_share_of_rooms": {
+      "pearson_r": 0.6861805876985869,
+      "pearson_p": 0.00030033254855597766,
+      "spearman_rho": 0.7544956555742781,
+      "spearman_p": 3.190644064631057e-05
+    }
+  },
+  "multiple_regression": {
+    "predictors": [
+      "n_variables",
+      "corridor_diameter_hops"
+    ],
+    "coefficients": {
+      "n_variables": 0.2907460540487928,
+      "corridor_diameter_hops": 2.9051540639025455,
+      "intercept": -29.39315751913338
+    },
+    "r_squared": 0.869909170138068,
+    "r_squared_n_variables_only": 0.6959369751351436
+  },
+  "rows": [
+    {
+      "floorplan": "FP01",
+      "total_nodes": 173,
+      "rooms": 12,
+      "exits": 5,
+      "doors": 13,
+      "navigation_nodes_total": 143,
+      "navigation_in_room": 109,
+      "navigation_hallway": 34,
+      "route_hops_mean": 15.45,
+      "route_hops_median": 16.0,
+      "route_hops_min": 2,
+      "route_hops_max": 25,
+      "route_hops_std": 5.463286556643355,
+      "route_distance_mean": 14.745833333333334,
+      "route_distance_max": 24.25,
+      "corridor_node_count": 34,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 21,
+      "vertical_mirror_score": 0.6127167630057804,
+      "horizontal_mirror_score": 0.8034682080924855,
+      "point_reflection_score": 0.5838150289017341,
+      "best_symmetry_score": 0.8034682080924855,
+      "capacity_bottleneck_edge_count_over_1x": 61,
+      "capacity_bottleneck_max_feasible_load_max": 10.000000000000002,
+      "capacity_bottleneck_max_feasible_load_mean": 0.8601700680272109,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E232:DOOR_10--N10",
+          "max_feasible_load": 10.000000000000002
+        },
+        {
+          "edge_id": "E231:P10--DOOR_10",
+          "max_feasible_load": 10.000000000000002
+        },
+        {
+          "edge_id": "E224:L2--DOOR_06",
+          "max_feasible_load": 9.500000000000002
+        },
+        {
+          "edge_id": "E225:DOOR_06--N2",
+          "max_feasible_load": 9.500000000000002
+        },
+        {
+          "edge_id": "E222:G8--DOOR_05",
+          "max_feasible_load": 7.5
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 18,
+      "traffic_bottleneck_max_multiplicity_edge": "E225:DOOR_06--N2",
+      "traffic_bottleneck_top1_share_of_rooms": 1.5,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E086:J2--K2",
+          "route_multiplicity": 18
+        },
+        {
+          "edge_id": "E102:K2--L2",
+          "route_multiplicity": 18
+        },
+        {
+          "edge_id": "E224:L2--DOOR_06",
+          "route_multiplicity": 18
+        },
+        {
+          "edge_id": "E225:DOOR_06--N2",
+          "route_multiplicity": 18
+        },
+        {
+          "edge_id": "E223:DOOR_05--E8",
+          "route_multiplicity": 17
+        }
+      ],
+      "structural_bridge_count": 34,
+      "structural_articulation_point_count": 39,
+      "structural_critical_bridge_count": 13,
+      "structural_max_rooms_sharing_one_bridge": 12,
+      "n_variables": 60,
+      "neal_gap_pct": 21.665317494063608,
+      "is_synthetic": false,
+      "topology": "real"
+    },
+    {
+      "floorplan": "FP02",
+      "total_nodes": 584,
+      "rooms": 33,
+      "exits": 8,
+      "doors": 55,
+      "navigation_nodes_total": 488,
+      "navigation_in_room": 381,
+      "navigation_hallway": 107,
+      "route_hops_mean": 28.58712121212121,
+      "route_hops_median": 31.0,
+      "route_hops_min": 2,
+      "route_hops_max": 48,
+      "route_hops_std": 10.646879648894078,
+      "route_distance_mean": 29.72253787878788,
+      "route_distance_max": 50.5,
+      "corridor_node_count": 107,
+      "corridor_connected_components": 8,
+      "corridor_diameter_hops": 22,
+      "vertical_mirror_score": 0.6318493150684932,
+      "horizontal_mirror_score": 0.6558219178082192,
+      "point_reflection_score": 0.5753424657534246,
+      "best_symmetry_score": 0.6558219178082192,
+      "capacity_bottleneck_edge_count_over_1x": 183,
+      "capacity_bottleneck_max_feasible_load_max": 17.900000000000002,
+      "capacity_bottleneck_max_feasible_load_mean": 1.5688629676334596,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E195:C22--DOOR_44",
+          "max_feasible_load": 17.900000000000002
+        },
+        {
+          "edge_id": "E197:C24--DOOR_44",
+          "max_feasible_load": 17.900000000000002
+        },
+        {
+          "edge_id": "E047:AA25--DOOR_53",
+          "max_feasible_load": 16.900000000000002
+        },
+        {
+          "edge_id": "E763:X24--DOOR_49",
+          "max_feasible_load": 16.900000000000002
+        },
+        {
+          "edge_id": "E780:Y25--DOOR_51",
+          "max_feasible_load": 16.900000000000002
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 93,
+      "traffic_bottleneck_max_multiplicity_edge": "E545:R10--S10",
+      "traffic_bottleneck_top1_share_of_rooms": 2.8181818181818183,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E514:Q10--R10",
+          "route_multiplicity": 93
+        },
+        {
+          "edge_id": "E545:R10--S10",
+          "route_multiplicity": 93
+        },
+        {
+          "edge_id": "E568:S10--T10",
+          "route_multiplicity": 87
+        },
+        {
+          "edge_id": "E679:T10--U10",
+          "route_multiplicity": 87
+        },
+        {
+          "edge_id": "E692:U10--V10",
+          "route_multiplicity": 87
+        }
+      ],
+      "structural_bridge_count": 70,
+      "structural_articulation_point_count": 73,
+      "structural_critical_bridge_count": 33,
+      "structural_max_rooms_sharing_one_bridge": 33,
+      "n_variables": 264,
+      "neal_gap_pct": 127.65597578871753,
+      "is_synthetic": false,
+      "topology": "real"
+    },
+    {
+      "floorplan": "FP03",
+      "total_nodes": 571,
+      "rooms": 28,
+      "exits": 9,
+      "doors": 45,
+      "navigation_nodes_total": 489,
+      "navigation_in_room": 285,
+      "navigation_hallway": 204,
+      "route_hops_mean": 27.51984126984127,
+      "route_hops_median": 29.0,
+      "route_hops_min": 1,
+      "route_hops_max": 49,
+      "route_hops_std": 10.733218868372715,
+      "route_distance_mean": 29.07936507936508,
+      "route_distance_max": 50.75,
+      "corridor_node_count": 204,
+      "corridor_connected_components": 6,
+      "corridor_diameter_hops": 40,
+      "vertical_mirror_score": 0.7460595446584939,
+      "horizontal_mirror_score": 0.6462346760070052,
+      "point_reflection_score": 0.5936952714535902,
+      "best_symmetry_score": 0.7460595446584939,
+      "capacity_bottleneck_edge_count_over_1x": 171,
+      "capacity_bottleneck_max_feasible_load_max": 6.500000000000002,
+      "capacity_bottleneck_max_feasible_load_mean": 0.6100484006734008,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E325:I23--DOOR_33",
+          "max_feasible_load": 6.500000000000002
+        },
+        {
+          "edge_id": "E327:I25--DOOR_33",
+          "max_feasible_load": 6.500000000000002
+        },
+        {
+          "edge_id": "E258:F26--DOOR_43",
+          "max_feasible_load": 6.500000000000002
+        },
+        {
+          "edge_id": "E301:H26--DOOR_43",
+          "max_feasible_load": 6.500000000000002
+        },
+        {
+          "edge_id": "E504:Q22--DOOR_45",
+          "max_feasible_load": 6.500000000000002
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 69,
+      "traffic_bottleneck_max_multiplicity_edge": "E427:N22--N23",
+      "traffic_bottleneck_top1_share_of_rooms": 2.4642857142857144,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E425:N20--N21",
+          "route_multiplicity": 69
+        },
+        {
+          "edge_id": "E426:N21--N22",
+          "route_multiplicity": 69
+        },
+        {
+          "edge_id": "E427:N22--N23",
+          "route_multiplicity": 69
+        },
+        {
+          "edge_id": "E421:N18--N19",
+          "route_multiplicity": 67
+        },
+        {
+          "edge_id": "E423:N19--N20",
+          "route_multiplicity": 67
+        }
+      ],
+      "structural_bridge_count": 81,
+      "structural_articulation_point_count": 83,
+      "structural_critical_bridge_count": 41,
+      "structural_max_rooms_sharing_one_bridge": 28,
+      "n_variables": 252,
+      "neal_gap_pct": 137.0778913096206,
+      "is_synthetic": false,
+      "topology": "real"
+    },
+    {
+      "floorplan": "FP04",
+      "total_nodes": 173,
+      "rooms": 8,
+      "exits": 2,
+      "doors": 12,
+      "navigation_nodes_total": 151,
+      "navigation_in_room": 143,
+      "navigation_hallway": 8,
+      "route_hops_mean": 12.625,
+      "route_hops_median": 13.0,
+      "route_hops_min": 3,
+      "route_hops_max": 19,
+      "route_hops_std": 5.395310463726809,
+      "route_distance_mean": 11.84375,
+      "route_distance_max": 18.5,
+      "corridor_node_count": 8,
+      "corridor_connected_components": 3,
+      "corridor_diameter_hops": 5,
+      "vertical_mirror_score": 1.0,
+      "horizontal_mirror_score": 0.7861271676300579,
+      "point_reflection_score": 0.7861271676300579,
+      "best_symmetry_score": 1.0,
+      "capacity_bottleneck_edge_count_over_1x": 70,
+      "capacity_bottleneck_max_feasible_load_max": 7.5,
+      "capacity_bottleneck_max_feasible_load_mean": 0.7945413436692507,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E085:G10--DOOR_07",
+          "max_feasible_load": 7.5
+        },
+        {
+          "edge_id": "E062:E10--DOOR_07",
+          "max_feasible_load": 7.5
+        },
+        {
+          "edge_id": "E127:K15--EXIT_B",
+          "max_feasible_load": 5.466666666666666
+        },
+        {
+          "edge_id": "E129:K2--EXIT_A",
+          "max_feasible_load": 5.466666666666666
+        },
+        {
+          "edge_id": "E166:Q10--DOOR_08",
+          "max_feasible_load": 5.0
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 8,
+      "traffic_bottleneck_max_multiplicity_edge": "E129:K2--EXIT_A",
+      "traffic_bottleneck_top1_share_of_rooms": 1.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E129:K2--EXIT_A",
+          "route_multiplicity": 8
+        },
+        {
+          "edge_id": "E127:K15--EXIT_B",
+          "route_multiplicity": 8
+        },
+        {
+          "edge_id": "E116:J2--K2",
+          "route_multiplicity": 5
+        },
+        {
+          "edge_id": "E101:I2--J2",
+          "route_multiplicity": 4
+        },
+        {
+          "edge_id": "E086:G10--G11",
+          "route_multiplicity": 4
+        }
+      ],
+      "structural_bridge_count": 3,
+      "structural_articulation_point_count": 3,
+      "structural_critical_bridge_count": 2,
+      "structural_max_rooms_sharing_one_bridge": 8,
+      "n_variables": 16,
+      "neal_gap_pct": -4.137499964035232e-13,
+      "is_synthetic": false,
+      "topology": "real"
+    },
+    {
+      "floorplan": "FP05",
+      "total_nodes": 359,
+      "rooms": 24,
+      "exits": 3,
+      "doors": 30,
+      "navigation_nodes_total": 302,
+      "navigation_in_room": 236,
+      "navigation_hallway": 66,
+      "route_hops_mean": 19.23611111111111,
+      "route_hops_median": 19.0,
+      "route_hops_min": 2,
+      "route_hops_max": 32,
+      "route_hops_std": 6.870818032235955,
+      "route_distance_mean": 18.08888888888889,
+      "route_distance_max": 30.25,
+      "corridor_node_count": 66,
+      "corridor_connected_components": 3,
+      "corridor_diameter_hops": 22,
+      "vertical_mirror_score": 0.6295264623955432,
+      "horizontal_mirror_score": 0.7688022284122563,
+      "point_reflection_score": 0.6072423398328691,
+      "best_symmetry_score": 0.7688022284122563,
+      "capacity_bottleneck_edge_count_over_1x": 36,
+      "capacity_bottleneck_max_feasible_load_max": 8.500000000000002,
+      "capacity_bottleneck_max_feasible_load_mean": 0.34237623762376246,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E503:DOOR_26--I28",
+          "max_feasible_load": 8.500000000000002
+        },
+        {
+          "edge_id": "E229:I26--DOOR_26",
+          "max_feasible_load": 8.500000000000002
+        },
+        {
+          "edge_id": "E245:I5.5--I7",
+          "max_feasible_load": 4.250000000000001
+        },
+        {
+          "edge_id": "E211:I14--I15",
+          "max_feasible_load": 4.250000000000001
+        },
+        {
+          "edge_id": "E049:C18--D18",
+          "max_feasible_load": 4.250000000000001
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 37,
+      "traffic_bottleneck_max_multiplicity_edge": "E215:I16--I18",
+      "traffic_bottleneck_top1_share_of_rooms": 1.5416666666666667,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E214:I15--I16",
+          "route_multiplicity": 37
+        },
+        {
+          "edge_id": "E215:I16--I18",
+          "route_multiplicity": 37
+        },
+        {
+          "edge_id": "E209:I12--I14",
+          "route_multiplicity": 35
+        },
+        {
+          "edge_id": "E211:I14--I15",
+          "route_multiplicity": 35
+        },
+        {
+          "edge_id": "E207:I11--I12",
+          "route_multiplicity": 33
+        }
+      ],
+      "structural_bridge_count": 54,
+      "structural_articulation_point_count": 65,
+      "structural_critical_bridge_count": 22,
+      "structural_max_rooms_sharing_one_bridge": 24,
+      "n_variables": 72,
+      "neal_gap_pct": 41.410429204429555,
+      "is_synthetic": false,
+      "topology": "real"
+    },
+    {
+      "floorplan": "SYN_LIN_10_S1",
+      "total_nodes": 32,
+      "rooms": 10,
+      "exits": 2,
+      "doors": 10,
+      "navigation_nodes_total": 10,
+      "navigation_in_room": 0,
+      "navigation_hallway": 10,
+      "route_hops_mean": 7.5,
+      "route_hops_median": 7.5,
+      "route_hops_min": 3,
+      "route_hops_max": 12,
+      "route_hops_std": 2.8722813232690143,
+      "route_distance_mean": 7.5,
+      "route_distance_max": 12.0,
+      "corridor_node_count": 10,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 9,
+      "vertical_mirror_score": 0.375,
+      "horizontal_mirror_score": 0.3125,
+      "point_reflection_score": 0.9375,
+      "best_symmetry_score": 0.9375,
+      "capacity_bottleneck_edge_count_over_1x": 12,
+      "capacity_bottleneck_max_feasible_load_max": 4.866666666666666,
+      "capacity_bottleneck_max_feasible_load_mean": 1.7470967741935484,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 4.866666666666666
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 4.866666666666666
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 4.866666666666666
+        },
+        {
+          "edge_id": "E011:C9--EXIT_B",
+          "max_feasible_load": 3.65
+        },
+        {
+          "edge_id": "E007:C6--C7",
+          "max_feasible_load": 3.65
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 10,
+      "traffic_bottleneck_max_multiplicity_edge": "E011:C9--EXIT_B",
+      "traffic_bottleneck_top1_share_of_rooms": 1.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E010:C0--EXIT_A",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 10
+        }
+      ],
+      "structural_bridge_count": 31,
+      "structural_articulation_point_count": 20,
+      "structural_critical_bridge_count": 11,
+      "structural_max_rooms_sharing_one_bridge": 10,
+      "n_variables": 20,
+      "neal_gap_pct": 1.1344004490841674e-12,
+      "is_synthetic": true,
+      "topology": "LIN"
+    },
+    {
+      "floorplan": "SYN_LIN_10_S2",
+      "total_nodes": 32,
+      "rooms": 10,
+      "exits": 2,
+      "doors": 10,
+      "navigation_nodes_total": 10,
+      "navigation_in_room": 0,
+      "navigation_hallway": 10,
+      "route_hops_mean": 7.5,
+      "route_hops_median": 7.5,
+      "route_hops_min": 3,
+      "route_hops_max": 12,
+      "route_hops_std": 2.8722813232690143,
+      "route_distance_mean": 7.5,
+      "route_distance_max": 12.0,
+      "corridor_node_count": 10,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 9,
+      "vertical_mirror_score": 0.375,
+      "horizontal_mirror_score": 0.3125,
+      "point_reflection_score": 0.9375,
+      "best_symmetry_score": 0.9375,
+      "capacity_bottleneck_edge_count_over_1x": 11,
+      "capacity_bottleneck_max_feasible_load_max": 5.2,
+      "capacity_bottleneck_max_feasible_load_mean": 1.8727956989247307,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 5.2
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 5.2
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 5.2
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 5.2
+        },
+        {
+          "edge_id": "E011:C9--EXIT_B",
+          "max_feasible_load": 3.9
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 10,
+      "traffic_bottleneck_max_multiplicity_edge": "E011:C9--EXIT_B",
+      "traffic_bottleneck_top1_share_of_rooms": 1.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E010:C0--EXIT_A",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 10
+        }
+      ],
+      "structural_bridge_count": 31,
+      "structural_articulation_point_count": 20,
+      "structural_critical_bridge_count": 11,
+      "structural_max_rooms_sharing_one_bridge": 10,
+      "n_variables": 20,
+      "neal_gap_pct": -2.1860253334168256e-13,
+      "is_synthetic": true,
+      "topology": "LIN"
+    },
+    {
+      "floorplan": "SYN_LIN_20_S1",
+      "total_nodes": 64,
+      "rooms": 20,
+      "exits": 4,
+      "doors": 20,
+      "navigation_nodes_total": 20,
+      "navigation_in_room": 0,
+      "navigation_hallway": 20,
+      "route_hops_mean": 10.55,
+      "route_hops_median": 9.5,
+      "route_hops_min": 3,
+      "route_hops_max": 22,
+      "route_hops_std": 5.243805869785799,
+      "route_distance_mean": 10.55,
+      "route_distance_max": 22.0,
+      "corridor_node_count": 20,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 19,
+      "vertical_mirror_score": 0.375,
+      "horizontal_mirror_score": 0.3125,
+      "point_reflection_score": 0.9375,
+      "best_symmetry_score": 0.9375,
+      "capacity_bottleneck_edge_count_over_1x": 28,
+      "capacity_bottleneck_max_feasible_load_max": 9.700000000000001,
+      "capacity_bottleneck_max_feasible_load_mean": 3.126904761904762,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 9.700000000000001
+        },
+        {
+          "edge_id": "E011:C10--C11",
+          "max_feasible_load": 9.700000000000001
+        },
+        {
+          "edge_id": "E018:C17--C18",
+          "max_feasible_load": 9.700000000000001
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 9.700000000000001
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 9.700000000000001
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 40,
+      "traffic_bottleneck_max_multiplicity_edge": "E013:C12--C13",
+      "traffic_bottleneck_top1_share_of_rooms": 2.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E007:C6--C7",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E008:C7--C8",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E009:C8--C9",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E010:C9--C10",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E011:C10--C11",
+          "route_multiplicity": 40
+        }
+      ],
+      "structural_bridge_count": 63,
+      "structural_articulation_point_count": 40,
+      "structural_critical_bridge_count": 23,
+      "structural_max_rooms_sharing_one_bridge": 20,
+      "n_variables": 80,
+      "neal_gap_pct": 33.43923292657442,
+      "is_synthetic": true,
+      "topology": "LIN"
+    },
+    {
+      "floorplan": "SYN_LIN_20_S2",
+      "total_nodes": 64,
+      "rooms": 20,
+      "exits": 4,
+      "doors": 20,
+      "navigation_nodes_total": 20,
+      "navigation_in_room": 0,
+      "navigation_hallway": 20,
+      "route_hops_mean": 10.55,
+      "route_hops_median": 9.5,
+      "route_hops_min": 3,
+      "route_hops_max": 22,
+      "route_hops_std": 5.243805869785799,
+      "route_distance_mean": 10.55,
+      "route_distance_max": 22.0,
+      "corridor_node_count": 20,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 19,
+      "vertical_mirror_score": 0.375,
+      "horizontal_mirror_score": 0.3125,
+      "point_reflection_score": 0.9375,
+      "best_symmetry_score": 0.9375,
+      "capacity_bottleneck_edge_count_over_1x": 26,
+      "capacity_bottleneck_max_feasible_load_max": 9.866666666666667,
+      "capacity_bottleneck_max_feasible_load_mean": 3.0393121693121694,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 9.866666666666667
+        },
+        {
+          "edge_id": "E013:C12--C13",
+          "max_feasible_load": 9.866666666666667
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 9.866666666666667
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 9.866666666666667
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 9.866666666666667
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 40,
+      "traffic_bottleneck_max_multiplicity_edge": "E013:C12--C13",
+      "traffic_bottleneck_top1_share_of_rooms": 2.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E007:C6--C7",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E008:C7--C8",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E009:C8--C9",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E010:C9--C10",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E011:C10--C11",
+          "route_multiplicity": 40
+        }
+      ],
+      "structural_bridge_count": 63,
+      "structural_articulation_point_count": 40,
+      "structural_critical_bridge_count": 23,
+      "structural_max_rooms_sharing_one_bridge": 20,
+      "n_variables": 80,
+      "neal_gap_pct": 54.33690149270812,
+      "is_synthetic": true,
+      "topology": "LIN"
+    },
+    {
+      "floorplan": "SYN_LIN_30_S1",
+      "total_nodes": 96,
+      "rooms": 30,
+      "exits": 6,
+      "doors": 30,
+      "navigation_nodes_total": 30,
+      "navigation_in_room": 0,
+      "navigation_hallway": 30,
+      "route_hops_mean": 13.7,
+      "route_hops_median": 12.5,
+      "route_hops_min": 3,
+      "route_hops_max": 32,
+      "route_hops_std": 7.528390708954117,
+      "route_distance_mean": 13.7,
+      "route_distance_max": 32.0,
+      "corridor_node_count": 30,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 29,
+      "vertical_mirror_score": 0.375,
+      "horizontal_mirror_score": 0.3125,
+      "point_reflection_score": 0.9375,
+      "best_symmetry_score": 0.9375,
+      "capacity_bottleneck_edge_count_over_1x": 37,
+      "capacity_bottleneck_max_feasible_load_max": 11.366666666666667,
+      "capacity_bottleneck_max_feasible_load_mean": 3.579456140350877,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 11.366666666666667
+        },
+        {
+          "edge_id": "E011:C10--C11",
+          "max_feasible_load": 11.366666666666667
+        },
+        {
+          "edge_id": "E027:C26--C27",
+          "max_feasible_load": 11.366666666666667
+        },
+        {
+          "edge_id": "E025:C24--C25",
+          "max_feasible_load": 11.366666666666667
+        },
+        {
+          "edge_id": "E023:C22--C23",
+          "max_feasible_load": 11.366666666666667
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 90,
+      "traffic_bottleneck_max_multiplicity_edge": "E017:C16--C17",
+      "traffic_bottleneck_top1_share_of_rooms": 3.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E013:C12--C13",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E014:C13--C14",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E015:C14--C15",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E016:C15--C16",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E017:C16--C17",
+          "route_multiplicity": 90
+        }
+      ],
+      "structural_bridge_count": 95,
+      "structural_articulation_point_count": 60,
+      "structural_critical_bridge_count": 35,
+      "structural_max_rooms_sharing_one_bridge": 30,
+      "n_variables": 180,
+      "neal_gap_pct": 139.90060852418142,
+      "is_synthetic": true,
+      "topology": "LIN"
+    },
+    {
+      "floorplan": "SYN_LIN_30_S2",
+      "total_nodes": 96,
+      "rooms": 30,
+      "exits": 6,
+      "doors": 30,
+      "navigation_nodes_total": 30,
+      "navigation_in_room": 0,
+      "navigation_hallway": 30,
+      "route_hops_mean": 13.7,
+      "route_hops_median": 12.5,
+      "route_hops_min": 3,
+      "route_hops_max": 32,
+      "route_hops_std": 7.528390708954117,
+      "route_distance_mean": 13.7,
+      "route_distance_max": 32.0,
+      "corridor_node_count": 30,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 29,
+      "vertical_mirror_score": 0.375,
+      "horizontal_mirror_score": 0.3125,
+      "point_reflection_score": 0.9375,
+      "best_symmetry_score": 0.9375,
+      "capacity_bottleneck_edge_count_over_1x": 41,
+      "capacity_bottleneck_max_feasible_load_max": 12.799999999999999,
+      "capacity_bottleneck_max_feasible_load_mean": 3.8308771929824568,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 12.799999999999999
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 12.799999999999999
+        },
+        {
+          "edge_id": "E028:C27--C28",
+          "max_feasible_load": 12.799999999999999
+        },
+        {
+          "edge_id": "E016:C15--C16",
+          "max_feasible_load": 12.799999999999999
+        },
+        {
+          "edge_id": "E013:C12--C13",
+          "max_feasible_load": 12.799999999999999
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 90,
+      "traffic_bottleneck_max_multiplicity_edge": "E017:C16--C17",
+      "traffic_bottleneck_top1_share_of_rooms": 3.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E013:C12--C13",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E014:C13--C14",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E015:C14--C15",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E016:C15--C16",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E017:C16--C17",
+          "route_multiplicity": 90
+        }
+      ],
+      "structural_bridge_count": 95,
+      "structural_articulation_point_count": 60,
+      "structural_critical_bridge_count": 35,
+      "structural_max_rooms_sharing_one_bridge": 30,
+      "n_variables": 180,
+      "neal_gap_pct": 141.52830476439703,
+      "is_synthetic": true,
+      "topology": "LIN"
+    },
+    {
+      "floorplan": "SYN_LOO_10_S1",
+      "total_nodes": 30,
+      "rooms": 10,
+      "exits": 2,
+      "doors": 10,
+      "navigation_nodes_total": 8,
+      "navigation_in_room": 0,
+      "navigation_hallway": 8,
+      "route_hops_mean": 4.8,
+      "route_hops_median": 5.0,
+      "route_hops_min": 3,
+      "route_hops_max": 7,
+      "route_hops_std": 1.2083045973594573,
+      "route_distance_mean": 4.8,
+      "route_distance_max": 7.0,
+      "corridor_node_count": 8,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 4,
+      "vertical_mirror_score": 1.0,
+      "horizontal_mirror_score": 0.5333333333333333,
+      "point_reflection_score": 0.5333333333333333,
+      "best_symmetry_score": 1.0,
+      "capacity_bottleneck_edge_count_over_1x": 9,
+      "capacity_bottleneck_max_feasible_load_max": 3.25,
+      "capacity_bottleneck_max_feasible_load_mean": 1.0228333333333335,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E008:C7--C0",
+          "max_feasible_load": 3.25
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 3.1
+        },
+        {
+          "edge_id": "E010:C7--EXIT_B",
+          "max_feasible_load": 3.06
+        },
+        {
+          "edge_id": "E009:C0--EXIT_A",
+          "max_feasible_load": 2.5500000000000003
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 1.2000000000000002
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 10,
+      "traffic_bottleneck_max_multiplicity_edge": "E010:C7--EXIT_B",
+      "traffic_bottleneck_top1_share_of_rooms": 1.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E009:C0--EXIT_A",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E010:C7--EXIT_B",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E008:C7--C0",
+          "route_multiplicity": 9
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 9
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 5
+        }
+      ],
+      "structural_bridge_count": 22,
+      "structural_articulation_point_count": 18,
+      "structural_critical_bridge_count": 2,
+      "structural_max_rooms_sharing_one_bridge": 10,
+      "n_variables": 20,
+      "neal_gap_pct": -8.842651372098944e-14,
+      "is_synthetic": true,
+      "topology": "LOO"
+    },
+    {
+      "floorplan": "SYN_LOO_10_S2",
+      "total_nodes": 30,
+      "rooms": 10,
+      "exits": 2,
+      "doors": 10,
+      "navigation_nodes_total": 8,
+      "navigation_in_room": 0,
+      "navigation_hallway": 8,
+      "route_hops_mean": 4.8,
+      "route_hops_median": 5.0,
+      "route_hops_min": 3,
+      "route_hops_max": 7,
+      "route_hops_std": 1.2083045973594573,
+      "route_distance_mean": 4.8,
+      "route_distance_max": 7.0,
+      "corridor_node_count": 8,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 4,
+      "vertical_mirror_score": 1.0,
+      "horizontal_mirror_score": 0.5333333333333333,
+      "point_reflection_score": 0.5333333333333333,
+      "best_symmetry_score": 1.0,
+      "capacity_bottleneck_edge_count_over_1x": 8,
+      "capacity_bottleneck_max_feasible_load_max": 2.95,
+      "capacity_bottleneck_max_feasible_load_mean": 0.9448333333333333,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E008:C7--C0",
+          "max_feasible_load": 2.95
+        },
+        {
+          "edge_id": "E009:C0--EXIT_A",
+          "max_feasible_load": 2.8200000000000003
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 2.466666666666667
+        },
+        {
+          "edge_id": "E010:C7--EXIT_B",
+          "max_feasible_load": 2.35
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 1.7999999999999998
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 10,
+      "traffic_bottleneck_max_multiplicity_edge": "E010:C7--EXIT_B",
+      "traffic_bottleneck_top1_share_of_rooms": 1.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E009:C0--EXIT_A",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E010:C7--EXIT_B",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E008:C7--C0",
+          "route_multiplicity": 9
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 9
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 5
+        }
+      ],
+      "structural_bridge_count": 22,
+      "structural_articulation_point_count": 18,
+      "structural_critical_bridge_count": 2,
+      "structural_max_rooms_sharing_one_bridge": 10,
+      "n_variables": 20,
+      "neal_gap_pct": -0.11557355933232713,
+      "is_synthetic": true,
+      "topology": "LOO"
+    },
+    {
+      "floorplan": "SYN_LOO_20_S1",
+      "total_nodes": 60,
+      "rooms": 20,
+      "exits": 4,
+      "doors": 20,
+      "navigation_nodes_total": 16,
+      "navigation_in_room": 0,
+      "navigation_hallway": 16,
+      "route_hops_mean": 6.925,
+      "route_hops_median": 7.0,
+      "route_hops_min": 3,
+      "route_hops_max": 11,
+      "route_hops_std": 2.344008319097865,
+      "route_distance_mean": 6.925,
+      "route_distance_max": 11.0,
+      "corridor_node_count": 16,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 8,
+      "vertical_mirror_score": 0.5,
+      "horizontal_mirror_score": 0.36666666666666664,
+      "point_reflection_score": 0.1,
+      "best_symmetry_score": 0.5,
+      "capacity_bottleneck_edge_count_over_1x": 27,
+      "capacity_bottleneck_max_feasible_load_max": 7.833333333333334,
+      "capacity_bottleneck_max_feasible_load_mean": 2.4636388888888887,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E012:C11--C12",
+          "max_feasible_load": 7.833333333333334
+        },
+        {
+          "edge_id": "E014:C13--C14",
+          "max_feasible_load": 7.833333333333334
+        },
+        {
+          "edge_id": "E011:C10--C11",
+          "max_feasible_load": 7.833333333333334
+        },
+        {
+          "edge_id": "E018:C5--EXIT_B",
+          "max_feasible_load": 7.775
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 7.333333333333334
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 29,
+      "traffic_bottleneck_max_multiplicity_edge": "E001:C0--C1",
+      "traffic_bottleneck_top1_share_of_rooms": 1.45,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 29
+        },
+        {
+          "edge_id": "E016:C15--C0",
+          "route_multiplicity": 27
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 25
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 21
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 21
+        }
+      ],
+      "structural_bridge_count": 44,
+      "structural_articulation_point_count": 36,
+      "structural_critical_bridge_count": 4,
+      "structural_max_rooms_sharing_one_bridge": 20,
+      "n_variables": 80,
+      "neal_gap_pct": 24.025579901794092,
+      "is_synthetic": true,
+      "topology": "LOO"
+    },
+    {
+      "floorplan": "SYN_LOO_20_S2",
+      "total_nodes": 60,
+      "rooms": 20,
+      "exits": 4,
+      "doors": 20,
+      "navigation_nodes_total": 16,
+      "navigation_in_room": 0,
+      "navigation_hallway": 16,
+      "route_hops_mean": 6.925,
+      "route_hops_median": 7.0,
+      "route_hops_min": 3,
+      "route_hops_max": 11,
+      "route_hops_std": 2.344008319097865,
+      "route_distance_mean": 6.925,
+      "route_distance_max": 11.0,
+      "corridor_node_count": 16,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 8,
+      "vertical_mirror_score": 0.5,
+      "horizontal_mirror_score": 0.36666666666666664,
+      "point_reflection_score": 0.1,
+      "best_symmetry_score": 0.5,
+      "capacity_bottleneck_edge_count_over_1x": 25,
+      "capacity_bottleneck_max_feasible_load_max": 9.633333333333333,
+      "capacity_bottleneck_max_feasible_load_mean": 2.358527777777778,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E016:C15--C0",
+          "max_feasible_load": 9.633333333333333
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 7.3
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 7.3
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 7.3
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 7.3
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 29,
+      "traffic_bottleneck_max_multiplicity_edge": "E001:C0--C1",
+      "traffic_bottleneck_top1_share_of_rooms": 1.45,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 29
+        },
+        {
+          "edge_id": "E016:C15--C0",
+          "route_multiplicity": 27
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 25
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 21
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 21
+        }
+      ],
+      "structural_bridge_count": 44,
+      "structural_articulation_point_count": 36,
+      "structural_critical_bridge_count": 4,
+      "structural_max_rooms_sharing_one_bridge": 20,
+      "n_variables": 80,
+      "neal_gap_pct": 19.701493980156357,
+      "is_synthetic": true,
+      "topology": "LOO"
+    },
+    {
+      "floorplan": "SYN_LOO_30_S1",
+      "total_nodes": 90,
+      "rooms": 30,
+      "exits": 6,
+      "doors": 30,
+      "navigation_nodes_total": 24,
+      "navigation_in_room": 0,
+      "navigation_hallway": 24,
+      "route_hops_mean": 8.933333333333334,
+      "route_hops_median": 9.0,
+      "route_hops_min": 3,
+      "route_hops_max": 15,
+      "route_hops_std": 3.487437773240151,
+      "route_distance_mean": 8.933333333333334,
+      "route_distance_max": 15.0,
+      "corridor_node_count": 24,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 12,
+      "vertical_mirror_score": 0.5333333333333333,
+      "horizontal_mirror_score": 0.35555555555555557,
+      "point_reflection_score": 0.06666666666666667,
+      "best_symmetry_score": 0.5333333333333333,
+      "capacity_bottleneck_edge_count_over_1x": 37,
+      "capacity_bottleneck_max_feasible_load_max": 12.066666666666666,
+      "capacity_bottleneck_max_feasible_load_mean": 3.453703703703703,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 12.066666666666666
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 12.066666666666666
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 12.066666666666666
+        },
+        {
+          "edge_id": "E023:C22--C23",
+          "max_feasible_load": 11.4
+        },
+        {
+          "edge_id": "E029:C18--EXIT_E",
+          "max_feasible_load": 10.575
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 60,
+      "traffic_bottleneck_max_multiplicity_edge": "E001:C0--C1",
+      "traffic_bottleneck_top1_share_of_rooms": 2.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 60
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 56
+        },
+        {
+          "edge_id": "E024:C23--C0",
+          "route_multiplicity": 56
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 52
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 52
+        }
+      ],
+      "structural_bridge_count": 66,
+      "structural_articulation_point_count": 54,
+      "structural_critical_bridge_count": 6,
+      "structural_max_rooms_sharing_one_bridge": 30,
+      "n_variables": 180,
+      "neal_gap_pct": 64.22334874508415,
+      "is_synthetic": true,
+      "topology": "LOO"
+    },
+    {
+      "floorplan": "SYN_LOO_30_S2",
+      "total_nodes": 90,
+      "rooms": 30,
+      "exits": 6,
+      "doors": 30,
+      "navigation_nodes_total": 24,
+      "navigation_in_room": 0,
+      "navigation_hallway": 24,
+      "route_hops_mean": 8.933333333333334,
+      "route_hops_median": 9.0,
+      "route_hops_min": 3,
+      "route_hops_max": 15,
+      "route_hops_std": 3.487437773240151,
+      "route_distance_mean": 8.933333333333334,
+      "route_distance_max": 15.0,
+      "corridor_node_count": 24,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 12,
+      "vertical_mirror_score": 0.5333333333333333,
+      "horizontal_mirror_score": 0.35555555555555557,
+      "point_reflection_score": 0.06666666666666667,
+      "best_symmetry_score": 0.5333333333333333,
+      "capacity_bottleneck_edge_count_over_1x": 36,
+      "capacity_bottleneck_max_feasible_load_max": 9.600000000000001,
+      "capacity_bottleneck_max_feasible_load_mean": 2.6198518518518523,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 9.600000000000001
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 9.600000000000001
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 9.600000000000001
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 9.600000000000001
+        },
+        {
+          "edge_id": "E016:C15--C16",
+          "max_feasible_load": 8.4
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 60,
+      "traffic_bottleneck_max_multiplicity_edge": "E001:C0--C1",
+      "traffic_bottleneck_top1_share_of_rooms": 2.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 60
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 56
+        },
+        {
+          "edge_id": "E024:C23--C0",
+          "route_multiplicity": 56
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 52
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 52
+        }
+      ],
+      "structural_bridge_count": 66,
+      "structural_articulation_point_count": 54,
+      "structural_critical_bridge_count": 6,
+      "structural_max_rooms_sharing_one_bridge": 30,
+      "n_variables": 180,
+      "neal_gap_pct": 71.13522372807435,
+      "is_synthetic": true,
+      "topology": "LOO"
+    },
+    {
+      "floorplan": "SYN_TRE_10_S1",
+      "total_nodes": 36,
+      "rooms": 10,
+      "exits": 2,
+      "doors": 10,
+      "navigation_nodes_total": 14,
+      "navigation_in_room": 0,
+      "navigation_hallway": 14,
+      "route_hops_mean": 6.7,
+      "route_hops_median": 7.0,
+      "route_hops_min": 3,
+      "route_hops_max": 9,
+      "route_hops_std": 1.9,
+      "route_distance_mean": 6.7,
+      "route_distance_max": 9.0,
+      "corridor_node_count": 14,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 7,
+      "vertical_mirror_score": 0.0,
+      "horizontal_mirror_score": 0.2222222222222222,
+      "point_reflection_score": 0.05555555555555555,
+      "best_symmetry_score": 0.2222222222222222,
+      "capacity_bottleneck_edge_count_over_1x": 14,
+      "capacity_bottleneck_max_feasible_load_max": 5.166666666666666,
+      "capacity_bottleneck_max_feasible_load_mean": 1.3980952380952383,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 5.166666666666666
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 5.166666666666666
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 5.166666666666666
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "max_feasible_load": 3.8749999999999996
+        },
+        {
+          "edge_id": "E034:C0--EXIT_A",
+          "max_feasible_load": 3.1000000000000005
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 10,
+      "traffic_bottleneck_max_multiplicity_edge": "E035:C5--EXIT_B",
+      "traffic_bottleneck_top1_share_of_rooms": 1.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E034:C0--EXIT_A",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 10
+        }
+      ],
+      "structural_bridge_count": 35,
+      "structural_articulation_point_count": 24,
+      "structural_critical_bridge_count": 11,
+      "structural_max_rooms_sharing_one_bridge": 10,
+      "n_variables": 20,
+      "neal_gap_pct": -2.575800662874215e-13,
+      "is_synthetic": true,
+      "topology": "TRE"
+    },
+    {
+      "floorplan": "SYN_TRE_10_S2",
+      "total_nodes": 36,
+      "rooms": 10,
+      "exits": 2,
+      "doors": 10,
+      "navigation_nodes_total": 14,
+      "navigation_in_room": 0,
+      "navigation_hallway": 14,
+      "route_hops_mean": 6.7,
+      "route_hops_median": 6.5,
+      "route_hops_min": 4,
+      "route_hops_max": 9,
+      "route_hops_std": 1.676305461424021,
+      "route_distance_mean": 6.7,
+      "route_distance_max": 9.0,
+      "corridor_node_count": 14,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 7,
+      "vertical_mirror_score": 0.0,
+      "horizontal_mirror_score": 0.2222222222222222,
+      "point_reflection_score": 0.05555555555555555,
+      "best_symmetry_score": 0.2222222222222222,
+      "capacity_bottleneck_edge_count_over_1x": 8,
+      "capacity_bottleneck_max_feasible_load_max": 5.9,
+      "capacity_bottleneck_max_feasible_load_mean": 1.5850000000000002,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 5.9
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 5.9
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 5.9
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 5.9
+        },
+        {
+          "edge_id": "E034:C0--EXIT_A",
+          "max_feasible_load": 4.425000000000001
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 10,
+      "traffic_bottleneck_max_multiplicity_edge": "E035:C5--EXIT_B",
+      "traffic_bottleneck_top1_share_of_rooms": 1.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E034:C0--EXIT_A",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 10
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 10
+        }
+      ],
+      "structural_bridge_count": 35,
+      "structural_articulation_point_count": 24,
+      "structural_critical_bridge_count": 11,
+      "structural_max_rooms_sharing_one_bridge": 10,
+      "n_variables": 20,
+      "neal_gap_pct": -4.2102750282004884e-13,
+      "is_synthetic": true,
+      "topology": "TRE"
+    },
+    {
+      "floorplan": "SYN_TRE_20_S1",
+      "total_nodes": 66,
+      "rooms": 20,
+      "exits": 4,
+      "doors": 20,
+      "navigation_nodes_total": 22,
+      "navigation_in_room": 0,
+      "navigation_hallway": 22,
+      "route_hops_mean": 6.1,
+      "route_hops_median": 6.0,
+      "route_hops_min": 3,
+      "route_hops_max": 9,
+      "route_hops_std": 1.42828568570857,
+      "route_distance_mean": 6.1,
+      "route_distance_max": 9.0,
+      "corridor_node_count": 22,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 7,
+      "vertical_mirror_score": 0.0,
+      "horizontal_mirror_score": 0.36363636363636365,
+      "point_reflection_score": 0.12121212121212122,
+      "best_symmetry_score": 0.36363636363636365,
+      "capacity_bottleneck_edge_count_over_1x": 19,
+      "capacity_bottleneck_max_feasible_load_max": 10.366666666666667,
+      "capacity_bottleneck_max_feasible_load_mean": 1.6647179487179489,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 10.366666666666667
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 10.366666666666667
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 10.366666666666667
+        },
+        {
+          "edge_id": "E063:C5--EXIT_B",
+          "max_feasible_load": 7.775
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "max_feasible_load": 7.775
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 40,
+      "traffic_bottleneck_max_multiplicity_edge": "E003:C2--C3",
+      "traffic_bottleneck_top1_share_of_rooms": 2.0,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 32
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 20
+        },
+        {
+          "edge_id": "E062:C0--EXIT_A",
+          "route_multiplicity": 20
+        }
+      ],
+      "structural_bridge_count": 65,
+      "structural_articulation_point_count": 42,
+      "structural_critical_bridge_count": 17,
+      "structural_max_rooms_sharing_one_bridge": 20,
+      "n_variables": 80,
+      "neal_gap_pct": 10.609657210753742,
+      "is_synthetic": true,
+      "topology": "TRE"
+    },
+    {
+      "floorplan": "SYN_TRE_20_S2",
+      "total_nodes": 66,
+      "rooms": 20,
+      "exits": 4,
+      "doors": 20,
+      "navigation_nodes_total": 22,
+      "navigation_in_room": 0,
+      "navigation_hallway": 22,
+      "route_hops_mean": 6.175,
+      "route_hops_median": 6.0,
+      "route_hops_min": 3,
+      "route_hops_max": 9,
+      "route_hops_std": 1.3672508913875316,
+      "route_distance_mean": 6.175,
+      "route_distance_max": 9.0,
+      "corridor_node_count": 22,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 7,
+      "vertical_mirror_score": 0.0,
+      "horizontal_mirror_score": 0.36363636363636365,
+      "point_reflection_score": 0.12121212121212122,
+      "best_symmetry_score": 0.36363636363636365,
+      "capacity_bottleneck_edge_count_over_1x": 18,
+      "capacity_bottleneck_max_feasible_load_max": 9.900000000000002,
+      "capacity_bottleneck_max_feasible_load_mean": 1.6131282051282054,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 9.900000000000002
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 9.900000000000002
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 9.900000000000002
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 9.900000000000002
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "max_feasible_load": 7.425000000000002
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 44,
+      "traffic_bottleneck_max_multiplicity_edge": "E003:C2--C3",
+      "traffic_bottleneck_top1_share_of_rooms": 2.2,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 44
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 40
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 32
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "route_multiplicity": 22
+        },
+        {
+          "edge_id": "E001:C0--C1",
+          "route_multiplicity": 20
+        }
+      ],
+      "structural_bridge_count": 65,
+      "structural_articulation_point_count": 42,
+      "structural_critical_bridge_count": 17,
+      "structural_max_rooms_sharing_one_bridge": 20,
+      "n_variables": 80,
+      "neal_gap_pct": 6.883503438495034,
+      "is_synthetic": true,
+      "topology": "TRE"
+    },
+    {
+      "floorplan": "SYN_TRE_30_S1",
+      "total_nodes": 108,
+      "rooms": 30,
+      "exits": 6,
+      "doors": 30,
+      "navigation_nodes_total": 42,
+      "navigation_in_room": 0,
+      "navigation_hallway": 42,
+      "route_hops_mean": 7.622222222222222,
+      "route_hops_median": 7.0,
+      "route_hops_min": 4,
+      "route_hops_max": 13,
+      "route_hops_std": 2.2164926136066505,
+      "route_distance_mean": 7.622222222222222,
+      "route_distance_max": 13.0,
+      "corridor_node_count": 42,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 11,
+      "vertical_mirror_score": 0.7777777777777778,
+      "horizontal_mirror_score": 0.48148148148148145,
+      "point_reflection_score": 0.5555555555555556,
+      "best_symmetry_score": 0.7777777777777778,
+      "capacity_bottleneck_edge_count_over_1x": 28,
+      "capacity_bottleneck_max_feasible_load_max": 13.833333333333332,
+      "capacity_bottleneck_max_feasible_load_mean": 1.8972741433021807,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 13.833333333333332
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 13.833333333333332
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 13.833333333333332
+        },
+        {
+          "edge_id": "E106:C3--EXIT_E",
+          "max_feasible_load": 10.375000000000002
+        },
+        {
+          "edge_id": "E004:C3--C4",
+          "max_feasible_load": 10.375000000000002
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 96,
+      "traffic_bottleneck_max_multiplicity_edge": "E004:C3--C4",
+      "traffic_bottleneck_top1_share_of_rooms": 3.2,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 96
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "route_multiplicity": 86
+        },
+        {
+          "edge_id": "E006:C5--C6",
+          "route_multiplicity": 70
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 68
+        }
+      ],
+      "structural_bridge_count": 107,
+      "structural_articulation_point_count": 71,
+      "structural_critical_bridge_count": 30,
+      "structural_max_rooms_sharing_one_bridge": 30,
+      "n_variables": 180,
+      "neal_gap_pct": 28.436227008553168,
+      "is_synthetic": true,
+      "topology": "TRE"
+    },
+    {
+      "floorplan": "SYN_TRE_30_S2",
+      "total_nodes": 108,
+      "rooms": 30,
+      "exits": 6,
+      "doors": 30,
+      "navigation_nodes_total": 42,
+      "navigation_in_room": 0,
+      "navigation_hallway": 42,
+      "route_hops_mean": 7.622222222222222,
+      "route_hops_median": 7.0,
+      "route_hops_min": 4,
+      "route_hops_max": 13,
+      "route_hops_std": 2.2164926136066505,
+      "route_distance_mean": 7.622222222222222,
+      "route_distance_max": 13.0,
+      "corridor_node_count": 42,
+      "corridor_connected_components": 1,
+      "corridor_diameter_hops": 11,
+      "vertical_mirror_score": 0.7777777777777778,
+      "horizontal_mirror_score": 0.48148148148148145,
+      "point_reflection_score": 0.5555555555555556,
+      "best_symmetry_score": 0.7777777777777778,
+      "capacity_bottleneck_edge_count_over_1x": 25,
+      "capacity_bottleneck_max_feasible_load_max": 11.533333333333331,
+      "capacity_bottleneck_max_feasible_load_mean": 1.6858099688473522,
+      "capacity_bottleneck_top5_edges": [
+        {
+          "edge_id": "E001:C0--C1",
+          "max_feasible_load": 11.533333333333331
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "max_feasible_load": 11.533333333333331
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "max_feasible_load": 11.533333333333331
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "max_feasible_load": 11.533333333333331
+        },
+        {
+          "edge_id": "E106:C3--EXIT_E",
+          "max_feasible_load": 8.649999999999999
+        }
+      ],
+      "traffic_bottleneck_max_multiplicity": 96,
+      "traffic_bottleneck_max_multiplicity_edge": "E004:C3--C4",
+      "traffic_bottleneck_top1_share_of_rooms": 3.2,
+      "traffic_bottleneck_top5_edges": [
+        {
+          "edge_id": "E004:C3--C4",
+          "route_multiplicity": 96
+        },
+        {
+          "edge_id": "E003:C2--C3",
+          "route_multiplicity": 90
+        },
+        {
+          "edge_id": "E005:C4--C5",
+          "route_multiplicity": 86
+        },
+        {
+          "edge_id": "E006:C5--C6",
+          "route_multiplicity": 70
+        },
+        {
+          "edge_id": "E002:C1--C2",
+          "route_multiplicity": 68
+        }
+      ],
+      "structural_bridge_count": 107,
+      "structural_articulation_point_count": 71,
+      "structural_critical_bridge_count": 30,
+      "structural_max_rooms_sharing_one_bridge": 30,
+      "n_variables": 180,
+      "neal_gap_pct": 19.011614368650477,
+      "is_synthetic": true,
+      "topology": "TRE"
+    }
+  ]
+}
