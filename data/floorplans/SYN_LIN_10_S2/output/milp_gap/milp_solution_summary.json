@@ -1,6 +1,6 @@
 {
   "status": "OPTIMAL",
-  "wall_clock_seconds": 0.007184165999999992,
+  "wall_clock_seconds": 0.005373083000000001,
   "n_variables": 20,
   "n_edge_square_terms": 31,
   "proven_optimal": true,
@@ -22,8 +22,8 @@
   "normalized_distance_component": 0.5,
   "normalized_congestion_component": 0.7188949589781854,
   "energy": 1.2188949589781854,
-  "solver_internal_objective_scaled": 719283280592.0,
-  "solver_internal_best_bound_scaled": 719283280592.0,
+  "solver_internal_objective_scaled": 1218783280592.0,
+  "solver_internal_best_bound_scaled": 1218783280592.0,
   "solver_reported_gap_scaled_pct": 0.0,
   "distance_normalization_scale": 100.0,
   "congestion_normalization_scale": 204.15018888888892

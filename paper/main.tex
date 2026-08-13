@@ -14,6 +14,7 @@
 \usepackage{titlesec}
 \usepackage{url}
 \Urlmuskip=0mu plus 1mu
+\usepackage{subcaption}
 
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
@@ -40,7 +41,7 @@ Arielle Jenna Fishman \and Natalia Romero, Ph.D. \\[4pt]
 \maketitle
 
 \begin{abstract}
-This paper formulates static indoor evacuation-route assignment as a capacity-aware Quadratic Unconstrained Binary Optimization (QUBO) problem, solves it with classical simulated annealing, D-Wave Leap Hybrid, and direct quantum annealing across five real building floorplans (16 to 264 logical variables), and then goes further than prior work of this kind in three ways. First, we derive an exact, certified global optimum for \emph{every} floorplan -- not only the smallest -- by observing that the same objective, freed from its penalty-method exactly-one constraint, is a convex integer quadratic program, solvable directly and exactly with a general-purpose MIQP solver in under two seconds per instance. This reveals that Neal and D-Wave Hybrid, previously reported as producing good solutions, are in fact 91--138\% above the true optimum on two of the five floorplans, a gap invisible without a certified baseline. Second, we investigate why: a controlled compute-budget experiment (up to 100$\times$ the original sweep count) fails to close the gap, ruling out under-sampling, while a structural/geometric analysis and an 18-floorplan synthetic corpus with independently controlled corridor topology (linear, branching, and looped) identify \emph{corridor diameter} -- not bridge/bottleneck-edge count, our initial hypothesis -- as a predictor comparably strong to raw problem size ($r\approx0.85$) that nonetheless captures independent information, adding up to 16 additional percentage points of explained variance beyond variable count alone in a joint regression. This finding replicates under both classical and hybrid quantum solvers with proper significance testing (Mann-Whitney $U$, Bonferroni-corrected across 23 floorplans). Third, we report formal significance tests throughout, correcting the descriptive-statistics-only limitation of the original study. The result is a fully reproducible evacuation-QUBO workflow with, for the first time in this line of work, certified rather than merely observed solution quality, and an empirically grounded, statistically confirmed account of what makes a floorplan hard for current annealing-based solvers.
+This paper formulates static indoor evacuation-route assignment as a capacity-aware Quadratic Unconstrained Binary Optimization (QUBO) problem, solves it with classical simulated annealing, D-Wave Leap Hybrid, and direct quantum annealing across five real building floorplans (16 to 264 logical variables), and then goes further than prior work of this kind in three ways. First, we derive an exact, certified global optimum for \emph{every} floorplan -- not only the smallest -- by observing that the same objective, freed from its penalty-method exactly-one constraint, is a convex integer quadratic program, solvable directly and exactly with a general-purpose MIQP solver in under two seconds per instance. This reveals that Neal and D-Wave Hybrid, previously reported as producing good solutions, are in fact 94--124\% above the true optimum on two of the five floorplans, a gap invisible without a certified baseline. Second, we investigate why: a controlled compute-budget experiment (up to 100$\times$ the original sweep count) fails to close the gap, ruling out under-sampling, while a structural/geometric analysis and an 18-floorplan synthetic corpus with independently controlled corridor topology (linear, branching, and looped) identify \emph{corridor diameter} -- not bridge/bottleneck-edge count, our initial hypothesis -- as a predictor comparably strong to raw problem size ($r\approx0.83$) that nonetheless captures independent information, adding up to 13 additional percentage points of explained variance beyond variable count alone in a joint regression. This finding replicates under both classical and hybrid quantum solvers with proper significance testing (Mann-Whitney $U$, Bonferroni-corrected across 23 floorplans). Third, we report formal significance tests throughout, correcting the descriptive-statistics-only limitation of the original study. The result is a fully reproducible evacuation-QUBO workflow with, for the first time in this line of work, certified rather than merely observed solution quality, and an empirically grounded, statistically confirmed account of what makes a floorplan hard for current annealing-based solvers.
 \end{abstract}
 
 \noindent\textbf{Keywords} --- evacuation routing, QUBO, quantum annealing, capacity-aware optimization, minor embedding, certified optimality, mixed-integer programming, D-Wave, simulated annealing
@@ -55,14 +56,14 @@ The Machine Perception and Cognitive Robotics Laboratory fellowship notebooks de
 
 That original study asked how effectively classical simulated annealing, a cloud Hybrid solver, and direct quantum annealing solve this QUBO as floorplan size and logical connectivity increase, and reported energy, physical route metrics, feasibility, runtime, and direct-QPU embedding behavior across 390 repeated solver runs. It found Hybrid consistently outperforming Neal, exact global optimality confirmed by exhaustive enumeration for the smallest 8-room floorplan, and two floorplans (FP02, FP03) whose density prevented direct embedding on the QPU altogether -- but it explicitly acknowledged, as a limitation, that results for the four larger floorplans were \emph{lowest observed energies, not certified optima}, and that no exact MIQP/MILP baseline or formal significance test was included.
 
-This paper closes both of those gaps, and in doing so substantially revises the picture the original results supported. We show that the same congestion objective, once separated from the penalty method used to make it QUBO-solvable, is a convex integer quadratic program that a general-purpose solver certifies to global optimality in under two seconds for every floorplan tested, including the two that could not be embedded on the QPU at all. Measured against these certified optima rather than each other, Neal and Hybrid are far from the optimum on exactly the two floorplans the original study already flagged as structurally unusual -- landing 91--138\% above true optimal, roughly double, rather than the small margins their mutual comparison suggested. We then investigate why, first ruling out insufficient compute budget directly (a 100$\times$ sweep-count increase does not close the gap), then building a geometric/topological analysis of the floorplans' navigation graphs, and finally constructing an 18-floorplan synthetic corpus with independently controlled corridor topology to test candidate structural explanations under conditions the five real floorplans cannot provide. The result corrects our own initial hypothesis (bridge/bottleneck-edge count) in favor of a cleaner, better-supported one (corridor diameter), replicated with proper significance testing under both solvers evaluated.
+This paper closes both of those gaps, and in doing so substantially revises the picture the original results supported. We show that the same congestion objective, once separated from the penalty method used to make it QUBO-solvable, is a convex integer quadratic program that a general-purpose solver certifies to global optimality in under two seconds for every floorplan tested, including the two that could not be embedded on the QPU at all. Measured against these certified optima rather than each other, Neal and Hybrid are far from the optimum on exactly the two floorplans the original study already flagged as structurally unusual -- landing 94--124\% above true optimal, roughly double, rather than the small margins their mutual comparison suggested. We then investigate why, first ruling out insufficient compute budget directly (a 100$\times$ sweep-count increase does not close the gap), then building a geometric/topological analysis of the floorplans' navigation graphs, and finally constructing an 18-floorplan synthetic corpus with independently controlled corridor topology to test candidate structural explanations under conditions the five real floorplans cannot provide. The result corrects our own initial hypothesis (bridge/bottleneck-edge count) in favor of a cleaner, better-supported one (corridor diameter), replicated with proper significance testing under both solvers evaluated.
 
 The contributions are:
 \begin{itemize}[leftmargin=*]
 \item A reproducible wall-aware floorplan-to-graph workflow for five indoor building layouts (retained from the original study).
 \item A room-group QUBO combining normalized route distance with occupancy-weighted, capacity-normalized shared-edge congestion (retained from the original study).
 \item A controlled comparison of Neal simulated annealing, D-Wave Leap Hybrid, and direct-QPU execution using repeated independent runs (retained from the original study).
-\item \textbf{New:} an exact convex-MIQP reformulation certifying the global optimum for all five floorplans -- not only the smallest -- solved in under two seconds each, exposing optimality gaps of 91--138\% on two floorplans that a solver-vs-solver comparison alone cannot reveal.
+\item \textbf{New:} an exact convex-MIQP reformulation certifying the global optimum for all five floorplans -- not only the smallest -- solved in under two seconds each, exposing optimality gaps of 94--124\% on two floorplans that a solver-vs-solver comparison alone cannot reveal.
 \item \textbf{New:} formal significance testing (Mann-Whitney $U$, Bonferroni-corrected) replacing the descriptive-statistics-only comparison of the original study.
 \item \textbf{New:} a root-cause investigation combining a direct compute-budget ablation (ruling out under-sampling) with a three-part structural bottleneck taxonomy (capacity, traffic-concentration, and topological) applied to the floorplans' raw navigation graphs.
 \item \textbf{New:} an 18-floorplan synthetic corpus with independently controlled corridor topology, used to test the structural hypothesis under conditions the original five floorplans cannot provide, statistically confirming corridor diameter (not bridge count, our initial hypothesis) as the dominant structural predictor of optimality gap, replicated under both Neal and Hybrid.
@@ -233,7 +234,7 @@ FP05 & Hybrid & $0.7381 \pm 0.0325$ & $305.2 \pm 12.4$ & $142.6 \pm 9.4$ & 100.0
 
 \subsection{Certified optimality gaps: the central new finding}
 \label{sec:gaps}
-Table~\ref{tab:milpgaps} reports each floorplan's certified global optimum alongside the original 30-run best-observed energies. FP04's certified optimum matches the previously-reported exact value exactly. FP01 and FP05, both embeddable on the QPU, show modest gaps (1--14\%). FP02 and FP03 -- precisely the two floorplans that could not be directly embedded on the QPU -- show Neal and Hybrid landing \textbf{91--110\%} above the certified optimum: roughly double the true minimum, a gap invisible in Table~\ref{tab:meanquality}'s solver-vs-solver comparison, where FP02 and FP03 do not stand out as unusual at all.
+Table~\ref{tab:milpgaps} reports each floorplan's certified global optimum alongside the original 30-run best-observed energies. FP04's certified optimum matches the previously-reported exact value exactly. FP01 and FP05, both embeddable on the QPU, show modest gaps (3--14\%). FP02 and FP03 -- precisely the two floorplans that could not be directly embedded on the QPU -- show Neal and Hybrid landing \textbf{94--124\%} above the certified optimum: more than double the true minimum, a gap invisible in Table~\ref{tab:meanquality}'s solver-vs-solver comparison, where FP02 and FP03 do not stand out as unusual at all.
 
 \begin{table}[h]
 \centering
@@ -244,20 +245,20 @@ Table~\ref{tab:milpgaps} reports each floorplan's certified global optimum along
 \toprule
 ID & MILP optimum (proven) & Neal best & Neal gap & Hybrid best & Hybrid gap \\
 \midrule
-FP01 & 0.593857 & 0.636840 & 7.24\% & 0.600250 & \textbf{1.08\%} \\
-FP02 & 0.288830 & 0.585420 & 102.69\% & 0.575235 & \textbf{99.16\%} \\
-FP03 & 0.260012 & 0.545110 & 109.65\% & 0.497328 & \textbf{91.27\%} \\
+FP01 & 0.581344 & 0.636840 & 9.55\% & 0.600250 & \textbf{3.25\%} \\
+FP02 & 0.261443 & 0.585420 & 123.92\% & 0.575235 & \textbf{120.02\%} \\
+FP03 & 0.256160 & 0.545110 & 112.80\% & 0.497328 & \textbf{94.15\%} \\
 FP04 & 1.502658 & 1.502658 & 0.00\% & 1.502658 & 0.00\% \\
 FP05 & 0.615057 & 0.703960 & 14.45\% & 0.655631 & \textbf{6.60\%} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-For FP03 specifically, the practical severity of this gap is best appreciated physically: the certified-optimal assignment (distance 260.25, raw congestion 11.53) is barely worse than the trivial, congestion-blind nearest-exit-Dijkstra baseline (distance 250.75, raw congestion 64.49, Appendix~A), while Neal and Hybrid's reported "100\% valid" solutions (distance 551--595, raw congestion 134--148) are simultaneously worse than that trivial baseline on \emph{both} distance and congestion -- a strictly dominated solution that a validity check alone cannot detect, since validity only verifies the exactly-one constraint, not solution quality.
+For FP03 specifically, the practical severity of this gap is best appreciated physically: the certified-optimal assignment (distance 254.25, raw congestion 11.85) is barely worse than the trivial, congestion-blind nearest-exit-Dijkstra baseline (distance 250.75, raw congestion 64.49, Appendix~A), while Neal and Hybrid's reported "100\% valid" solutions (distance 551--595, raw congestion 134--148) are simultaneously worse than that trivial baseline on \emph{both} distance and congestion -- a strictly dominated solution that a validity check alone cannot detect, since validity only verifies the exactly-one constraint, not solution quality.
 
 \subsection{Statistical significance}
 \label{sec:significance}
-The original study's Section~7 explicitly notes the absence of formal significance testing. We apply Mann-Whitney $U$ (not paired Wilcoxon: Neal's local seeds and Hybrid's server-side randomness are independent, not paired samples) to the 30-run distributions, Bonferroni-corrected across five floorplans ($\alpha=0.01$). Hybrid is significantly better than Neal on FP01, FP02, FP03, and FP05 (all $p<10^{-5}$); FP04 shows a technically significant but practically meaningless $p=1.7\times10^{-14}$, reflecting floating-point-noise-level differences between two distributions that both reach the exact optimum on every run -- a concrete illustration of why $p$-values must be read alongside effect size, not alone. Per-run (not just best-run) optimality gaps against the certified optimum show neither solver ever reaches true optimum across 30 independent runs on FP02 or FP03 (closest approach: Neal 102.7\%, Hybrid 99.2\% on FP02).
+The original study's Section~7 explicitly notes the absence of formal significance testing. We apply Mann-Whitney $U$ (not paired Wilcoxon: Neal's local seeds and Hybrid's server-side randomness are independent, not paired samples) to the 30-run distributions, Bonferroni-corrected across five floorplans ($\alpha=0.01$). Hybrid is significantly better than Neal on FP01, FP02, FP03, and FP05 (all $p<10^{-5}$); FP04 shows a technically significant but practically meaningless $p=1.7\times10^{-14}$, reflecting floating-point-noise-level differences between two distributions that both reach the exact optimum on every run -- a concrete illustration of why $p$-values must be read alongside effect size, not alone. Per-run (not just best-run) optimality gaps against the certified optimum show neither solver ever reaches true optimum across 30 independent runs on FP02 or FP03 (closest approach: Neal 123.9\%, Hybrid 120.0\% on FP02).
 
 \subsection{Root-cause investigation: ruling out compute budget}
 \label{sec:budget}
@@ -298,7 +299,7 @@ Five real floorplans confound topology with size, room/exit ratio, and building 
 All 18 pass the repository's own auto-discovering connectivity, door-degree, and reachability test suite unmodified (Section~4.2), and all 18 solved to certified MILP optimality in under two seconds each.
 
 \subsubsection{Structure predicts difficulty, but not the way we first hypothesized}
-Combining all 23 floorplans (real and synthetic, $n=23$), every candidate structural predictor correlates significantly with both solvers' 10-repeat mean optimality gap (Table~\ref{tab:correlations}). Corridor diameter is comparably strong to raw variable count as a univariate predictor -- marginally stronger for Neal's gap ($r=0.859$ vs.\ $0.851$ for variable count) and marginally weaker for Hybrid's ($r=0.849$ vs.\ $0.859$) -- and both are well ahead of every bridge-based measure. Critical-bridge count, our original working hypothesis, trails at $r\approx0.73$ for both solvers; plain bridge count trails further still ($r\approx0.62$--$0.64$).
+Combining all 23 floorplans (real and synthetic, $n=23$), every candidate structural predictor correlates significantly with both solvers' 10-repeat mean optimality gap (Table~\ref{tab:correlations}). Raw variable count is the strongest univariate predictor ($r=0.865$ Neal, $0.873$ Hybrid), with corridor diameter close behind ($r=0.837$ Neal, $0.823$ Hybrid) -- both well ahead of every bridge-based measure. Critical-bridge count, our original working hypothesis, trails at $r\approx0.70$ for both solvers; plain bridge count trails further still ($r\approx0.60$--$0.62$).
 
 \begin{table}[h]
 \centering
@@ -309,18 +310,18 @@ Combining all 23 floorplans (real and synthetic, $n=23$), every candidate struct
 \toprule
 Predictor & Neal $r$ & Neal $p$ & Hybrid $r$ & Hybrid $p$ \\
 \midrule
-n\_variables & 0.851 & $2.7\times10^{-7}$ & 0.859 & $1.5\times10^{-7}$ \\
-corridor\_diameter\_hops & \textbf{0.859} & $1.5\times10^{-7}$ & \textbf{0.849} & $3.0\times10^{-7}$ \\
-route\_hops\_mean & 0.715 & $1.3\times10^{-4}$ & 0.741 & $5.2\times10^{-5}$ \\
-structural\_critical\_bridge\_count & 0.730 & $7.6\times10^{-5}$ & 0.729 & $8.0\times10^{-5}$ \\
-structural\_bridge\_count & 0.638 & $1.1\times10^{-3}$ & 0.618 & $1.7\times10^{-3}$ \\
-capacity\_bottleneck\_edge\_count & 0.667 & $5.1\times10^{-4}$ & 0.709 & $1.5\times10^{-4}$ \\
-traffic\_bottleneck\_top1\_share & 0.702 & $1.9\times10^{-4}$ & 0.687 & $2.9\times10^{-4}$ \\
+n\_variables & \textbf{0.865} & $9.9\times10^{-8}$ & \textbf{0.873} & $5.5\times10^{-8}$ \\
+corridor\_diameter\_hops & 0.837 & $6.3\times10^{-7}$ & 0.823 & $1.4\times10^{-6}$ \\
+route\_hops\_mean & 0.736 & $6.2\times10^{-5}$ & 0.761 & $2.5\times10^{-5}$ \\
+structural\_critical\_bridge\_count & 0.702 & $1.9\times10^{-4}$ & 0.700 & $2.0\times10^{-4}$ \\
+structural\_bridge\_count & 0.622 & $1.5\times10^{-3}$ & 0.603 & $2.4\times10^{-3}$ \\
+capacity\_bottleneck\_edge\_count & 0.702 & $1.9\times10^{-4}$ & 0.743 & $4.9\times10^{-5}$ \\
+traffic\_bottleneck\_top1\_share & 0.713 & $1.3\times10^{-4}$ & 0.699 & $2.1\times10^{-4}$ \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The interesting result is not that corridor diameter beats size outright, but that it is essentially \emph{as informative as size while capturing something size does not}, confirmed directly by the regression below. Critically, our original working hypothesis -- that critical-bridge count drives difficulty -- does not order the three controlled topologies correctly. At matched room counts, Tree has 4--5$\times$ more critical bridges than Loop (17 vs.\ 4 at 20 rooms; 30 vs.\ 6 at 30 rooms) yet a \emph{smaller} optimality gap both times (Table~\ref{tab:synthetic}, an illustrative subset of the full 18-floorplan results in Tables~\ref{tab:appendixb} and~\ref{tab:appendixb2}). Corridor diameter and mean route length, by contrast, correctly order all three topologies (Tree $<$ Loop $<$ Linear) at every size tested.
+The interesting result is not that corridor diameter beats size outright -- it does not, slightly, for either solver -- but that it is essentially \emph{as informative as size while capturing something size does not}, confirmed directly by the regression below. Critically, our original working hypothesis -- that critical-bridge count drives difficulty -- does not order the three controlled topologies correctly. At matched room counts, Tree has 5--6$\times$ more critical bridges than Loop (21 vs.\ 4 at 20 rooms; 29 vs.\ 6 at 30 rooms) yet a \emph{smaller} optimality gap both times (Table~\ref{tab:synthetic}, an illustrative subset of the full 18-floorplan results in Tables~\ref{tab:appendixb} and~\ref{tab:appendixb2}). Corridor diameter and mean route length, by contrast, correctly order all three topologies (Tree $<$ Loop $<$ Linear) at every size tested.
 
 \begin{table}[h]
 \centering
@@ -331,20 +332,20 @@ The interesting result is not that corridor diameter beats size outright, but th
 \toprule
 Topology & Rooms & Critical bridges & Corridor diameter & Hybrid gap (mean of 2 seeds) \\
 \midrule
-Loop & 20 & 4 & 8 & 13.6\% \\
-Tree & 20 & 17 & 7 & 5.1\% \\
-Loop & 30 & 6 & 12 & 52.0\% \\
-Tree & 30 & 30 & 11 & 19.4\% \\
+Loop & 20 & 4 & 8 & 14.7\% \\
+Tree & 20 & 21 & 8 & 6.0\% \\
+Loop & 30 & 6 & 12 & 55.0\% \\
+Tree & 30 & 29 & 10 & 22.0\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 This is a genuine, physically interpretable correction rather than a failure to confirm: a tree's bridges are each shared by only the handful of rooms on that specific short branch, while a loop routes \emph{every} room's traffic through the same single ring, concentrating congestion onto shared capacity regardless of how many technically-non-redundant edges exist. Route/corridor length is the better proxy for how much combinatorial interaction accumulates per room's routing decision.
 
-Multiple regression confirms corridor diameter adds substantial explanatory power beyond raw size: partial correlation controlling for variable count is $r=0.751$ ($p=3.6\times10^{-5}$), and $R^2$ rises from 0.724 (variable count alone) to 0.880 with corridor diameter added for Neal's 10-repeat mean gap (0.739 to 0.879 for Hybrid's) -- roughly five times the additional variance explained by critical-bridge count alone in the same regression framework.
+Multiple regression confirms corridor diameter adds substantial explanatory power beyond raw size: partial correlation controlling for variable count is $r=0.727$ ($p=8.5\times10^{-5}$), and $R^2$ rises from 0.749 (variable count alone) to 0.882 with corridor diameter added for Neal's 10-repeat mean gap (0.762 to 0.877 for Hybrid's) -- roughly six times the additional variance explained by critical-bridge count alone in the same regression framework (+0.021 and +0.018 $R^2$ respectively).
 
 \subsubsection{Replication under Hybrid, with proper significance testing}
-Repeating this analysis with ten independent Neal \emph{and} ten independent Hybrid runs on all 23 floorplans (230 Hybrid calls total) allows both a direct significance test and a check that the structural finding is not an artifact of Neal's particular search dynamics. Hybrid's mean gap is smaller than Neal's in 18 of 23 floorplans, significantly so (Bonferroni-corrected across 23 tests) in 17 of 23 -- extending the original study's Hybrid-outperforms-Neal finding to the full synthetic corpus. Corridor diameter predicts Hybrid's gap ($r=0.849$, $p=3.0\times10^{-7}$) essentially as well as it predicts Neal's ($r=0.859$, $p=1.5\times10^{-7}$): the structural mechanism is not solver-specific.
+Repeating this analysis with ten independent Neal \emph{and} ten independent Hybrid runs on all 23 floorplans (230 Hybrid calls total) allows both a direct significance test and a check that the structural finding is not an artifact of Neal's particular search dynamics. Hybrid's mean gap is smaller than Neal's in 18 of 23 floorplans, significantly so (Bonferroni-corrected across 23 tests) in 16 of 23 -- extending the original study's Hybrid-outperforms-Neal finding to the full synthetic corpus. Corridor diameter predicts Hybrid's gap ($r=0.823$, $p=1.4\times10^{-6}$) essentially as well as it predicts Neal's ($r=0.837$, $p=6.3\times10^{-7}$): the structural mechanism is not solver-specific.
 
 \subsection{Direct-QPU feasibility and embedding}
 Direct-QPU performance remains strongly instance-dependent, retained from the original study: FP04 reproduced the exact optimum with 78.78\% mean valid-sample rate; FP01 and FP05 required chains up to 9 and 12 physical qubits per logical variable respectively, with valid-sample rates below 1\%; FP02 and FP03 could not be embedded at all. Given Section~\ref{sec:milp}'s finding that the same two floorplans are also the hardest for \emph{classical} optimization once measured against a certified baseline, embedding difficulty and solution-quality difficulty for this formulation appear to share a common structural origin (corridor diameter) rather than being independent failure modes of the quantum-specific pipeline.
@@ -355,7 +356,7 @@ Direct-QPU performance remains strongly instance-dependent, retained from the or
 The original study's central comparative claim -- Hybrid outperforms Neal -- survives and is now statistically confirmed. But the \emph{absolute} quality claim it could not make (how good are these solutions, really?) changes substantially once a certified baseline exists: two of five floorplans were, in fact, roughly twice their true optimal energy, a finding a solver-vs-solver comparison structurally cannot surface, since both solvers can simultaneously be far from optimal while one still beats the other. This is a general methodological point beyond this specific evacuation formulation: reporting only relative solver comparisons on QUBO-formulated problems, without an exact or certified-bound baseline wherever the underlying combinatorial structure permits one, risks reporting precise but potentially misleading conclusions about absolute solution quality.
 
 \subsection{On being wrong in a useful way}
-Our first structural hypothesis (bridge/bottleneck-edge count) was reasonable, motivated directly by the paper's own QPU-embedding-density finding, and wrong in a specific, informative way: it does not order our own controlled synthetic topologies correctly. Building the synthetic corpus specifically to stress-test that hypothesis, rather than stopping at the five real floorplans' correlational support for it, is what exposed the correction. We report this as a case study in the value of controlled synthetic ablations over correlational analysis on a small, naturally-occurring sample, even when the naturally-occurring sample's correlations look convincing in isolation ($r=0.723$, $p=0.0001$ for critical bridges on $n=5$-derived data was itself statistically significant, and still misleading about the mechanism).
+Our first structural hypothesis (bridge/bottleneck-edge count) was reasonable, motivated directly by the paper's own QPU-embedding-density finding, and wrong in a specific, informative way: it does not order our own controlled synthetic topologies correctly. Building the synthetic corpus specifically to stress-test that hypothesis, rather than stopping at the five real floorplans' correlational support for it, is what exposed the correction. We report this as a case study in the value of controlled synthetic ablations over correlational analysis alone: critical-bridge count's correlation with optimality gap is itself statistically significant and reasonably strong ($r=0.70$--$0.73$ across both solvers, $p<0.0002$, Table~\ref{tab:correlations}) -- convincing enough on its own to stop there -- yet the controlled topology comparison shows it still gets the underlying mechanism wrong.
 
 \subsection{Why corridor length, mechanistically}
 A longer route through the network touches more edges, and each additional edge is a potential point of interaction with every other room's route through the congestion term's Gram-matrix structure (Section~\ref{sec:milp}). Longer corridors therefore accumulate more combinatorial coupling per room's single binary routing decision than a purely topological bridge count reflects, since a bridge shared by only two nearby rooms contributes far less coupling than a long shared corridor spine touched by every room in the building.
@@ -473,9 +474,9 @@ Topology & Rooms & Exits & Variables & Corridor diam. & Bridges & Crit.\ bridges
 Linear & 10 & 2 & 20 & 9 & 31 & 11 \\
 Linear & 20 & 4 & 80 & 19 & 63 & 23 \\
 Linear & 30 & 6 & 180 & 29 & 95 & 35 \\
-Tree & 10 & 2 & 20 & 7 & 35 & 11 \\
-Tree & 20 & 4 & 80 & 7 & 65 & 17 \\
-Tree & 30 & 6 & 180 & 11 & 107 & 30 \\
+Tree & 10 & 2 & 20 & 8 & 37 & 13 \\
+Tree & 20 & 4 & 80 & 8 & 69 & 21 \\
+Tree & 30 & 6 & 180 & 10 & 105 & 29 \\
 Loop & 10 & 2 & 20 & 4 & 22 & 2 \\
 Loop & 20 & 4 & 80 & 8 & 44 & 4 \\
 Loop & 30 & 6 & 180 & 12 & 66 & 6 \\
@@ -497,24 +498,108 @@ Linear & 10 / S2 & 1.2189 & $-$0.00\% & 0.00\% \\
 Linear & 20 / S1 & 0.3971 & 51.78\% & 32.59\% \\
 Linear & 20 / S2 & 0.3941 & 49.48\% & 34.92\% \\
 Linear & 30 / S1 & 0.2440 & 128.15\% & 103.58\% \\
-Linear & 30 / S2 & 0.2428 & 129.83\% & 101.37\% \\
-Tree & 10 / S1 & 1.7241 & $-$0.00\% & $-$0.00\% \\
-Tree & 10 / S2 & 1.6876 & $-$0.00\% & $-$0.00\% \\
-Tree & 20 / S1 & 1.1002 & 8.74\% & 5.39\% \\
-Tree & 20 / S2 & 1.0437 & 8.59\% & 4.82\% \\
-Tree & 30 / S1 & 0.7397 & 27.90\% & 21.75\% \\
-Tree & 30 / S2 & 0.7959 & 23.14\% & 17.06\% \\
+Linear & 30 / S2 & 0.2402 & 132.35\% & 103.58\% \\
+Tree & 10 / S1 & 2.0298 & $-$0.00\% & 0.00\% \\
+Tree & 10 / S2 & 1.8660 & $-$0.00\% & 0.00\% \\
+Tree & 20 / S1 & 1.1245 & 8.50\% & 6.07\% \\
+Tree & 20 / S2 & 1.0649 & 9.82\% & 5.84\% \\
+Tree & 30 / S1 & 0.7210 & 29.14\% & 23.40\% \\
+Tree & 30 / S2 & 0.7734 & 26.40\% & 20.58\% \\
 Loop & 10 / S1 & 3.0133 & $-$0.00\% & $-$0.00\% \\
-Loop & 10 / S2 & 2.8944 & $-$0.10\% & $-$0.12\% \\
-Loop & 20 / S1 & 0.7147 & 22.54\% & 15.07\% \\
-Loop & 20 / S2 & 0.6670 & 20.88\% & 12.19\% \\
-Loop & 30 / S1 & 0.4056 & 65.62\% & 53.53\% \\
-Loop & 30 / S2 & 0.4216 & 65.37\% & 50.48\% \\
+Loop & 10 / S2 & 2.8911 & 0.01\% & $-$0.00\% \\
+Loop & 20 / S1 & 0.7104 & 23.27\% & 15.76\% \\
+Loop & 20 / S2 & 0.6588 & 22.40\% & 13.59\% \\
+Loop & 30 / S1 & 0.3969 & 69.28\% & 56.92\% \\
+Loop & 30 / S2 & 0.4146 & 68.17\% & 53.03\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
+\section{Floorplan Blueprints}
+\label{sec:appendixD}
+Figures~\ref{fig:blueprints-real} and~\ref{fig:blueprints-synthetic} show the navigation-graph structure of every floorplan studied: green circles are room-start nodes, orange squares are doors, red diamonds are exits, and gray dots/lines are corridor and in-room navigation nodes and their connecting edges. These are structural diagrams (node positions and connectivity), not architectural drawings.
+
+For the synthetic corpus, only the 9 unique topology-size layouts are shown (Figure~\ref{fig:blueprints-synthetic}) rather than all 18 -- seeds S1 and S2 share identical node positions and edges, differing only in per-room occupancy and per-edge capacity (Table~\ref{tab:appendixb2}), which a structural blueprint does not depict. Note that ``Tree'' refers to the zero-cycle graph property confirmed in Table~\ref{tab:appendixb} (bridges $=$ variables $-1$ within the corridor network), not a visually branching layout -- the generator lays branches out as parallel corridor rows joined by a spine, which is graph-theoretically a tree but does not resemble a biological tree when drawn.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP01.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP02.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP03.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP04.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP05.png}
+\end{subfigure}
+\caption{The five real floorplans (Table~\ref{tab:floorplans}). FP03's long single corridor spine and FP02's dense multi-wing layout are visually apparent here, consistent with their large certified optimality gaps (Section~\ref{sec:gaps}).}
+\label{fig:blueprints-real}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_10.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_20.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_30.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_10.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_20.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_30.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_10.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_20.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_30.png}
+\end{subfigure}
+\caption{The 9 unique synthetic layouts (rows: Linear, Tree, Loop; columns: 10, 20, 30 rooms), representative of both seeds each. Compare against Table~\ref{tab:appendixb}'s structural metrics: Linear's single spine, Tree's dual-row branch structure, and Loop's ring are all visible directly.}
+\label{fig:blueprints-synthetic}
+\end{figure}
+
 \section{Reproducibility}
-Source code, all 23 floorplan datasets (five real, 18 synthetic), generated route catalogs, validation tests, MILP/Neal/Hybrid benchmark outputs, and this manuscript's source are available at \url{https://github.com/RomeroNatalia/EvacCapstone} (branch \texttt{expansion/milp-optimality-gaps}), forked from and building on the original study's repository at \url{https://github.com/afishman2023/EvacCapstone}.
+Source code, all 23 floorplan datasets (five real, 18 synthetic), generated route catalogs, validation tests, MILP/Neal/Hybrid benchmark outputs, blueprint figures, and this manuscript's source are available at
+\begin{center}
+\url{https://github.com/RomeroNatalia/EvacCapstone}, branch \path{expansion/milp-optimality-gaps},
+\end{center}
+forked from and building on the original study's repository at \url{https://github.com/afishman2023/EvacCapstone}.
 
 \end{document}

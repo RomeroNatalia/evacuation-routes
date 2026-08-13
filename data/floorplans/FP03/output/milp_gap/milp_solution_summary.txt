@@ -1,11 +1,11 @@
 MILP OPTIMALITY-GAP RESULT -- FP03
 ============================================
 Status: OPTIMAL (proven optimal: True)
-Wall-clock: 0.43s
+Wall-clock: 0.12s
 Variables: 252  |  Edge square-terms: 339
-True (unpruned, recomputed) energy: 0.2600115377
-  distance component:   0.2175094024
-  congestion component: 0.0425021353
-  total distance:       260.250000
-  raw congestion (unweighted sum of util^2): 11.533125
+True (unpruned, recomputed) energy: 0.2561598042
+  distance component:   0.2124947764
+  congestion component: 0.0436650278
+  total distance:       254.250000
+  raw congestion (unweighted sum of util^2): 11.848681
 Solver-internal scaled objective gap: 0.000000%

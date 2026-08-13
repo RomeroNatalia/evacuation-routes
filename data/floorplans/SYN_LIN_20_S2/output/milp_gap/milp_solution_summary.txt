@@ -1,7 +1,7 @@
 MILP OPTIMALITY-GAP RESULT -- SYN_LIN_20_S2
 ============================================
 Status: OPTIMAL (proven optimal: True)
-Wall-clock: 0.02s
+Wall-clock: 0.01s
 Variables: 80  |  Edge square-terms: 63
 True (unpruned, recomputed) energy: 0.3940950306
   distance component:   0.2571428571

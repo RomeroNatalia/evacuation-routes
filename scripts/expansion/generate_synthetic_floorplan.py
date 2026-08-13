@@ -147,9 +147,7 @@ def build_tree(n_rooms: int, n_exits: int, rng: random.Random) -> Builder:
         b.add_edge(f"C{i}", f"C{i+1}", "navigation", 1.0, rng.choice([3, 4, 5]))
 
     branch_points = list(range(1, spine_len - 1, max(1, spine_len // max(1, n_exits))))
-    node_counter = 0
     room_counter = 0
-    rooms_per_branch = max(1, n_rooms // max(1, len(branch_points) * 2))
     branch_uid = 0
 
     def add_room(attach_node_id, x, y):
@@ -165,23 +163,31 @@ def build_tree(n_rooms: int, n_exits: int, rng: random.Random) -> Builder:
     # branch_x is the branch corridor's own column, offset by a fixed +0.5
     # from the spine (a valid half-column step); rooms sit a further whole
     # column out from the branch, on the same side.
+    #
+    # Each (branch_point, side) is a growable branch. Round-robin one room
+    # at a time across all branches until every room is placed -- this
+    # guarantees every room attaches to the nearest node on its own
+    # branch's chain (never a distant, unrelated node from a separate
+    # fallback path), and branches grow evenly regardless of whether
+    # n_rooms divides cleanly across them.
+    branches = []
     for bp in branch_points:
         for side in (1, -1):
             branch_uid += 1
-            branch_len = max(2, rooms_per_branch)
-            prev = f"C{bp}"
-            branch_x = bp + 0.5
-            for j in range(branch_len):
-                node_counter += 1
-                bnode = f"B{branch_uid}_{j}"
-                b.add_node(bnode, "navigation", branch_x, side * (j + 1), space_type="hallway")
-                b.add_edge(prev, bnode, "navigation", 1.0, rng.choice([2, 3, 4]))
-                prev = bnode
-                if room_counter < n_rooms:
-                    add_room(bnode, branch_x + side * 1, side * (j + 1))
+            branches.append({"prev": f"C{bp}", "x": bp + 0.5, "side": side, "j": 0, "uid": branch_uid})
 
+    branch_idx = 0
     while room_counter < n_rooms:
-        add_room(f"C{rng.randrange(spine_len)}", spine_len + room_counter, 3)
+        branch = branches[branch_idx % len(branches)]
+        branch_idx += 1
+        j = branch["j"]
+        branch["j"] += 1
+        bnode = f"B{branch['uid']}_{j}"
+        y = branch["side"] * (j + 1)
+        b.add_node(bnode, "navigation", branch["x"], y, space_type="hallway")
+        b.add_edge(branch["prev"], bnode, "navigation", 1.0, rng.choice([2, 3, 4]))
+        branch["prev"] = bnode
+        add_room(bnode, branch["x"] + branch["side"] * 1, y)
 
     exit_positions = [0, spine_len - 1] + [branch_points[i] for i in range(min(n_exits - 2, len(branch_points)))]
     for e, pos in enumerate(exit_positions[:n_exits]):

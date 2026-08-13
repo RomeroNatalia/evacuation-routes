@@ -1,7 +1,7 @@
 MILP OPTIMALITY-GAP RESULT -- FP04
 ============================================
 Status: OPTIMAL (proven optimal: True)
-Wall-clock: 0.04s
+Wall-clock: 0.01s
 Variables: 16  |  Edge square-terms: 105
 True (unpruned, recomputed) energy: 1.5026583666
   distance component:   0.4633204633

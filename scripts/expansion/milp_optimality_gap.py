@@ -76,9 +76,22 @@ PEOPLE_PER_CAPACITY_UNIT = 10.0
 # Integer-scaling constants for the CP-SAT search objective (see module
 # docstring -- these affect solve-time ranking precision only, not the
 # reported energy, which is recomputed exactly afterward).
+#
+# CRITICAL: both terms of the combined objective (distance + congestion)
+# MUST use the identical final multiplicative scale, or the proxy the
+# solver actually searches over silently reweights one term relative to
+# the other -- an earlier version of this file used DISTANCE_OBJ_SCALE=1e9
+# and CONGESTION_OBJ_SCALE=1e12 independently, a 1000x systematic
+# overweighting of congestion that caused CP-SAT to prove "OPTIMAL" for a
+# solution that was demonstrably worse than one Neal found under the true
+# (unscaled) objective on at least one floorplan (SYN_TRE_10_S1). Verified
+# safe against int64 overflow for the largest instance in this corpus
+# (FP02, 264 routes / 793 edges) with generous margin -- see the module
+# docstring's worked bound if this is changed.
 LOAD_SCALE = 1_000
-DISTANCE_OBJ_SCALE = 10 ** 9
-CONGESTION_OBJ_SCALE = 10 ** 12
+OBJ_SCALE = 10 ** 12
+DISTANCE_OBJ_SCALE = OBJ_SCALE
+CONGESTION_OBJ_SCALE = OBJ_SCALE
 
 
 def read_csv(path: Path) -> List[Dict[str, str]]:
