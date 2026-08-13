@@ -298,11 +298,33 @@ Five real floorplans confound topology with size, room/exit ratio, and building 
 All 18 pass the repository's own auto-discovering connectivity, door-degree, and reachability test suite unmodified (Section~4.2), and all 18 solved to certified MILP optimality in under two seconds each.
 
 \subsubsection{Structure predicts difficulty, but not the way we first hypothesized}
-Combining all 23 floorplans (real and synthetic, $n=23$), every candidate structural predictor correlates significantly with Neal's optimality gap (all $p<0.002$). Corridor diameter is comparably strong to raw variable count as a univariate predictor -- marginally stronger for Neal's 10-repeat mean gap ($r=0.859$ vs.\ $0.851$ for variable count) and marginally weaker for Hybrid's ($r=0.849$ vs.\ $0.859$), always well ahead of critical-bridge count ($r=0.730$ and $0.729$ respectively). The interesting result is not that corridor diameter beats size outright, but that it is essentially \emph{as informative as size while capturing something size does not}, confirmed directly by the regression below. Critically, our original working hypothesis -- that critical-bridge count drives difficulty -- does not order the three controlled topologies correctly. At matched room counts, Tree has 4--5$\times$ more critical bridges than Loop (17 vs.\ 4 at 20 rooms; 30 vs.\ 6 at 30 rooms) yet a \emph{smaller} optimality gap both times (Table~\ref{tab:synthetic}). Corridor diameter and mean route length, by contrast, correctly order all three topologies (Tree $<$ Loop $<$ Linear) at every size tested.
+Combining all 23 floorplans (real and synthetic, $n=23$), every candidate structural predictor correlates significantly with both solvers' 10-repeat mean optimality gap (Table~\ref{tab:correlations}). Corridor diameter is comparably strong to raw variable count as a univariate predictor -- marginally stronger for Neal's gap ($r=0.859$ vs.\ $0.851$ for variable count) and marginally weaker for Hybrid's ($r=0.849$ vs.\ $0.859$) -- and both are well ahead of every bridge-based measure. Critical-bridge count, our original working hypothesis, trails at $r\approx0.73$ for both solvers; plain bridge count trails further still ($r\approx0.62$--$0.64$).
 
 \begin{table}[h]
 \centering
-\caption{Synthetic corpus: topology, structure, and 10-repeat mean optimality gap (Hybrid).}
+\caption{Full correlation of each structural predictor with the 10-repeat mean optimality gap, $n=23$.}
+\label{tab:correlations}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Predictor & Neal $r$ & Neal $p$ & Hybrid $r$ & Hybrid $p$ \\
+\midrule
+n\_variables & 0.851 & $2.7\times10^{-7}$ & 0.859 & $1.5\times10^{-7}$ \\
+corridor\_diameter\_hops & \textbf{0.859} & $1.5\times10^{-7}$ & \textbf{0.849} & $3.0\times10^{-7}$ \\
+route\_hops\_mean & 0.715 & $1.3\times10^{-4}$ & 0.741 & $5.2\times10^{-5}$ \\
+structural\_critical\_bridge\_count & 0.730 & $7.6\times10^{-5}$ & 0.729 & $8.0\times10^{-5}$ \\
+structural\_bridge\_count & 0.638 & $1.1\times10^{-3}$ & 0.618 & $1.7\times10^{-3}$ \\
+capacity\_bottleneck\_edge\_count & 0.667 & $5.1\times10^{-4}$ & 0.709 & $1.5\times10^{-4}$ \\
+traffic\_bottleneck\_top1\_share & 0.702 & $1.9\times10^{-4}$ & 0.687 & $2.9\times10^{-4}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The interesting result is not that corridor diameter beats size outright, but that it is essentially \emph{as informative as size while capturing something size does not}, confirmed directly by the regression below. Critically, our original working hypothesis -- that critical-bridge count drives difficulty -- does not order the three controlled topologies correctly. At matched room counts, Tree has 4--5$\times$ more critical bridges than Loop (17 vs.\ 4 at 20 rooms; 30 vs.\ 6 at 30 rooms) yet a \emph{smaller} optimality gap both times (Table~\ref{tab:synthetic}, an illustrative subset of the full 18-floorplan results in Tables~\ref{tab:appendixb} and~\ref{tab:appendixb2}). Corridor diameter and mean route length, by contrast, correctly order all three topologies (Tree $<$ Loop $<$ Linear) at every size tested.
+
+\begin{table}[h]
+\centering
+\caption{Illustrative subset: topology, structure, and 10-repeat mean Hybrid optimality gap. Full 18-floorplan results, including Neal gaps and both seeds separately, are in Table~\ref{tab:appendixb}.}
 \label{tab:synthetic}
 \small
 \begin{tabular}{lrrrrr}
@@ -437,26 +459,57 @@ FP05 & Greedy congestion-aware & 277.95 & 111.385 & 3 & 1.400 \\
 
 \section{Synthetic Corpus Specification}
 \label{sec:appendixB}
-Table~\ref{tab:appendixb} lists all 18 synthetic floorplans. Room occupancy is drawn uniformly from $[2,25]$ and edge capacities from small integer ranges matching the real floorplans' scale (see the generator script in the accompanying repository, \path{scripts/expansion/generate_synthetic_floorplan.py}, for exact generation logic); topology and, consequently, all structural metrics (bridges, corridor diameter, route length) are deterministic given topology and size, not affected by the random seed.
+Tables~\ref{tab:appendixb} and~\ref{tab:appendixb2} together list all 18 synthetic floorplans. Room occupancy is drawn uniformly from $[2,25]$ and edge capacities from small integer ranges matching the real floorplans' scale (see the generator script in the accompanying repository, \path{scripts/expansion/generate_synthetic_floorplan.py}, for exact generation logic). Structural properties (Table~\ref{tab:appendixb}) are deterministic given topology and size, not affected by the random seed, so are listed once per topology-size combination; MILP optima and solver gaps (Table~\ref{tab:appendixb2}) vary by seed (occupancy/capacity draw) and are listed for both.
 
 \begin{table}[h]
 \centering
-\caption{Synthetic corpus: 3 topologies $\times$ 3 sizes $\times$ 2 seeds.}
+\caption{Synthetic corpus structural properties: 3 topologies $\times$ 3 sizes (seed-independent).}
 \label{tab:appendixb}
 \small
-\begin{tabular}{lrrrrrrr}
+\begin{tabular}{lrrrrrr}
 \toprule
-Topology & Rooms & Exits & Variables & Corridor diam. & Bridges & Crit.\ bridges & MILP optimum (S1) \\
+Topology & Rooms & Exits & Variables & Corridor diam. & Bridges & Crit.\ bridges \\
 \midrule
-Linear & 10 & 2 & 20 & 9 & 31 & 11 & 1.1940 \\
-Linear & 20 & 4 & 80 & 19 & 63 & 23 & 0.3971 \\
-Linear & 30 & 6 & 180 & 29 & 95 & 35 & 0.2440 \\
-Tree & 10 & 2 & 20 & 7 & 35 & 11 & 1.7241 \\
-Tree & 20 & 4 & 80 & 7 & 65 & 17 & 1.1002 \\
-Tree & 30 & 6 & 180 & 11 & 107 & 30 & 0.7397 \\
-Loop & 10 & 2 & 20 & 4 & 22 & 2 & 3.0133 \\
-Loop & 20 & 4 & 80 & 8 & 44 & 4 & 0.7147 \\
-Loop & 30 & 6 & 180 & 12 & 66 & 6 & 0.4056 \\
+Linear & 10 & 2 & 20 & 9 & 31 & 11 \\
+Linear & 20 & 4 & 80 & 19 & 63 & 23 \\
+Linear & 30 & 6 & 180 & 29 & 95 & 35 \\
+Tree & 10 & 2 & 20 & 7 & 35 & 11 \\
+Tree & 20 & 4 & 80 & 7 & 65 & 17 \\
+Tree & 30 & 6 & 180 & 11 & 107 & 30 \\
+Loop & 10 & 2 & 20 & 4 & 22 & 2 \\
+Loop & 20 & 4 & 80 & 8 & 44 & 4 \\
+Loop & 30 & 6 & 180 & 12 & 66 & 6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Synthetic corpus full results, all 18 floorplans (both seeds): certified MILP optimum and 10-repeat mean optimality gap for each solver.}
+\label{tab:appendixb2}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Topology & Rooms/Seed & MILP optimum & Neal gap (mean) & Hybrid gap (mean) \\
+\midrule
+Linear & 10 / S1 & 1.1940 & 0.00\% & 0.00\% \\
+Linear & 10 / S2 & 1.2189 & $-$0.00\% & 0.00\% \\
+Linear & 20 / S1 & 0.3971 & 51.78\% & 32.59\% \\
+Linear & 20 / S2 & 0.3941 & 49.48\% & 34.92\% \\
+Linear & 30 / S1 & 0.2440 & 128.15\% & 103.58\% \\
+Linear & 30 / S2 & 0.2428 & 129.83\% & 101.37\% \\
+Tree & 10 / S1 & 1.7241 & $-$0.00\% & $-$0.00\% \\
+Tree & 10 / S2 & 1.6876 & $-$0.00\% & $-$0.00\% \\
+Tree & 20 / S1 & 1.1002 & 8.74\% & 5.39\% \\
+Tree & 20 / S2 & 1.0437 & 8.59\% & 4.82\% \\
+Tree & 30 / S1 & 0.7397 & 27.90\% & 21.75\% \\
+Tree & 30 / S2 & 0.7959 & 23.14\% & 17.06\% \\
+Loop & 10 / S1 & 3.0133 & $-$0.00\% & $-$0.00\% \\
+Loop & 10 / S2 & 2.8944 & $-$0.10\% & $-$0.12\% \\
+Loop & 20 / S1 & 0.7147 & 22.54\% & 15.07\% \\
+Loop & 20 / S2 & 0.6670 & 20.88\% & 12.19\% \\
+Loop & 30 / S1 & 0.4056 & 65.62\% & 53.53\% \\
+Loop & 30 / S2 & 0.4216 & 65.37\% & 50.48\% \\
 \bottomrule
 \end{tabular}
 \end{table}
