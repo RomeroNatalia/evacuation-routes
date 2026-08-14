@@ -1,1 +1,615 @@
-PLACEHOLDER
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{url}
+\Urlmuskip=0mu plus 1mu
+\usepackage{subcaption}
+\clubpenalty=10000
+\widowpenalty=10000
+\raggedbottom
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries}{\thesubsubsection}{1em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small\itshape Optimality and Structural Bottleneck Analysis for Indoor Evacuation QUBO Routing}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\title{\textbf{Optimality Gaps and Structural Bottleneck Analysis \\
+for Capacity-Aware Indoor Evacuation Route Assignment \\
+Using QUBO Optimization and Quantum Annealing}}
+
+\author{
+Arielle Jenna Fishman \\
+\small Florida Atlantic University \\
+\small Machine Perception and Cognitive Robotics Laboratory
+\and
+Natalia Romero, Ph.D. \\
+\small Florida Atlantic University \\
+\small Machine Perception and Cognitive Robotics Laboratory
+}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper formulates static indoor evacuation-route assignment as a capacity-aware Quadratic Unconstrained Binary Optimization (QUBO) problem, solves it with classical simulated annealing, D-Wave Leap Hybrid, and direct quantum annealing across five manually constructed benchmark building layouts (16 to 264 logical variables), and then extends the original study in three ways. First, we formulate the same constrained objective in Google OR-Tools CP-SAT using a scaled-integer representation. CP-SAT reaches status \texttt{OPTIMAL} for every benchmark instance in under two seconds, and the returned assignments are rescored independently under the original unpruned float64 objective. This reference baseline reveals that Neal and D-Wave Hybrid are approximately 94--125\% above the reference energy on two of the five original layouts, a gap invisible without an exact solver-side optimum for the scaled formulation. Second, we investigate why: a sweep-count sensitivity experiment, using 200 total reads per setting and up to 100$\times$ the original per-read sweep count, does not close the gap, while a structural/geometric analysis and an 18-floorplan synthetic corpus with independently controlled corridor topology (linear, branching, and looped) identify \emph{corridor diameter} as a structural predictor comparably strong to raw problem size ($r\approx0.83$) that nonetheless captures additional information, adding up to 13 additional percentage points of explained variance beyond variable count alone in a joint regression. Third, we report formal significance tests throughout, correcting the descriptive-statistics-only limitation of the original study. The result is a reproducible evacuation-QUBO workflow with a substantially stronger classical reference baseline and an empirically grounded account of what makes a floorplan hard for current annealing-based solvers.
+\end{abstract}
+
+\noindent\textbf{Keywords} --- evacuation routing, QUBO, quantum annealing, capacity-aware optimization, minor embedding, integer optimization, D-Wave, simulated annealing
+
+\section{Introduction}
+
+Emergency evacuation planning requires people to move from occupied spaces to safe exits along legal and understandable routes. Practical evacuation guidance emphasizes clearly identified exits, unobstructed routes, and floorplans that show how occupants can leave a building without entering hazardous or inaccessible areas \cite{osha}. From an optimization perspective, however, assigning every room to its individually nearest exit can concentrate many occupants on the same doorway or corridor. A short route for each individual group is therefore not necessarily the best coordinated assignment for the building as a whole.
+
+Building evacuation has long been represented as a network problem with nodes, arcs, capacities, and bottlenecks \cite{chalmet}. Classical facility-to-exit assignment work also shows that coordinated assignments can outperform simple nearest-exit rules \cite{kang}. Modern indoor guidance methods incorporate corridor capacity, congestion, risk, and changing conditions \cite{desmet,zhang,ye}. These approaches motivate a system-level objective that balances route efficiency against shared infrastructure rather than minimizing geometric distance alone.
+
+The Machine Perception and Cognitive Robotics Laboratory fellowship notebooks develop a progression from identifying binary decisions, objectives, and constraints to building Binary Quadratic Models (BQMs), sampling them with classical simulated annealing, and executing them on D-Wave Hybrid and direct quantum hardware. The original capstone project applied that progression to a larger original problem: representing five manually constructed benchmark building layouts as validated wall-aware graphs, precomputing one legal route for each room-exit pair, and formulating the global assignment as a QUBO whose pairwise interactions penalize occupancy concentration on shared low-capacity edges.
+
+That original study asked how effectively classical simulated annealing, a cloud Hybrid solver, and direct quantum annealing solve this QUBO as floorplan size and logical connectivity increase, and reported energy, physical route metrics, feasibility, runtime, and direct-QPU embedding behavior across 390 repeated solver runs. It found Hybrid consistently outperforming Neal, exact global optimality confirmed by exhaustive enumeration for the smallest 8-room floorplan, and two floorplans (FP02, FP03) whose density prevented direct embedding on the QPU altogether -- but it explicitly acknowledged, as a limitation, that results for the four larger floorplans were \emph{lowest observed energies, not certified optima}, and that no exact integer-optimization baseline or formal significance test was included.
+
+This paper closes much of that gap, and in doing so substantially revises the picture the original results supported. We formulate the same constrained distance-plus-congestion objective in OR-Tools CP-SAT using scaled integer coefficients and solve that formulation to CP-SAT status \texttt{OPTIMAL} in under two seconds for every floorplan tested, including the two that could not be embedded on the QPU at all. The returned assignments are then rescored under the original unpruned float64 objective. Measured against these reference energies rather than only against each other, Neal and Hybrid are far from the reference solution on exactly the two floorplans the original study already flagged as structurally unusual -- approximately 94--125\% above it, rather than the small margins their mutual comparison suggested. We then investigate why, first testing sensitivity to a 100$\times$ increase in per-read sweep count, then building a geometric/topological analysis of the floorplans' navigation graphs, and finally constructing an 18-floorplan synthetic corpus with independently controlled corridor topology to test candidate structural explanations under conditions the five original benchmark layouts cannot provide. The extension shifts the structural interpretation away from bridge count and toward corridor diameter, replicated under both solvers evaluated.
+
+The contributions are:
+\begin{itemize}[leftmargin=*]
+\item A reproducible wall-aware floorplan-to-graph workflow for five manually constructed benchmark building layouts (retained from the original study).
+\item A room-group QUBO combining normalized route distance with occupancy-weighted, capacity-normalized shared-edge congestion (retained from the original study).
+\item A controlled comparison of Neal simulated annealing, D-Wave Leap Hybrid, and direct-QPU execution using repeated independent runs (retained from the original study).
+\item \textbf{New:} a CP-SAT scaled-integer reformulation solved to status \texttt{OPTIMAL} for all five original layouts and all 18 synthetic instances, with each returned assignment rescored under the original unpruned objective.
+\item \textbf{New:} formal significance testing (Mann-Whitney $U$, Bonferroni-corrected) replacing the descriptive-statistics-only comparison of the original study.
+\item \textbf{New:} a root-cause investigation combining a direct sweep-count sensitivity ablation with a three-part structural bottleneck taxonomy (capacity, traffic-concentration, and topological) applied to the floorplans' raw navigation graphs.
+\item \textbf{New:} an 18-floorplan synthetic corpus with independently controlled corridor topology, used to test the structural hypothesis under conditions the original five benchmark layouts cannot provide, showing that raw variable count is the strongest univariate predictor while corridor diameter is a comparably strong structural predictor that adds explanatory information beyond size.
+\end{itemize}
+
+\section{Related Work}
+
+\subsection{Building evacuation networks and exit assignment}
+Chalmet, Francis, and Saunders developed foundational network models for building evacuation in which occupants move through capacity-limited arcs toward exits \cite{chalmet}. Kang, Jeong, and Kwun later formulated a closely related facility-final exit assignment problem, where rooms or other building subspaces are assigned to known routes leading to exterior exits \cite{kang}. Their integer model keeps occupants associated with a facility together, while a linear variant allows splitting. This structure is an important classical predecessor to the present room-group formulation.
+
+The NIST review by Kuligowski, Peacock, and Hoskins places route optimization within a broader evacuation-modeling landscape that may include pre-movement delay, individual behavior, smoke and fire effects, exit blockage, group movement, and validation against experiments \cite{kuligowski}. The present work addresses only the route-assignment layer.
+
+\subsection{Capacity-, congestion-, and risk-aware routing}
+Desmet and Gelenbe proposed capacity-based evacuation guidance with dynamic exit signs \cite{desmet}. Zhang et al. developed congestion-aware indoor evacuation routing using augmented-reality devices \cite{zhang}. Pedestrian bottleneck research shows exit throughput depends on geometry, crowd formation, and incoming flow rather than a single universal capacity value \cite{ye}. Accordingly, the capacities used here are relative prototype values for optimization experiments, not empirically calibrated pedestrian flow rates.
+
+\subsection{Classical path generation and direct shortest-path QUBOs}
+Dijkstra's algorithm provides shortest paths on graphs with nonnegative edge weights \cite{dijkstra}, while A* uses a heuristic to guide search \cite{astar}. Krauss and McCollum encode the shortest-path problem itself into a QUBO \cite{krauss}. The present two-stage design instead reduces the logical decision to selecting among already-valid routes, reserving quadratic interactions for system-level congestion and assignment.
+
+\subsection{QUBO, traffic assignment, and quantum evacuation}
+Lucas provides general Ising and QUBO constructions for many discrete optimization problems \cite{lucas}. Neukart et al. applied quantum annealing to traffic-flow optimization by selecting candidate routes while penalizing shared road segments \cite{neukart}. Shikanai et al. provide the closest recent comparison: a large-scale vehicle-evacuation formulation choosing among pre-generated candidate routes while balancing travel distance and route overlap under a one-route-per-vehicle constraint \cite{shikanai}. The present project adapts that general route-selection structure to indoor building graphs and room-level occupant groups, weighting shared edges by room occupancy and normalizing load by modeled edge capacity.
+
+\subsection{Exact and reference baselines for QUBO-formulated problems}
+A recurring, explicitly acknowledged limitation across this literature -- including the original version of the present study -- is the absence of an exact classical reference baseline: results are often reported as best-observed energy across repeated solver runs, without an exact solver-side optimum for the corresponding constrained model. Here we use Google OR-Tools CP-SAT \cite{ortools} to optimize a scaled-integer reformulation of the distance-plus-congestion objective without embedding, chaining, or QUBO penalty tuning. CP-SAT supplies an \texttt{OPTIMAL} status and matching bound for that integer-scaled model; the selected assignment is then rescored under the original unpruned float64 objective. This provides a much stronger reference than solver-vs-solver comparison alone, while the effect of coefficient rounding on assignment ordering remains a limitation discussed below.
+
+\subsection{Research gap and positioning}
+Existing research has established network-flow evacuation models, facility-to-exit assignment, congestion-aware indoor routing, direct shortest-path QUBOs, quantum traffic assignment, and quantum evacuation-route selection, but has rarely combined a strong exact classical reference formulation, formal significance testing, and a controlled structural analysis of \emph{why} certain floorplan topologies resist QUBO-based optimization. This paper addresses that intersection. It does not claim quantum advantage.
+
+\section{Problem Definition and Scope}
+
+Let a building be represented by a graph $G=(V,K)$, where $V$ contains navigation, room-start, doorway, and exit nodes, and $K$ contains legal movement edges. Each edge has a positive distance and a positive relative capacity. Let $R$ denote the set of rooms and $E$ the set of designated exterior exits. For each pair $(r,e)$, a single legal shortest route is precomputed and stored. Every occupant assigned to room $r$ is treated as one indivisible group with occupancy $p_r$:
+\begin{equation}
+x_{r,e} \in \{0,1\}, \qquad r \in R,\ e \in E. \tag{1}
+\end{equation}
+The assignment must select exactly one exit route for every room, balancing total travel distance against concentration of large occupant groups on shared low-capacity edges. This is a static planning model; it computes neither a movement schedule nor an evacuation completion time. Assumptions, retained from the original study, include: all occupants in a room follow the same selected route; one candidate path is available per room-exit pair; occupancy and edge capacities remain fixed during a run; congestion is represented by simultaneous route overlap, not a time-resolved queue; and all designated exits are available.
+
+\section{Floorplan Graphs and Preprocessing}
+
+\subsection{Wall-aware graph construction}
+The five benchmark floorplans were manually constructed as indoor navigation graphs, with room centers connecting to doorway nodes, doorway nodes connecting to corridor navigation points, and exit nodes connecting to the interior graph through legal openings. Edges crossing walls, leaving the building, or bypassing doors are prohibited. Table~\ref{tab:floorplans} summarizes the five benchmark instances.
+
+\begin{table}[h]
+\centering
+\caption{Benchmark floorplans and logical problem sizes.}
+\label{tab:floorplans}
+\small
+\begin{tabular}{lllrrrrr}
+\toprule
+ID & Building type & Rooms & Exits & Variables & Nodes & Edges & Occupants \\
+\midrule
+FP01 & Office & 12 & 5 & 60 & 173 & 245 & 100 \\
+FP02 & School administration & 33 & 8 & 264 & 584 & 793 & 183 \\
+FP03 & Dormitory & 28 & 9 & 252 & 571 & 792 & 65 \\
+FP04 & Museum & 8 & 2 & 16 & 173 & 258 & 164 \\
+FP05 & Clinic & 24 & 3 & 72 & 359 & 505 & 85 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Route generation and validation}
+Dijkstra's algorithm computes the shortest legal path from every room-start node to every exit; A* independently verifies path-length agreement. The repository's automated test suite covers graph loading, node and edge validity, connectivity, doorway structure, room-to-exit reachability, route generation, floorplan consistency, and Dijkstra--A* agreement. At the time of this revision, with the 18-floorplan synthetic corpus described in Section~\ref{sec:synthetic} added under the same auto-discovering test harness, the complete suite passes 49 of 49 tests (13 of 13 on the original five floorplans alone).
+
+\section{Capacity-Aware QUBO Formulation}
+
+The binary route variables are assembled into a BQM with linear and quadratic coefficients. The total energy is
+\begin{equation}
+H(\mathbf{x}) = H_{\text{distance}}(\mathbf{x}) + H_{\text{congestion}}(\mathbf{x}) + H_{\text{assignment}}(\mathbf{x}). \tag{2}
+\end{equation}
+
+\subsection{Normalized distance term}
+\begin{equation}
+H_{\text{distance}}(\mathbf{x}) = \frac{1}{S_D}\sum_{r \in R}\sum_{e \in E} d_{r,e}\, x_{r,e}. \tag{3}
+\end{equation}
+$d_{r,e}$ is the length of the stored route from room $r$ to exit $e$; $S_D$ is a data-derived scale preventing raw distance magnitudes from dominating.
+
+\subsection{Occupancy-weighted edge load}
+\begin{equation}
+L_k(\mathbf{x}) = \sum_{r \in R}\sum_{e \in E} p_r\, I_{r,e,k}\, x_{r,e}, \qquad u_k(\mathbf{x}) = \frac{L_k(\mathbf{x})}{C_k}. \tag{4}
+\end{equation}
+$I_{r,e,k}$ equals one when route $(r,e)$ uses physical graph edge $k$; the prototype effective capacity is $C_k = 10 c_k$, where $c_k$ is the relative capacity stored in the floorplan's edge table.
+
+\subsection{Quadratic congestion term}
+\begin{equation}
+H_{\text{congestion}}(\mathbf{x}) = \frac{w_c}{S_C}\sum_{k \in K}\left(\frac{L_k(\mathbf{x})}{C_k}\right)^2, \qquad w_c = 5. \tag{5}
+\end{equation}
+$S_C$ is a data-derived normalization scale. Squaring utilization creates both individual and pairwise costs: if two selected routes share edge $k$, their normalized loads generate a positive quadratic interaction. This term is a Gram-matrix quadratic in $\mathbf{x}$ (Section~\ref{sec:milp}) -- a fact central to this paper's classical-reference contribution.
+
+\subsection{Exactly-one assignment penalty}
+\begin{equation}
+H_{\text{assignment}}(\mathbf{x}) = A \sum_{r \in R}\left(1 - \sum_{e \in E} x_{r,e}\right)^2. \tag{6}
+\end{equation}
+Expanding, $A(1-\sum_e x_{r,e})^2 = A - A\sum_e x_{r,e} + 2A\sum_{e<f} x_{r,e}x_{r,f}$, assigning a negative linear bias to every route and a positive interaction between every pair of routes for the same room. Rather than fixing $A$ across instances, the largest positive marginal feasible route cost $M_{\max}$ is estimated and
+\begin{equation}
+A = 1.5\,(M_{\max} + 0.25). \tag{7}
+\end{equation}
+This penalty is recalculated per floorplan. Congestion-only interactions below $10^{-4}$ are pruned for QPU density reduction (assignment interactions are never pruned); the reported penalized-BQM energy therefore differs by a small, previously-documented amount from the exact, unpruned energy used for the reference comparison below.
+
+\section{Exact Solver Reference via Convex Quadratic Structure}
+\label{sec:milp}
+
+\subsection{Motivation}
+Every result in the original study is a \emph{lowest energy observed} across repeated runs, not a certified optimum, except for FP04, whose 256 feasible assignments could be exhaustively enumerated. This leaves the absolute solution-quality question unresolved for four of five floorplans and is explicitly listed as a limitation in the original study.
+
+\subsection{The penalty method obscures a convex quadratic objective}
+Equation~6's role is purely to make the exactly-one-route-per-room constraint expressible inside an unconstrained BQM, as required by Neal, Hybrid, and QPU samplers. But the constraint itself, $\sum_{e} x_{r,e} = 1$ for every room, is a linear equality. And $H_{\text{congestion}}$ (Equation~5) is a sum of squared linear forms in $\mathbf{x}$ -- equivalently, $\mathbf{x}^\top \mathbf{Q} \mathbf{x}$ for a Gram matrix $\mathbf{Q} = \mathbf{L}\mathbf{L}^\top$ built from the per-route normalized-load vectors -- and a Gram matrix is positive semi-definite. The optimization problem underneath the QUBO reduction,
+\begin{equation}
+\min_{\mathbf{x} \in \{0,1\}^n} H_{\text{distance}}(\mathbf{x}) + H_{\text{congestion}}(\mathbf{x}) \quad \text{s.t.} \quad \sum_{e \in E} x_{r,e} = 1 \ \ \forall r \in R, \tag{8}
+\end{equation}
+therefore has a convex quadratic objective over a discrete binary feasible set. This removes the QUBO penalty term and embedding requirement from the classical reference formulation, although the feasible set remains combinatorial.
+
+\subsection{A per-edge CP-SAT formulation}
+A direct implementation expanding $\mathbf{x}^\top\mathbf{Q}\mathbf{x}$ into pairwise product terms scales quadratically in the number of routes. Instead, we introduce one integer variable per \emph{edge} (not per route pair), $\text{load}_k = \sum_{r,e} \lfloor S \cdot p_r I_{r,e,k} / C_k \rceil\, x_{r,e}$ for an integer scale $S$, and a single squared variable $\text{sq}_k = \text{load}_k^2$ via a native multiplication constraint. This keeps the implemented model compact and allows FP02 and FP03 -- both too densely coupled to embed directly on the QPU -- to solve in seconds in CP-SAT.
+
+We use Google OR-Tools CP-SAT \cite{ortools}, an open-source, license-free constraint-programming solver. Because CP-SAT requires integer coefficients, normalized load coefficients are scaled and rounded before optimization. CP-SAT's \texttt{OPTIMAL} certificate therefore applies directly to this integer-scaled formulation. The selected assignment is then recomputed independently in float64 using the identical unpruned objective formula in Equations~3--5. This rescoring reports the original-objective energy of the selected assignment, but by itself does not prove that coefficient rounding could never change assignment ordering under the unrounded objective; we therefore treat these values as a strong exact-solver reference rather than claiming a formal certificate for the original floating-point objective.
+
+\subsection{Validation}
+Two independent checks validate the implementation before downstream comparison. First, for FP04, the CP-SAT solution rescored under the original objective is $1.5026583666\ldots$, matching the original study's exhaustive-enumeration ground truth to 10 decimal places. Second, applying the same objective-recomputation code to an \emph{existing} saved Neal assignment (FP03) reproduces that assignment's previously reported unpruned energy exactly ($0.5452529142969503$ both sides), confirming the float64 rescoring implementation matches the original objective.
+
+Every one of the five original benchmark layouts, and all 18 synthetic floorplans introduced in Section~\ref{sec:synthetic}, solved to CP-SAT status \texttt{OPTIMAL} for the integer-scaled formulation in under two seconds each.
+
+\section{Solver Methods}
+
+\subsection{Classical path baselines}
+Nearest-exit Dijkstra assigns every room to the shortest stored path; a greedy congestion-aware algorithm processes rooms in occupancy order, updating projected edge costs. Neither optimizes the same fixed candidate-route QUBO and both remain contextual comparators only (Appendix~A).
+
+\subsection{Neal simulated annealing}
+A fully classical Ocean sampler accepting the identical BQM representation as the quantum and Hybrid solvers. Each original benchmark run used 1,000 reads, 5,000 sweeps, and four seeds.
+
+\subsection{D-Wave Leap Hybrid}
+\texttt{LeapHybridSampler} combines classical and quantum resources without requiring direct minor-embedding. Applied to all five floorplans and, in this revision, to all 18 synthetic floorplans as well.
+
+\subsection{Direct QPU execution}
+\texttt{DWaveSampler} wrapped with \texttt{EmbeddingComposite} and \texttt{SpinReversalTransformComposite}, using solver \texttt{Advantage\_system4}; 1,000 reads, four spin-reversal transforms, 20-microsecond anneal time, chain-strength prefactor 1.5. Embedding succeeded for FP01, FP04, and FP05 but not FP02 or FP03.
+
+\subsection{CP-SAT reference baseline (new)}
+Google OR-Tools CP-SAT, as described in Section~\ref{sec:milp}, applied to all 23 floorplan instances (five original, 18 synthetic).
+
+\section{Experimental Design}
+
+Thirty independent benchmark runs were completed per solver-floorplan combination for the original five floorplans (Neal and Hybrid on all five; direct QPU on the three embeddable ones), yielding the 390-run dataset of the original study. This revision adds: (i) one CP-SAT reference solve per floorplan (23 total); (ii) a direct sweep-count sensitivity ablation on Neal for FP02 and FP03 (Section~\ref{sec:budget}); (iii) ten independent Neal and ten independent Hybrid runs on all 23 floorplan instances (230 Hybrid calls total, each at D-Wave's documented 3.0-second minimum time limit for problems under 1,024 variables, confirmed directly against the returned \texttt{run\_time} field) for formal significance testing; and (iv) full CP-SAT + Neal + Hybrid evaluation of an 18-floorplan synthetic corpus (Section~\ref{sec:synthetic}).
+
+\section{Results}
+
+\subsection{Mean solution quality (original five floorplans)}
+Hybrid produced the lowest mean energy on four of five floorplans in the original 30-run benchmark, improving mean energy by 4.6--8.5\% relative to Neal (Table~\ref{tab:meanquality}), with all best assignments valid. These figures are retained from the original study and provide context for the reference-gap comparison that follows.
+
+\begin{table}[h]
+\centering
+\caption{Repeated-run solution metrics, mean $\pm$ sample standard deviation, $n=30$ (original study).}
+\label{tab:meanquality}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+ID & Solver & Best energy & Distance & Congestion & Valid samples \\
+\midrule
+FP01 & Neal & $0.7050 \pm 0.0271$ & $121.8 \pm 6.0$ & $195.8 \pm 13.3$ & 100.00\% \\
+FP01 & Hybrid & $0.6447 \pm 0.0179$ & $110.8 \pm 4.2$ & $181.3 \pm 9.1$ & 100.00\% \\
+FP02 & Neal & $0.6433 \pm 0.0237$ & $748.6 \pm 27.7$ & $1048.2 \pm 140.2$ & 100.00\% \\
+FP02 & Hybrid & $0.6136 \pm 0.0199$ & $720.4 \pm 23.6$ & $954.6 \pm 128.9$ & 100.00\% \\
+FP03 & Neal & $0.6059 \pm 0.0240$ & $595.3 \pm 23.5$ & $147.7 \pm 13.1$ & 100.00\% \\
+FP03 & Hybrid & $0.5589 \pm 0.0241$ & $551.2 \pm 23.9$ & $133.7 \pm 11.4$ & 100.00\% \\
+FP04 & Neal & $1.5027 \pm 0.0000$ & $60.0 \pm 0.0$ & $630.9 \pm 0.0$ & 100.00\% \\
+FP04 & Hybrid & $1.5027 \pm 0.0000$ & $60.0 \pm 0.0$ & $630.9 \pm 0.0$ & 100.00\% \\
+FP05 & Neal & $0.7937 \pm 0.0317$ & $321.8 \pm 11.5$ & $160.4 \pm 10.4$ & 100.00\% \\
+FP05 & Hybrid & $0.7381 \pm 0.0325$ & $305.2 \pm 12.4$ & $142.6 \pm 9.4$ & 100.00\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Optimality gaps against the CP-SAT reference}
+\label{sec:gaps}
+Table~\ref{tab:milpgaps} reports each floorplan's CP-SAT reference energy alongside the original 30-run best-observed assignments rescored under the same unpruned objective. FP04's CP-SAT reference matches the previously reported exhaustive optimum exactly. FP01 and FP05, both embeddable on the QPU, show modest gaps (3--14\%). FP02 and FP03 -- precisely the two floorplans that could not be directly embedded on the QPU -- show Neal and Hybrid landing approximately \textbf{94--125\%} above the CP-SAT reference energy: more than double the reference on the hardest cases, a gap invisible in Table~\ref{tab:meanquality}'s solver-vs-solver comparison.
+
+\begin{table}[h]
+\centering
+\caption{CP-SAT reference energy vs. best-observed assignment rescored with the unpruned objective, with relative gap.}
+\label{tab:milpgaps}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+ID & CP-SAT reference & Neal best & Neal gap & Hybrid best & Hybrid gap \\
+\midrule
+FP01 & 0.581344 & 0.636840 & 9.55\% & 0.600349 & \textbf{3.27\%} \\
+FP02 & 0.261443 & 0.587613 & 124.76\% & 0.577324 & \textbf{120.82\%} \\
+FP03 & 0.256160 & 0.545253 & 112.86\% & 0.497750 & \textbf{94.31\%} \\
+FP04 & 1.502658 & 1.502658 & 0.00\% & 1.502658 & 0.00\% \\
+FP05 & 0.615057 & 0.704015 & 14.46\% & 0.655631 & \textbf{6.60\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For FP03 specifically, the practical severity of this gap is best appreciated physically: the CP-SAT reference assignment (distance 254.25, raw congestion 11.85) is barely worse in distance than the trivial, congestion-blind nearest-exit-Dijkstra baseline (distance 250.75, raw congestion 64.49, Appendix~A), while Neal and Hybrid's reported "100\% valid" solutions (distance 551--595, raw congestion 134--148 in the repeated-run summary) are simultaneously worse than that trivial baseline on both distance and congestion. Validity verifies the exactly-one constraint, not solution quality.
+
+\subsection{Statistical significance}
+\label{sec:significance}
+The original study's Section~7 explicitly notes the absence of formal significance testing. We apply Mann-Whitney $U$ (not paired Wilcoxon: Neal's local seeds and Hybrid's server-side randomness are independent, not paired samples) to the 30-run distributions, Bonferroni-corrected across five floorplans ($\alpha=0.01$). Hybrid is significantly better than Neal on FP01, FP02, FP03, and FP05 after correction; FP02 has $p\approx1.02\times10^{-5}$, while the other three are below $10^{-5}$. FP04 shows a technically significant but practically meaningless $p=1.7\times10^{-14}$, reflecting floating-point-noise-level differences between two distributions that both reach the exhaustive optimum on every run -- a concrete illustration of why $p$-values must be read alongside effect size, not alone. Against the CP-SAT reference, neither solver reaches the reference energy in the saved best assignments on FP02 or FP03 (FP02 best gaps: Neal 124.76\%, Hybrid 120.82\%).
+
+\subsection{Root-cause investigation: sweep-count sensitivity}
+\label{sec:budget}
+FP02 and FP03's large gaps could plausibly reflect insufficient annealing effort. The original Neal benchmark used 1,000 reads and 5,000 sweeps per read. The follow-up ablation used 200 total reads at each setting (50 reads for each of four seeds) and varied the per-read sweep count from 25,000 to 500,000, up to 100$\times$ the original sweep count. Because the ablation changes the read count relative to the original benchmark, it should be interpreted as a sweep-count sensitivity test rather than a controlled increase in total compute budget. Recomputing the saved ablation energies against the current CP-SAT reference values gives approximately 153--163\% gaps for FP02 and 110--161\% for FP03. The non-monotonic results show that increasing the sweep count alone did not close the gap, but do not by themselves rule out every form of under-sampling.
+
+\subsection{Geometric and topological bottleneck analysis}
+\label{sec:geometry}
+We quantify each floorplan's raw navigation graph (independent of the QUBO) directly from its node and edge tables, defining bottlenecks three complementary ways, since no single measure captures the concept: (i) \textit{capacity bottleneck} -- the paper's own worst-case simultaneous per-edge utilization, $\max_{\text{feasible}} u_k$, reported per edge rather than only summed into the normalization scale $S_C$; (ii) \textit{traffic-concentration bottleneck} -- how many distinct candidate routes use a given edge at all, independent of capacity; (iii) \textit{structural bottleneck} -- bridge edges and articulation points in the raw navigation graph, with a \textit{critical bridge} defined as one lying on the recorded path of two or more distinct rooms.
+
+FP02 and FP03 generally contain more bridges and critical bridges than the other original layouts, with the largest differences relative to FP04; compared with FP05, however, the bridge-count differences are only about 1.3--1.5$\times$ (Table~\ref{tab:geometry}). FP03 (dormitory) has a corridor-subgraph diameter of 40 hops -- roughly double every other floorplan -- consistent with a long single-spine hallway layout.
+
+\begin{table}[h]
+\centering
+\caption{Structural comparison across the five original benchmark layouts.}
+\label{tab:geometry}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+ID & Rooms & Hallway nodes & Route hops (mean/max) & Corridor diam. & Bridges & Critical bridges \\
+\midrule
+FP01 & 12 & 34 & 15.4 / 25 & 21 & 34 & 13 \\
+FP02 & 33 & 107 & 28.6 / 48 & 22 & 70 & 33 \\
+FP03 & 28 & 204 & 27.5 / 49 & 40 & 81 & 41 \\
+FP04 & 8 & 8 & 12.6 / 19 & 5 & 3 & 2 \\
+FP05 & 24 & 66 & 19.2 / 32 & 22 & 54 & 22 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{An 18-floorplan synthetic corpus: confirming and correcting the structural hypothesis}
+\label{sec:synthetic}
+The five original benchmark layouts confound topology with size, room/exit ratio, and building type simultaneously, and cannot statistically confirm a structural hypothesis on their own. We generate 18 additional floorplans, in the identical CSV schema as FP01--FP05, spanning three \emph{independently controlled} corridor topologies at three sizes (10, 20, 30 rooms) and two random seeds (occupancy/capacity only; topology is deterministic given size):
+\begin{itemize}[leftmargin=*]
+\item \textbf{Linear}: a single corridor spine, rooms along its length. Maximum structural bottleneck by design.
+\item \textbf{Tree}: a branching spine, rooms on short branches. A tree graph has zero cycles, so every corridor edge is technically a bridge, but each may be shared by only the rooms whose candidate routes traverse it.
+\item \textbf{Loop}: corridor forms a single ring, rooms attached around it. The ring provides an alternate hallway path when one ring edge is removed.
+\end{itemize}
+All 18 pass the repository's own auto-discovering connectivity, door-degree, and reachability test suite unmodified (Section~4.2), and all 18 solve to CP-SAT status \texttt{OPTIMAL} for the integer-scaled reference formulation in under two seconds each.
+
+\subsubsection{Structure predicts difficulty, but not the way we first hypothesized}
+Combining all 23 evaluated instances (five original and 18 synthetic, $n=23$), every candidate predictor in Table~\ref{tab:correlations} correlates significantly with both solvers' 10-repeat mean gap against the CP-SAT reference. Raw variable count is the strongest univariate predictor ($r=0.865$ Neal, $0.873$ Hybrid), with corridor diameter close behind ($r=0.837$ Neal, $0.823$ Hybrid) -- both ahead of every bridge-based measure. Critical-bridge count, the initial hypothesis in this extension, trails at $r\approx0.70$ for both solvers; plain bridge count trails further still ($r\approx0.60$--$0.62$). The 18 synthetic instances contain nine unique topology-size graph structures with two occupancy/capacity seeds each, so the $n=23$ analysis should be interpreted as an instance-level correlation that includes repeated graph structures rather than 23 structurally independent layouts.
+
+\begin{table}[h]
+\centering
+\caption{Instance-level correlation of each predictor with the 10-repeat mean reference gap, $n=23$; synthetic seed pairs share graph structure.}
+\label{tab:correlations}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Predictor & Neal $r$ & Neal $p$ & Hybrid $r$ & Hybrid $p$ \\
+\midrule
+n\_variables & \textbf{0.865} & $9.9\times10^{-8}$ & \textbf{0.873} & $5.5\times10^{-8}$ \\
+corridor\_diameter\_hops & 0.837 & $6.3\times10^{-7}$ & 0.823 & $1.4\times10^{-6}$ \\
+route\_hops\_mean & 0.736 & $6.2\times10^{-5}$ & 0.761 & $2.5\times10^{-5}$ \\
+structural\_critical\_bridge\_count & 0.702 & $1.9\times10^{-4}$ & 0.700 & $2.0\times10^{-4}$ \\
+structural\_bridge\_count & 0.622 & $1.5\times10^{-3}$ & 0.603 & $2.4\times10^{-3}$ \\
+capacity\_bottleneck\_edge\_count & 0.702 & $1.9\times10^{-4}$ & 0.743 & $4.9\times10^{-5}$ \\
+traffic\_bottleneck\_top1\_share & 0.713 & $1.3\times10^{-4}$ & 0.699 & $2.1\times10^{-4}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The interesting result is not that corridor diameter beats size outright -- it does not, slightly, for either solver -- but that it is nearly as informative as size while capturing something size does not, confirmed by the regression below. Critically, the initial bridge-count hypothesis in this extension does not order the three controlled topologies correctly. At matched room counts, Tree has 5--6$\times$ more critical bridges than Loop (21 vs.\ 4 at 20 rooms; 29 vs.\ 6 at 30 rooms) yet a smaller mean reference gap both times (Table~\ref{tab:synthetic}). Corridor diameter better distinguishes the difficult Linear topology from the other two at every tested size, but it does not strictly produce Tree $<$ Loop $<$ Linear at every size: at 10 rooms Loop has diameter 4, Tree 8, Linear 9, and at 20 rooms Tree and Loop are tied at 8. Overall, corridor diameter and mean route length track the observed difficulty pattern more consistently than bridge count.
+
+\begin{table}[h]
+\centering
+\caption{Illustrative subset: topology, structure, and 10-repeat mean Hybrid reference gap. Full 18-floorplan results, including Neal gaps and both seeds separately, are in Table~\ref{tab:appendixb2}.}
+\label{tab:synthetic}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Topology & Rooms & Critical bridges & Corridor diameter & Hybrid gap (mean of 2 seeds) \\
+\midrule
+Loop & 20 & 4 & 8 & 14.7\% \\
+Tree & 20 & 21 & 8 & 6.0\% \\
+Loop & 30 & 6 & 12 & 55.0\% \\
+Tree & 30 & 29 & 10 & 22.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This is a physically interpretable correction rather than a failure to confirm: bridge count alone does not encode how widely a bridge is shared across candidate routes, while long shared corridor segments can accumulate many pairwise congestion interactions. Route/corridor length is therefore a better proxy than plain bridge count for how much interaction can accumulate per room's routing decision.
+
+Multiple regression confirms corridor diameter adds explanatory power beyond raw size in the current instance-level dataset: partial correlation controlling for variable count is $r=0.727$ ($p=8.5\times10^{-5}$), and $R^2$ rises from 0.749 (variable count alone) to 0.882 with corridor diameter added for Neal's 10-repeat mean gap (0.762 to 0.877 for Hybrid's). Because the two seeds at each synthetic topology-size pair share identical graph structure, these inferential values should be interpreted with the repeated-structure caveat noted above.
+
+\subsubsection{Replication under Hybrid, with proper significance testing}
+Repeating this analysis with ten independent Neal and ten independent Hybrid runs on all 23 floorplan instances (230 Hybrid calls total) allows a direct significance test and a check that the structural association is not unique to Neal's search dynamics. Hybrid's mean gap is smaller than Neal's in 18 of 23 instances. Solver distributions differ significantly after Bonferroni correction in 16 of 23 instances; Hybrid is both lower in mean gap and Bonferroni-significant in 11 of 23. Several of the remaining significant cases are near-exact ties where floating-point-level differences make the inferential result practically unimportant. Corridor diameter predicts Hybrid's gap ($r=0.823$, $p=1.4\times10^{-6}$) similarly to Neal's ($r=0.837$, $p=6.3\times10^{-7}$), supporting a solver-independent association in this dataset.
+
+\subsection{Direct-QPU feasibility and embedding}
+Direct-QPU performance remains strongly instance-dependent, retained from the original study: FP04 reproduced the exact optimum with 78.78\% mean valid-sample rate; FP01 and FP05 required chains up to 9 and 12 physical qubits per logical variable respectively, with valid-sample rates below 1\%; FP02 and FP03 could not be embedded at all. The fact that FP02 and FP03 are also difficult for the annealing solvers relative to the CP-SAT reference suggests a possible relationship between graph structure, embedding difficulty, and solution quality, but the five original QPU cases are insufficient to establish corridor diameter as a common cause. In particular, FP02 and FP05 both have corridor diameter 22 while their direct-QPU embedding outcomes differ.
+
+\section{Discussion}
+
+\subsection{A strong classical reference changes the empirical picture}
+The original study's central comparative claim -- Hybrid outperforms Neal on most original layouts -- survives and is now supported by formal significance testing. But the absolute quality question changes substantially once the CP-SAT reference exists: two of five original layouts are roughly twice the reference energy in the best saved annealing assignments, a finding a solver-vs-solver comparison cannot surface, since both solvers can simultaneously be far from a stronger classical reference while one still beats the other.
+
+\subsection{Correcting the initial structural hypothesis}
+The initial structural hypothesis in this extension focused on bridge/bottleneck-edge count, motivated by the original paper's QPU-embedding-density finding. The controlled synthetic corpus shows that bridge count alone does not order the observed solver difficulty consistently. Critical-bridge count is still correlated with the reference gap in the current instance-level dataset, but the controlled topology comparison indicates that corridor length/diameter captures the observed pattern more consistently.
+
+\subsection{Why corridor length, mechanistically}
+A longer route through the network touches more edges, and each additional edge is a potential point of interaction with every other room's route through the congestion term's Gram-matrix structure (Section~\ref{sec:milp}). Longer corridors can therefore accumulate more combinatorial coupling per room's routing decision than a purely topological bridge count reflects.
+
+\subsection{Interpretation of the congestion objective}
+Retained from the original study: the squared-utilization term is a surrogate cost. It does not simulate arrival times, queues, pedestrian speed, or crowd dynamics. A lower congestion objective describes a more distributed static assignment under the prototype capacity model, not a proven reduction in evacuation completion time.
+
+\section{Limitations}
+
+\begin{itemize}[leftmargin=*]
+\item The model remains static, with no time dimension, walking speed, queue, smoke, fire, or dynamically changing hazards.
+\item All occupants in a room remain one indivisible group; only one precomputed candidate path exists per room-exit pair.
+\item Edge capacities are relative prototype values, not calibrated pedestrian throughput measurements.
+\item CP-SAT certifies the integer-scaled reformulation used for optimization. The returned assignment is rescored under the original float64 objective, but the present analysis does not prove that coefficient rounding preserves the exact assignment ordering of the unrounded objective on every instance.
+\item The original benchmark corpus consists of five manually constructed layouts representing five building types; the synthetic corpus is not a substitute for a larger, independently sourced real-building sample.
+\item The 18 synthetic instances contain only nine unique topology-size graph structures, each repeated with two occupancy/capacity seeds. Treating both seeds as separate observations is useful for instance-level behavior but does not provide 18 structurally independent layouts; structural-correlation $p$-values should therefore be interpreted cautiously.
+\item The synthetic generator connects rooms directly to their door without an interior room-tile grid (unlike the original benchmark layouts), by design, to isolate corridor-network structure. This means absolute route-hop magnitudes are not directly comparable across the two corpora.
+\item Corridor diameter and mean route-hop length are correlated with each other ($r=0.721$ in the combined corpus) and not yet fully statistically separated; a synthetic sweep varying one independently of the other would sharpen this further.
+\item The sweep-count ablation used 200 total reads per setting rather than the original benchmark's 1,000 reads, so it demonstrates that increasing sweeps alone did not close the gap rather than ruling out all forms of under-sampling.
+\item Hybrid repeat count on the full 23-instance corpus (ten runs) is lower than the original study's 30-run granularity on the five original layouts, a deliberate compromise against D-Wave Leap solver-time quota.
+\item The experiments do not establish quantum advantage, real-time deployment readiness, or real-world evacuation performance.
+\end{itemize}
+
+\section{Future Work}
+
+The highest-priority extension, retained from the original study, remains empirical and simulation-based validation of the capacity model against a validated evacuation simulator or controlled pedestrian studies. Beyond that, this revision's findings motivate: (i) verifying the CP-SAT integer scaling against the unrounded objective with an order-preservation proof, exact rational formulation, or another exact continuous-coefficient method; (ii) a synthetic sweep varying corridor diameter independently of route-hop count and room/exit ratio; (iii) applying the same reference-baseline methodology to other QUBO-formulated routing problems; (iv) an independently sourced real-building corpus (e.g.\ the Modified Swiss Dwellings dataset \cite{msd}, considered but not used in the original study) annotated with the same wall-aware graph pipeline; and (v) dynamic hazard layers connecting the static assignment framework to risk-aware routing while preserving the graph-validation pipeline.
+
+\section{Conclusion}
+
+This paper extends a capacity-aware indoor evacuation-route assignment QUBO study, originally reporting best-observed solver energies across 390 runs on five manually constructed benchmark layouts, with a strong CP-SAT reference baseline, formal significance testing, and a controlled structural investigation. The constrained distance-plus-congestion objective can be represented compactly in CP-SAT using scaled integer coefficients, and all 23 evaluated instances reach CP-SAT status \texttt{OPTIMAL} for that scaled formulation in under two seconds each. Rescoring the resulting assignments under the original unpruned objective reveals that Neal and D-Wave Hybrid are approximately twice the CP-SAT reference energy on FP02 and FP03. A sweep-count sensitivity experiment shows that increasing sweeps alone does not close those gaps. Across the current instance-level structural analysis, variable count is the strongest univariate predictor, while corridor diameter remains a comparably strong structural predictor that adds explanatory information beyond size and tracks the controlled topology results more consistently than bridge count. Hybrid has a lower mean gap on 18 of 23 instances, with 11 instances showing both a lower Hybrid mean and a Bonferroni-significant solver difference. The result is a reproducible evacuation-QUBO workflow with a substantially stronger classical reference and a more carefully qualified account of what makes these benchmark instances difficult for current annealing-based solvers.
+
+\section*{Acknowledgments}
+The authors thank the Machine Perception and Cognitive Robotics Laboratory at Florida Atlantic University for providing the instructional framework and access to quantum-optimization resources.
+
+\begin{thebibliography}{99}
+
+\bibitem{osha} Occupational Safety and Health Administration, ``Evacuation Plans and Procedures eTool: Emergency Action Plan -- Evacuation Elements,'' U.S. Department of Labor. Accessed: Jul. 31, 2026.
+
+\bibitem{chalmet} L. G. Chalmet, R. L. Francis, and P. B. Saunders, ``Network models for building evacuation,'' \textit{Management Science}, vol. 28, no. 1, pp. 86--105, 1982.
+
+\bibitem{kang} J. Kang, I. J. Jeong, and J. B. Kwun, ``Optimal facility-final exit assignment algorithm for building complex evacuation,'' \textit{Computers \& Industrial Engineering}, vol. 85, pp. 169--176, 2015.
+
+\bibitem{kuligowski} E. D. Kuligowski, R. D. Peacock, and B. L. Hoskins, \textit{A Review of Building Evacuation Models}, 2nd ed., NIST Technical Note 1680, 2010.
+
+\bibitem{desmet} A. Desmet and E. Gelenbe, ``Capacity based evacuation with dynamic exit signs,'' in \textit{Proc. IEEE Int. Conf. Pervasive Computing and Communications Workshops}, 2014, pp. 332--337.
+
+\bibitem{zhang} Z. Zhang, H. Liu, Z. Jiao, Y. Zhu, and S.-C. Zhu, ``Congestion-aware evacuation routing using augmented reality devices,'' in \textit{Proc. IEEE Int. Conf. Robotics and Automation}, 2020, pp. 2798--2804.
+
+\bibitem{ye} R. Ye, J. Li, H. Lu, J. Wang, Y. Pan, and Y. Wang, ``A study on the arch mechanism of pedestrian evacuation and congestion alleviation strategies at building exits,'' \textit{Journal of Building Engineering}, vol. 88, art. 109159, 2024.
+
+\bibitem{dijkstra} E. W. Dijkstra, ``A note on two problems in connexion with graphs,'' \textit{Numerische Mathematik}, vol. 1, pp. 269--271, 1959.
+
+\bibitem{astar} P. E. Hart, N. J. Nilsson, and B. Raphael, ``A formal basis for the heuristic determination of minimum cost paths,'' \textit{IEEE Transactions on Systems Science and Cybernetics}, vol. 4, no. 2, pp. 100--107, 1968.
+
+\bibitem{krauss} T. Krauss and J. McCollum, ``Solving the network shortest path problem on a quantum annealer,'' \textit{IEEE Transactions on Quantum Engineering}, vol. 1, pp. 1--12, 2020.
+
+\bibitem{lucas} A. Lucas, ``Ising formulations of many NP problems,'' \textit{Frontiers in Physics}, vol. 2, art. 5, 2014.
+
+\bibitem{neukart} F. Neukart, G. Compostella, C. Seidel, D. von Dollen, S. Yarkoni, and B. Parney, ``Traffic flow optimization using a quantum annealer,'' \textit{Frontiers in ICT}, vol. 4, art. 29, 2017.
+
+\bibitem{shikanai} R. Shikanai, R. Haba, Y. Okazaki, K. Matsumoto, and M. Ohzeki, ``Large-scale evacuation route optimization leveraging sampling diversity in quantum annealing,'' \textit{Scientific Reports}, 2026.
+
+\bibitem{msd} C. van Engelenburg, F. Mostafavi, E. Kuhn, Y. Jeon, M. Franzen, M. Standfest, J. van Gemert, and S. Khademi, ``MSD: A benchmark dataset for floor plan generation of building complexes,'' in \textit{Computer Vision -- ECCV 2024}, LNCS 15116, pp. 60--75, 2025.
+
+\bibitem{dwave-embedding} D-Wave Quantum Inc., ``Minor-Embedding: Best Practices,'' D-Wave Quantum Computing Products Documentation. Accessed: Jul. 31, 2026.
+
+\bibitem{ortools} L. Perron and V. Furnon, ``OR-Tools,'' Google, version 9.x, 2024. \url{https://developers.google.com/optimization}.
+
+\bibitem{mannwhitney} H. B. Mann and D. R. Whitney, ``On a test of whether one of two random variables is stochastically larger than the other,'' \textit{The Annals of Mathematical Statistics}, vol. 18, no. 1, pp. 50--60, 1947.
+
+\bibitem{scipy} P. Virtanen et al., ``SciPy 1.0: fundamental algorithms for scientific computing in Python,'' \textit{Nature Methods}, vol. 17, pp. 261--272, 2020.
+
+\bibitem{networkx} A. Hagberg, P. Swart, and D. S Chult, ``Exploring network structure, dynamics, and function using NetworkX,'' in \textit{Proc. 7th Python in Science Conference}, 2008, pp. 11--15.
+
+\end{thebibliography}
+
+\appendix
+
+\section{Contextual Classical Routing Metrics}
+Table~\ref{tab:appendixa} reports deterministic route metrics illustrating the distance-congestion tradeoff; these do not optimize the same fixed candidate-route QUBO and are not exact energy baselines.
+
+\begin{table}[h]
+\centering
+\caption{Deterministic routing metrics under the prototype capacity model.}
+\label{tab:appendixa}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+ID & Method & Distance & Congestion & Overloaded edges & Max utilization \\
+\midrule
+FP01 & Nearest-exit Dijkstra & 96.50 & 176.463 & 9 & 1.950 \\
+FP01 & Greedy congestion-aware & 110.00 & 166.581 & 10 & 1.400 \\
+FP02 & Nearest-exit Dijkstra & 317.50 & 319.976 & 14 & 1.800 \\
+FP02 & Greedy congestion-aware & 385.50 & 290.228 & 7 & 1.800 \\
+FP03 & Nearest-exit Dijkstra & 250.75 & 64.494 & 1 & 1.600 \\
+FP03 & Greedy congestion-aware & 258.25 & 57.660 & 0 & 1.000 \\
+FP04 & Nearest-exit Dijkstra & 60.00 & 630.890 & 24 & 3.467 \\
+FP04 & Greedy congestion-aware & 63.50 & 645.438 & 21 & 3.667 \\
+FP05 & Nearest-exit Dijkstra & 257.15 & 115.651 & 3 & 1.400 \\
+FP05 & Greedy congestion-aware & 277.95 & 111.385 & 3 & 1.400 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Synthetic Corpus Specification}
+\label{sec:appendixB}
+Tables~\ref{tab:appendixb} and~\ref{tab:appendixb2} together list all 18 synthetic floorplans. Room occupancy is drawn uniformly from $[2,25]$ and edge capacities from small integer ranges matching the original benchmark layouts' scale (see the generator script in the accompanying repository, \path{scripts/expansion/generate_synthetic_floorplan.py}, for exact generation logic). Structural properties (Table~\ref{tab:appendixb}) are deterministic given topology and size, not affected by the random seed, so are listed once per topology-size combination; CP-SAT reference energies and solver gaps (Table~\ref{tab:appendixb2}) vary by seed (occupancy/capacity draw) and are listed for both.
+
+\begin{table}[h]
+\centering
+\caption{Synthetic corpus structural properties: 3 topologies $\times$ 3 sizes (seed-independent).}
+\label{tab:appendixb}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Topology & Rooms & Exits & Variables & Corridor diam. & Bridges & Crit.\ bridges \\
+\midrule
+Linear & 10 & 2 & 20 & 9 & 31 & 11 \\
+Linear & 20 & 4 & 80 & 19 & 63 & 23 \\
+Linear & 30 & 6 & 180 & 29 & 95 & 35 \\
+Tree & 10 & 2 & 20 & 8 & 37 & 13 \\
+Tree & 20 & 4 & 80 & 8 & 69 & 21 \\
+Tree & 30 & 6 & 180 & 10 & 105 & 29 \\
+Loop & 10 & 2 & 20 & 4 & 22 & 2 \\
+Loop & 20 & 4 & 80 & 8 & 44 & 4 \\
+Loop & 30 & 6 & 180 & 12 & 66 & 6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Synthetic corpus full results, all 18 instances (both seeds): CP-SAT reference energy and 10-repeat mean gap for each solver.}
+\label{tab:appendixb2}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Topology & Rooms/Seed & CP-SAT reference & Neal gap (mean) & Hybrid gap (mean) \\
+\midrule
+Linear & 10 / S1 & 1.1940 & 0.00\% & 0.00\% \\
+Linear & 10 / S2 & 1.2189 & $-$0.00\% & 0.00\% \\
+Linear & 20 / S1 & 0.3971 & 51.78\% & 32.59\% \\
+Linear & 20 / S2 & 0.3941 & 49.48\% & 34.92\% \\
+Linear & 30 / S1 & 0.2440 & 128.15\% & 103.58\% \\
+Linear & 30 / S2 & 0.2402 & 132.35\% & 103.58\% \\
+Tree & 10 / S1 & 2.0298 & $-$0.00\% & 0.00\% \\
+Tree & 10 / S2 & 1.8660 & $-$0.00\% & 0.00\% \\
+Tree & 20 / S1 & 1.1245 & 8.50\% & 6.07\% \\
+Tree & 20 / S2 & 1.0649 & 9.82\% & 5.84\% \\
+Tree & 30 / S1 & 0.7210 & 29.14\% & 23.40\% \\
+Tree & 30 / S2 & 0.7734 & 26.40\% & 20.58\% \\
+Loop & 10 / S1 & 3.0133 & $-$0.00\% & $-$0.00\% \\
+Loop & 10 / S2 & 2.8911 & 0.01\% & $-$0.00\% \\
+Loop & 20 / S1 & 0.7104 & 23.27\% & 15.76\% \\
+Loop & 20 / S2 & 0.6588 & 22.40\% & 13.59\% \\
+Loop & 30 / S1 & 0.3969 & 69.28\% & 56.92\% \\
+Loop & 30 / S2 & 0.4146 & 68.17\% & 53.03\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Floorplan Blueprints}
+\label{sec:appendixD}
+Figures~\ref{fig:blueprints-original} and~\ref{fig:blueprints-synthetic} show the navigation-graph structure of every floorplan studied: green circles are room-start nodes, orange squares are doors, red diamonds are exits, and gray dots/lines are corridor and in-room navigation nodes and their connecting edges. These are structural diagrams (node positions and connectivity), not architectural drawings.
+
+For the synthetic corpus, only the 9 unique topology-size layouts are shown (Figure~\ref{fig:blueprints-synthetic}) rather than all 18 -- seeds S1 and S2 share identical node positions and edges, differing only in per-room occupancy and per-edge capacity (Table~\ref{tab:appendixb2}), which a structural blueprint does not depict. Note that ``Tree'' refers to the connected, acyclic corridor structure: for a connected tree, $|E|=|V|-1$ and every corridor edge is a bridge. This graph identity is unrelated to the number of QUBO variables. The generator lays branches out as parallel corridor rows joined by a spine, so the plotted geometry does not necessarily resemble a biological tree.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP01.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP02.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP03.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP04.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_FP05.png}
+\end{subfigure}
+\caption{The five manually constructed benchmark building layouts (Table~\ref{tab:floorplans}). FP03's long single corridor spine and FP02's dense multi-wing layout are visually apparent here.}
+\label{fig:blueprints-original}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_10.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_20.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_30.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_10.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_20.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_30.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_10.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_20.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_30.png}
+\end{subfigure}
+\caption{The 9 unique synthetic layouts (rows: Linear, Tree, Loop; columns: 10, 20, 30 rooms), representative of both seeds each.}
+\label{fig:blueprints-synthetic}
+\end{figure}
+
+\section{Reproducibility}
+Source code, all 23 evaluated floorplan instances (five original benchmarks and 18 synthetic instances), generated route catalogs, validation tests, CP-SAT/Neal/Hybrid benchmark outputs, blueprint figures, and this manuscript's source are available at
+\begin{center}
+\url{https://github.com/RomeroNatalia/evacuation-routes}, branch \path{main},
+\end{center}
+forked from and building on the original study's repository at \url{https://github.com/afishman2023/EvacCapstone}.
+
+\end{document}
