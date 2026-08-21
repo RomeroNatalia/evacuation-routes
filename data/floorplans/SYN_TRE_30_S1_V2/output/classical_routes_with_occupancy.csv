@@ -1,0 +1,31 @@
+room_id,room_name,start_node,primary_exit,distance,hops,path,astar_matches_distance,astar_same_exact_path,capacity,occupancy
+R01,Room 01,START_R01,EXIT_C,5.0,5,START_R01 -> DOOR_01 -> B1_0 -> E1 -> C1 -> EXIT_C,True,True,23,19
+R02,Room 02,START_R02,EXIT_C,5.0,5,START_R02 -> DOOR_02 -> B2_0 -> E2 -> C1 -> EXIT_C,True,True,7,7
+R03,Room 03,START_R03,EXIT_D,5.0,5,START_R03 -> DOOR_03 -> B3_0 -> E3 -> C2 -> EXIT_D,True,True,21,19
+R04,Room 04,START_R04,EXIT_D,5.0,5,START_R04 -> DOOR_04 -> B4_0 -> E4 -> C2 -> EXIT_D,True,True,8,3
+R05,Room 05,START_R05,EXIT_E,5.0,5,START_R05 -> DOOR_05 -> B5_0 -> E5 -> C3 -> EXIT_E,True,True,4,4
+R06,Room 06,START_R06,EXIT_E,5.0,5,START_R06 -> DOOR_06 -> B6_0 -> E6 -> C3 -> EXIT_E,True,True,5,2
+R07,Room 07,START_R07,EXIT_F,5.0,5,START_R07 -> DOOR_07 -> B7_0 -> E7 -> C4 -> EXIT_F,True,True,4,2
+R08,Room 08,START_R08,EXIT_F,5.0,5,START_R08 -> DOOR_08 -> B8_0 -> E8 -> C4 -> EXIT_F,True,True,11,9
+R09,Room 09,START_R09,EXIT_F,6.0,6,START_R09 -> DOOR_09 -> B9_0 -> E9 -> C5 -> C4 -> EXIT_F,True,True,9,5
+R10,Room 10,START_R10,EXIT_F,6.0,6,START_R10 -> DOOR_10 -> B10_0 -> E10 -> C5 -> C4 -> EXIT_F,True,True,9,7
+R11,Room 11,START_R11,EXIT_F,7.0,7,START_R11 -> DOOR_11 -> B11_0 -> E11 -> C6 -> C5 -> C4 -> EXIT_F,True,True,11,11
+R12,Room 12,START_R12,EXIT_F,7.0,7,START_R12 -> DOOR_12 -> B12_0 -> E12 -> C6 -> C5 -> C4 -> EXIT_F,True,True,8,7
+R13,Room 13,START_R13,EXIT_B,7.0,7,START_R13 -> DOOR_13 -> B13_0 -> E13 -> C7 -> C8 -> C9 -> EXIT_B,True,True,14,10
+R14,Room 14,START_R14,EXIT_B,7.0,7,START_R14 -> DOOR_14 -> B14_0 -> E14 -> C7 -> C8 -> C9 -> EXIT_B,True,True,12,7
+R15,Room 15,START_R15,EXIT_B,6.0,6,START_R15 -> DOOR_15 -> B15_0 -> E15 -> C8 -> C9 -> EXIT_B,True,True,15,10
+R16,Room 16,START_R16,EXIT_B,6.0,6,START_R16 -> DOOR_16 -> B16_0 -> E16 -> C8 -> C9 -> EXIT_B,True,True,26,24
+R17,Room 17,START_R17,EXIT_C,6.0,6,START_R17 -> DOOR_17 -> B1_1 -> B1_0 -> E1 -> C1 -> EXIT_C,True,True,21,16
+R18,Room 18,START_R18,EXIT_C,6.0,6,START_R18 -> DOOR_18 -> B2_1 -> B2_0 -> E2 -> C1 -> EXIT_C,True,True,15,12
+R19,Room 19,START_R19,EXIT_D,6.0,6,START_R19 -> DOOR_19 -> B3_1 -> B3_0 -> E3 -> C2 -> EXIT_D,True,True,17,17
+R20,Room 20,START_R20,EXIT_D,6.0,6,START_R20 -> DOOR_20 -> B4_1 -> B4_0 -> E4 -> C2 -> EXIT_D,True,True,4,2
+R21,Room 21,START_R21,EXIT_E,6.0,6,START_R21 -> DOOR_21 -> B5_1 -> B5_0 -> E5 -> C3 -> EXIT_E,True,True,16,14
+R22,Room 22,START_R22,EXIT_E,6.0,6,START_R22 -> DOOR_22 -> B6_1 -> B6_0 -> E6 -> C3 -> EXIT_E,True,True,16,15
+R23,Room 23,START_R23,EXIT_F,6.0,6,START_R23 -> DOOR_23 -> B7_1 -> B7_0 -> E7 -> C4 -> EXIT_F,True,True,10,10
+R24,Room 24,START_R24,EXIT_F,6.0,6,START_R24 -> DOOR_24 -> B8_1 -> B8_0 -> E8 -> C4 -> EXIT_F,True,True,15,10
+R25,Room 25,START_R25,EXIT_F,7.0,7,START_R25 -> DOOR_25 -> B9_1 -> B9_0 -> E9 -> C5 -> C4 -> EXIT_F,True,True,19,18
+R26,Room 26,START_R26,EXIT_F,7.0,7,START_R26 -> DOOR_26 -> B10_1 -> B10_0 -> E10 -> C5 -> C4 -> EXIT_F,True,True,24,21
+R27,Room 27,START_R27,EXIT_F,8.0,8,START_R27 -> DOOR_27 -> B11_1 -> B11_0 -> E11 -> C6 -> C5 -> C4 -> EXIT_F,True,True,3,2
+R28,Room 28,START_R28,EXIT_F,8.0,8,START_R28 -> DOOR_28 -> B12_1 -> B12_0 -> E12 -> C6 -> C5 -> C4 -> EXIT_F,True,True,5,2
+R29,Room 29,START_R29,EXIT_B,8.0,8,START_R29 -> DOOR_29 -> B13_1 -> B13_0 -> E13 -> C7 -> C8 -> C9 -> EXIT_B,True,True,6,6
+R30,Room 30,START_R30,EXIT_B,8.0,8,START_R30 -> DOOR_30 -> B14_1 -> B14_0 -> E14 -> C7 -> C8 -> C9 -> EXIT_B,True,True,26,25

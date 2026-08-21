@@ -1,0 +1,245 @@
+[
+  {
+    "floorplan": "SYN_LIN_10_S1_V2",
+    "cpsat_reference_energy": 1.1939981962597013,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 0.0,
+    "unpruned_gap_pct_FIXED": -0.0,
+    "wall_clock_s": 3.5,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LIN_10_S2_V2",
+    "cpsat_reference_energy": 1.2188949589781854,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": -0.0,
+    "unpruned_gap_pct_FIXED": 0.0,
+    "wall_clock_s": 3.5,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LIN_20_S1_V2",
+    "cpsat_reference_energy": 0.3971338757749991,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 51.78,
+    "unpruned_gap_pct_FIXED": 51.79,
+    "wall_clock_s": 27.7,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LIN_20_S2_V2",
+    "cpsat_reference_energy": 0.3940950305760918,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 49.48,
+    "unpruned_gap_pct_FIXED": 49.52,
+    "wall_clock_s": 27.4,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LIN_30_S1_V2",
+    "cpsat_reference_energy": 0.244048704702985,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 128.15,
+    "unpruned_gap_pct_FIXED": 128.83,
+    "wall_clock_s": 116.6,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LIN_30_S2_V2",
+    "cpsat_reference_energy": 0.24016763464886548,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 132.35,
+    "unpruned_gap_pct_FIXED": 133.03,
+    "wall_clock_s": 116.1,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LOO_10_S1_V2",
+    "cpsat_reference_energy": 2.8385556692684815,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 0.0,
+    "unpruned_gap_pct_FIXED": 0.0,
+    "wall_clock_s": 4.0,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LOO_10_S2_V2",
+    "cpsat_reference_energy": 2.975126368941397,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": -0.0,
+    "unpruned_gap_pct_FIXED": -0.0,
+    "wall_clock_s": 4.4,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LOO_20_S1_V2",
+    "cpsat_reference_energy": 0.8386528278975431,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 17.32,
+    "unpruned_gap_pct_FIXED": 17.32,
+    "wall_clock_s": 25.0,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LOO_20_S2_V2",
+    "cpsat_reference_energy": 0.8367155996239991,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 16.75,
+    "unpruned_gap_pct_FIXED": 16.76,
+    "wall_clock_s": 24.8,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LOO_30_S1_V2",
+    "cpsat_reference_energy": 0.5282109243658186,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 48.08,
+    "unpruned_gap_pct_FIXED": 48.16,
+    "wall_clock_s": 105.0,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_LOO_30_S2_V2",
+    "cpsat_reference_energy": 0.5330019602236332,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 48.64,
+    "unpruned_gap_pct_FIXED": 48.75,
+    "wall_clock_s": 103.7,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_TRE_10_S1_V2",
+    "cpsat_reference_energy": 2.434679953989411,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 0.0,
+    "unpruned_gap_pct_FIXED": -0.0,
+    "wall_clock_s": 3.6,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_TRE_10_S2_V2",
+    "cpsat_reference_energy": 2.0813849342667337,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": -0.0,
+    "unpruned_gap_pct_FIXED": 0.0,
+    "wall_clock_s": 4.2,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_TRE_20_S1_V2",
+    "cpsat_reference_energy": 1.4073226831174708,
+    "pruned_energies": null,
+    "unpruned_energies": null,
+    "pruned_gap_pct_OLD_BUGGY": 6.14,
+    "unpruned_gap_pct_FIXED": 6.15,
+    "wall_clock_s": 25.5,
+    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
+  },
+  {
+    "floorplan": "SYN_TRE_20_S2_V2",
+    "cpsat_reference_energy": 1.3885478492145629,
+    "pruned_energies": [
+      1.5086733721681682,
+      1.5035312254949034,
+      1.4551989983069475,
+      1.4889559292590562,
+      1.4778647698438405,
+      1.4964402301565158,
+      1.4909760836170634,
+      1.5152497406539922,
+      1.4799033659233416,
+      1.4663007250120828
+    ],
+    "unpruned_energies": [
+      1.5089384361784952,
+      1.5038294225067834,
+      1.4556048775728176,
+      1.4892541262709518,
+      1.478179533356285,
+      1.4964402301568327,
+      1.491075482621255,
+      1.5158544179275086,
+      1.4801021639313832,
+      1.4665326560212535
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 7.184598995667218,
+    "unpruned_gap_pct_FIXED": 7.204165524175348,
+    "wall_clock_s": 25.937431666000002
+  },
+  {
+    "floorplan": "SYN_TRE_30_S1_V2",
+    "cpsat_reference_energy": 0.8447146077727152,
+    "pruned_energies": [
+      1.0947079604924568,
+      0.9831068613731588,
+      1.0552116407923506,
+      1.059588338211853,
+      1.0030913351035622,
+      0.9916847914859943,
+      1.0421476961612086,
+      1.037230059771531,
+      1.0491862989572098,
+      1.020897174410976
+    ],
+    "unpruned_energies": [
+      1.0957369498683756,
+      0.984244277899975,
+      1.056055156759528,
+      1.0606695728264715,
+      1.0044023025519193,
+      0.9924395074181964,
+      1.0431779790169071,
+      1.0383052487858946,
+      1.0501325057825166,
+      1.0220795814542538
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 22.370941163380547,
+    "unpruned_gap_pct_FIXED": 22.49395224319523,
+    "wall_clock_s": 116.16568237500002
+  },
+  {
+    "floorplan": "SYN_TRE_30_S2_V2",
+    "cpsat_reference_energy": 0.8326282607900719,
+    "pruned_energies": [
+      0.9708590375456083,
+      1.0122260978057511,
+      1.0289382445283195,
+      1.0175625894303266,
+      1.001361601051542,
+      1.0351057719746564,
+      1.0185900928299816,
+      1.0404187838161647,
+      1.029784939617059,
+      1.0302021085188926
+    ],
+    "unpruned_energies": [
+      0.9715821992206328,
+      1.0127544882056592,
+      1.0297236669426633,
+      1.0179788970171106,
+      1.0021385961851434,
+      1.0364245568848516,
+      1.0197804460053412,
+      1.0415674219609086,
+      1.0306925575787942,
+      1.0306942616172459
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 22.32408803244103,
+    "unpruned_gap_pct_FIXED": 22.423626144349267,
+    "wall_clock_s": 114.36873587500003
+  }
+]

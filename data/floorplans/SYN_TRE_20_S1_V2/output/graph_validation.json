@@ -1,0 +1,156 @@
+{
+  "node_count": 78,
+  "edge_count": 77,
+  "connected_components": 1,
+  "component_sizes": [
+    78
+  ],
+  "isolated_nodes": [],
+  "all_rooms_reach_all_exits": true,
+  "door_degrees": {
+    "DOOR_01": 2,
+    "DOOR_02": 2,
+    "DOOR_03": 2,
+    "DOOR_04": 2,
+    "DOOR_05": 2,
+    "DOOR_06": 2,
+    "DOOR_07": 2,
+    "DOOR_08": 2,
+    "DOOR_09": 2,
+    "DOOR_10": 2,
+    "DOOR_11": 2,
+    "DOOR_12": 2,
+    "DOOR_13": 2,
+    "DOOR_14": 2,
+    "DOOR_15": 2,
+    "DOOR_16": 2,
+    "DOOR_17": 2,
+    "DOOR_18": 2,
+    "DOOR_19": 2,
+    "DOOR_20": 2
+  },
+  "all_doors_have_degree_2": true,
+  "all_doors_have_valid_degree": true,
+  "reachability": {
+    "START_R01": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R02": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R03": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R04": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R05": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R06": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R07": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R08": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R09": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R10": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R11": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R12": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R13": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R14": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R15": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R16": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R17": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R18": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R19": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    },
+    "START_R20": {
+      "EXIT_A": true,
+      "EXIT_B": true,
+      "EXIT_C": true,
+      "EXIT_D": true
+    }
+  }
+}

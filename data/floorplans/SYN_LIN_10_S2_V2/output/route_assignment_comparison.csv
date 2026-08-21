@@ -1,0 +1,11 @@
+room_id,classical_exit,classical_distance,classical_hops,classical_path,occupancy,congestion_aware_exit,congestion_aware_distance,congestion_aware_hops,congestion_penalty,combined_cost,congestion_aware_path,exit_changed,path_changed,extra_distance,extra_hops
+R01,EXIT_A,3.0,3,START_R01 -> DOOR_01 -> C0 -> EXIT_A,12,EXIT_A,3.0,3,6.934722222222222,9.934722222222222,START_R01 -> DOOR_01 -> C0 -> EXIT_A,False,False,0.0,0
+R02,EXIT_A,4.0,4,START_R02 -> DOOR_02 -> C1 -> C0 -> EXIT_A,6,EXIT_A,4.0,4,14.87361111111111,18.87361111111111,START_R02 -> DOOR_02 -> C1 -> C0 -> EXIT_A,False,False,0.0,0
+R03,EXIT_A,5.0,5,START_R03 -> DOOR_03 -> C2 -> C1 -> C0 -> EXIT_A,18,EXIT_A,5.0,5,20.7125,25.7125,START_R03 -> DOOR_03 -> C2 -> C1 -> C0 -> EXIT_A,False,False,0.0,0
+R04,EXIT_A,6.0,6,START_R04 -> DOOR_04 -> C3 -> C2 -> C1 -> C0 -> EXIT_A,18,EXIT_B,9.0,9,33.6085,42.60850000000001,START_R04 -> DOOR_04 -> C3 -> C4 -> C5 -> C6 -> C7 -> C8 -> C9 -> EXIT_B,True,True,3.0,3
+R05,EXIT_A,7.0,7,START_R05 -> DOOR_05 -> C4 -> C3 -> C2 -> C1 -> C0 -> EXIT_A,19,EXIT_A,7.0,7,14.16423611111111,21.164236111111116,START_R05 -> DOOR_05 -> C4 -> C3 -> C2 -> C1 -> C0 -> EXIT_A,False,False,0.0,0
+R06,EXIT_B,7.0,7,START_R06 -> DOOR_06 -> C5 -> C6 -> C7 -> C8 -> C9 -> EXIT_B,16,EXIT_B,7.0,7,44.75281944444444,51.75281944444444,START_R06 -> DOOR_06 -> C5 -> C6 -> C7 -> C8 -> C9 -> EXIT_B,False,False,0.0,0
+R07,EXIT_B,6.0,6,START_R07 -> DOOR_07 -> C6 -> C7 -> C8 -> C9 -> EXIT_B,25,EXIT_B,6.0,6,14.053819444444446,20.053819444444446,START_R07 -> DOOR_07 -> C6 -> C7 -> C8 -> C9 -> EXIT_B,False,False,0.0,0
+R08,EXIT_B,5.0,5,START_R08 -> DOOR_08 -> C7 -> C8 -> C9 -> EXIT_B,13,EXIT_B,5.0,5,60.82500000000001,65.82500000000002,START_R08 -> DOOR_08 -> C7 -> C8 -> C9 -> EXIT_B,False,False,0.0,0
+R09,EXIT_B,4.0,4,START_R09 -> DOOR_09 -> C8 -> C9 -> EXIT_B,13,EXIT_B,4.0,4,58.68125,62.68125,START_R09 -> DOOR_09 -> C8 -> C9 -> EXIT_B,False,False,0.0,0
+R10,EXIT_B,3.0,3,START_R10 -> DOOR_10 -> C9 -> EXIT_B,16,EXIT_B,3.0,3,23.978125000000002,26.978125000000002,START_R10 -> DOOR_10 -> C9 -> EXIT_B,False,False,0.0,0

@@ -185,7 +185,17 @@ def build_tree(n_rooms: int, n_exits: int, rng: random.Random) -> Builder:
         bnode = f"B{branch['uid']}_{j}"
         y = branch["side"] * (j + 1)
         b.add_node(bnode, "navigation", branch["x"], y, space_type="hallway")
-        b.add_edge(branch["prev"], bnode, "navigation", 1.0, rng.choice([2, 3, 4]))
+        if j == 0:
+            # The spine -> first-branch-node edge would otherwise move both
+            # in x (0.5) and y (1) in a single hop -- a diagonal shortcut a
+            # real, wall-respecting corridor can't take. Route it through an
+            # axis-aligned elbow instead (turn the corner in two hops).
+            elbow = f"E{branch['uid']}"
+            b.add_node(elbow, "navigation", branch["x"], 0, space_type="hallway")
+            b.add_edge(branch["prev"], elbow, "navigation", 1.0, rng.choice([2, 3, 4]))
+            b.add_edge(elbow, bnode, "navigation", 1.0, rng.choice([2, 3, 4]))
+        else:
+            b.add_edge(branch["prev"], bnode, "navigation", 1.0, rng.choice([2, 3, 4]))
         branch["prev"] = bnode
         add_room(bnode, branch["x"] + branch["side"] * 1, y)
 
@@ -225,8 +235,13 @@ def build_loop(n_rooms: int, n_exits: int, rng: random.Random) -> Builder:
     for e, pos in enumerate(exit_positions):
         exit_id = f"EXIT_{chr(65 + e)}"
         x, y = ring[pos]
+        # ring -> exit would otherwise move both in x (0.5) and y (1) in a
+        # single hop -- route it through an axis-aligned elbow instead.
+        elbow_id = f"EELBOW_{exit_id}"
+        b.add_node(elbow_id, "navigation", x + 0.5, y, space_type="hallway")
         b.add_node(exit_id, "exit", x + 0.5, y + 1)
-        b.add_edge(ring_ids[pos], exit_id, "exit", 1.0, rng.choice([4, 5, 6]))
+        b.add_edge(ring_ids[pos], elbow_id, "navigation", 1.0, rng.choice([4, 5, 6]))
+        b.add_edge(elbow_id, exit_id, "exit", 1.0, rng.choice([4, 5, 6]))
 
     for r in range(n_rooms):
         attach_idx = r % n
@@ -236,7 +251,14 @@ def build_loop(n_rooms: int, n_exits: int, rng: random.Random) -> Builder:
         b.add_node(door_id, "door", x - 0.5, y - 1, space_type="door", space_id=room_id, room_id=room_id, room_name=room_name)
         b.add_node(start_id, "room_start", x - 0.5, y - 2, space_type="room", space_id=room_id, room_id=room_id, room_name=room_name)
         b.add_edge(start_id, door_id, "room_start", 1.0, rng.choice([2, 3]))
-        b.add_edge(door_id, ring_ids[attach_idx], "door_to_hallway", 1.0, rng.choice([2, 3]))
+        # door -> ring node would otherwise move both in x (0.5) and y (1)
+        # in a single hop -- a diagonal shortcut a real, wall-respecting
+        # corridor can't take. Route it through an axis-aligned elbow
+        # instead (turn the corner in two hops).
+        elbow_id = f"ELBOW_{room_id}"
+        b.add_node(elbow_id, "navigation", x - 0.5, y, space_type="hallway")
+        b.add_edge(door_id, elbow_id, "door_to_hallway", 1.0, rng.choice([2, 3]))
+        b.add_edge(elbow_id, ring_ids[attach_idx], "navigation", 1.0, rng.choice([2, 3]))
     return b
 
 
