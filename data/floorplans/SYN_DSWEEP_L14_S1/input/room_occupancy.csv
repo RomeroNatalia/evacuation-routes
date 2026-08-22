@@ -1,0 +1,21 @@
+room_id,room_name,capacity,occupancy
+R01,Room 01,20,15
+R02,Room 02,9,7
+R03,Room 03,24,19
+R04,Room 04,28,23
+R05,Room 05,13,13
+R06,Room 06,21,16
+R07,Room 07,18,18
+R08,Room 08,11,7
+R09,Room 09,16,14
+R10,Room 10,22,17
+R11,Room 11,5,2
+R12,Room 12,5,3
+R13,Room 13,28,24
+R14,Room 14,24,20
+R15,Room 15,19,14
+R16,Room 16,8,7
+R17,Room 17,19,18
+R18,Room 18,3,2
+R19,Room 19,23,19
+R20,Room 20,12,9

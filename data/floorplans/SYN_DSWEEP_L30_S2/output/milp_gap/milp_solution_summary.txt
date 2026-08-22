@@ -1,0 +1,11 @@
+MILP OPTIMALITY-GAP RESULT -- SYN_DSWEEP_L30_S2
+============================================
+Status: OPTIMAL (proven optimal: True)
+Wall-clock: 0.02s
+Variables: 80  |  Edge square-terms: 73
+True (unpruned, recomputed) energy: 0.3909051994
+  distance component:   0.2231578947
+  congestion component: 0.1677473047
+  total distance:       106.000000
+  raw congestion (unweighted sum of util^2): 33.301192
+Solver-internal scaled objective gap: 0.000000%

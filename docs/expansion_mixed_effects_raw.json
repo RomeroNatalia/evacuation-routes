@@ -1,0 +1,22 @@
+{
+  "n_observations": 23,
+  "n_clusters": 14,
+  "neal": {
+    "diameter_coef": 2.3830032038432036,
+    "diameter_p": 0.0020522460750039347,
+    "n_variables_coef": 0.3589573762748628,
+    "n_variables_p": 3.760414920503691e-05,
+    "group_var": 380.82650264169985,
+    "lr_stat_diameter": 7.248522959616622,
+    "lr_p_diameter": 0.007095935653855358
+  },
+  "hybrid": {
+    "diameter_coef": 1.8368193127304546,
+    "diameter_p": 0.006484846431377665,
+    "n_variables_coef": 0.3299153301668268,
+    "n_variables_p": 1.4236557258811474e-05,
+    "group_var": 289.9708027061196,
+    "lr_stat_diameter": 5.943756188115316,
+    "lr_p_diameter": 0.014769509793051382
+  }
+}

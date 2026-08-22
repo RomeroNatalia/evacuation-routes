@@ -1,0 +1,508 @@
+[
+  {
+    "floorplan": "FP01",
+    "n_variables": 60,
+    "full": {
+      "n_interactions": 954,
+      "density": 0.5389830508474577,
+      "degree_mean": 31.8,
+      "degree_max": 49,
+      "coefficient_dynamic_range": 35438.06262227355,
+      "coefficient_abs_max": 3.94736544234845,
+      "coefficient_abs_min": 0.00011138773257507169
+    },
+    "congestion": {
+      "n_interactions": 944,
+      "density": 0.5333333333333333,
+      "degree_mean": 31.466666666666665,
+      "degree_max": 48,
+      "coefficient_dynamic_range": 1507.9999999999995,
+      "coefficient_abs_max": 0.16797270072320805,
+      "coefficient_abs_min": 0.00011138773257507169
+    }
+  },
+  {
+    "floorplan": "FP02",
+    "n_variables": 264,
+    "full": {
+      "n_interactions": 13675,
+      "density": 0.39391058877750895,
+      "degree_mean": 103.59848484848484,
+      "degree_max": 173,
+      "coefficient_dynamic_range": 18673.136232107863,
+      "coefficient_abs_max": 1.8680171786890993,
+      "coefficient_abs_min": 0.0001000376774136689
+    },
+    "congestion": {
+      "n_interactions": 13428,
+      "density": 0.3867957137919115,
+      "degree_mean": 102.89655172413794,
+      "degree_max": 173,
+      "coefficient_dynamic_range": 401.6528925619833,
+      "coefficient_abs_max": 0.040180422498382704,
+      "coefficient_abs_min": 0.0001000376774136689
+    }
+  },
+  {
+    "floorplan": "FP03",
+    "n_variables": 252,
+    "full": {
+      "n_interactions": 12421,
+      "density": 0.39274647441978117,
+      "degree_mean": 98.57936507936508,
+      "degree_max": 160,
+      "coefficient_dynamic_range": 16077.519977086617,
+      "coefficient_abs_max": 1.711644805140525,
+      "coefficient_abs_min": 0.00010646199212191492
+    },
+    "congestion": {
+      "n_interactions": 12220,
+      "density": 0.38639094415986847,
+      "degree_mean": 100.57613168724279,
+      "degree_max": 157,
+      "coefficient_dynamic_range": 356.25000000000006,
+      "coefficient_abs_max": 0.03792708469343219,
+      "coefficient_abs_min": 0.00010646199212191492
+    }
+  },
+  {
+    "floorplan": "FP04",
+    "n_variables": 16,
+    "full": {
+      "n_interactions": 77,
+      "density": 0.6416666666666667,
+      "degree_mean": 9.625,
+      "degree_max": 13,
+      "coefficient_dynamic_range": 5371.207757450531,
+      "coefficient_abs_max": 3.9327183261794727,
+      "coefficient_abs_min": 0.0007321851069201903
+    },
+    "congestion": {
+      "n_interactions": 72,
+      "density": 0.6,
+      "degree_mean": 9.0,
+      "degree_max": 13,
+      "coefficient_dynamic_range": 2048.6111111111104,
+      "coefficient_abs_max": 0.3374915727210252,
+      "coefficient_abs_min": 0.00016474164905704285
+    }
+  },
+  {
+    "floorplan": "FP05",
+    "n_variables": 72,
+    "full": {
+      "n_interactions": 1751,
+      "density": 0.685054773082942,
+      "degree_mean": 48.638888888888886,
+      "degree_max": 67,
+      "coefficient_dynamic_range": 43471.497517241376,
+      "coefficient_abs_max": 4.624682498051186,
+      "coefficient_abs_min": 0.00010638424628038118
+    },
+    "congestion": {
+      "n_interactions": 1741,
+      "density": 0.6811424100156495,
+      "degree_mean": 48.361111111111114,
+      "degree_max": 67,
+      "coefficient_dynamic_range": 1869.48,
+      "coefficient_abs_max": 0.198883220736247,
+      "coefficient_abs_min": 0.00010638424628038118
+    }
+  },
+  {
+    "floorplan": "SYN_LIN_10_S1_V2",
+    "n_variables": 20,
+    "full": {
+      "n_interactions": 145,
+      "density": 0.7631578947368421,
+      "degree_mean": 14.5,
+      "degree_max": 19,
+      "coefficient_dynamic_range": 5477.826954666666,
+      "coefficient_abs_max": 3.962515820343041,
+      "coefficient_abs_min": 0.0007233736759368234
+    },
+    "congestion": {
+      "n_interactions": 145,
+      "density": 0.7631578947368421,
+      "degree_mean": 14.5,
+      "degree_max": 19,
+      "coefficient_dynamic_range": 180.01866666666663,
+      "coefficient_abs_max": 0.13022076464391233,
+      "coefficient_abs_min": 0.0007233736759368234
+    }
+  },
+  {
+    "floorplan": "SYN_LIN_10_S2_V2",
+    "n_variables": 20,
+    "full": {
+      "n_interactions": 145,
+      "density": 0.7631578947368421,
+      "degree_mean": 14.5,
+      "degree_max": 19,
+      "coefficient_dynamic_range": 3819.1468661111107,
+      "coefficient_abs_max": 3.7415070609508234,
+      "coefficient_abs_min": 0.0009796709035074776
+    },
+    "congestion": {
+      "n_interactions": 145,
+      "density": 0.7631578947368421,
+      "degree_mean": 14.5,
+      "degree_max": 19,
+      "coefficient_dynamic_range": 114.94444444444443,
+      "coefficient_abs_max": 0.11260772774205394,
+      "coefficient_abs_min": 0.0009796709035074776
+    }
+  },
+  {
+    "floorplan": "SYN_LIN_20_S1_V2",
+    "n_variables": 80,
+    "full": {
+      "n_interactions": 2178,
+      "density": 0.6892405063291139,
+      "degree_mean": 54.45,
+      "degree_max": 77,
+      "coefficient_dynamic_range": 24667.754587400002,
+      "coefficient_abs_max": 2.4841585619784468,
+      "coefficient_abs_min": 0.0001007046893213104
+    },
+    "congestion": {
+      "n_interactions": 2178,
+      "density": 0.6892405063291139,
+      "degree_mean": 54.45,
+      "degree_max": 77,
+      "coefficient_dynamic_range": 533.0204000000001,
+      "coefficient_abs_max": 0.05367765378392061,
+      "coefficient_abs_min": 0.0001007046893213104
+    }
+  },
+  {
+    "floorplan": "SYN_LIN_20_S2_V2",
+    "n_variables": 80,
+    "full": {
+      "n_interactions": 2136,
+      "density": 0.6759493670886076,
+      "degree_mean": 53.4,
+      "degree_max": 76,
+      "coefficient_dynamic_range": 23034.71487071429,
+      "coefficient_abs_max": 2.316718619278382,
+      "coefficient_abs_min": 0.00010057509425583536
+    },
+    "congestion": {
+      "n_interactions": 2136,
+      "density": 0.6759493670886076,
+      "degree_mean": 53.4,
+      "degree_max": 76,
+      "coefficient_dynamic_range": 462.8020833333332,
+      "coefficient_abs_max": 0.04654636315304696,
+      "coefficient_abs_min": 0.00010057509425583536
+    }
+  },
+  {
+    "floorplan": "SYN_LIN_30_S1_V2",
+    "n_variables": 180,
+    "full": {
+      "n_interactions": 9923,
+      "density": 0.6159528243327126,
+      "degree_mean": 110.25555555555556,
+      "degree_max": 173,
+      "coefficient_dynamic_range": 21621.039330267566,
+      "coefficient_abs_max": 2.201747095163344,
+      "coefficient_abs_min": 0.00010183354562798888
+    },
+    "congestion": {
+      "n_interactions": 9866,
+      "density": 0.6124146492861576,
+      "degree_mean": 110.85393258426966,
+      "degree_max": 173,
+      "coefficient_dynamic_range": 366.28762541806026,
+      "coefficient_abs_max": 0.037300367615977735,
+      "coefficient_abs_min": 0.00010183354562798888
+    }
+  },
+  {
+    "floorplan": "SYN_LIN_30_S2_V2",
+    "n_variables": 180,
+    "full": {
+      "n_interactions": 9931,
+      "density": 0.6164494103041589,
+      "degree_mean": 110.34444444444445,
+      "degree_max": 173,
+      "coefficient_dynamic_range": 19037.431359341565,
+      "coefficient_abs_max": 1.9212194972313417,
+      "coefficient_abs_min": 0.00010091799996371935
+    },
+    "congestion": {
+      "n_interactions": 9879,
+      "density": 0.6132216014897579,
+      "degree_mean": 109.76666666666667,
+      "degree_max": 173,
+      "coefficient_dynamic_range": 262.13991769547323,
+      "coefficient_abs_max": 0.026454636204481165,
+      "coefficient_abs_min": 0.00010091799996371935
+    }
+  },
+  {
+    "floorplan": "SYN_LOO_10_S1_V2",
+    "n_variables": 20,
+    "full": {
+      "n_interactions": 138,
+      "density": 0.7263157894736842,
+      "degree_mean": 13.8,
+      "degree_max": 18,
+      "coefficient_dynamic_range": 1637.2564830691986,
+      "coefficient_abs_max": 4.247822505708671,
+      "coefficient_abs_min": 0.0025944759111570037
+    },
+    "congestion": {
+      "n_interactions": 138,
+      "density": 0.7263157894736842,
+      "degree_mean": 13.8,
+      "degree_max": 18,
+      "coefficient_dynamic_range": 153.68852459016395,
+      "coefficient_abs_max": 0.3987411748704412,
+      "coefficient_abs_min": 0.0025944759111570037
+    }
+  },
+  {
+    "floorplan": "SYN_LOO_10_S2_V2",
+    "n_variables": 20,
+    "full": {
+      "n_interactions": 138,
+      "density": 0.7263157894736842,
+      "degree_mean": 13.8,
+      "degree_max": 18,
+      "coefficient_dynamic_range": 695.1434739688599,
+      "coefficient_abs_max": 5.396432931376188,
+      "coefficient_abs_min": 0.0077630491164158285
+    },
+    "congestion": {
+      "n_interactions": 138,
+      "density": 0.7263157894736842,
+      "degree_mean": 13.8,
+      "degree_max": 18,
+      "coefficient_dynamic_range": 85.3825136612022,
+      "coefficient_abs_max": 0.6628286472349582,
+      "coefficient_abs_min": 0.0077630491164158285
+    }
+  },
+  {
+    "floorplan": "SYN_LOO_20_S1_V2",
+    "n_variables": 80,
+    "full": {
+      "n_interactions": 1778,
+      "density": 0.5626582278481013,
+      "degree_mean": 44.45,
+      "degree_max": 68,
+      "coefficient_dynamic_range": 19716.649038281976,
+      "coefficient_abs_max": 1.9927318658406792,
+      "coefficient_abs_min": 0.00010106848592636496
+    },
+    "congestion": {
+      "n_interactions": 1778,
+      "density": 0.5626582278481013,
+      "degree_mean": 44.45,
+      "degree_max": 68,
+      "coefficient_dynamic_range": 654.3402777777776,
+      "coefficient_abs_max": 0.06613318115563706,
+      "coefficient_abs_min": 0.00010106848592636496
+    }
+  },
+  {
+    "floorplan": "SYN_LOO_20_S2_V2",
+    "n_variables": 80,
+    "full": {
+      "n_interactions": 1773,
+      "density": 0.5610759493670886,
+      "degree_mean": 44.325,
+      "degree_max": 68,
+      "coefficient_dynamic_range": 26234.41763476502,
+      "coefficient_abs_max": 2.9431701779967865,
+      "coefficient_abs_min": 0.00011218736466620057
+    },
+    "congestion": {
+      "n_interactions": 1773,
+      "density": 0.5610759493670886,
+      "degree_mean": 44.325,
+      "degree_max": 68,
+      "coefficient_dynamic_range": 1298.2051851851857,
+      "coefficient_abs_max": 0.14564221852192286,
+      "coefficient_abs_min": 0.00011218736466620057
+    }
+  },
+  {
+    "floorplan": "SYN_LOO_30_S1_V2",
+    "n_variables": 180,
+    "full": {
+      "n_interactions": 8286,
+      "density": 0.5143389199255121,
+      "degree_mean": 92.06666666666666,
+      "degree_max": 150,
+      "coefficient_dynamic_range": 14380.346516345006,
+      "coefficient_abs_max": 1.4387429904158948,
+      "coefficient_abs_min": 0.0001000492574209244
+    },
+    "congestion": {
+      "n_interactions": 8286,
+      "density": 0.5143389199255121,
+      "degree_mean": 92.06666666666666,
+      "degree_max": 150,
+      "coefficient_dynamic_range": 216.0947712418301,
+      "coefficient_abs_max": 0.02162012139528963,
+      "coefficient_abs_min": 0.0001000492574209244
+    }
+  },
+  {
+    "floorplan": "SYN_LOO_30_S2_V2",
+    "n_variables": 180,
+    "full": {
+      "n_interactions": 8150,
+      "density": 0.5058969584109249,
+      "degree_mean": 90.55555555555556,
+      "degree_max": 148,
+      "coefficient_dynamic_range": 15373.405003712438,
+      "coefficient_abs_max": 1.5517342797912625,
+      "coefficient_abs_min": 0.00010093627790437726
+    },
+    "congestion": {
+      "n_interactions": 8137,
+      "density": 0.5050900062073247,
+      "degree_mean": 90.41111111111111,
+      "degree_max": 148,
+      "coefficient_dynamic_range": 307.13333333333327,
+      "coefficient_abs_max": 0.031000895487031062,
+      "coefficient_abs_min": 0.00010093627790437726
+    }
+  },
+  {
+    "floorplan": "SYN_TRE_10_S1_V2",
+    "n_variables": 20,
+    "full": {
+      "n_interactions": 140,
+      "density": 0.7368421052631579,
+      "degree_mean": 14.0,
+      "degree_max": 17,
+      "coefficient_dynamic_range": 5040.2259778286325,
+      "coefficient_abs_max": 4.82298439797979,
+      "coefficient_abs_min": 0.0009568984444736283
+    },
+    "congestion": {
+      "n_interactions": 140,
+      "density": 0.7368421052631579,
+      "degree_mean": 14.0,
+      "degree_max": 17,
+      "coefficient_dynamic_range": 459.5588235294118,
+      "coefficient_abs_max": 0.43975112337942485,
+      "coefficient_abs_min": 0.0009568984444736283
+    }
+  },
+  {
+    "floorplan": "SYN_TRE_10_S2_V2",
+    "n_variables": 20,
+    "full": {
+      "n_interactions": 140,
+      "density": 0.7368421052631579,
+      "degree_mean": 14.0,
+      "degree_max": 17,
+      "coefficient_dynamic_range": 603.1842744910465,
+      "coefficient_abs_max": 4.304331795395133,
+      "coefficient_abs_min": 0.007136014610173703
+    },
+    "congestion": {
+      "n_interactions": 140,
+      "density": 0.7368421052631579,
+      "degree_mean": 14.0,
+      "degree_max": 17,
+      "coefficient_dynamic_range": 29.679840686274517,
+      "coefficient_abs_max": 0.21179577676488284,
+      "coefficient_abs_min": 0.007136014610173703
+    }
+  },
+  {
+    "floorplan": "SYN_TRE_20_S1_V2",
+    "n_variables": 80,
+    "full": {
+      "n_interactions": 1898,
+      "density": 0.600632911392405,
+      "degree_mean": 47.45,
+      "degree_max": 67,
+      "coefficient_dynamic_range": 21879.89131904442,
+      "coefficient_abs_max": 2.326478131919698,
+      "coefficient_abs_min": 0.00010632951041647608
+    },
+    "congestion": {
+      "n_interactions": 1898,
+      "density": 0.600632911392405,
+      "degree_mean": 47.45,
+      "degree_max": 67,
+      "coefficient_dynamic_range": 994.0,
+      "coefficient_abs_max": 0.10569153335397723,
+      "coefficient_abs_min": 0.00010632951041647608
+    }
+  },
+  {
+    "floorplan": "SYN_TRE_20_S2_V2",
+    "n_variables": 80,
+    "full": {
+      "n_interactions": 1895,
+      "density": 0.5996835443037974,
+      "degree_mean": 47.375,
+      "degree_max": 67,
+      "coefficient_dynamic_range": 24776.636133640553,
+      "coefficient_abs_max": 2.8732351074942883,
+      "coefficient_abs_min": 0.00011596550443718808
+    },
+    "congestion": {
+      "n_interactions": 1895,
+      "density": 0.5996835443037974,
+      "degree_mean": 47.375,
+      "degree_max": 67,
+      "coefficient_dynamic_range": 1520.875,
+      "coefficient_abs_max": 0.17636903656090844,
+      "coefficient_abs_min": 0.00011596550443718808
+    }
+  },
+  {
+    "floorplan": "SYN_TRE_30_S1_V2",
+    "n_variables": 180,
+    "full": {
+      "n_interactions": 9768,
+      "density": 0.6063314711359404,
+      "degree_mean": 108.53333333333333,
+      "degree_max": 163,
+      "coefficient_dynamic_range": 20725.18442197253,
+      "coefficient_abs_max": 2.097982754501859,
+      "coefficient_abs_min": 0.00010122866517306397
+    },
+    "congestion": {
+      "n_interactions": 9768,
+      "density": 0.6063314711359404,
+      "degree_mean": 108.53333333333333,
+      "degree_max": 163,
+      "coefficient_dynamic_range": 771.5277777777778,
+      "coefficient_abs_max": 0.07810072708838478,
+      "coefficient_abs_min": 0.00010122866517306397
+    }
+  },
+  {
+    "floorplan": "SYN_TRE_30_S2_V2",
+    "n_variables": 180,
+    "full": {
+      "n_interactions": 9810,
+      "density": 0.6089385474860335,
+      "degree_mean": 109.0,
+      "degree_max": 163,
+      "coefficient_dynamic_range": 18040.308454213482,
+      "coefficient_abs_max": 1.824368581016793,
+      "coefficient_abs_min": 0.00010112734965962817
+    },
+    "congestion": {
+      "n_interactions": 9810,
+      "density": 0.6089385474860335,
+      "degree_mean": 109.0,
+      "degree_max": 163,
+      "coefficient_dynamic_range": 486.624,
+      "coefficient_abs_max": 0.0492109954007669,
+      "coefficient_abs_min": 0.00010112734965962817
+    }
+  }
+]

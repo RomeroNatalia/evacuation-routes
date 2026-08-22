@@ -1,0 +1,366 @@
+[
+  {
+    "floorplan": "FP01",
+    "assignment_stable_across_scales": true,
+    "max_energy_delta_across_scales": 0.0,
+    "runs": [
+      {
+        "load_scale": 10,
+        "obj_scale": 10000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.018553665999999996,
+        "energy": 0.5813437955261612,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100,
+        "obj_scale": 100000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.016185459000000013,
+        "energy": 0.5813437955261612,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 1000,
+        "obj_scale": 1000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.01585004099999998,
+        "energy": 0.5813437955261612,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 10000,
+        "obj_scale": 10000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.016041167000000023,
+        "energy": 0.5813437955261612,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100000,
+        "obj_scale": 100000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.021451416999999973,
+        "energy": 0.5813437955261612,
+        "assignment_matches_baseline": true
+      }
+    ]
+  },
+  {
+    "floorplan": "FP02",
+    "assignment_stable_across_scales": true,
+    "max_energy_delta_across_scales": 0.0,
+    "runs": [
+      {
+        "load_scale": 10,
+        "obj_scale": 10000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.125123459,
+        "energy": 0.2614430736222073,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100,
+        "obj_scale": 100000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.125637875,
+        "energy": 0.2614430736222073,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 1000,
+        "obj_scale": 1000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.12787625000000002,
+        "energy": 0.2614430736222073,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 10000,
+        "obj_scale": 10000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.12517625,
+        "energy": 0.2614430736222073,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100000,
+        "obj_scale": 100000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.0718035829999999,
+        "energy": 0.2614430736222073,
+        "assignment_matches_baseline": true
+      }
+    ]
+  },
+  {
+    "floorplan": "FP03",
+    "assignment_stable_across_scales": true,
+    "max_energy_delta_across_scales": 0.0,
+    "runs": [
+      {
+        "load_scale": 10,
+        "obj_scale": 10000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.0816787080000001,
+        "energy": 0.25615980421451084,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100,
+        "obj_scale": 100000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.09601687500000011,
+        "energy": 0.25615980421451084,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 1000,
+        "obj_scale": 1000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.07461720799999982,
+        "energy": 0.25615980421451084,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 10000,
+        "obj_scale": 10000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.09240358300000007,
+        "energy": 0.25615980421451084,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100000,
+        "obj_scale": 100000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.11626308299999999,
+        "energy": 0.25615980421451084,
+        "assignment_matches_baseline": true
+      }
+    ]
+  },
+  {
+    "floorplan": "FP04",
+    "assignment_stable_across_scales": true,
+    "max_energy_delta_across_scales": 0.0,
+    "runs": [
+      {
+        "load_scale": 10,
+        "obj_scale": 10000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.0067051250000000895,
+        "energy": 1.502658366632903,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100,
+        "obj_scale": 100000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.007202208000000043,
+        "energy": 1.502658366632903,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 1000,
+        "obj_scale": 1000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.006891291999999938,
+        "energy": 1.502658366632903,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 10000,
+        "obj_scale": 10000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.006693499999999908,
+        "energy": 1.502658366632903,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100000,
+        "obj_scale": 100000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.007495542000000022,
+        "energy": 1.502658366632903,
+        "assignment_matches_baseline": true
+      }
+    ]
+  },
+  {
+    "floorplan": "FP05",
+    "assignment_stable_across_scales": true,
+    "max_energy_delta_across_scales": 0.0,
+    "runs": [
+      {
+        "load_scale": 10,
+        "obj_scale": 10000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.013053500000000051,
+        "energy": 0.6150570634825465,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100,
+        "obj_scale": 100000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.015694040999999936,
+        "energy": 0.6150570634825465,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 1000,
+        "obj_scale": 1000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.016193834000000074,
+        "energy": 0.6150570634825465,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 10000,
+        "obj_scale": 10000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.01645345900000006,
+        "energy": 0.6150570634825465,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100000,
+        "obj_scale": 100000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.016536084000000173,
+        "energy": 0.6150570634825465,
+        "assignment_matches_baseline": true
+      }
+    ]
+  },
+  {
+    "floorplan": "SYN_LIN_30_S1_V2",
+    "assignment_stable_across_scales": true,
+    "max_energy_delta_across_scales": 0.0,
+    "runs": [
+      {
+        "load_scale": 10,
+        "obj_scale": 10000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.025688375000000097,
+        "energy": 0.244048704702985,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100,
+        "obj_scale": 100000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.04132316699999983,
+        "energy": 0.244048704702985,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 1000,
+        "obj_scale": 1000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.037778917000000245,
+        "energy": 0.244048704702985,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 10000,
+        "obj_scale": 10000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.04705287499999988,
+        "energy": 0.244048704702985,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100000,
+        "obj_scale": 100000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.04434254200000032,
+        "energy": 0.244048704702985,
+        "assignment_matches_baseline": true
+      }
+    ]
+  },
+  {
+    "floorplan": "SYN_LIN_30_S2_V2",
+    "assignment_stable_across_scales": true,
+    "max_energy_delta_across_scales": 0.0,
+    "runs": [
+      {
+        "load_scale": 10,
+        "obj_scale": 10000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.02901054099999989,
+        "energy": 0.24016763464886548,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100,
+        "obj_scale": 100000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.032552874999999926,
+        "energy": 0.24016763464886548,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 1000,
+        "obj_scale": 1000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.03161012499999982,
+        "energy": 0.24016763464886548,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 10000,
+        "obj_scale": 10000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.03156458399999984,
+        "energy": 0.24016763464886548,
+        "assignment_matches_baseline": true
+      },
+      {
+        "load_scale": 100000,
+        "obj_scale": 100000000000000,
+        "status": "OPTIMAL",
+        "proven_optimal": true,
+        "wall_clock_seconds": 0.03528420799999976,
+        "energy": 0.24016763464886548,
+        "assignment_matches_baseline": true
+      }
+    ]
+  }
+]

@@ -112,9 +112,19 @@ class Builder:
         })
 
 
-def build_linear(n_rooms: int, n_exits: int, rng: random.Random) -> Builder:
+def build_linear(n_rooms: int, n_exits: int, rng: random.Random, corridor_length: int = None) -> Builder:
+    """corridor_length, when given, decouples corridor diameter from n_rooms:
+    rooms attach round-robin (r % corridor_len), so a corridor shorter than
+    n_rooms places multiple rooms per corridor node instead of stretching the
+    corridor to match room count. This is what lets the diameter-sweep
+    experiment (paper/revision/plan_9.22.26.md item 3) hold N = n_rooms *
+    n_exits fixed while varying corridor diameter independently -- the
+    default (None) preserves the original corridor_len = max(n_rooms,
+    n_exits + 1) behavior used by the published corpus.
+    """
     b = Builder()
-    corridor_len = max(n_rooms, n_exits + 1)
+    corridor_len = corridor_length if corridor_length is not None else max(n_rooms, n_exits + 1)
+    corridor_len = max(corridor_len, n_exits + 1, 2)
     for i in range(corridor_len):
         b.add_node(f"C{i}", "navigation", i, 0, space_type="hallway")
     for i in range(corridor_len - 1):
@@ -319,10 +329,21 @@ def main() -> None:
     parser.add_argument("--rooms", type=int, required=True)
     parser.add_argument("--exits", type=int, required=True)
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument(
+        "--corridor-length", type=int, default=None,
+        help="Linear topology only: corridor node count, decoupled from --rooms "
+             "(rooms attach round-robin). Omit to preserve the original "
+             "corridor_len = max(rooms, exits + 1) behavior.",
+    )
     args = parser.parse_args()
+    if args.corridor_length is not None and args.topology != "linear":
+        raise SystemExit("--corridor-length is only supported for --topology linear")
 
     rng = random.Random(args.seed)
-    builder = BUILDERS[args.topology](args.rooms, args.exits, rng)
+    if args.topology == "linear":
+        builder = build_linear(args.rooms, args.exits, rng, corridor_length=args.corridor_length)
+    else:
+        builder = BUILDERS[args.topology](args.rooms, args.exits, rng)
     write_floorplan(args.floorplan_id, builder, rng, args.topology)
     print(f"{args.floorplan_id}: {args.topology}, {len(builder.nodes)} nodes, {len(builder.edges)} edges")
 
