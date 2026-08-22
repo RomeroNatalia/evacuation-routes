@@ -1,155 +1,5 @@
 [
   {
-    "floorplan": "SYN_LIN_10_S1_V2",
-    "cpsat_reference_energy": 1.1939981962597013,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 0.0,
-    "unpruned_gap_pct_FIXED": -0.0,
-    "wall_clock_s": 3.5,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LIN_10_S2_V2",
-    "cpsat_reference_energy": 1.2188949589781854,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": -0.0,
-    "unpruned_gap_pct_FIXED": 0.0,
-    "wall_clock_s": 3.5,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LIN_20_S1_V2",
-    "cpsat_reference_energy": 0.3971338757749991,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 51.78,
-    "unpruned_gap_pct_FIXED": 51.79,
-    "wall_clock_s": 27.7,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LIN_20_S2_V2",
-    "cpsat_reference_energy": 0.3940950305760918,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 49.48,
-    "unpruned_gap_pct_FIXED": 49.52,
-    "wall_clock_s": 27.4,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LIN_30_S1_V2",
-    "cpsat_reference_energy": 0.244048704702985,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 128.15,
-    "unpruned_gap_pct_FIXED": 128.83,
-    "wall_clock_s": 116.6,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LIN_30_S2_V2",
-    "cpsat_reference_energy": 0.24016763464886548,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 132.35,
-    "unpruned_gap_pct_FIXED": 133.03,
-    "wall_clock_s": 116.1,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LOO_10_S1_V2",
-    "cpsat_reference_energy": 2.8385556692684815,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 0.0,
-    "unpruned_gap_pct_FIXED": 0.0,
-    "wall_clock_s": 4.0,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LOO_10_S2_V2",
-    "cpsat_reference_energy": 2.975126368941397,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": -0.0,
-    "unpruned_gap_pct_FIXED": -0.0,
-    "wall_clock_s": 4.4,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LOO_20_S1_V2",
-    "cpsat_reference_energy": 0.8386528278975431,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 17.32,
-    "unpruned_gap_pct_FIXED": 17.32,
-    "wall_clock_s": 25.0,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LOO_20_S2_V2",
-    "cpsat_reference_energy": 0.8367155996239991,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 16.75,
-    "unpruned_gap_pct_FIXED": 16.76,
-    "wall_clock_s": 24.8,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LOO_30_S1_V2",
-    "cpsat_reference_energy": 0.5282109243658186,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 48.08,
-    "unpruned_gap_pct_FIXED": 48.16,
-    "wall_clock_s": 105.0,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_LOO_30_S2_V2",
-    "cpsat_reference_energy": 0.5330019602236332,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 48.64,
-    "unpruned_gap_pct_FIXED": 48.75,
-    "wall_clock_s": 103.7,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_TRE_10_S1_V2",
-    "cpsat_reference_energy": 2.434679953989411,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 0.0,
-    "unpruned_gap_pct_FIXED": -0.0,
-    "wall_clock_s": 3.6,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_TRE_10_S2_V2",
-    "cpsat_reference_energy": 2.0813849342667337,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": -0.0,
-    "unpruned_gap_pct_FIXED": 0.0,
-    "wall_clock_s": 4.2,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
-    "floorplan": "SYN_TRE_20_S1_V2",
-    "cpsat_reference_energy": 1.4073226831174708,
-    "pruned_energies": null,
-    "unpruned_energies": null,
-    "pruned_gap_pct_OLD_BUGGY": 6.14,
-    "unpruned_gap_pct_FIXED": 6.15,
-    "wall_clock_s": 25.5,
-    "note": "reconstructed from stdout after a timeout; per-repeat energy lists unavailable for this entry"
-  },
-  {
     "floorplan": "SYN_TRE_20_S2_V2",
     "cpsat_reference_energy": 1.3885478492145629,
     "pruned_energies": [
@@ -241,5 +91,470 @@
     "pruned_gap_pct_OLD_BUGGY": 22.32408803244103,
     "unpruned_gap_pct_FIXED": 22.423626144349267,
     "wall_clock_s": 114.36873587500003
+  },
+  {
+    "floorplan": "SYN_LIN_10_S1_V2",
+    "cpsat_reference_energy": 1.1939981962597013,
+    "pruned_energies": [
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148,
+      1.1939981962597148
+    ],
+    "unpruned_energies": [
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013,
+      1.1939981962597013
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 1.1344004490841674e-12,
+    "unpruned_gap_pct_FIXED": -1.859672867351094e-14,
+    "wall_clock_s": 3.4299694579999995
+  },
+  {
+    "floorplan": "SYN_LIN_10_S2_V2",
+    "cpsat_reference_energy": 1.2188949589781854,
+    "pruned_energies": [
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828,
+      1.2188949589781828
+    ],
+    "unpruned_energies": [
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854,
+      1.2188949589781854
+    ],
+    "pruned_gap_pct_OLD_BUGGY": -2.1860253334168256e-13,
+    "unpruned_gap_pct_FIXED": 1.8216877778473545e-14,
+    "wall_clock_s": 3.5213178330000003
+  },
+  {
+    "floorplan": "SYN_LIN_20_S1_V2",
+    "cpsat_reference_energy": 0.3971338757749991,
+    "pruned_energies": [
+      0.5618059850996175,
+      0.6630949700321835,
+      0.605688042929394,
+      0.567964671481441,
+      0.6042839059599103,
+      0.5950531441185589,
+      0.6340351909073618,
+      0.5891545278330383,
+      0.5923265557644655,
+      0.6144048874205836
+    ],
+    "unpruned_energies": [
+      0.5618059851002585,
+      0.6631761782937716,
+      0.6056880429296772,
+      0.5680291224829627,
+      0.604283905960381,
+      0.5951175951200669,
+      0.6340351909078348,
+      0.5891545278334718,
+      0.5923845616657906,
+      0.6144854511723858
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 51.78286842902525,
+    "unpruned_gap_pct_FIXED": 51.791648337799465,
+    "wall_clock_s": 27.568179042
+  },
+  {
+    "floorplan": "SYN_LIN_20_S2_V2",
+    "cpsat_reference_energy": 0.3940950305760918,
+    "pruned_energies": [
+      0.6023370305866109,
+      0.5848027337639792,
+      0.5774051317130358,
+      0.5635377540242814,
+      0.5950535604820999,
+      0.616226688604101,
+      0.566526014668085,
+      0.5616374189281856,
+      0.5990358416960362,
+      0.6245309960110887
+    ],
+    "unpruned_energies": [
+      0.6024438916243924,
+      0.584908840488644,
+      0.5776450033129975,
+      0.5637572591675698,
+      0.595162181583996,
+      0.6163353097061739,
+      0.5667251533548981,
+      0.561687706475505,
+      0.5991427027337464,
+      0.6248689283281057
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 49.48407651489157,
+    "unpruned_gap_pct_FIXED": 49.52426495107179,
+    "wall_clock_s": 27.387783542
+  },
+  {
+    "floorplan": "SYN_LIN_30_S1_V2",
+    "cpsat_reference_energy": 0.244048704702985,
+    "pruned_energies": [
+      0.5478024422072281,
+      0.5529457627056047,
+      0.5021892267064914,
+      0.5967001293877274,
+      0.5825802775529496,
+      0.6082016768709195,
+      0.5428203419979241,
+      0.547760333540964,
+      0.5977638114694628,
+      0.4892981987008511
+    ],
+    "unpruned_energies": [
+      0.5499236905936133,
+      0.5545766604308,
+      0.5037839093826834,
+      0.5980834535310224,
+      0.5836196438548086,
+      0.6100628542622333,
+      0.5444375029815569,
+      0.5496752564161158,
+      0.599719935116062,
+      0.4906247972840505
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 128.15372890082045,
+    "unpruned_gap_pct_FIXED": 128.82759040452476,
+    "wall_clock_s": 116.803029458
+  },
+  {
+    "floorplan": "SYN_LIN_30_S2_V2",
+    "cpsat_reference_energy": 0.24016763464886548,
+    "pruned_energies": [
+      0.580961973335377,
+      0.49768926020826143,
+      0.5212987534640092,
+      0.5703554666882269,
+      0.5597227829562712,
+      0.5783519938477468,
+      0.5628042392170869,
+      0.5530712646573193,
+      0.5980072307825708,
+      0.557938938880767
+    ],
+    "unpruned_energies": [
+      0.5827720518704232,
+      0.4994227407341993,
+      0.523301963301132,
+      0.5720430316013047,
+      0.5611275116787459,
+      0.5802229803392798,
+      0.5645711265080139,
+      0.5547217515484226,
+      0.5989664252209747,
+      0.5595565838172247
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 132.3461240810449,
+    "unpruned_gap_pct_FIXED": 133.03332169641945,
+    "wall_clock_s": 115.36329874999998
+  },
+  {
+    "floorplan": "SYN_LOO_10_S1_V2",
+    "cpsat_reference_energy": 2.8385556692684815,
+    "pruned_energies": [
+      2.838555669268489,
+      2.838555669268489,
+      2.838555669268489,
+      2.838555669268489,
+      2.8389506129083593,
+      2.838555669268489,
+      2.838555669268489,
+      2.838555669268489,
+      2.838555669268489,
+      2.838555669268489
+    ],
+    "unpruned_energies": [
+      2.8385556692684815,
+      2.8385556692684815,
+      2.8385556692684815,
+      2.8385556692684815,
+      2.838950612908353,
+      2.8385556692684815,
+      2.8385556692684815,
+      2.8385556692684815,
+      2.8385556692684815,
+      2.8385556692684815
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 0.0013913542165633085,
+    "unpruned_gap_pct_FIXED": 0.0013913542163129901,
+    "wall_clock_s": 3.9980197080000153
+  },
+  {
+    "floorplan": "SYN_LOO_10_S2_V2",
+    "cpsat_reference_energy": 2.975126368941397,
+    "pruned_energies": [
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389,
+      2.975126368941389
+    ],
+    "unpruned_energies": [
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397,
+      2.975126368941397
+    ],
+    "pruned_gap_pct_OLD_BUGGY": -2.686812184097375e-13,
+    "unpruned_gap_pct_FIXED": -1.4926734356096527e-14,
+    "wall_clock_s": 4.418026291999979
+  },
+  {
+    "floorplan": "SYN_LOO_20_S1_V2",
+    "cpsat_reference_energy": 0.8386528278975431,
+    "pruned_energies": [
+      0.9848147816911492,
+      0.9729937864986695,
+      0.9572007095934865,
+      1.0065681380250098,
+      0.9965709436910473,
+      0.985321431641232,
+      0.9454787164091911,
+      1.0188567233826333,
+      0.987521849986102,
+      0.9835100146685605
+    ],
+    "unpruned_energies": [
+      0.984814781691215,
+      0.9729937864988825,
+      0.9572007095935164,
+      1.0065681380251859,
+      0.9965709436910737,
+      0.9854036340098546,
+      0.9454787164093281,
+      1.01893252474717,
+      0.9875218499862997,
+      0.9835100146688016
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 17.31716353061741,
+    "unpruned_gap_pct_FIXED": 17.319047548997727,
+    "wall_clock_s": 24.954120042
+  },
+  {
+    "floorplan": "SYN_LOO_20_S2_V2",
+    "cpsat_reference_energy": 0.8367155996239991,
+    "pruned_energies": [
+      0.9665568120236898,
+      1.0092596194460128,
+      0.9141334513733455,
+      0.9767051563788769,
+      1.0029197285751081,
+      0.9665698007576822,
+      0.9509890117984767,
+      1.0099718263180932,
+      0.9691427140891165,
+      1.0025816021081226
+    ],
+    "unpruned_energies": [
+      0.9665568120240347,
+      1.009259619446382,
+      0.914133451373687,
+      0.9767051563791118,
+      1.0030965691028226,
+      0.9665698007579772,
+      0.9509890117987563,
+      1.0100529336278916,
+      0.969142714089407,
+      1.002581602108394
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 16.752092673525066,
+    "unpruned_gap_pct_FIXED": 16.755175535133684,
+    "wall_clock_s": 24.69101033300001
+  },
+  {
+    "floorplan": "SYN_LOO_30_S1_V2",
+    "cpsat_reference_energy": 0.5282109243658186,
+    "pruned_energies": [
+      0.765123548572916,
+      0.7703247263282691,
+      0.822331136342882,
+      0.7881161043027163,
+      0.8003001386399262,
+      0.7774724101715265,
+      0.7645247161664628,
+      0.7706603941659438,
+      0.7701920642153794,
+      0.7924750630924677
+    ],
+    "unpruned_energies": [
+      0.765604602404639,
+      0.7708965519743598,
+      0.8225148215469822,
+      0.7885207152698007,
+      0.8006559020282511,
+      0.77779035265276,
+      0.764780332211209,
+      0.7710693945482117,
+      0.7710845951404253,
+      0.7928759467336188
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 48.075701224641946,
+    "unpruned_gap_pct_FIXED": 48.15659528257717,
+    "wall_clock_s": 105.16150383299998
+  },
+  {
+    "floorplan": "SYN_LOO_30_S2_V2",
+    "cpsat_reference_energy": 0.5330019602236332,
+    "pruned_energies": [
+      0.8094182936906975,
+      0.7848497840754192,
+      0.7852110583623926,
+      0.7421111632384623,
+      0.8186665144099834,
+      0.8001373624212533,
+      0.8059640942116744,
+      0.7780794280854195,
+      0.8202509606243495,
+      0.777817435117413
+    ],
+    "unpruned_energies": [
+      0.8103514168723004,
+      0.7854869676977235,
+      0.7856984964731513,
+      0.7427158463128858,
+      0.8192829733832938,
+      0.8005415281037087,
+      0.8065168605253967,
+      0.7786153249562642,
+      0.8207748946776854,
+      0.7784879604210937
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 48.6393425441249,
+    "unpruned_gap_pct_FIXED": 48.7512778770444,
+    "wall_clock_s": 102.36221649999999
+  },
+  {
+    "floorplan": "SYN_TRE_10_S1_V2",
+    "cpsat_reference_energy": 2.434679953989411,
+    "pruned_energies": [
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235,
+      2.4346799539894235
+    ],
+    "unpruned_energies": [
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411,
+      2.434679953989411
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 5.10724124352643e-13,
+    "unpruned_gap_pct_FIXED": -1.824014729830868e-14,
+    "wall_clock_s": 3.604847791999987
+  },
+  {
+    "floorplan": "SYN_TRE_10_S2_V2",
+    "cpsat_reference_energy": 2.0813849342667337,
+    "pruned_energies": [
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172,
+      2.0813849342667172
+    ],
+    "unpruned_energies": [
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337,
+      2.0813849342667337
+    ],
+    "pruned_gap_pct_OLD_BUGGY": -8.107769829826088e-13,
+    "unpruned_gap_pct_FIXED": 0.0,
+    "wall_clock_s": 4.205900041999939
+  },
+  {
+    "floorplan": "SYN_TRE_20_S1_V2",
+    "cpsat_reference_energy": 1.4073226831174708,
+    "pruned_energies": [
+      1.499941717773929,
+      1.4851934132383562,
+      1.493736319368189,
+      1.5236065212076184,
+      1.4792711700952381,
+      1.4710792519582796,
+      1.508327603077639,
+      1.497531840445852,
+      1.4881875281756223,
+      1.4900447444212759
+    ],
+    "unpruned_energies": [
+      1.5000915073622283,
+      1.48538328736426,
+      1.493829357689879,
+      1.5237107410056787,
+      1.4795797155497639,
+      1.4712324170864899,
+      1.5086284480813648,
+      1.4975318404459892,
+      1.4885411159921802,
+      1.4904113069696159
+    ],
+    "pruned_gap_pct_OLD_BUGGY": 6.137137480610042,
+    "unpruned_gap_pct_FIXED": 6.151488331411182,
+    "wall_clock_s": 25.36339462500007
   }
 ]

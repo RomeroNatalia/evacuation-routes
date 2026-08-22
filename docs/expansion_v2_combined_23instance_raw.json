@@ -77,7 +77,8 @@
     "structural_critical_bridge_count": 13,
     "structural_max_rooms_sharing_one_bridge": 12,
     "n_variables": 60,
-    "neal_gap_pct": 20.625588308792622
+    "neal_gap_pct": 20.625588308792622,
+    "hybrid_gap_pct": 11.993229861636586
   },
   {
     "floorplan": "FP02",
@@ -157,7 +158,8 @@
     "structural_critical_bridge_count": 33,
     "structural_max_rooms_sharing_one_bridge": 33,
     "n_variables": 264,
-    "neal_gap_pct": 148.60731940062155
+    "neal_gap_pct": 148.60731940062155,
+    "hybrid_gap_pct": 131.86931030536076
   },
   {
     "floorplan": "FP03",
@@ -237,7 +239,8 @@
     "structural_critical_bridge_count": 41,
     "structural_max_rooms_sharing_one_bridge": 28,
     "n_variables": 252,
-    "neal_gap_pct": 136.7206296191209
+    "neal_gap_pct": 136.7206296191209,
+    "hybrid_gap_pct": 119.64613216912498
   },
   {
     "floorplan": "FP04",
@@ -317,7 +320,8 @@
     "structural_critical_bridge_count": 2,
     "structural_max_rooms_sharing_one_bridge": 8,
     "n_variables": 16,
-    "neal_gap_pct": -4.137499964035232e-13
+    "neal_gap_pct": -4.137499964035232e-13,
+    "hybrid_gap_pct": -2.2165178378760171e-13
   },
   {
     "floorplan": "FP05",
@@ -397,7 +401,8 @@
     "structural_critical_bridge_count": 22,
     "structural_max_rooms_sharing_one_bridge": 24,
     "n_variables": 72,
-    "neal_gap_pct": 27.12886819625393
+    "neal_gap_pct": 27.12886819625393,
+    "hybrid_gap_pct": 19.77692813177572
   },
   {
     "floorplan": "SYN_LIN_10_S1_V2",
@@ -477,7 +482,8 @@
     "structural_critical_bridge_count": 11,
     "structural_max_rooms_sharing_one_bridge": 10,
     "n_variables": 20,
-    "neal_gap_pct": -0.0
+    "neal_gap_pct": -0.0,
+    "hybrid_gap_pct": -1.859672867351094e-14
   },
   {
     "floorplan": "SYN_LIN_10_S2_V2",
@@ -557,7 +563,8 @@
     "structural_critical_bridge_count": 11,
     "structural_max_rooms_sharing_one_bridge": 10,
     "n_variables": 20,
-    "neal_gap_pct": 0.0
+    "neal_gap_pct": 0.0,
+    "hybrid_gap_pct": 1.8216877778473545e-14
   },
   {
     "floorplan": "SYN_LIN_20_S1_V2",
@@ -637,7 +644,8 @@
     "structural_critical_bridge_count": 23,
     "structural_max_rooms_sharing_one_bridge": 20,
     "n_variables": 80,
-    "neal_gap_pct": 51.79
+    "neal_gap_pct": 51.79,
+    "hybrid_gap_pct": 35.96307895281978
   },
   {
     "floorplan": "SYN_LIN_20_S2_V2",
@@ -717,7 +725,8 @@
     "structural_critical_bridge_count": 23,
     "structural_max_rooms_sharing_one_bridge": 20,
     "n_variables": 80,
-    "neal_gap_pct": 49.52
+    "neal_gap_pct": 49.52,
+    "hybrid_gap_pct": 32.63806492913641
   },
   {
     "floorplan": "SYN_LIN_30_S1_V2",
@@ -797,7 +806,8 @@
     "structural_critical_bridge_count": 35,
     "structural_max_rooms_sharing_one_bridge": 30,
     "n_variables": 180,
-    "neal_gap_pct": 128.83
+    "neal_gap_pct": 128.83,
+    "hybrid_gap_pct": 99.17080995956073
   },
   {
     "floorplan": "SYN_LIN_30_S2_V2",
@@ -877,7 +887,8 @@
     "structural_critical_bridge_count": 35,
     "structural_max_rooms_sharing_one_bridge": 30,
     "n_variables": 180,
-    "neal_gap_pct": 133.03
+    "neal_gap_pct": 133.03,
+    "hybrid_gap_pct": 102.08993288297997
   },
   {
     "floorplan": "SYN_LOO_10_S1_V2",
@@ -957,7 +968,8 @@
     "structural_critical_bridge_count": 4,
     "structural_max_rooms_sharing_one_bridge": 10,
     "n_variables": 20,
-    "neal_gap_pct": 0.0
+    "neal_gap_pct": 0.0,
+    "hybrid_gap_pct": -1.5644900491400543e-14
   },
   {
     "floorplan": "SYN_LOO_10_S2_V2",
@@ -1037,7 +1049,8 @@
     "structural_critical_bridge_count": 4,
     "structural_max_rooms_sharing_one_bridge": 10,
     "n_variables": 20,
-    "neal_gap_pct": -0.0
+    "neal_gap_pct": -0.0,
+    "hybrid_gap_pct": -1.4926734356096527e-14
   },
   {
     "floorplan": "SYN_LOO_20_S1_V2",
@@ -1117,7 +1130,8 @@
     "structural_critical_bridge_count": 8,
     "structural_max_rooms_sharing_one_bridge": 20,
     "n_variables": 80,
-    "neal_gap_pct": 17.32
+    "neal_gap_pct": 17.32,
+    "hybrid_gap_pct": 10.531321263003223
   },
   {
     "floorplan": "SYN_LOO_20_S2_V2",
@@ -1197,7 +1211,8 @@
     "structural_critical_bridge_count": 8,
     "structural_max_rooms_sharing_one_bridge": 20,
     "n_variables": 80,
-    "neal_gap_pct": 16.76
+    "neal_gap_pct": 16.76,
+    "hybrid_gap_pct": 11.455613844722771
   },
   {
     "floorplan": "SYN_LOO_30_S1_V2",
@@ -1277,7 +1292,8 @@
     "structural_critical_bridge_count": 12,
     "structural_max_rooms_sharing_one_bridge": 30,
     "n_variables": 180,
-    "neal_gap_pct": 48.16
+    "neal_gap_pct": 48.16,
+    "hybrid_gap_pct": 38.031268663182225
   },
   {
     "floorplan": "SYN_LOO_30_S2_V2",
@@ -1357,7 +1373,8 @@
     "structural_critical_bridge_count": 12,
     "structural_max_rooms_sharing_one_bridge": 30,
     "n_variables": 180,
-    "neal_gap_pct": 48.75
+    "neal_gap_pct": 48.75,
+    "hybrid_gap_pct": 37.386848398749706
   },
   {
     "floorplan": "SYN_TRE_10_S1_V2",
@@ -1437,7 +1454,8 @@
     "structural_critical_bridge_count": 17,
     "structural_max_rooms_sharing_one_bridge": 10,
     "n_variables": 20,
-    "neal_gap_pct": -0.0
+    "neal_gap_pct": -0.0,
+    "hybrid_gap_pct": -1.824014729830868e-14
   },
   {
     "floorplan": "SYN_TRE_10_S2_V2",
@@ -1517,7 +1535,8 @@
     "structural_critical_bridge_count": 17,
     "structural_max_rooms_sharing_one_bridge": 10,
     "n_variables": 20,
-    "neal_gap_pct": 0.0
+    "neal_gap_pct": 0.0,
+    "hybrid_gap_pct": 0.0
   },
   {
     "floorplan": "SYN_TRE_20_S1_V2",
@@ -1597,7 +1616,8 @@
     "structural_critical_bridge_count": 29,
     "structural_max_rooms_sharing_one_bridge": 20,
     "n_variables": 80,
-    "neal_gap_pct": 6.15
+    "neal_gap_pct": 6.15,
+    "hybrid_gap_pct": 3.9313923402840656
   },
   {
     "floorplan": "SYN_TRE_20_S2_V2",
@@ -1677,7 +1697,8 @@
     "structural_critical_bridge_count": 29,
     "structural_max_rooms_sharing_one_bridge": 20,
     "n_variables": 80,
-    "neal_gap_pct": 7.204165524175348
+    "neal_gap_pct": 7.204165524175348,
+    "hybrid_gap_pct": 4.566346612648515
   },
   {
     "floorplan": "SYN_TRE_30_S1_V2",
@@ -1757,7 +1778,8 @@
     "structural_critical_bridge_count": 43,
     "structural_max_rooms_sharing_one_bridge": 30,
     "n_variables": 180,
-    "neal_gap_pct": 22.49395224319523
+    "neal_gap_pct": 22.49395224319523,
+    "hybrid_gap_pct": 17.009416274971464
   },
   {
     "floorplan": "SYN_TRE_30_S2_V2",
@@ -1837,6 +1859,7 @@
     "structural_critical_bridge_count": 43,
     "structural_max_rooms_sharing_one_bridge": 30,
     "n_variables": 180,
-    "neal_gap_pct": 22.423626144349267
+    "neal_gap_pct": 22.423626144349267,
+    "hybrid_gap_pct": 18.097060262452988
   }
 ]

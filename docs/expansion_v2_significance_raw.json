@@ -1,0 +1,186 @@
+[
+  {
+    "floorplan": "FP01",
+    "neal_mean": 0.7012493734500964,
+    "hybrid_mean": 0.6510656932099763,
+    "p_value": 0.00579535854433471,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "FP02",
+    "neal_mean": 0.6499666170907631,
+    "hybrid_mean": 0.6062062516489486,
+    "p_value": 0.00579535854433471,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "FP03",
+    "neal_mean": 0.6063831013676975,
+    "hybrid_mean": 0.5626451021291763,
+    "p_value": 0.0022022199424970783,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "FP04",
+    "neal_mean": 1.5026583666328968,
+    "hybrid_mean": 1.5026583666328996,
+    "p_value": 1.593791168806624e-05,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": false
+  },
+  {
+    "floorplan": "FP05",
+    "neal_mean": 0.7819150835664764,
+    "hybrid_mean": 0.7366964568968999,
+    "p_value": 0.004586392080253494,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_TRE_20_S2",
+    "neal_mean": 1.4885811346543567,
+    "hybrid_mean": 1.4519537568921759,
+    "p_value": 0.0007685389131627666,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_TRE_30_S1",
+    "neal_mean": 1.0347243082364037,
+    "hybrid_mean": 0.9883956317442688,
+    "p_value": 0.004586392080253494,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_TRE_30_S2",
+    "neal_mean": 1.019333709161835,
+    "hybrid_mean": 0.9833094989074654,
+    "p_value": 0.0022022199424970783,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LIN_10_S1",
+    "neal_mean": 1.193998196259701,
+    "hybrid_mean": 1.193998196259701,
+    "p_value": 1.0,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": false
+  },
+  {
+    "floorplan": "SYN_LIN_10_S2",
+    "neal_mean": 1.2188949589781857,
+    "hybrid_mean": 1.2188949589781857,
+    "p_value": 1.0,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": false
+  },
+  {
+    "floorplan": "SYN_LIN_20_S1",
+    "neal_mean": 0.60281605614666,
+    "hybrid_mean": 0.5399554450683552,
+    "p_value": 0.0005828399431792745,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LIN_20_S2",
+    "neal_mean": 0.5892676976776029,
+    "hybrid_mean": 0.5227200225380166,
+    "p_value": 0.00018267179110955002,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LIN_30_S1",
+    "neal_mean": 0.5584507703852947,
+    "hybrid_mean": 0.4860737818527518,
+    "p_value": 0.0013149446697132139,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LIN_30_S2",
+    "neal_mean": 0.559670616661972,
+    "hybrid_mean": 0.4853546116685328,
+    "p_value": 0.0005828399431792745,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LOO_10_S1",
+    "neal_mean": 2.838595163632468,
+    "hybrid_mean": 2.838555669268481,
+    "p_value": 0.36812025069351895,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LOO_10_S2",
+    "neal_mean": 2.9751263689413965,
+    "hybrid_mean": 2.9751263689413965,
+    "p_value": 1.0,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": false
+  },
+  {
+    "floorplan": "SYN_LOO_20_S1",
+    "neal_mean": 0.9838995099321327,
+    "hybrid_mean": 0.9269740514846949,
+    "p_value": 0.00043963875262656465,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LOO_20_S2",
+    "neal_mean": 0.9769087670708465,
+    "hybrid_mean": 0.9325665076954811,
+    "p_value": 0.0017062493689195964,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LOO_30_S1",
+    "neal_mean": 0.7825793214510257,
+    "hybrid_mean": 0.7290962401196613,
+    "p_value": 0.00018267179110955002,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_LOO_30_S2",
+    "neal_mean": 0.7928472269423503,
+    "hybrid_mean": 0.7322745950548072,
+    "p_value": 0.00043963875262656465,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  },
+  {
+    "floorplan": "SYN_TRE_10_S1",
+    "neal_mean": 2.4346799539894106,
+    "hybrid_mean": 2.4346799539894106,
+    "p_value": 1.0,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": false
+  },
+  {
+    "floorplan": "SYN_TRE_10_S2",
+    "neal_mean": 2.0813849342667337,
+    "hybrid_mean": 2.0813849342667337,
+    "p_value": 1.0,
+    "bonferroni_significant_alpha05": false,
+    "hybrid_lower": false
+  },
+  {
+    "floorplan": "SYN_TRE_20_S1",
+    "neal_mean": 1.4938939737547448,
+    "hybrid_mean": 1.4626500592846312,
+    "p_value": 0.0013149446697132139,
+    "bonferroni_significant_alpha05": true,
+    "hybrid_lower": true
+  }
+]

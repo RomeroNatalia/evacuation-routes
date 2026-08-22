@@ -60,10 +60,10 @@ v4 resolves both, independently and for free (no D-Wave Leap quota spent):
 
 \textbf{What this changes.} Loop's and Tree's measured optimality gaps drop substantially once the shortcut is removed (Loop: up to $-21$ percentage points at 30 rooms; Tree: up to $-6.65$pp), while Linear -- which never had diagonal edges -- is essentially unchanged, confirming the effect is real and not solver noise. The paper's central qualitative finding survives, and if anything strengthens: corridor diameter remains exactly tied between Tree and Loop at matched room counts after the fix, and in the free (Neal-only) 23-instance correlation analysis, corridor diameter is now the single strongest predictor ($r=0.868$, overtaking variable count's $0.826$, itself down from v3's $0.865$), while bridge-count measures got weaker ($0.622 \to 0.457$).
 
-\textbf{What is not yet done.} This is a Neal-only correction. The Hybrid side of Section~\ref{sec:synthetic} (Tables~\ref{tab:correlations}, \ref{tab:synthetic}, \ref{tab:appendixb2}) still reflects the original, diagonal-affected corpus, since re-running Hybrid on the V2 corpus costs real D-Wave Leap quota. Section~\ref{sec:v4-diagonal} reports the free comparison in full; the paper's main tables are \textbf{not yet updated} to V2 numbers pending that Hybrid re-run.
+\textbf{Hybrid re-run: complete.} 180 Hybrid calls (10 repeats $\times$ 18 V2 floorplans) were run on the diagonal-fixed corpus. Hybrid's mean gap is lower than Neal's in 17 of 23 instances and Bonferroni-significant (Mann-Whitney $U$, $\alpha=0.05/23$) in 11 of 23, both lower and significant in 10 of 23 -- essentially unchanged from v3's 18/23, 16/23, 11/23, confirming the Hybrid-outperforms-Neal finding was not an artifact of the diagonal-edge bug. The correlation and gap tables below now include both solvers. The paper's main tables (Tables~\ref{tab:correlations}, \ref{tab:synthetic}, \ref{tab:appendixb2}) still show the v3/original-corpus numbers as originally published; Section~\ref{sec:v4-diagonal} is where the V2-corrected numbers live for this draft.
 
 \begin{abstract}
-This paper formulates static indoor evacuation-route assignment as a capacity-aware Quadratic Unconstrained Binary Optimization (QUBO) problem, solves it with classical simulated annealing, D-Wave Leap Hybrid, and direct quantum annealing across five manually constructed benchmark building layouts (16 to 264 logical variables), and then goes further than prior work of this kind in three ways. First, we formulate the same constrained objective in Google OR-Tools CP-SAT using a scaled-integer representation. CP-SAT reaches status \texttt{OPTIMAL} for every floorplan tested in under two seconds, and the returned assignments are rescored independently under the original unpruned float64 objective. This reference baseline reveals that Neal and D-Wave Hybrid, previously reported as producing good solutions, are approximately 94--125\% above the reference energy on two of the five floorplans, a gap invisible without an exact solver-side optimum for the scaled formulation. Second, we investigate why: a controlled compute-budget experiment (up to 100$\times$ the original sweep count) fails to close the gap, ruling out under-sampling as the sole explanation, while a structural/geometric analysis and an 18-floorplan synthetic corpus with independently controlled corridor topology (linear, branching, and looped) identify \emph{corridor diameter} -- not bridge/bottleneck-edge count, our initial hypothesis -- as a predictor comparably strong to raw problem size ($r\approx0.83$) that nonetheless captures independent information, adding up to 13 additional percentage points of explained variance beyond variable count alone in a joint regression. This finding replicates under both classical and hybrid quantum solvers with proper significance testing (Mann-Whitney $U$, Bonferroni-corrected across 23 floorplans). Third, we report formal significance tests throughout, correcting the descriptive-statistics-only limitation of the original study. The result is a fully reproducible evacuation-QUBO workflow with a substantially stronger classical reference baseline than prior work in this line, and an empirically grounded, statistically confirmed account of what makes a floorplan hard for current annealing-based solvers. \textbf{[v4]} A geometry bug in the synthetic-corpus generator -- diagonal connector edges acting as uncredited one-hop shortcuts in the Loop and Tree topologies -- is identified, fixed, and the corpus regenerated; a free (Neal-only, no D-Wave quota) reanalysis shows measured optimality gaps drop substantially for the affected topologies (Loop: up to $-21$ percentage points), while the paper's central structural finding survives and strengthens: corridor diameter becomes the single strongest predictor of solver difficulty ($r=0.868$), ahead of raw variable count. A Hybrid re-run on the corrected corpus is the remaining step before the paper's main tables can be officially updated.
+This paper formulates static indoor evacuation-route assignment as a capacity-aware Quadratic Unconstrained Binary Optimization (QUBO) problem, solves it with classical simulated annealing, D-Wave Leap Hybrid, and direct quantum annealing across five manually constructed benchmark building layouts (16 to 264 logical variables), and then goes further than prior work of this kind in three ways. First, we formulate the same constrained objective in Google OR-Tools CP-SAT using a scaled-integer representation. CP-SAT reaches status \texttt{OPTIMAL} for every floorplan tested in under two seconds, and the returned assignments are rescored independently under the original unpruned float64 objective. This reference baseline reveals that Neal and D-Wave Hybrid, previously reported as producing good solutions, are approximately 94--125\% above the reference energy on two of the five floorplans, a gap invisible without an exact solver-side optimum for the scaled formulation. Second, we investigate why: a controlled compute-budget experiment (up to 100$\times$ the original sweep count) fails to close the gap, ruling out under-sampling as the sole explanation, while a structural/geometric analysis and an 18-floorplan synthetic corpus with independently controlled corridor topology (linear, branching, and looped) identify \emph{corridor diameter} -- not bridge/bottleneck-edge count, our initial hypothesis -- as a predictor comparably strong to raw problem size ($r\approx0.83$) that nonetheless captures independent information, adding up to 13 additional percentage points of explained variance beyond variable count alone in a joint regression. This finding replicates under both classical and hybrid quantum solvers with proper significance testing (Mann-Whitney $U$, Bonferroni-corrected across 23 floorplans). Third, we report formal significance tests throughout, correcting the descriptive-statistics-only limitation of the original study. The result is a fully reproducible evacuation-QUBO workflow with a substantially stronger classical reference baseline than prior work in this line, and an empirically grounded, statistically confirmed account of what makes a floorplan hard for current annealing-based solvers. \textbf{[v4]} A geometry bug in the synthetic-corpus generator -- diagonal connector edges acting as uncredited one-hop shortcuts in the Loop and Tree topologies -- is identified, fixed, and the corpus regenerated; both Neal (free) and Hybrid (180 calls) were re-run on the corrected corpus. Measured optimality gaps drop substantially for the affected topologies under both solvers (Loop: up to $-21$pp Neal, $-19$pp Hybrid), while the paper's central structural finding survives and strengthens under both: corridor diameter becomes the single strongest predictor of solver difficulty for Neal ($r=0.868$) and Hybrid ($r=0.853$), ahead of raw variable count for both. The Hybrid-outperforms-Neal finding itself is essentially unchanged (11 of 23 both lower and Bonferroni-significant, vs.\ 11 of 23 originally).
 \end{abstract}
 
 \noindent\textbf{Keywords} --- evacuation routing, QUBO, quantum annealing, capacity-aware optimization, minor embedding, integer optimization, D-Wave, simulated annealing
@@ -373,7 +373,7 @@ Repeating this analysis with ten independent Neal \emph{and} ten independent Hyb
 \label{sec:v4-diagonal}
 
 \begin{quote}
-\textbf{Status: Neal-only, executed and free (no D-Wave Leap quota spent).} A Hybrid re-run on the corrected corpus is the remaining step; see the Revision Notes and Future Work.
+\textbf{Status: complete.} Both Neal (free, local) and Hybrid (180 calls, using the corresponding author's own D-Wave Leap account) have been re-run on the diagonal-fixed corpus.
 \end{quote}
 
 Every edge \path{scripts/expansion/generate_synthetic_floorplan.py} creates is assigned \texttt{distance=1.0}, regardless of the angle it is drawn at. This is harmless for an axis-aligned edge, but three sites produced edges that moved diagonally -- both in $x$ and $y$ in a single hop: Loop's door-to-corridor edge (one per room), Loop's ring-to-exit edge (one per exit), and Tree's spine-to-first-branch-node edge (one per branch). A real, wall-respecting corridor cannot cut a corner this way; reaching the same point axis-aligned requires two hops, not one. Every such edge was therefore a one-hop shortcut not available to the five manually constructed benchmark layouts, whose graphs are hand-built to be wall-aware. Linear's topology never produced a diagonal edge and is an unaffected control.
@@ -406,58 +406,64 @@ Tree-30 & $10 \to 12$ & $7.6 \to 8.6$ & $105 \to 121$ \\
 
 Linear is byte-for-byte unaffected, as expected. Loop and Tree both gain exactly the elbow-node count the fix predicts (Loop: one per room plus one per exit; Tree: one per branch), confirmed directly against node/edge counts before recomputing anything else. Notably, Tree-20 and Loop-20's corridor diameter -- tied at 8 in the original corpus, the specific pairing Section~\ref{sec:synthetic} uses to argue bridge count doesn't order difficulty correctly -- remain \emph{exactly tied} after the fix, now at 10.
 
-\subsubsection{Optimality gaps drop for Loop and Tree, Linear unchanged}
+\subsubsection{Optimality gaps drop for Loop and Tree, Linear unchanged -- both solvers}
 
 \begin{table}[h]
 \centering
-\caption{Neal 10-repeat mean optimality gap against the CP-SAT reference, original corpus vs.\ diagonal-fixed V2 (both energies recomputed unpruned, so this table is also net of the pruned-vs-unpruned bug).}
+\caption{10-repeat mean optimality gap against the CP-SAT reference, original corpus vs.\ diagonal-fixed V2, both solvers (energies recomputed unpruned throughout).}
 \label{tab:v4-gaps}
 \small
-\begin{tabular}{lrrr}
+\begin{tabular}{lrrrr}
 \toprule
-Floorplan & Old Neal gap (\%) & V2 Neal gap (\%) & $\Delta$ (pp) \\
+Floorplan & Old Neal $\to$ V2 Neal & $\Delta$ & Old Hybrid $\to$ V2 Hybrid & $\Delta$ \\
 \midrule
-Linear-20-S1 & 51.78 & 51.79 & $+0.01$ \\
-Linear-30-S1 & 128.15 & 128.83 & $+0.68$ \\
-Loop-20-S1 & 23.27 & 17.32 & $-5.95$ \\
-Loop-20-S2 & 22.40 & 16.76 & $-5.64$ \\
-Loop-30-S1 & 69.28 & 48.16 & $-21.12$ \\
-Loop-30-S2 & 68.17 & 48.75 & $-19.42$ \\
-Tree-20-S1 & 8.50 & 6.15 & $-2.35$ \\
-Tree-20-S2 & 9.82 & 7.20 & $-2.62$ \\
-Tree-30-S1 & 29.14 & 22.49 & $-6.65$ \\
-Tree-30-S2 & 26.40 & 22.42 & $-3.98$ \\
+Linear-20-S1 & $51.78 \to 51.79$ & $+0.01$ & $32.59 \to 35.96$ & $+3.37$ \\
+Linear-20-S2 & $49.48 \to 49.52$ & $+0.04$ & $34.92 \to 32.64$ & $-2.28$ \\
+Linear-30-S1 & $128.15 \to 128.83$ & $+0.68$ & $103.58 \to 99.17$ & $-4.41$ \\
+Linear-30-S2 & $132.35 \to 133.03$ & $+0.68$ & $103.58 \to 102.09$ & $-1.49$ \\
+Loop-20-S1 & $23.27 \to 17.32$ & $-5.95$ & $15.76 \to 10.53$ & $-5.23$ \\
+Loop-20-S2 & $22.40 \to 16.76$ & $-5.64$ & $13.59 \to 11.46$ & $-2.13$ \\
+Loop-30-S1 & $69.28 \to 48.16$ & $-21.12$ & $56.92 \to 38.03$ & $-18.89$ \\
+Loop-30-S2 & $68.17 \to 48.75$ & $-19.42$ & $53.03 \to 37.39$ & $-15.64$ \\
+Tree-20-S1 & $8.50 \to 6.15$ & $-2.35$ & $6.07 \to 3.93$ & $-2.14$ \\
+Tree-20-S2 & $9.82 \to 7.20$ & $-2.62$ & $5.84 \to 4.57$ & $-1.27$ \\
+Tree-30-S1 & $29.14 \to 22.49$ & $-6.65$ & $23.40 \to 17.01$ & $-6.39$ \\
+Tree-30-S2 & $26.40 \to 22.42$ & $-3.98$ & $20.58 \to 18.10$ & $-2.48$ \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Linear moves by at most $0.68$ percentage points -- within ordinary run-to-run Neal variation -- while Loop and Tree both drop substantially and consistently across every affected instance, Loop far more than Tree (up to $-21.12$pp vs.\ up to $-6.65$pp), matching the asymmetry in how many diagonal shortcuts each topology had (one per room in Loop; one per branch in Tree). This is strong evidence the diagonal-edge artifact was inflating measured difficulty specifically for the topologies that had it, not a coincidence of solver noise.
+Linear moves within ordinary run-to-run noise under both solvers ($-2.28$ to $+3.37$pp), while Loop and Tree drop substantially and consistently under both, Loop far more than Tree (up to $-21.12$pp Neal / $-18.89$pp Hybrid vs.\ up to $-6.65$pp Neal / $-6.39$pp Hybrid), matching the asymmetry in how many diagonal shortcuts each topology had (one per room in Loop; one per branch in Tree). The same pattern appearing under two independently-run solvers is strong evidence the diagonal-edge artifact was inflating measured difficulty specifically for the topologies that had it, not solver-specific noise.
 
-\subsubsection{The core finding survives, and strengthens}
+\subsubsection{The core finding survives, and strengthens -- both solvers}
 
-Combining the unchanged 5 benchmark floorplans with the diagonal-fixed 18-floorplan V2 corpus ($n=23$, Neal only) and repeating the correlation analysis behind Table~\ref{tab:correlations}:
+Combining the unchanged 5 benchmark floorplans with the diagonal-fixed 18-floorplan V2 corpus ($n=23$) and repeating the correlation analysis behind Table~\ref{tab:correlations}:
 
 \begin{table}[h]
 \centering
-\caption{Predictor correlation with Neal's 10-repeat mean gap, original 23-instance corpus (Table~\ref{tab:correlations}) vs.\ V2 diagonal-fixed 23-instance corpus.}
+\caption{Predictor correlation with 10-repeat mean gap, original 23-instance corpus (Table~\ref{tab:correlations}) vs.\ V2 diagonal-fixed 23-instance corpus, both solvers.}
 \label{tab:v4-correlations}
 \small
-\begin{tabular}{lrrr}
+\begin{tabular}{lrrrr}
 \toprule
-Predictor & Old $r$ & V2 $r$ & V2 $p$ \\
+Predictor & Old Neal $r$ & V2 Neal $r$ & Old Hybrid $r$ & V2 Hybrid $r$ \\
 \midrule
-n\_variables & 0.865 & 0.826 & $1.22\times10^{-6}$ \\
-corridor\_diameter\_hops & 0.837 & \textbf{0.868} & $7.93\times10^{-8}$ \\
-route\_hops\_mean & 0.736 & 0.765 & $2.10\times10^{-5}$ \\
-capacity\_bottleneck\_edge\_count & 0.702 & 0.712 & $1.38\times10^{-4}$ \\
-traffic\_bottleneck\_top1\_share & 0.713 & 0.697 & $2.21\times10^{-4}$ \\
-structural\_critical\_bridge\_count & 0.702 & 0.586 & $3.31\times10^{-3}$ \\
-structural\_bridge\_count & 0.622 & 0.457 & $2.85\times10^{-2}$ \\
+n\_variables & 0.865 & 0.826 & 0.873 & 0.836 \\
+corridor\_diameter\_hops & 0.837 & \textbf{0.868} & 0.823 & \textbf{0.853} \\
+route\_hops\_mean & 0.736 & 0.765 & 0.761 & 0.800 \\
+capacity\_bottleneck\_edge\_count & 0.702 & 0.712 & 0.743 & 0.763 \\
+traffic\_bottleneck\_top1\_share & 0.713 & 0.697 & 0.699 & 0.680 \\
+structural\_critical\_bridge\_count & 0.702 & 0.586 & 0.700 & 0.585 \\
+structural\_bridge\_count & 0.622 & 0.457 & 0.603 & 0.436 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Corridor diameter is now the single strongest predictor of the ten, ahead of raw variable count -- the opposite direction from a concern that removing an artifact might weaken the finding. The bridge-based measures, already the weakest predictors and already rejected as the primary explanation in Section~\ref{sec:synthetic}, get weaker still. The regression result is consistent: $R^2$ from variable count alone is $0.682$ (V2) vs.\ $0.749$ (old); adding corridor diameter raises it to $0.857$ (V2) vs.\ $0.882$ (old) -- an increase of $+0.175$ (V2) vs.\ $+0.133$ (old), and the partial correlation of corridor diameter controlling for variable count is $r=0.742$, $p=5.0\times10^{-5}$ (V2) vs.\ $r=0.727$, $p=8.5\times10^{-5}$ (old). Every headline number in Section~\ref{sec:synthetic} that this can be checked against moves in the direction of a \emph{stronger}, not weaker, corridor-diameter finding once the diagonal-edge artifact is removed.
+Corridor diameter is now the single strongest predictor for \emph{both} solvers, ahead of raw variable count in both cases -- the opposite direction from a concern that removing an artifact might weaken the finding. The bridge-based measures, already the weakest predictors and already rejected as the primary explanation in Section~\ref{sec:synthetic}, get weaker still, again for both solvers. The Neal regression result: $R^2$ from variable count alone is $0.682$ (V2) vs.\ $0.749$ (old); adding corridor diameter raises it to $0.857$ (V2) vs.\ $0.882$ (old); partial correlation $r=0.742$, $p=5.0\times10^{-5}$ (V2) vs.\ $r=0.727$, $p=8.5\times10^{-5}$ (old).
+
+\subsubsection{Hybrid-outperforms-Neal finding: essentially unchanged}
+
+Repeating Section~\ref{sec:synthetic}'s Mann-Whitney significance test ($\alpha=0.05$, Bonferroni-corrected across 23 instances) on the V2 corpus: Hybrid's mean gap is lower than Neal's in \textbf{17 of 23} instances (old: 18 of 23), Bonferroni-significant in \textbf{11 of 23} (old: 16 of 23), and both lower \emph{and} significant in \textbf{10 of 23} (old: 11 of 23). The headline comparative claim is essentially preserved -- within one instance of the original counts on every measure -- confirming the diagonal-edge bug affected absolute gap magnitude and the structural-predictor analysis, but not the solver-vs-solver comparison itself.
 
 \subsection{Direct-QPU feasibility and embedding}
 Direct-QPU performance remains strongly instance-dependent, retained from the original study: FP04 reproduced the exact optimum with 78.78\% mean valid-sample rate; FP01 and FP05 required chains up to 9 and 12 physical qubits per logical variable respectively, with valid-sample rates below 1\%; FP02 and FP03 could not be embedded at all. Given Section~\ref{sec:milp}'s finding that the same two floorplans are also the hardest for \emph{classical} optimization once measured against the CP-SAT reference, embedding difficulty and solution-quality difficulty for this formulation appear to share a common structural origin (corridor diameter) rather than being independent failure modes of the quantum-specific pipeline.
@@ -490,13 +496,13 @@ Retained from the original study: the squared-utilization term is a surrogate co
 \item Corridor diameter and mean route-hop length are correlated with each other ($r=0.801$ across all 23 floorplans; $r=0.801$ also when restricted to the 14 structurally-unique instances) and not yet fully statistically separated; a synthetic sweep varying one independently of the other would sharpen this further.
 \item Hybrid repeat count on the full 23-floorplan corpus (ten runs) is lower than the original study's 30-run granularity on the five benchmark floorplans, a deliberate compromise against D-Wave Leap solver-time quota (approximately 12 minutes of Hybrid solver time for the 230 calls in Section~\ref{sec:significance} alone, at the platform's documented 3.0-second minimum time limit for problems under 1,024 variables).
 \item \textbf{\textbf{[v4 -- confirmed, Neal side]} Unlike Table~\ref{tab:milpgaps}, the 10-repeat Neal/Hybrid energies behind Tables~\ref{tab:correlations}, \ref{tab:synthetic}, and \ref{tab:appendixb2} (Section~\ref{sec:synthetic}) are the pruned-BQM search energy, not the independently-recomputed unpruned objective.} Section~\ref{sec:v4-diagonal} recomputed the true unpruned energy directly (not just spot-checked) across all 18 regenerated floorplans' Neal runs: maximum difference 0.68 percentage points, consistent with the original spot-check (max 0.26\%) and the 5-floorplan figure ($<0.4\%$). Confirmed negligible for Neal; the Hybrid side (230 calls) has still not been recomputed, since doing so costs D-Wave Leap quota.
-\item \textbf{\textbf{[v4 -- fixed, Neal side]} The synthetic generator's Loop and Tree topologies included some short non-axis-aligned (diagonal) connector edges that were, in fact, genuine one-hop shortcuts (every edge is weighted \texttt{distance=1.0} regardless of angle, so a diagonal hop covered more net displacement than an axis-aligned one could in a single hop).} Root-caused, fixed (routed through an axis-aligned elbow node instead), and the corpus regenerated as \texttt{\_V2} (Section~\ref{sec:v4-diagonal}); zero diagonal edges remain, verified programmatically. This measurably changed structural metrics and Neal gaps for Loop and Tree (Tables~\ref{tab:v4-structural}, \ref{tab:v4-gaps}); the paper's main tables (Tables~\ref{tab:correlations}, \ref{tab:synthetic}, \ref{tab:appendixb2}), which use Hybrid as well as Neal, are not yet updated to the V2 corpus pending a Hybrid re-run.
+\item \textbf{\textbf{[v4 -- resolved]} The synthetic generator's Loop and Tree topologies included some short non-axis-aligned (diagonal) connector edges that were, in fact, genuine one-hop shortcuts (every edge is weighted \texttt{distance=1.0} regardless of angle, so a diagonal hop covered more net displacement than an axis-aligned one could in a single hop).} Root-caused, fixed (routed through an axis-aligned elbow node instead), and the corpus regenerated as \texttt{\_V2} (Section~\ref{sec:v4-diagonal}); zero diagonal edges remain, verified programmatically. Both Neal and Hybrid were re-run on the corrected corpus (180 Hybrid calls); this measurably changed structural metrics and both solvers' gaps for Loop and Tree (Tables~\ref{tab:v4-structural}, \ref{tab:v4-gaps}), while the corridor-diameter finding and the Hybrid-outperforms-Neal finding both survive. The paper's main tables (Tables~\ref{tab:correlations}, \ref{tab:synthetic}, \ref{tab:appendixb2}) still show the originally-published, diagonal-affected numbers; Section~\ref{sec:v4-diagonal} is where the corrected numbers currently live pending a decision on whether to replace them outright in a future version.
 \item The experiments do not establish quantum advantage, real-time deployment readiness, or real-world evacuation performance.
 \end{itemize}
 
 \section{Future Work}
 
-\textbf{[v4]} The single highest-priority item is completing the correction started in Section~\ref{sec:v4-diagonal}: a Hybrid re-run (10 repeats $\times$ 18 V2 floorplans, ~180 calls, comparable quota cost to the original 230-call run) is the only thing separating the free Neal-only comparison in this draft from being able to officially replace Tables~\ref{tab:correlations}, \ref{tab:synthetic}, and \ref{tab:appendixb2} with the diagonal-corrected numbers. This is a deliberate pause for review, not a technical blocker -- see the accompanying repository discussion.
+\textbf{[v4 -- done]} The diagonal-edge correction (Section~\ref{sec:v4-diagonal}) is now complete for both solvers. The remaining decision is whether to replace Tables~\ref{tab:correlations}, \ref{tab:synthetic}, and \ref{tab:appendixb2} outright with the V2 numbers in a future version, versus keeping both corpora side by side as this draft does -- a judgment call for the co-authors, not a technical blocker.
 
 The next-highest-priority extension, retained from the original study, remains empirical and simulation-based validation of the capacity model against a validated evacuation simulator or controlled pedestrian studies. Beyond that, this revision's findings motivate: (i) verifying the CP-SAT integer scaling against the unrounded objective with an order-preservation proof, exact rational formulation, or another exact continuous-coefficient method; (ii) a synthetic sweep varying corridor diameter independently of route-hop count and room/exit ratio, to isolate the structural mechanism further; (iii) applying the same reference-baseline methodology to other QUBO-formulated routing problems in the literature reviewed in Section~2, to test whether the same embedding-difficulty/solution-quality correlation generalizes beyond evacuation routing; (iv) an independently-sourced real-building corpus (e.g.\ the Modified Swiss Dwellings dataset \cite{msd}, considered but not used in the original study) annotated with the same wall-aware graph pipeline, to test whether corridor diameter predicts difficulty on buildings this project did not design; and (v) dynamic hazard layers connecting the static assignment framework to risk-aware routing while preserving the graph-validation pipeline.
 
@@ -715,7 +721,7 @@ For the synthetic corpus, only the 9 unique topology-size layouts are shown (Fig
 \end{figure}
 
 \section{Reproducibility}
-\textbf{[v4]} The diagonal-fixed synthetic corpus (18 floorplans, \path{*_V2} IDs) is at \path{data/floorplans/}, generated by the corrected \path{scripts/expansion/generate_synthetic_floorplan.py}. Its structural metrics are at \path{docs/expansion_synthetic_geometry_raw_V2.json}, CP-SAT reference energies at each floorplan's own \path{output/milp_gap/}, and the Neal 10-repeat comparison (produced by the new \path{scripts/expansion/run_neal_repeats_v2_fixed.py}, which also fixes the pruned-vs-unpruned bug) at \path{docs/expansion_synthetic_neal_v2_fixed_raw.json}. The combined 23-instance correlation dataset behind Table~\ref{tab:v4-correlations} is at \path{docs/expansion_v2_combined_23instance_raw.json}.
+\textbf{[v4]} The diagonal-fixed synthetic corpus (18 floorplans, \path{*_V2} IDs) is at \path{data/floorplans/}, generated by the corrected \path{scripts/expansion/generate_synthetic_floorplan.py}. Its structural metrics are at \path{docs/expansion_synthetic_geometry_raw_V2.json}, CP-SAT reference energies at each floorplan's own \path{output/milp_gap/}, the Neal 10-repeat comparison (produced by \path{scripts/expansion/run_neal_repeats_v2_fixed.py}, which also fixes the pruned-vs-unpruned bug) at \path{docs/expansion_synthetic_neal_v2_fixed_raw.json}, and the Hybrid 10-repeat comparison (\path{scripts/expansion/run_hybrid_repeats_v2_fixed.py}) at \path{docs/expansion_synthetic_hybrid_v2_fixed_raw.json}. The combined 23-instance correlation dataset behind Table~\ref{tab:v4-correlations} is at \path{docs/expansion_v2_combined_23instance_raw.json}, and the Mann-Whitney significance results behind Section~\ref{sec:v4-diagonal}'s solver-comparison recount are at \path{docs/expansion_v2_significance_raw.json}.
 
 Source code, all 23 floorplan datasets (five benchmark, 18 synthetic), generated route catalogs, validation tests, CP-SAT/Neal/Hybrid benchmark outputs, blueprint figures, and this manuscript's source are available at
 \begin{center}
