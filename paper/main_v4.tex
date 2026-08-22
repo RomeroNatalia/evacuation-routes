@@ -502,7 +502,7 @@ Retained from the original study: the squared-utilization term is a surrogate co
 
 \section{Future Work}
 
-\textbf{[v4 -- done]} The diagonal-edge correction (Section~\ref{sec:v4-diagonal}) is now complete for both solvers. The remaining decision is whether to replace Tables~\ref{tab:correlations}, \ref{tab:synthetic}, and \ref{tab:appendixb2} outright with the V2 numbers in a future version, versus keeping both corpora side by side as this draft does -- a judgment call for the co-authors, not a technical blocker.
+\textbf{[v4 -- done]} The diagonal-edge correction (Section~\ref{sec:v4-diagonal}) is now complete for both solvers. The remaining decision is whether to replace Tables~\ref{tab:correlations}, \ref{tab:synthetic}, and \ref{tab:appendixb2} outright with the V2 numbers in a future version, versus keeping both corpora side by side as this draft does.
 
 The next-highest-priority extension, retained from the original study, remains empirical and simulation-based validation of the capacity model against a validated evacuation simulator or controlled pedestrian studies. Beyond that, this revision's findings motivate: (i) verifying the CP-SAT integer scaling against the unrounded objective with an order-preservation proof, exact rational formulation, or another exact continuous-coefficient method; (ii) a synthetic sweep varying corridor diameter independently of route-hop count and room/exit ratio, to isolate the structural mechanism further; (iii) applying the same reference-baseline methodology to other QUBO-formulated routing problems in the literature reviewed in Section~2, to test whether the same embedding-difficulty/solution-quality correlation generalizes beyond evacuation routing; (iv) an independently-sourced real-building corpus (e.g.\ the Modified Swiss Dwellings dataset \cite{msd}, considered but not used in the original study) annotated with the same wall-aware graph pipeline, to test whether corridor diameter predicts difficulty on buildings this project did not design; and (v) dynamic hazard layers connecting the static assignment framework to risk-aware routing while preserving the graph-validation pipeline.
 
@@ -716,8 +716,54 @@ For the synthetic corpus, only the 9 unique topology-size layouts are shown (Fig
 \centering
 \includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_30.png}
 \end{subfigure}
-\caption{The 9 unique synthetic layouts (rows: Linear, Tree, Loop; columns: 10, 20, 30 rooms), representative of both seeds each. Compare against Table~\ref{tab:appendixb}'s structural metrics: Linear's single spine, Tree's dual-row branch structure, and Loop's ring are all visible directly.}
+\caption{The 9 unique synthetic layouts (rows: Linear, Tree, Loop; columns: 10, 20, 30 rooms), representative of both seeds each. Compare against Table~\ref{tab:appendixb}'s structural metrics: Linear's single spine, Tree's dual-row branch structure, and Loop's ring are all visible directly. \textbf{Note (v4): these are the original, diagonal-affected blueprints}, retained for comparison against Figure~\ref{fig:blueprints-v2} below -- look closely at Loop and Tree and the diagonal door/ring-to-exit connectors described in Section~\ref{sec:v4-diagonal} are visible directly.}
 \label{fig:blueprints-synthetic}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_10_V2.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_20_V2.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_linear_30_V2.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_10_V2.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_20_V2.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_tree_30_V2.png}
+\end{subfigure}
+
+\vspace{4pt}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_10_V2.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_20_V2.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/blueprint_SYN_loop_30_V2.png}
+\end{subfigure}
+\caption{\textbf{[v4]} The same 9 layouts after the diagonal-edge fix (Section~\ref{sec:v4-diagonal}). Compare directly against Figure~\ref{fig:blueprints-synthetic}: Loop's door-to-corridor and ring-to-exit connections, and Tree's spine-to-first-branch connection, now route through a right-angle elbow instead of cutting the corner. Linear is visually identical to the previous figure, as expected. Verified programmatically (not just visually) that zero diagonal edges remain in any of the 18 V2 floorplans.}
+\label{fig:blueprints-v2}
 \end{figure}
 
 \section{Reproducibility}

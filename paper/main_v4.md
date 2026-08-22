@@ -392,7 +392,7 @@ Retained from the original study: the squared-utilization term is a surrogate co
 
 ## 12. Future Work
 
-**[v4 — done]** The diagonal-edge correction (Section 9.7) is now complete for both solvers. The remaining decision is whether to replace Tables 5, 6, and the appendix outright with the V2 numbers in a future version, versus keeping both corpora side by side as this draft does — a judgment call for the co-authors, not a technical blocker.
+**[v4 — done]** The diagonal-edge correction (Section 9.7) is now complete for both solvers. The remaining decision is whether to replace Tables 5, 6, and the appendix outright with the V2 numbers in a future version, versus keeping both corpora side by side as this draft does.
 
 The next-highest-priority extension, retained from the original study, remains empirical and simulation-based validation of the capacity model against a validated evacuation simulator or controlled pedestrian studies. Beyond that, this revision's findings motivate: (i) verifying the CP-SAT integer scaling against the unrounded objective with an order-preservation proof, exact rational formulation, or another exact continuous-coefficient method; (ii) a synthetic sweep varying corridor diameter independently of route-hop count and room/exit ratio, to isolate the structural mechanism further; (iii) applying the same reference-baseline methodology to other QUBO-formulated routing problems in the reviewed literature, to test whether the same embedding-difficulty/solution-quality correlation generalizes beyond evacuation routing; (iv) an independently-sourced real-building corpus (e.g. the Modified Swiss Dwellings dataset, considered but not used in the original study) annotated with the same wall-aware graph pipeline, to test whether corridor diameter predicts difficulty on buildings this project did not design; and (v) dynamic hazard layers connecting the static assignment framework to risk-aware routing while preserving the graph-validation pipeline.
 
@@ -488,10 +488,19 @@ Room occupancy is drawn uniformly from [2,25] and edge capacities from small int
 
 ## Appendix C: Floorplan Blueprints
 
-Structural diagrams (node positions and connectivity, not architectural drawings) for all floorplans are in `paper/figures/` — green circles are room-start nodes, orange squares are doors, red diamonds are exits, gray dots/lines are corridor and in-room navigation nodes and their connecting edges:
+Structural diagrams (node positions and connectivity, not architectural drawings) for all floorplans are in `paper/figures/` — green circles are room-start nodes, orange squares are doors, **red diamonds are exits**, gray dots/lines are corridor and in-room navigation nodes and their connecting edges:
 
 - Five benchmark floorplans: `figures/blueprint_FP01.png` through `blueprint_FP05.png`
-- Nine unique synthetic layouts (Linear/Tree/Loop × 10/20/30 rooms): `figures/blueprint_SYN_{linear,tree,loop}_{10,20,30}.png`
+- Nine unique synthetic layouts, **original (diagonal-affected) corpus**: `figures/blueprint_SYN_{linear,tree,loop}_{10,20,30}.png`
+- Nine unique synthetic layouts, **[v4] diagonal-fixed V2 corpus**: `figures/blueprint_SYN_{linear,tree,loop}_{10,20,30}_V2.png`
+
+**[v4] Before/after the diagonal-edge fix (Loop, 10 rooms):** in the original corpus, Loop's door-to-corridor and ring-to-exit connections cut diagonally straight to the door/exit node. In the V2 corpus, those same connections route through a right-angle elbow instead — visually confirming the fix described in Section 9.7, not just the numeric result.
+
+| Original (diagonal) | V2 (fixed) |
+|---|---|
+| ![Loop 10 rooms, original](figures/blueprint_SYN_loop_10.png) | ![Loop 10 rooms, V2](figures/blueprint_SYN_loop_10_V2.png) |
+
+Linear is visually identical between the two corpora (it never had diagonal edges); Tree shows the same right-angle correction as Loop, just at fewer points (one per branch rather than one per room).
 
 Note that "Tree" refers to the zero-cycle graph property of the corridor subgraph — for a connected tree, edges = vertices − 1 and every edge is a bridge, an identity unrelated to the number of QUBO variables (e.g. Tree-10 has 20 QUBO variables but 37 bridges) — not a visually branching layout: the generator lays branches out as parallel corridor rows joined by a spine, which is graph-theoretically a tree but does not resemble a biological tree when drawn.
 
