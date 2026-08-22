@@ -82,7 +82,9 @@ The NIST review by Kuligowski, Peacock, and Hoskins places route optimization wi
 
 Let a building be represented by a graph G=(V,K), where V contains navigation, room-start, doorway, and exit nodes, and K contains legal movement edges. Each edge has a positive distance and a positive relative capacity. Let R denote the set of rooms and E the set of designated exterior exits. For each pair (r,e), a single legal shortest route is precomputed and stored. Every occupant assigned to room r is treated as one indivisible group with occupancy p_r:
 
-$$x_{r,e} \in \{0,1\}, \qquad r \in R,\ e \in E \tag{1}$$
+**Equation 1.**
+
+$$x_{r,e} \in \{0,1\}, \qquad r \in R,\ e \in E$$
 
 The assignment must select exactly one exit route for every room, balancing total travel distance against concentration of large occupant groups on shared low-capacity edges. This is a static planning model; it computes neither a movement schedule nor an evacuation completion time. Assumptions, retained from the original study, include: all occupants in a room follow the same selected route; one candidate path is available per room-exit pair; occupancy and edge capacities remain fixed during a run; congestion is represented by simultaneous route overlap, not a time-resolved queue; and all designated exits are available.
 
@@ -110,33 +112,45 @@ Dijkstra's algorithm computes the shortest legal path from every room-start node
 
 The binary route variables are assembled into a BQM with linear and quadratic coefficients. The total energy is:
 
-$$H(\mathbf{x}) = H_{\text{distance}}(\mathbf{x}) + H_{\text{congestion}}(\mathbf{x}) + H_{\text{assignment}}(\mathbf{x}) \tag{2}$$
+**Equation 2.**
+
+$$H(\mathbf{x}) = H_{\text{distance}}(\mathbf{x}) + H_{\text{congestion}}(\mathbf{x}) + H_{\text{assignment}}(\mathbf{x})$$
 
 **Normalized distance term:**
 
-$$H_{\text{distance}}(\mathbf{x}) = \frac{1}{S_D}\sum_{r \in R}\sum_{e \in E} d_{r,e}\, x_{r,e} \tag{3}$$
+**Equation 3.**
+
+$$H_{\text{distance}}(\mathbf{x}) = \frac{1}{S_D}\sum_{r \in R}\sum_{e \in E} d_{r,e}\, x_{r,e}$$
 
 $d_{r,e}$ is the length of the stored route from room $r$ to exit $e$; $S_D$ is a data-derived scale preventing raw distance magnitudes from dominating.
 
 **Occupancy-weighted edge load:**
 
-$$L_k(\mathbf{x}) = \sum_{r \in R}\sum_{e \in E} p_r\, I_{r,e,k}\, x_{r,e}, \qquad u_k(\mathbf{x}) = \frac{L_k(\mathbf{x})}{C_k} \tag{4}$$
+**Equation 4.**
+
+$$L_k(\mathbf{x}) = \sum_{r \in R}\sum_{e \in E} p_r\, I_{r,e,k}\, x_{r,e}, \qquad u_k(\mathbf{x}) = \frac{L_k(\mathbf{x})}{C_k}$$
 
 $I_{r,e,k}$ equals one when route $(r,e)$ uses physical graph edge $k$; the prototype effective capacity is $C_k = 10 c_k$, where $c_k$ is the relative capacity stored in the floorplan's edge table.
 
 **Quadratic congestion term:**
 
-$$H_{\text{congestion}}(\mathbf{x}) = \frac{w_c}{S_C}\sum_{k \in K}\left(\frac{L_k(\mathbf{x})}{C_k}\right)^2, \qquad w_c = 5 \tag{5}$$
+**Equation 5.**
+
+$$H_{\text{congestion}}(\mathbf{x}) = \frac{w_c}{S_C}\sum_{k \in K}\left(\frac{L_k(\mathbf{x})}{C_k}\right)^2, \qquad w_c = 5$$
 
 $S_C$ is a data-derived normalization scale. Squaring utilization creates both individual and pairwise costs: if two selected routes share edge $k$, their normalized loads generate a positive quadratic interaction. This term is a Gram-matrix quadratic in $\mathbf{x}$ (Section 6) — a fact central to this paper's exact-baseline contribution.
 
 **Exactly-one assignment penalty:**
 
-$$H_{\text{assignment}}(\mathbf{x}) = A \sum_{r \in R}\left(1 - \sum_{e \in E} x_{r,e}\right)^2 \tag{6}$$
+**Equation 6.**
+
+$$H_{\text{assignment}}(\mathbf{x}) = A \sum_{r \in R}\left(1 - \sum_{e \in E} x_{r,e}\right)^2$$
 
 Expanding, $A(1-\sum_e x_{r,e})^2 = A - A\sum_e x_{r,e} + 2A\sum_{e<f} x_{r,e}x_{r,f}$, assigning a negative linear bias to every route and a positive interaction between every pair of routes for the same room. Rather than fixing $A$ across instances, the largest positive marginal feasible route cost $M_{\max}$ is estimated and:
 
-$$A = 1.5\,(M_{\max} + 0.25) \tag{7}$$
+**Equation 7.**
+
+$$A = 1.5\,(M_{\max} + 0.25)$$
 
 This penalty is recalculated per floorplan. Congestion-only interactions below $10^{-4}$ are pruned for QPU density reduction (assignment interactions are never pruned); the reported penalized-BQM energy therefore differs by a small, previously-documented amount from the exact, unpruned energy this paper's CP-SAT reference baseline reports.
 
@@ -150,7 +164,9 @@ Every result in the original study is a *lowest energy observed* across repeated
 
 Equation 6's role is purely to make the exactly-one-route-per-room constraint expressible inside an unconstrained BQM, as required by Neal, Hybrid, and QPU samplers. But the constraint itself, $\sum_{e} x_{r,e} = 1$ for every room, is a linear equality. And $H_{\text{congestion}}$ (Equation 5) is a sum of squared linear forms in $\mathbf{x}$ — equivalently, $\mathbf{x}^\top \mathbf{Q} \mathbf{x}$ for a Gram matrix $\mathbf{Q} = \mathbf{L}\mathbf{L}^\top$ built from the per-route normalized-load vectors — and a Gram matrix is positive semi-definite. The optimization problem underneath the QUBO reduction,
 
-$$\min_{\mathbf{x} \in \{0,1\}^n} H_{\text{distance}}(\mathbf{x}) + H_{\text{congestion}}(\mathbf{x}) \quad \text{s.t.} \quad \sum_{e \in E} x_{r,e} = 1 \ \ \forall r \in R \tag{8}$$
+**Equation 8.**
+
+$$\min_{\mathbf{x} \in \{0,1\}^n} H_{\text{distance}}(\mathbf{x}) + H_{\text{congestion}}(\mathbf{x}) \quad \text{s.t.} \quad \sum_{e \in E} x_{r,e} = 1 \ \ \forall r \in R$$
 
 therefore has a convex quadratic objective over a discrete binary feasible set. This removes the QUBO penalty term and embedding requirement from the classical reference formulation, although the feasible set remains combinatorial.
 
