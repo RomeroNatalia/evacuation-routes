@@ -13,7 +13,8 @@ dependencies = [
     "pandas>=2.0",
     "networkx>=3.0",
     "matplotlib>=3.7",
-    "dwave-ocean-sdk>=9.0"
+    "dwave-ocean-sdk>=9.0",
+    "statsmodels>=0.14"
 ]
 
 [project.optional-dependencies]
